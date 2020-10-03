@@ -6,3 +6,6 @@ git clone https://github.com/iamliguangming/Guidedog
 cd Guidedog
 git submodule update --init --recursive
 ```
+## What is included:
+- A Pedstrain simulator from https://github.com/srl-freiburg/pedsim_ros
+- Nothing more for now
