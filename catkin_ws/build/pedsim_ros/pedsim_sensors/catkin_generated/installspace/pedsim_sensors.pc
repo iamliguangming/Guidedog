@@ -1,0 +1,8 @@
+prefix=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install
+
+Name: pedsim_sensors
+Description: Description of pedsim_sensors
+Version: 0.1.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs nav_msgs pedsim_msgs roscpp rospy sensor_msgs tf pedsim_utils

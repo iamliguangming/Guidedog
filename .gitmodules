@@ -1,0 +1,3 @@
+[submodule "catkin_ws/src/pedsim_ros"]
+	path = catkin_ws/src/pedsim_ros
+	url = https://github.com/srl-freiburg/pedsim_ros
