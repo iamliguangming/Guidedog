@@ -749,6 +749,9 @@ cmake_modules_DIR:PATH=/opt/ros/melodic/share/cmake_modules/cmake
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
 
+//The directory containing a CMake configuration file for diagnostic_msgs.
+diagnostic_msgs_DIR:PATH=/opt/ros/melodic/share/diagnostic_msgs/cmake
+
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/melodic/share/dynamic_reconfigure/cmake
 
@@ -865,7 +868,7 @@ jsoncpp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/jsoncpp
 laser_geometry_DIR:PATH=/opt/ros/melodic/share/laser_geometry/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/melodic/lib/librosconsole_bridge.so
+lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
 
 //The directory containing a CMake configuration file for map_msgs.
 map_msgs_DIR:PATH=/opt/ros/melodic/share/map_msgs/cmake
@@ -1068,11 +1071,83 @@ tf_DIR:PATH=/opt/ros/melodic/share/tf/cmake
 //The directory containing a CMake configuration file for trajectory_msgs.
 trajectory_msgs_DIR:PATH=/opt/ros/melodic/share/trajectory_msgs/cmake
 
+//Value Computed by CMake
+turtlebot3_BINARY_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/turtlebot3/turtlebot3
+
+//Value Computed by CMake
+turtlebot3_SOURCE_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3/turtlebot3
+
+//Value Computed by CMake
+turtlebot3_bringup_BINARY_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/turtlebot3/turtlebot3_bringup
+
+//Value Computed by CMake
+turtlebot3_bringup_SOURCE_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3/turtlebot3_bringup
+
+//Value Computed by CMake
+turtlebot3_description_BINARY_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/turtlebot3/turtlebot3_description
+
+//Value Computed by CMake
+turtlebot3_description_SOURCE_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3/turtlebot3_description
+
+//Value Computed by CMake
+turtlebot3_example_BINARY_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/turtlebot3/turtlebot3_example
+
+//Value Computed by CMake
+turtlebot3_example_SOURCE_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3/turtlebot3_example
+
+//Value Computed by CMake
+turtlebot3_fake_BINARY_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/turtlebot3_simulations/turtlebot3_fake
+
+//Value Computed by CMake
+turtlebot3_fake_SOURCE_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3_simulations/turtlebot3_fake
+
+//Value Computed by CMake
+turtlebot3_gazebo_BINARY_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/turtlebot3_simulations/turtlebot3_gazebo
+
+//Value Computed by CMake
+turtlebot3_gazebo_SOURCE_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo
+
+//Value Computed by CMake
+turtlebot3_msgs_BINARY_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/turtlebot3_msgs
+
+//The directory containing a CMake configuration file for turtlebot3_msgs.
+turtlebot3_msgs_DIR:PATH=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/share/turtlebot3_msgs/cmake
+
+//Value Computed by CMake
+turtlebot3_msgs_SOURCE_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3_msgs
+
+//Value Computed by CMake
+turtlebot3_navigation_BINARY_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/turtlebot3/turtlebot3_navigation
+
+//Value Computed by CMake
+turtlebot3_navigation_SOURCE_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3/turtlebot3_navigation
+
+//Value Computed by CMake
+turtlebot3_simulations_BINARY_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/turtlebot3_simulations/turtlebot3_simulations
+
+//Value Computed by CMake
+turtlebot3_simulations_SOURCE_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3_simulations/turtlebot3_simulations
+
+//Value Computed by CMake
+turtlebot3_slam_BINARY_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/turtlebot3/turtlebot3_slam
+
+//Value Computed by CMake
+turtlebot3_slam_SOURCE_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3/turtlebot3_slam
+
+//Value Computed by CMake
+turtlebot3_teleop_BINARY_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/turtlebot3/turtlebot3_teleop
+
+//Value Computed by CMake
+turtlebot3_teleop_SOURCE_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3/turtlebot3_teleop
+
 //The directory containing a CMake configuration file for urdf.
 urdf_DIR:PATH=/opt/ros/melodic/share/urdf/cmake
 
 //The directory containing a CMake configuration file for visualization_msgs.
 visualization_msgs_DIR:PATH=/opt/ros/melodic/share/visualization_msgs/cmake
+
+//The directory containing a CMake configuration file for xacro.
+xacro_DIR:PATH=/opt/ros/melodic/share/xacro/cmake
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/melodic/share/xmlrpcpp/cmake
@@ -1401,7 +1476,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=29
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
