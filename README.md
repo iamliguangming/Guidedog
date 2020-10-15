@@ -13,3 +13,7 @@ roslaunch pedsim_gazebo_plugin airport.launch
 ## What is included:
 - A Pedstrain simulator from https://github.com/srl-freiburg/pedsim_ros
 - Nothing more for now
+
+
+## Branch Info:
+- This is the branch for World and Robot Model/Sensor Development
