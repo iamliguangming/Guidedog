@@ -837,6 +837,12 @@ gtest_hide_internal_symbols:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
+//Value Computed by CMake
+guidedog_turtle_BINARY_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/GuideDogSim/guidedog_turtle
+
+//Value Computed by CMake
+guidedog_turtle_SOURCE_DIR:STATIC=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/GuideDogSim/guidedog_turtle
+
 //The directory containing a CMake configuration file for ignition-cmake0.
 ignition-cmake0_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/ignition-cmake0
 
