@@ -4,7 +4,3 @@
 [submodule "catkin_ws/src/turtlebot3_msgs"]
 	path = catkin_ws/src/turtlebot3_msgs
 	url = https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-[submodule "catkin_ws/src/turtlebot3"]
-	path = catkin_ws/src/turtlebot3
-	url = https://github.com/ROBOTIS-GIT/turtlebot3.git
-
