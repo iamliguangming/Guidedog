@@ -9,6 +9,7 @@ source catkin_ws/devel/setup.bash
 roslaunch pedsim_simulator airport_demo.launch 
 roslaunch pedsim_gazebo_plugin airport.launch
 
+TRY
 ```
 ## What is included:
 - A Pedstrain simulator from https://github.com/srl-freiburg/pedsim_ros
