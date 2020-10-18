@@ -8,7 +8,7 @@ git checkout world_branch
 git submodule update --init --recursive
 cd catkin_ws
 catkin_make
-source catkin_ws/devel/setup.bash
+source devel/setup.bash
 roslaunch pedsim_simulator airport_demo.launch 
 roslaunch pedsim_gazebo_plugin airport.launch
 
