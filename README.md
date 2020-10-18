@@ -25,7 +25,7 @@ needed anymore inside the customized world_simulations pkg. one-liner in termina
 roslaunch world_simulations <customized_launch_file>.launch
 ```  
   In this case, we have provided some launch files inside 'launch' folder under 'world_simulations' pkg.  
-You can run my_sim.launch as the instance. In future, it will be replaced as customized launch files.  
+You can run **my_sim.launch** as the instance. In future, it will be replaced as customized launch files.  
 It will be required to put self-defined .world gazebo models and .xml scenario file inside the 'worlds'  
 and 'scenarios' folder under 'world_simulations' pkg. Then a quick shorcut is to directly modify  
 'my_sim.launch' file to reflect the changes in world model and scenario files. The launch file will  
