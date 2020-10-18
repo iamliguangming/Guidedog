@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/yongxin/Guidedog-Service-Robot/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build
+CMAKE_BINARY_DIR = /home/yongxin/Guidedog-Service-Robot/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/depend.make
@@ -57,50 +57,50 @@ include pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_trac
 # Include the compile flags for this target's objects.
 include pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
 
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_detected_persons_display.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/detected_persons_display.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating src/moc_detected_persons_display.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_detected_persons_display.cpp_parameters
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_detected_persons_display.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/detected_persons_display.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating src/moc_detected_persons_display.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_detected_persons_display.cpp_parameters
 
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_persons_display.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_display.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating src/moc_tracked_persons_display.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_persons_display.cpp_parameters
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_persons_display.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_display.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating src/moc_tracked_persons_display.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_persons_display.cpp_parameters
 
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_groups_display.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_groups_display.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating src/moc_tracked_groups_display.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_groups_display.cpp_parameters
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_groups_display.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_groups_display.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating src/moc_tracked_groups_display.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_groups_display.cpp_parameters
 
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_relations_display.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_relations_display.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating src/moc_social_relations_display.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_relations_display.cpp_parameters
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_relations_display.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_relations_display.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating src/moc_social_relations_display.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_relations_display.cpp_parameters
 
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_activities_display.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_activities_display.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating src/moc_social_activities_display.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_activities_display.cpp_parameters
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_activities_display.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_activities_display.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating src/moc_social_activities_display.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_activities_display.cpp_parameters
 
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_human_attributes_display.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/human_attributes_display.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating src/moc_human_attributes_display.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_human_attributes_display.cpp_parameters
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_human_attributes_display.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/human_attributes_display.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating src/moc_human_attributes_display.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_human_attributes_display.cpp_parameters
 
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_person_display_common.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/person_display_common.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating src/moc_person_display_common.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_person_display_common.cpp_parameters
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_person_display_common.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/person_display_common.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating src/moc_person_display_common.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_person_display_common.cpp_parameters
 
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_additional_topic_subscriber.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/additional_topic_subscriber.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating src/moc_additional_topic_subscriber.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_additional_topic_subscriber.cpp_parameters
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_additional_topic_subscriber.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/additional_topic_subscriber.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating src/moc_additional_topic_subscriber.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_additional_topic_subscriber.cpp_parameters
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/detected_persons_display.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/detected_persons_display.cpp
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/detected_persons_display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/detected_persons_display.cpp
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/detected_persons_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/detected_persons_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.i
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/detected_persons_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/detected_persons_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.s
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.o.requires:
 
@@ -114,17 +114,17 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_display.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_display.cpp
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_display.cpp
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.i
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.s
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.o.requires:
 
@@ -138,17 +138,17 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_groups_display.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_groups_display.cpp
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_groups_display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_groups_display.cpp
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_groups_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_groups_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.i
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_groups_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_groups_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.s
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.o.requires:
 
@@ -162,17 +162,17 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_relations_display.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_relations_display.cpp
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_relations_display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_relations_display.cpp
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_relations_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_relations_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.i
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_relations_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_relations_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.s
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.o.requires:
 
@@ -186,17 +186,17 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_activities_display.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_activities_display.cpp
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_activities_display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_activities_display.cpp
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_activities_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_activities_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.i
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_activities_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/social_activities_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.s
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.o.requires:
 
@@ -210,17 +210,17 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/human_attributes_display.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/human_attributes_display.cpp
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/human_attributes_display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/human_attributes_display.cpp
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/human_attributes_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/human_attributes_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.i
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/human_attributes_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/human_attributes_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.s
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.o.requires:
 
@@ -234,17 +234,17 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/person_display_common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/person_display_common.cpp
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/person_display_common.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/person_display_common.cpp
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/person_display_common.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/person_display_common.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.i
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/person_display_common.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/person_display_common.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.s
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.o.requires:
 
@@ -258,17 +258,17 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_cache.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_cache.cpp
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_cache.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_cache.cpp
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_cache.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_cache.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.i
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_cache.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/tracked_persons_cache.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.s
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.o.requires:
 
@@ -282,17 +282,17 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/visuals/person_visual.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/visuals/person_visual.cpp
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/visuals/person_visual.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/visuals/person_visual.cpp
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/visuals/person_visual.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/visuals/person_visual.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.i
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/visuals/person_visual.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/visuals/person_visual.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.s
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.o.requires:
 
@@ -307,16 +307,16 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_detected_persons_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_detected_persons_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_detected_persons_display.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_detected_persons_display.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_detected_persons_display.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_detected_persons_display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_detected_persons_display.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_detected_persons_display.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_detected_persons_display.cpp
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_detected_persons_display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_detected_persons_display.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_detected_persons_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_detected_persons_display.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_detected_persons_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_detected_persons_display.cpp.i
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_detected_persons_display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_detected_persons_display.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_detected_persons_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_detected_persons_display.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_detected_persons_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_detected_persons_display.cpp.s
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_detected_persons_display.cpp.o.requires:
 
@@ -331,16 +331,16 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_persons_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_persons_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_persons_display.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_persons_display.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_persons_display.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_persons_display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_persons_display.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_persons_display.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_persons_display.cpp
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_persons_display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_persons_display.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_persons_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_persons_display.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_persons_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_persons_display.cpp.i
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_persons_display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_persons_display.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_persons_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_persons_display.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_persons_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_persons_display.cpp.s
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_persons_display.cpp.o.requires:
 
@@ -355,16 +355,16 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_groups_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_groups_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_groups_display.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_groups_display.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_groups_display.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_groups_display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_groups_display.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_groups_display.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_groups_display.cpp
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_groups_display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_groups_display.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_groups_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_groups_display.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_groups_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_groups_display.cpp.i
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_groups_display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_groups_display.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_groups_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_groups_display.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_tracked_groups_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_groups_display.cpp.s
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_groups_display.cpp.o.requires:
 
@@ -379,16 +379,16 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_relations_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_relations_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_relations_display.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_relations_display.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_relations_display.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_relations_display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_relations_display.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_relations_display.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_relations_display.cpp
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_relations_display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_relations_display.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_relations_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_relations_display.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_relations_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_relations_display.cpp.i
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_relations_display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_relations_display.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_relations_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_relations_display.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_relations_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_relations_display.cpp.s
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_relations_display.cpp.o.requires:
 
@@ -403,16 +403,16 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_activities_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_activities_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_activities_display.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_activities_display.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_activities_display.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_activities_display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_activities_display.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_activities_display.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_activities_display.cpp
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_activities_display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_activities_display.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_activities_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_activities_display.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_activities_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_activities_display.cpp.i
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_activities_display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_activities_display.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_activities_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_activities_display.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_social_activities_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_activities_display.cpp.s
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_activities_display.cpp.o.requires:
 
@@ -427,16 +427,16 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_human_attributes_display.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_human_attributes_display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_human_attributes_display.cpp
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_human_attributes_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_human_attributes_display.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.i
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_human_attributes_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_human_attributes_display.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.s
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.o.requires:
 
@@ -451,16 +451,16 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_person_display_common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_person_display_common.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_person_display_common.cpp
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_person_display_common.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_person_display_common.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.i
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_person_display_common.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_person_display_common.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.s
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.o.requires:
 
@@ -475,16 +475,16 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/flags.make
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.o: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_additional_topic_subscriber.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_additional_topic_subscriber.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_additional_topic_subscriber.cpp
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_additional_topic_subscriber.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_additional_topic_subscriber.cpp > CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.i
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_additional_topic_subscriber.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_additional_topic_subscriber.cpp -o CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.s
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.o.requires:
 
@@ -520,80 +520,80 @@ spencer_tracking_rviz_plugin_OBJECTS = \
 # External object files for target spencer_tracking_rviz_plugin
 spencer_tracking_rviz_plugin_EXTERNAL_OBJECTS =
 
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_detected_persons_display.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_persons_display.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_groups_display.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_relations_display.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_activities_display.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/build.make
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /home/iamliguangming/anaconda3/lib/libQt5Widgets.so.5.9.7
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/librviz.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libOgreOverlay.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libGL.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libGLU.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libimage_transport.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libinteractive_markers.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/liblaser_geometry.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libresource_retriever.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libtf.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libtf2_ros.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libactionlib.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libmessage_filters.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libtf2.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/liburdf.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libclass_loader.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/libPocoFoundation.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libroslib.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/librospack.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/librosconsole_bridge.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libroscpp.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/librosconsole.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/librostime.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libcpp_common.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /home/iamliguangming/anaconda3/lib/libQt5Gui.so.5.9.7
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /home/iamliguangming/anaconda3/lib/libQt5Core.so.5.9.7
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX shared library /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/spencer_tracking_rviz_plugin.dir/link.txt --verbose=$(VERBOSE)
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/detected_persons_display.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_display.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_groups_display.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_relations_display.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/social_activities_display.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/human_attributes_display.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/person_display_common.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/tracked_persons_cache.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/visuals/person_visual.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_detected_persons_display.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_persons_display.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_tracked_groups_display.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_relations_display.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_social_activities_display.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/build.make
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.9.5
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/librviz.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libGL.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libGLU.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libimage_transport.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libinteractive_markers.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/liblaser_geometry.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libresource_retriever.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libtf.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libtf2_ros.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libactionlib.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libmessage_filters.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libtf2.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/liburdf.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libclass_loader.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/libPocoFoundation.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libroslib.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/librospack.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/librosconsole_bridge.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libroscpp.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/librosconsole.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/librostime.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /opt/ros/melodic/lib/libcpp_common.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX shared library /home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/spencer_tracking_rviz_plugin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/build: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so
+pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/build: /home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so
 
 .PHONY : pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/build
 
@@ -618,7 +618,7 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 .PHONY : pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/requires
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/clean:
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && $(CMAKE_COMMAND) -P CMakeFiles/spencer_tracking_rviz_plugin.dir/cmake_clean.cmake
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin && $(CMAKE_COMMAND) -P CMakeFiles/spencer_tracking_rviz_plugin.dir/cmake_clean.cmake
 .PHONY : pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/clean
 
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/depend: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_detected_persons_display.cpp
@@ -629,6 +629,6 @@ pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rvi
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/depend: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_human_attributes_display.cpp
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/depend: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_person_display_common.cpp
 pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/depend: pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/src/moc_additional_topic_subscriber.cpp
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongxin/Guidedog-Service-Robot/catkin_ws/src /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin /home/yongxin/Guidedog-Service-Robot/catkin_ws/build /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pedsim_ros/2ndparty/spencer_tracking_rviz_plugin/CMakeFiles/spencer_tracking_rviz_plugin.dir/depend
 

@@ -6,8 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pedsim.dir/src/ped_tree.cpp.o"
   "CMakeFiles/pedsim.dir/src/ped_vector.cpp.o"
   "CMakeFiles/pedsim.dir/src/ped_waypoint.cpp.o"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libpedsim.pdb"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libpedsim.so"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libpedsim.pdb"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libpedsim.so"
 )
 
 # Per-language clean rules from dependency scanning.

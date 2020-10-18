@@ -1,13 +1,13 @@
 file(REMOVE_RECURSE
   "CMakeFiles/turtlebot3_example_generate_messages_py"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionFeedback.py"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3Goal.py"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3Result.py"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3Action.py"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionGoal.py"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3Feedback.py"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionResult.py"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/__init__.py"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionResult.py"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionGoal.py"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3Goal.py"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3Action.py"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3Result.py"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3Feedback.py"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/_Turtlebot3ActionFeedback.py"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/msg/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,4 +1,4 @@
-prefix=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel
+prefix=/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel
 
 Name: turtlebot3_bringup
 Description: Description of turtlebot3_bringup

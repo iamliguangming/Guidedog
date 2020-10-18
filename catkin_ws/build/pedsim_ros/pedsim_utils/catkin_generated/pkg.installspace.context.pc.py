@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "cmake_modules;geometry_msgs;pedsim_msgs;roscpp;rospy".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lpedsim_utils".split(';') if "-lpedsim_utils" != "" else []
 PROJECT_NAME = "pedsim_utils"
-PROJECT_SPACE_DIR = "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install"
+PROJECT_SPACE_DIR = "/home/yongxin/Guidedog-Service-Robot/catkin_ws/install"
 PROJECT_VERSION = "0.1.0"

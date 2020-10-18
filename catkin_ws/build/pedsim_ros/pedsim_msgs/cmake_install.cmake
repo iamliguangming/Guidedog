@@ -1,8 +1,8 @@
-# Install script for directory: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs
+# Install script for directory: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/yongxin/Guidedog-Service-Robot/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,70 +39,70 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pedsim_msgs/msg" TYPE FILE FILES
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/AgentState.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/AgentStates.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/AgentGroup.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/AgentGroups.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/AgentForce.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/LineObstacle.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/LineObstacles.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/TrackedPerson.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/TrackedPersons.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/TrackedGroup.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/TrackedGroups.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/SocialRelation.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/SocialRelations.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/SocialActivity.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/SocialActivities.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/Waypoint.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/Waypoints.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/AgentState.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/AgentStates.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/AgentGroup.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/AgentGroups.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/AgentForce.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/LineObstacle.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/LineObstacles.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/TrackedPerson.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/TrackedPersons.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/TrackedGroup.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/TrackedGroups.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/SocialRelation.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/SocialRelations.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/SocialActivity.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/SocialActivities.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/Waypoint.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/msg/Waypoints.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pedsim_msgs/cmake" TYPE FILE FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_msgs/catkin_generated/installspace/pedsim_msgs-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pedsim_msgs/cmake" TYPE FILE FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_msgs/catkin_generated/installspace/pedsim_msgs-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/include/pedsim_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/include/pedsim_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/share/roseus/ros/pedsim_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/share/roseus/ros/pedsim_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/share/common-lisp/ros/pedsim_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/share/common-lisp/ros/pedsim_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/share/gennodejs/ros/pedsim_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/share/gennodejs/ros/pedsim_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/python2.7/dist-packages/pedsim_msgs")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/python2.7/dist-packages/pedsim_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/python2.7/dist-packages/pedsim_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/python2.7/dist-packages/pedsim_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_msgs/catkin_generated/installspace/pedsim_msgs.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_msgs/catkin_generated/installspace/pedsim_msgs.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pedsim_msgs/cmake" TYPE FILE FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_msgs/catkin_generated/installspace/pedsim_msgs-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pedsim_msgs/cmake" TYPE FILE FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_msgs/catkin_generated/installspace/pedsim_msgs-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pedsim_msgs/cmake" TYPE FILE FILES
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_msgs/catkin_generated/installspace/pedsim_msgsConfig.cmake"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_msgs/catkin_generated/installspace/pedsim_msgsConfig-version.cmake"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_msgs/catkin_generated/installspace/pedsim_msgsConfig.cmake"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_msgs/catkin_generated/installspace/pedsim_msgsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pedsim_msgs" TYPE FILE FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pedsim_msgs" TYPE FILE FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_msgs/package.xml")
 endif()
 

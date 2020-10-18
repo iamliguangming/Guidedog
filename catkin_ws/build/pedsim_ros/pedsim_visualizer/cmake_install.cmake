@@ -1,8 +1,8 @@
-# Install script for directory: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_visualizer
+# Install script for directory: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_visualizer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/yongxin/Guidedog-Service-Robot/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,34 +38,34 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/pedsim_visualizer" TYPE FILE FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/include/pedsim_visualizer/PedsimVisualizerConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/pedsim_visualizer" TYPE FILE FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/include/pedsim_visualizer/PedsimVisualizerConfig.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/pedsim_visualizer" TYPE FILE FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/python2.7/dist-packages/pedsim_visualizer/__init__.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/pedsim_visualizer" TYPE FILE FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/python2.7/dist-packages/pedsim_visualizer/__init__.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/python2.7/dist-packages/pedsim_visualizer/cfg")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/python2.7/dist-packages/pedsim_visualizer/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/pedsim_visualizer" TYPE DIRECTORY FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/python2.7/dist-packages/pedsim_visualizer/cfg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/pedsim_visualizer" TYPE DIRECTORY FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/python2.7/dist-packages/pedsim_visualizer/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_visualizer/catkin_generated/installspace/pedsim_visualizer.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_visualizer/catkin_generated/installspace/pedsim_visualizer.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pedsim_visualizer/cmake" TYPE FILE FILES
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_visualizer/catkin_generated/installspace/pedsim_visualizerConfig.cmake"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_visualizer/catkin_generated/installspace/pedsim_visualizerConfig-version.cmake"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_visualizer/catkin_generated/installspace/pedsim_visualizerConfig.cmake"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_visualizer/catkin_generated/installspace/pedsim_visualizerConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pedsim_visualizer" TYPE FILE FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_visualizer/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pedsim_visualizer" TYPE FILE FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_visualizer/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -75,12 +75,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pedsim_visualizer/pedsim_visualizer_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pedsim_visualizer" TYPE EXECUTABLE FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_visualizer/pedsim_visualizer_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pedsim_visualizer" TYPE EXECUTABLE FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_visualizer/pedsim_visualizer_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pedsim_visualizer/pedsim_visualizer_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pedsim_visualizer/pedsim_visualizer_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pedsim_visualizer/pedsim_visualizer_node"
-         OLD_RPATH "/opt/ros/melodic/lib:/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib:"
+         OLD_RPATH "/opt/ros/melodic/lib:/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/pedsim_visualizer/pedsim_visualizer_node")
@@ -89,6 +89,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/pedsim_visualizer" TYPE DIRECTORY FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_visualizer/include/pedsim_visualizer/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\.svn$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/pedsim_visualizer" TYPE DIRECTORY FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_visualizer/include/pedsim_visualizer/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\.svn$" EXCLUDE)
 endif()
 

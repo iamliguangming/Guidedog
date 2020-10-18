@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pedsim_obstacle_sensor.dir/src/pedsim_sensors/obstacle_point_cloud.cpp.o"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_sensors/pedsim_obstacle_sensor.pdb"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_sensors/pedsim_obstacle_sensor"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_sensors/pedsim_obstacle_sensor.pdb"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_sensors/pedsim_obstacle_sensor"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,8 +1,8 @@
-# Install script for directory: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/3rdparty/libpedsim
+# Install script for directory: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/3rdparty/libpedsim
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/yongxin/Guidedog-Service-Robot/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/3rdparty/libpedsim/catkin_generated/installspace/pedsim.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/3rdparty/libpedsim/catkin_generated/installspace/pedsim.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pedsim/cmake" TYPE FILE FILES
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/3rdparty/libpedsim/catkin_generated/installspace/pedsimConfig.cmake"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/3rdparty/libpedsim/catkin_generated/installspace/pedsimConfig-version.cmake"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/3rdparty/libpedsim/catkin_generated/installspace/pedsimConfig.cmake"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/3rdparty/libpedsim/catkin_generated/installspace/pedsimConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pedsim" TYPE FILE FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/3rdparty/libpedsim/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pedsim" TYPE FILE FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/3rdparty/libpedsim/package.xml")
 endif()
 

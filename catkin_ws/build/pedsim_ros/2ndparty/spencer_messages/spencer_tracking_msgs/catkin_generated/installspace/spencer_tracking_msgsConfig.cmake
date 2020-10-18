@@ -67,14 +67,14 @@ set(spencer_tracking_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(spencer_tracking_msgs_SOURCE_PREFIX /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_tracking_msgs)
-  set(spencer_tracking_msgs_DEVEL_PREFIX /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel)
+  set(spencer_tracking_msgs_SOURCE_PREFIX /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_tracking_msgs)
+  set(spencer_tracking_msgs_DEVEL_PREFIX /home/yongxin/Guidedog-Service-Robot/catkin_ws/devel)
   set(spencer_tracking_msgs_INSTALL_PREFIX "")
   set(spencer_tracking_msgs_PREFIX ${spencer_tracking_msgs_DEVEL_PREFIX})
 else()
   set(spencer_tracking_msgs_SOURCE_PREFIX "")
   set(spencer_tracking_msgs_DEVEL_PREFIX "")
-  set(spencer_tracking_msgs_INSTALL_PREFIX /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install)
+  set(spencer_tracking_msgs_INSTALL_PREFIX /home/yongxin/Guidedog-Service-Robot/catkin_ws/install)
   set(spencer_tracking_msgs_PREFIX ${spencer_tracking_msgs_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install/lib;/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/yongxin/Guidedog-Service-Robot/catkin_ws/install/lib;/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

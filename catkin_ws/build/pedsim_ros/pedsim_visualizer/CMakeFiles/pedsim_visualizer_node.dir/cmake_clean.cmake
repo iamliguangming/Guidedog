@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pedsim_visualizer_node.dir/src/sim_visualizer_node.cpp.o"
   "CMakeFiles/pedsim_visualizer_node.dir/src/sim_visualizer.cpp.o"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_visualizer/pedsim_visualizer_node.pdb"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_visualizer/pedsim_visualizer_node"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_visualizer/pedsim_visualizer_node.pdb"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_visualizer/pedsim_visualizer_node"
 )
 
 # Per-language clean rules from dependency scanning.

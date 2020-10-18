@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/yongxin/Guidedog-Service-Robot/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build
+CMAKE_BINARY_DIR = /home/yongxin/Guidedog-Service-Robot/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/depend.make
@@ -57,114 +57,114 @@ include pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/progress.mak
 # Include the compile flags for this target's objects.
 include pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_config.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/config.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/pedsim_simulator/moc_config.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_config.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_config.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/config.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/pedsim_simulator/moc_config.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_config.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_scene.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/scene.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating include/pedsim_simulator/moc_scene.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_scene.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_scene.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/scene.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating include/pedsim_simulator/moc_scene.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_scene.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_agentstatemachine.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/agentstatemachine.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating include/pedsim_simulator/moc_agentstatemachine.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_agentstatemachine.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_agentstatemachine.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/agentstatemachine.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating include/pedsim_simulator/moc_agentstatemachine.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_agentstatemachine.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_scenarioelement.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/scenarioelement.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating include/pedsim_simulator/element/moc_scenarioelement.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_scenarioelement.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_scenarioelement.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/scenarioelement.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating include/pedsim_simulator/element/moc_scenarioelement.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_scenarioelement.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agent.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/agent.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating include/pedsim_simulator/element/moc_agent.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agent.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agent.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/agent.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating include/pedsim_simulator/element/moc_agent.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agent.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentcluster.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/agentcluster.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating include/pedsim_simulator/element/moc_agentcluster.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentcluster.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentcluster.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/agentcluster.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating include/pedsim_simulator/element/moc_agentcluster.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentcluster.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentgroup.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/agentgroup.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating include/pedsim_simulator/element/moc_agentgroup.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentgroup.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentgroup.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/agentgroup.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating include/pedsim_simulator/element/moc_agentgroup.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentgroup.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_attractionarea.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/attractionarea.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating include/pedsim_simulator/element/moc_attractionarea.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_attractionarea.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_attractionarea.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/attractionarea.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating include/pedsim_simulator/element/moc_attractionarea.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_attractionarea.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_obstacle.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/obstacle.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating include/pedsim_simulator/element/moc_obstacle.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_obstacle.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_obstacle.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/obstacle.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating include/pedsim_simulator/element/moc_obstacle.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_obstacle.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waypoint.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/waypoint.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating include/pedsim_simulator/element/moc_waypoint.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waypoint.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waypoint.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/waypoint.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating include/pedsim_simulator/element/moc_waypoint.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waypoint.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_areawaypoint.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/areawaypoint.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating include/pedsim_simulator/element/moc_areawaypoint.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_areawaypoint.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_areawaypoint.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/areawaypoint.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating include/pedsim_simulator/element/moc_areawaypoint.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_areawaypoint.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waitingqueue.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/waitingqueue.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating include/pedsim_simulator/element/moc_waitingqueue.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waitingqueue.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waitingqueue.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/waitingqueue.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating include/pedsim_simulator/element/moc_waitingqueue.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waitingqueue.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_queueingwaypoint.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/queueingwaypoint.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating include/pedsim_simulator/element/moc_queueingwaypoint.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_queueingwaypoint.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_queueingwaypoint.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/queueingwaypoint.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating include/pedsim_simulator/element/moc_queueingwaypoint.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_queueingwaypoint.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_force.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/force.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating include/pedsim_simulator/force/moc_force.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_force.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_force.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/force.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating include/pedsim_simulator/force/moc_force.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_force.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_randomforce.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/randomforce.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating include/pedsim_simulator/force/moc_randomforce.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_randomforce.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_randomforce.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/randomforce.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating include/pedsim_simulator/force/moc_randomforce.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_randomforce.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupgazeforce.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/groupgazeforce.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating include/pedsim_simulator/force/moc_groupgazeforce.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupgazeforce.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupgazeforce.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/groupgazeforce.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating include/pedsim_simulator/force/moc_groupgazeforce.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupgazeforce.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/groupcoherenceforce.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating include/pedsim_simulator/force/moc_groupcoherenceforce.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/groupcoherenceforce.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating include/pedsim_simulator/force/moc_groupcoherenceforce.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/grouprepulsionforce.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating include/pedsim_simulator/force/moc_grouprepulsionforce.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/grouprepulsionforce.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating include/pedsim_simulator/force/moc_grouprepulsionforce.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_alongwallforce.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/alongwallforce.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating include/pedsim_simulator/force/moc_alongwallforce.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_alongwallforce.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_alongwallforce.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/alongwallforce.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating include/pedsim_simulator/force/moc_alongwallforce.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_alongwallforce.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/waypointplanner.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/waypointplanner.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/individualwaypointplanner.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/individualwaypointplanner.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/groupwaypointplanner.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/groupwaypointplanner.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/shoppingplanner.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/shoppingplanner.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp_parameters
 
-pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/queueingplanner.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner && /home/iamliguangming/anaconda3/bin/moc @/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp_parameters
+pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/queueingplanner.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner && /usr/lib/qt5/bin/moc @/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp_parameters
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/simulator_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/simulator_node.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/simulator_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/simulator_node.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/simulator_node.cpp > CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/simulator_node.cpp > CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/simulator_node.cpp -o CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/simulator_node.cpp -o CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.o.requires:
 
@@ -178,17 +178,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator_node.c
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/simulator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/simulator.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/simulator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/simulator.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/simulator.cpp > CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/simulator.cpp > CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/simulator.cpp -o CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/simulator.cpp -o CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.o.requires:
 
@@ -202,17 +202,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.o.
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scene.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scene.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scene.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/scene.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/scene.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scene.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scene.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/scene.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/scene.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/scene.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/scene.cpp > CMakeFiles/pedsim_simulator.dir/src/scene.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/scene.cpp > CMakeFiles/pedsim_simulator.dir/src/scene.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/scene.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/scene.cpp -o CMakeFiles/pedsim_simulator.dir/src/scene.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/scene.cpp -o CMakeFiles/pedsim_simulator.dir/src/scene.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scene.cpp.o.requires:
 
@@ -226,17 +226,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scene.cpp.o.prov
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/config.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/config.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/config.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/config.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/config.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/config.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/config.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/config.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/config.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/config.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/config.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/config.cpp > CMakeFiles/pedsim_simulator.dir/src/config.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/config.cpp > CMakeFiles/pedsim_simulator.dir/src/config.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/config.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/config.cpp -o CMakeFiles/pedsim_simulator.dir/src/config.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/config.cpp -o CMakeFiles/pedsim_simulator.dir/src/config.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/config.cpp.o.requires:
 
@@ -250,17 +250,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/config.cpp.o.pro
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/agentstatemachine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/agentstatemachine.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/agentstatemachine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/agentstatemachine.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/agentstatemachine.cpp > CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/agentstatemachine.cpp > CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/agentstatemachine.cpp -o CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/agentstatemachine.cpp -o CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.o.requires:
 
@@ -274,17 +274,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/agentstatemachin
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/scenarioreader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/scenarioreader.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/scenarioreader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/scenarioreader.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/scenarioreader.cpp > CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/scenarioreader.cpp > CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/scenarioreader.cpp -o CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/scenarioreader.cpp -o CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.o.requires:
 
@@ -298,17 +298,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scenarioreader.c
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/rng.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/rng.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/rng.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/rng.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/rng.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/rng.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/rng.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/rng.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/rng.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/rng.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/rng.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/rng.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/rng.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/rng.cpp > CMakeFiles/pedsim_simulator.dir/src/rng.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/rng.cpp > CMakeFiles/pedsim_simulator.dir/src/rng.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/rng.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/rng.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/rng.cpp -o CMakeFiles/pedsim_simulator.dir/src/rng.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/rng.cpp -o CMakeFiles/pedsim_simulator.dir/src/rng.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/rng.cpp.o.requires:
 
@@ -322,17 +322,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/rng.cpp.o.provid
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agent.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agent.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agent.cpp > CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agent.cpp > CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agent.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agent.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.o.requires:
 
@@ -346,17 +346,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agent.cp
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agentgroup.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agentgroup.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agentgroup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agentgroup.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agentgroup.cpp > CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agentgroup.cpp > CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agentgroup.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agentgroup.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.o.requires:
 
@@ -370,17 +370,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentgro
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agentcluster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agentcluster.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agentcluster.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agentcluster.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agentcluster.cpp > CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agentcluster.cpp > CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agentcluster.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/agentcluster.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.o.requires:
 
@@ -394,17 +394,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentclu
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/areawaypoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/areawaypoint.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/areawaypoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/areawaypoint.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/areawaypoint.cpp > CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/areawaypoint.cpp > CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/areawaypoint.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/areawaypoint.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.o.requires:
 
@@ -418,17 +418,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/areawayp
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/attractionarea.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/attractionarea.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/attractionarea.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/attractionarea.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/attractionarea.cpp > CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/attractionarea.cpp > CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/attractionarea.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/attractionarea.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.o.requires:
 
@@ -442,17 +442,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/attracti
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/queueingwaypoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/queueingwaypoint.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/queueingwaypoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/queueingwaypoint.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/queueingwaypoint.cpp > CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/queueingwaypoint.cpp > CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/queueingwaypoint.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/queueingwaypoint.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.o.requires:
 
@@ -466,17 +466,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/queueing
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/waitingqueue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/waitingqueue.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/waitingqueue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/waitingqueue.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/waitingqueue.cpp > CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/waitingqueue.cpp > CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/waitingqueue.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/waitingqueue.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.o.requires:
 
@@ -490,17 +490,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waitingq
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/waypoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/waypoint.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/waypoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/waypoint.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/waypoint.cpp > CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/waypoint.cpp > CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/waypoint.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/waypoint.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.o.requires:
 
@@ -514,17 +514,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waypoint
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/obstacle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/obstacle.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/obstacle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/obstacle.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/obstacle.cpp > CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/obstacle.cpp > CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/obstacle.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/obstacle.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.o.requires:
 
@@ -538,17 +538,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/obstacle
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/scenarioelement.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/scenarioelement.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/scenarioelement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/scenarioelement.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/scenarioelement.cpp > CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/scenarioelement.cpp > CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/scenarioelement.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/element/scenarioelement.cpp -o CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.o.requires:
 
@@ -562,17 +562,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/scenario
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/alongwallforce.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/alongwallforce.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/alongwallforce.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/alongwallforce.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/alongwallforce.cpp > CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/alongwallforce.cpp > CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/alongwallforce.cpp -o CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/alongwallforce.cpp -o CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.o.requires:
 
@@ -586,17 +586,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/alongwallf
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/force.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/force.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/force.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/force.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/force.cpp > CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/force.cpp > CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/force.cpp -o CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/force.cpp -o CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.o.requires:
 
@@ -610,17 +610,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/groupcoherenceforce.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/groupcoherenceforce.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/groupcoherenceforce.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/groupcoherenceforce.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/groupcoherenceforce.cpp > CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/groupcoherenceforce.cpp > CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/groupcoherenceforce.cpp -o CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/groupcoherenceforce.cpp -o CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.o.requires:
 
@@ -634,17 +634,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupcoher
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/groupgazeforce.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/groupgazeforce.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/groupgazeforce.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/groupgazeforce.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/groupgazeforce.cpp > CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/groupgazeforce.cpp > CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/groupgazeforce.cpp -o CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/groupgazeforce.cpp -o CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.o.requires:
 
@@ -658,17 +658,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupgazef
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/grouprepulsionforce.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/grouprepulsionforce.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/grouprepulsionforce.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/grouprepulsionforce.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/grouprepulsionforce.cpp > CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/grouprepulsionforce.cpp > CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/grouprepulsionforce.cpp -o CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/grouprepulsionforce.cpp -o CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.o.requires:
 
@@ -682,17 +682,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/grouprepul
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/randomforce.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/randomforce.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/randomforce.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/randomforce.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/randomforce.cpp > CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/randomforce.cpp > CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/randomforce.cpp -o CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/force/randomforce.cpp -o CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.o.requires:
 
@@ -706,17 +706,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/randomforc
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/waypointplanner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/waypointplanner.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/waypointplanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/waypointplanner.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/waypointplanner.cpp > CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/waypointplanner.cpp > CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/waypointplanner.cpp -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/waypointplanner.cpp -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.o.requires:
 
@@ -730,17 +730,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/individualwaypointplanner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/individualwaypointplanner.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/individualwaypointplanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/individualwaypointplanner.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/individualwaypointplanner.cpp > CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/individualwaypointplanner.cpp > CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/individualwaypointplanner.cpp -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/individualwaypointplanner.cpp -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.o.requires:
 
@@ -754,17 +754,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/queueingplanner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/queueingplanner.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/queueingplanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/queueingplanner.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/queueingplanner.cpp > CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/queueingplanner.cpp > CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/queueingplanner.cpp -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/queueingplanner.cpp -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.o.requires:
 
@@ -778,17 +778,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/shoppingplanner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/shoppingplanner.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/shoppingplanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/shoppingplanner.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/shoppingplanner.cpp > CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/shoppingplanner.cpp > CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/shoppingplanner.cpp -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/shoppingplanner.cpp -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.o.requires:
 
@@ -802,17 +802,17 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/
 
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.o: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/groupwaypointplanner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/groupwaypointplanner.cpp
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.o: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/groupwaypointplanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/groupwaypointplanner.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/groupwaypointplanner.cpp > CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/groupwaypointplanner.cpp > CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/groupwaypointplanner.cpp -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator/src/waypointplanner/groupwaypointplanner.cpp -o CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.o.requires:
 
@@ -827,16 +827,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_config.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_config.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_config.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_config.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_config.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_config.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_config.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_config.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_config.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_config.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_config.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_config.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_config.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_config.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_config.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_config.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_config.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_config.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_config.cpp.o.requires:
 
@@ -851,16 +851,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_scene.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_scene.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_scene.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_scene.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_scene.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_scene.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_scene.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_scene.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_scene.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_scene.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_scene.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_scene.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_scene.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_scene.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_scene.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_scene.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_scene.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_scene.cpp.o.requires:
 
@@ -875,16 +875,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_agentstatemachine.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_agentstatemachine.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_agentstatemachine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_agentstatemachine.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_agentstatemachine.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_agentstatemachine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_agentstatemachine.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_agentstatemachine.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_agentstatemachine.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_agentstatemachine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_agentstatemachine.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_agentstatemachine.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_agentstatemachine.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_agentstatemachine.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_agentstatemachine.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_agentstatemachine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_agentstatemachine.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_agentstatemachine.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_agentstatemachine.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_agentstatemachine.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_agentstatemachine.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_agentstatemachine.cpp.o.requires:
 
@@ -899,16 +899,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_scenarioelement.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_scenarioelement.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_scenarioelement.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_scenarioelement.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_scenarioelement.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_scenarioelement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_scenarioelement.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_scenarioelement.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_scenarioelement.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_scenarioelement.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_scenarioelement.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_scenarioelement.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_scenarioelement.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_scenarioelement.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_scenarioelement.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_scenarioelement.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_scenarioelement.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_scenarioelement.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_scenarioelement.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_scenarioelement.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_scenarioelement.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_scenarioelement.cpp.o.requires:
 
@@ -923,16 +923,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agent.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agent.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agent.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agent.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agent.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agent.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agent.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agent.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agent.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agent.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agent.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agent.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agent.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agent.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agent.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agent.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agent.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agent.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agent.cpp.o.requires:
 
@@ -947,16 +947,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentcluster.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentcluster.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentcluster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentcluster.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentcluster.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentcluster.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentcluster.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentcluster.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentcluster.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentcluster.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentcluster.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentcluster.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentcluster.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentcluster.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentcluster.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentcluster.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentcluster.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentcluster.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentcluster.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentcluster.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentcluster.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentcluster.cpp.o.requires:
 
@@ -971,16 +971,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentgroup.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentgroup.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentgroup.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentgroup.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentgroup.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentgroup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentgroup.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentgroup.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentgroup.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentgroup.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentgroup.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentgroup.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentgroup.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentgroup.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentgroup.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentgroup.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentgroup.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentgroup.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentgroup.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_agentgroup.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentgroup.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentgroup.cpp.o.requires:
 
@@ -995,16 +995,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_attractionarea.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_attractionarea.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_attractionarea.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_attractionarea.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_attractionarea.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_attractionarea.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_attractionarea.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_attractionarea.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_attractionarea.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_attractionarea.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_attractionarea.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_attractionarea.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_attractionarea.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_attractionarea.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_attractionarea.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_attractionarea.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_attractionarea.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_attractionarea.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_attractionarea.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_attractionarea.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_attractionarea.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_attractionarea.cpp.o.requires:
 
@@ -1019,16 +1019,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_obstacle.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_obstacle.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_obstacle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_obstacle.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_obstacle.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_obstacle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_obstacle.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_obstacle.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_obstacle.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_obstacle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_obstacle.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_obstacle.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_obstacle.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_obstacle.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_obstacle.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_obstacle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_obstacle.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_obstacle.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_obstacle.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_obstacle.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_obstacle.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_obstacle.cpp.o.requires:
 
@@ -1043,16 +1043,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waypoint.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waypoint.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waypoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waypoint.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waypoint.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waypoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waypoint.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waypoint.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waypoint.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waypoint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waypoint.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waypoint.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waypoint.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waypoint.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waypoint.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waypoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waypoint.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waypoint.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waypoint.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waypoint.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waypoint.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waypoint.cpp.o.requires:
 
@@ -1067,16 +1067,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_areawaypoint.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_areawaypoint.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_areawaypoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_areawaypoint.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_areawaypoint.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_areawaypoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_areawaypoint.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_areawaypoint.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_areawaypoint.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_areawaypoint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_areawaypoint.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_areawaypoint.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_areawaypoint.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_areawaypoint.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_areawaypoint.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_areawaypoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_areawaypoint.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_areawaypoint.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_areawaypoint.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_areawaypoint.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_areawaypoint.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_areawaypoint.cpp.o.requires:
 
@@ -1091,16 +1091,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waitingqueue.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waitingqueue.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waitingqueue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waitingqueue.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waitingqueue.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waitingqueue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waitingqueue.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waitingqueue.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waitingqueue.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waitingqueue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waitingqueue.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waitingqueue.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waitingqueue.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waitingqueue.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waitingqueue.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waitingqueue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waitingqueue.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waitingqueue.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waitingqueue.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_waitingqueue.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waitingqueue.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waitingqueue.cpp.o.requires:
 
@@ -1115,16 +1115,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_queueingwaypoint.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_queueingwaypoint.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_queueingwaypoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_queueingwaypoint.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_queueingwaypoint.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_queueingwaypoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_queueingwaypoint.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_queueingwaypoint.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_queueingwaypoint.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_queueingwaypoint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_queueingwaypoint.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_queueingwaypoint.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_queueingwaypoint.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_queueingwaypoint.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_queueingwaypoint.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_queueingwaypoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_queueingwaypoint.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_queueingwaypoint.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_queueingwaypoint.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/element/moc_queueingwaypoint.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_queueingwaypoint.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_queueingwaypoint.cpp.o.requires:
 
@@ -1139,16 +1139,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_force.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_force.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_force.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_force.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_force.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_force.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_force.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_force.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_force.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_force.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_force.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_force.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_force.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_force.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_force.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_force.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_force.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_force.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_force.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_force.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_force.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_force.cpp.o.requires:
 
@@ -1163,16 +1163,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_randomforce.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_randomforce.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_randomforce.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_randomforce.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_randomforce.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_randomforce.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_randomforce.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_randomforce.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_randomforce.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_randomforce.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_randomforce.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_randomforce.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_randomforce.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_randomforce.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_randomforce.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_randomforce.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_randomforce.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_randomforce.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_randomforce.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_randomforce.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_randomforce.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_randomforce.cpp.o.requires:
 
@@ -1187,16 +1187,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupgazeforce.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupgazeforce.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupgazeforce.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupgazeforce.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupgazeforce.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupgazeforce.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupgazeforce.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupgazeforce.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupgazeforce.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupgazeforce.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupgazeforce.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupgazeforce.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupgazeforce.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupgazeforce.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupgazeforce.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupgazeforce.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupgazeforce.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupgazeforce.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupgazeforce.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupgazeforce.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupgazeforce.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupgazeforce.cpp.o.requires:
 
@@ -1211,16 +1211,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp.o.requires:
 
@@ -1235,16 +1235,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp.o.requires:
 
@@ -1259,16 +1259,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_alongwallforce.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_alongwallforce.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_alongwallforce.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_alongwallforce.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_alongwallforce.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_alongwallforce.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_alongwallforce.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_alongwallforce.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_alongwallforce.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_alongwallforce.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_alongwallforce.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_alongwallforce.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_alongwallforce.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_alongwallforce.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_alongwallforce.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_alongwallforce.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_alongwallforce.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_alongwallforce.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_alongwallforce.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/force/moc_alongwallforce.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_alongwallforce.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_alongwallforce.cpp.o.requires:
 
@@ -1283,16 +1283,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp.o.requires:
 
@@ -1307,16 +1307,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp.o.requires:
 
@@ -1331,16 +1331,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp.o.requires:
 
@@ -1355,16 +1355,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.o.requires:
 
@@ -1379,16 +1379,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.o: pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp > CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp -o CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.o.requires:
 
@@ -1403,16 +1403,16 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simul
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.o: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/flags.make
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.o: pedsim_ros/pedsim_simulator/pedsim_simulator_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.o"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.o -c /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/pedsim_simulator_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.o"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.o -c /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/pedsim_simulator_autogen/mocs_compilation.cpp
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.i"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/pedsim_simulator_autogen/mocs_compilation.cpp > CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.i
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/pedsim_simulator_autogen/mocs_compilation.cpp > CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.i
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.s"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/pedsim_simulator_autogen/mocs_compilation.cpp -o CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.s
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/pedsim_simulator_autogen/mocs_compilation.cpp -o CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.s
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.o.requires:
 
@@ -1484,95 +1484,95 @@ pedsim_simulator_OBJECTS = \
 # External object files for target pedsim_simulator
 pedsim_simulator_EXTERNAL_OBJECTS =
 
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scene.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/config.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/rng.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_config.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_scene.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_agentstatemachine.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_scenarioelement.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agent.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentcluster.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentgroup.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_attractionarea.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_obstacle.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waypoint.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_areawaypoint.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waitingqueue.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_queueingwaypoint.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_force.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_randomforce.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupgazeforce.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_alongwallforce.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.o
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/build.make
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /home/iamliguangming/anaconda3/lib/libQt5Widgets.so.5.9.7
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libpedsim.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libpedsim_utils.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libtf.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libtf2_ros.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libactionlib.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libmessage_filters.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libroscpp.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libtf2.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/librosconsole.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/librostime.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libcpp_common.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /home/iamliguangming/anaconda3/lib/libQt5Gui.so.5.9.7
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /home/iamliguangming/anaconda3/lib/libQt5Core.so.5.9.7
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Linking CXX executable /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator"
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pedsim_simulator.dir/link.txt --verbose=$(VERBOSE)
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator_node.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/simulator.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scene.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/config.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/agentstatemachine.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/scenarioreader.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/rng.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agent.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentgroup.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/agentcluster.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/areawaypoint.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/attractionarea.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/queueingwaypoint.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waitingqueue.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/waypoint.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/obstacle.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/element/scenarioelement.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/alongwallforce.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/force.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupcoherenceforce.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/groupgazeforce.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/grouprepulsionforce.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/force/randomforce.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/waypointplanner.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/individualwaypointplanner.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/queueingplanner.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/shoppingplanner.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/src/waypointplanner/groupwaypointplanner.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_config.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_scene.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/moc_agentstatemachine.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_scenarioelement.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agent.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentcluster.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_agentgroup.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_attractionarea.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_obstacle.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waypoint.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_areawaypoint.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_waitingqueue.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/element/moc_queueingwaypoint.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_force.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_randomforce.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupgazeforce.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_groupcoherenceforce.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_grouprepulsionforce.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/force/moc_alongwallforce.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_waypointplanner.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_individualwaypointplanner.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.o
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/build.make
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.9.5
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libpedsim.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libpedsim_utils.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libtf.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libtf2_ros.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libactionlib.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libmessage_filters.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libroscpp.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libtf2.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/librosconsole.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/librostime.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /opt/ros/melodic/lib/libcpp_common.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator: pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Linking CXX executable /home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator"
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pedsim_simulator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/build: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator
+pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/build: /home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator
 
 .PHONY : pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/build
 
@@ -1633,7 +1633,7 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/requires: pedsim_ros
 .PHONY : pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/requires
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/clean:
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator && $(CMAKE_COMMAND) -P CMakeFiles/pedsim_simulator.dir/cmake_clean.cmake
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator && $(CMAKE_COMMAND) -P CMakeFiles/pedsim_simulator.dir/cmake_clean.cmake
 .PHONY : pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/clean
 
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/depend: pedsim_ros/pedsim_simulator/include/pedsim_simulator/moc_config.cpp
@@ -1660,6 +1660,6 @@ pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/depend: pedsim_ros/p
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/depend: pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_groupwaypointplanner.cpp
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/depend: pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp
 pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/depend: pedsim_ros/pedsim_simulator/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongxin/Guidedog-Service-Robot/catkin_ws/src /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/pedsim_simulator /home/yongxin/Guidedog-Service-Robot/catkin_ws/build /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pedsim_ros/pedsim_simulator/CMakeFiles/pedsim_simulator.dir/depend
 

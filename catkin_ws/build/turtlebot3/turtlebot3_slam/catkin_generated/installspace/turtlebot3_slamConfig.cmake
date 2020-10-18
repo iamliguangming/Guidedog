@@ -67,14 +67,14 @@ set(turtlebot3_slam_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(turtlebot3_slam_SOURCE_PREFIX /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3/turtlebot3_slam)
-  set(turtlebot3_slam_DEVEL_PREFIX /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel)
+  set(turtlebot3_slam_SOURCE_PREFIX /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/turtlebot3/turtlebot3_slam)
+  set(turtlebot3_slam_DEVEL_PREFIX /home/yongxin/Guidedog-Service-Robot/catkin_ws/devel)
   set(turtlebot3_slam_INSTALL_PREFIX "")
   set(turtlebot3_slam_PREFIX ${turtlebot3_slam_DEVEL_PREFIX})
 else()
   set(turtlebot3_slam_SOURCE_PREFIX "")
   set(turtlebot3_slam_DEVEL_PREFIX "")
-  set(turtlebot3_slam_INSTALL_PREFIX /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install)
+  set(turtlebot3_slam_INSTALL_PREFIX /home/yongxin/Guidedog-Service-Robot/catkin_ws/install)
   set(turtlebot3_slam_PREFIX ${turtlebot3_slam_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install/lib;/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/yongxin/Guidedog-Service-Robot/catkin_ws/install/lib;/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -13,21 +13,21 @@ fi
 
 echo_and_run() { echo "+ $@" ; "$@" ; }
 
-echo_and_run cd "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3/turtlebot3_example"
+echo_and_run cd "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/turtlebot3/turtlebot3_example"
 
 # ensure that Python install destination exists
-echo_and_run mkdir -p "$DESTDIR/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install/lib/python2.7/dist-packages"
+echo_and_run mkdir -p "$DESTDIR/home/yongxin/Guidedog-Service-Robot/catkin_ws/install/lib/python2.7/dist-packages"
 
 # Note that PYTHONPATH is pulled from the environment to support installing
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install/lib/python2.7/dist-packages:/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/lib/python2.7/dist-packages:$PYTHONPATH" \
-    CATKIN_BINARY_DIR="/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build" \
+    PYTHONPATH="/home/yongxin/Guidedog-Service-Robot/catkin_ws/install/lib/python2.7/dist-packages:/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/lib/python2.7/dist-packages:$PYTHONPATH" \
+    CATKIN_BINARY_DIR="/home/yongxin/Guidedog-Service-Robot/catkin_ws/build" \
     "/usr/bin/python2" \
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3/turtlebot3_example/setup.py" \
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/turtlebot3/turtlebot3_example/setup.py" \
      \
-    build --build-base "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/turtlebot3/turtlebot3_example" \
+    build --build-base "/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/turtlebot3/turtlebot3_example" \
     install \
     --root="${DESTDIR-/}" \
-    --install-layout=deb --prefix="/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install" --install-scripts="/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install/bin"
+    --install-layout=deb --prefix="/home/yongxin/Guidedog-Service-Robot/catkin_ws/install" --install-scripts="/home/yongxin/Guidedog-Service-Robot/catkin_ws/install/bin"

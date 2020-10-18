@@ -1,36 +1,36 @@
 
 "use strict";
 
-let TrackedPerson = require('./TrackedPerson.js');
-let DetectedPerson = require('./DetectedPerson.js');
-let PersonTrajectoryEntry = require('./PersonTrajectoryEntry.js');
-let ImmDebugInfos = require('./ImmDebugInfos.js');
-let ImmDebugInfo = require('./ImmDebugInfo.js');
-let TrackedGroup = require('./TrackedGroup.js');
-let TrackedPerson2d = require('./TrackedPerson2d.js');
-let PersonTrajectory = require('./PersonTrajectory.js');
+let CompositeDetectedPerson = require('./CompositeDetectedPerson.js');
 let TrackedPersons = require('./TrackedPersons.js');
-let CompositeDetectedPersons = require('./CompositeDetectedPersons.js');
+let TrackedGroup = require('./TrackedGroup.js');
+let DetectedPerson = require('./DetectedPerson.js');
 let TrackedGroups = require('./TrackedGroups.js');
+let TrackingTimingMetrics = require('./TrackingTimingMetrics.js');
+let TrackedPerson = require('./TrackedPerson.js');
+let ImmDebugInfos = require('./ImmDebugInfos.js');
+let PersonTrajectoryEntry = require('./PersonTrajectoryEntry.js');
 let TrackedPersons2d = require('./TrackedPersons2d.js');
 let DetectedPersons = require('./DetectedPersons.js');
-let TrackingTimingMetrics = require('./TrackingTimingMetrics.js');
-let CompositeDetectedPerson = require('./CompositeDetectedPerson.js');
+let ImmDebugInfo = require('./ImmDebugInfo.js');
+let PersonTrajectory = require('./PersonTrajectory.js');
+let TrackedPerson2d = require('./TrackedPerson2d.js');
+let CompositeDetectedPersons = require('./CompositeDetectedPersons.js');
 
 module.exports = {
-  TrackedPerson: TrackedPerson,
-  DetectedPerson: DetectedPerson,
-  PersonTrajectoryEntry: PersonTrajectoryEntry,
-  ImmDebugInfos: ImmDebugInfos,
-  ImmDebugInfo: ImmDebugInfo,
-  TrackedGroup: TrackedGroup,
-  TrackedPerson2d: TrackedPerson2d,
-  PersonTrajectory: PersonTrajectory,
+  CompositeDetectedPerson: CompositeDetectedPerson,
   TrackedPersons: TrackedPersons,
-  CompositeDetectedPersons: CompositeDetectedPersons,
+  TrackedGroup: TrackedGroup,
+  DetectedPerson: DetectedPerson,
   TrackedGroups: TrackedGroups,
+  TrackingTimingMetrics: TrackingTimingMetrics,
+  TrackedPerson: TrackedPerson,
+  ImmDebugInfos: ImmDebugInfos,
+  PersonTrajectoryEntry: PersonTrajectoryEntry,
   TrackedPersons2d: TrackedPersons2d,
   DetectedPersons: DetectedPersons,
-  TrackingTimingMetrics: TrackingTimingMetrics,
-  CompositeDetectedPerson: CompositeDetectedPerson,
+  ImmDebugInfo: ImmDebugInfo,
+  PersonTrajectory: PersonTrajectory,
+  TrackedPerson2d: TrackedPerson2d,
+  CompositeDetectedPersons: CompositeDetectedPersons,
 };

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src
-# Build directory: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build
+# Source directory: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src
+# Build directory: /home/yongxin/Guidedog-Service-Robot/catkin_ws/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
@@ -29,4 +29,5 @@ subdirs("turtlebot3_simulations/turtlebot3_gazebo")
 subdirs("turtlebot3/turtlebot3_slam")
 subdirs("turtlebot3/turtlebot3_teleop")
 subdirs("pedsim_ros/2ndparty/spencer_tracking_rviz_plugin")
+subdirs("world_simulations")
 subdirs("turtlebot3/turtlebot3_description")

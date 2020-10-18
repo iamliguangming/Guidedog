@@ -1,4 +1,4 @@
-prefix=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install
+prefix=/home/yongxin/Guidedog-Service-Robot/catkin_ws/install
 
 Name: spencer_tracking_rviz_plugin
 Description: Description of spencer_tracking_rviz_plugin

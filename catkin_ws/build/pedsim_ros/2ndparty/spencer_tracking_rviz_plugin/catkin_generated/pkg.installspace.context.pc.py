@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "spencer_tracking_rviz_plugin"
-PROJECT_SPACE_DIR = "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install"
+PROJECT_SPACE_DIR = "/home/yongxin/Guidedog-Service-Robot/catkin_ws/install"
 PROJECT_VERSION = "1.0.8"

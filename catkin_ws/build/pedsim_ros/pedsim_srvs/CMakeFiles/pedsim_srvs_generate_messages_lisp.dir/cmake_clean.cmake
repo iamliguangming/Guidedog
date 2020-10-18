@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pedsim_srvs_generate_messages_lisp"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/share/common-lisp/ros/pedsim_srvs/srv/GetAgentState.lisp"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/share/common-lisp/ros/pedsim_srvs/srv/GetAllAgentsState.lisp"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/share/common-lisp/ros/pedsim_srvs/srv/SetAllAgentsState.lisp"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/share/common-lisp/ros/pedsim_srvs/srv/SetAgentState.lisp"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/share/common-lisp/ros/pedsim_srvs/srv/GetAllAgentsState.lisp"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/share/common-lisp/ros/pedsim_srvs/srv/GetAgentState.lisp"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/share/common-lisp/ros/pedsim_srvs/srv/SetAllAgentsState.lisp"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/share/common-lisp/ros/pedsim_srvs/srv/SetAgentState.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

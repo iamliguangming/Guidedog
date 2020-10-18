@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/yongxin/Guidedog-Service-Robot/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build
+CMAKE_BINARY_DIR = /home/yongxin/Guidedog-Service-Robot/catkin_ws/build
 
 # Utility rule file for diagnostic_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ turtlebot3/turtlebot3_bringup/CMakeFiles/diagnostic_msgs_generate_messages_nodej
 .PHONY : turtlebot3/turtlebot3_bringup/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
 
 turtlebot3/turtlebot3_bringup/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/turtlebot3/turtlebot3_bringup && $(CMAKE_COMMAND) -P CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/turtlebot3/turtlebot3_bringup && $(CMAKE_COMMAND) -P CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : turtlebot3/turtlebot3_bringup/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/clean
 
 turtlebot3/turtlebot3_bringup/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3/turtlebot3_bringup /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/turtlebot3/turtlebot3_bringup /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/turtlebot3/turtlebot3_bringup/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yongxin/Guidedog-Service-Robot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongxin/Guidedog-Service-Robot/catkin_ws/src /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/turtlebot3/turtlebot3_bringup /home/yongxin/Guidedog-Service-Robot/catkin_ws/build /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/turtlebot3/turtlebot3_bringup /home/yongxin/Guidedog-Service-Robot/catkin_ws/build/turtlebot3/turtlebot3_bringup/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : turtlebot3/turtlebot3_bringup/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/depend
 

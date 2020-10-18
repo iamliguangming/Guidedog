@@ -1,8 +1,0 @@
-prefix=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install
-
-Name: guidedog_turtle
-Description: Description of guidedog_turtle
-Version: 1.3.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: roscpp std_msgs sensor_msgs geometry_msgs nav_msgs tf gazebo_ros

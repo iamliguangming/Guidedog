@@ -1,42 +1,42 @@
 
 "use strict";
 
-let AgentGroup = require('./AgentGroup.js');
-let TrackedPerson = require('./TrackedPerson.js');
-let AgentState = require('./AgentState.js');
 let AgentForce = require('./AgentForce.js');
-let AgentGroups = require('./AgentGroups.js');
-let SocialActivity = require('./SocialActivity.js');
-let TrackedGroup = require('./TrackedGroup.js');
-let AllAgentsState = require('./AllAgentsState.js');
-let LineObstacle = require('./LineObstacle.js');
-let LineObstacles = require('./LineObstacles.js');
 let TrackedPersons = require('./TrackedPersons.js');
+let LineObstacles = require('./LineObstacles.js');
+let TrackedGroup = require('./TrackedGroup.js');
 let TrackedGroups = require('./TrackedGroups.js');
-let AgentStates = require('./AgentStates.js');
-let Waypoints = require('./Waypoints.js');
-let SocialActivities = require('./SocialActivities.js');
+let TrackedPerson = require('./TrackedPerson.js');
 let SocialRelation = require('./SocialRelation.js');
-let SocialRelations = require('./SocialRelations.js');
+let AllAgentsState = require('./AllAgentsState.js');
 let Waypoint = require('./Waypoint.js');
+let AgentState = require('./AgentState.js');
+let SocialActivity = require('./SocialActivity.js');
+let SocialRelations = require('./SocialRelations.js');
+let AgentGroup = require('./AgentGroup.js');
+let SocialActivities = require('./SocialActivities.js');
+let AgentStates = require('./AgentStates.js');
+let LineObstacle = require('./LineObstacle.js');
+let Waypoints = require('./Waypoints.js');
+let AgentGroups = require('./AgentGroups.js');
 
 module.exports = {
-  AgentGroup: AgentGroup,
-  TrackedPerson: TrackedPerson,
-  AgentState: AgentState,
   AgentForce: AgentForce,
-  AgentGroups: AgentGroups,
-  SocialActivity: SocialActivity,
-  TrackedGroup: TrackedGroup,
-  AllAgentsState: AllAgentsState,
-  LineObstacle: LineObstacle,
-  LineObstacles: LineObstacles,
   TrackedPersons: TrackedPersons,
+  LineObstacles: LineObstacles,
+  TrackedGroup: TrackedGroup,
   TrackedGroups: TrackedGroups,
-  AgentStates: AgentStates,
-  Waypoints: Waypoints,
-  SocialActivities: SocialActivities,
+  TrackedPerson: TrackedPerson,
   SocialRelation: SocialRelation,
-  SocialRelations: SocialRelations,
+  AllAgentsState: AllAgentsState,
   Waypoint: Waypoint,
+  AgentState: AgentState,
+  SocialActivity: SocialActivity,
+  SocialRelations: SocialRelations,
+  AgentGroup: AgentGroup,
+  SocialActivities: SocialActivities,
+  AgentStates: AgentStates,
+  LineObstacle: LineObstacle,
+  Waypoints: Waypoints,
+  AgentGroups: AgentGroups,
 };

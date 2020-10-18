@@ -1,8 +1,8 @@
-# Install script for directory: /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs
+# Install script for directory: /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/yongxin/Guidedog-Service-Robot/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,57 +39,57 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spencer_vision_msgs/msg" TYPE FILE FILES
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/msg/PersonImage.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/msg/PersonImages.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/msg/PersonROI.msg"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/msg/PersonROIs.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/msg/PersonImage.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/msg/PersonImages.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/msg/PersonROI.msg"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/msg/PersonROIs.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spencer_vision_msgs/cmake" TYPE FILE FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/catkin_generated/installspace/spencer_vision_msgs-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spencer_vision_msgs/cmake" TYPE FILE FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/catkin_generated/installspace/spencer_vision_msgs-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/include/spencer_vision_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/include/spencer_vision_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/share/roseus/ros/spencer_vision_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/share/roseus/ros/spencer_vision_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/share/common-lisp/ros/spencer_vision_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/share/common-lisp/ros/spencer_vision_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/share/gennodejs/ros/spencer_vision_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/share/gennodejs/ros/spencer_vision_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/python2.7/dist-packages/spencer_vision_msgs")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/python2.7/dist-packages/spencer_vision_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/python2.7/dist-packages/spencer_vision_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/python2.7/dist-packages/spencer_vision_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/catkin_generated/installspace/spencer_vision_msgs.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/catkin_generated/installspace/spencer_vision_msgs.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spencer_vision_msgs/cmake" TYPE FILE FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/catkin_generated/installspace/spencer_vision_msgs-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spencer_vision_msgs/cmake" TYPE FILE FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/catkin_generated/installspace/spencer_vision_msgs-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spencer_vision_msgs/cmake" TYPE FILE FILES
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/catkin_generated/installspace/spencer_vision_msgsConfig.cmake"
-    "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/catkin_generated/installspace/spencer_vision_msgsConfig-version.cmake"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/catkin_generated/installspace/spencer_vision_msgsConfig.cmake"
+    "/home/yongxin/Guidedog-Service-Robot/catkin_ws/build/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/catkin_generated/installspace/spencer_vision_msgsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spencer_vision_msgs" TYPE FILE FILES "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spencer_vision_msgs" TYPE FILE FILES "/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_vision_msgs/package.xml")
 endif()
 

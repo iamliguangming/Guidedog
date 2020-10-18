@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/build'
+export PWD='/home/yongxin/Guidedog-Service-Robot/catkin_ws/build'

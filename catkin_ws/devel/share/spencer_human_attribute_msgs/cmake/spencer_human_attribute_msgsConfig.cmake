@@ -67,14 +67,14 @@ set(spencer_human_attribute_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(spencer_human_attribute_msgs_SOURCE_PREFIX /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_human_attribute_msgs)
-  set(spencer_human_attribute_msgs_DEVEL_PREFIX /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel)
+  set(spencer_human_attribute_msgs_SOURCE_PREFIX /home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_human_attribute_msgs)
+  set(spencer_human_attribute_msgs_DEVEL_PREFIX /home/yongxin/Guidedog-Service-Robot/catkin_ws/devel)
   set(spencer_human_attribute_msgs_INSTALL_PREFIX "")
   set(spencer_human_attribute_msgs_PREFIX ${spencer_human_attribute_msgs_DEVEL_PREFIX})
 else()
   set(spencer_human_attribute_msgs_SOURCE_PREFIX "")
   set(spencer_human_attribute_msgs_DEVEL_PREFIX "")
-  set(spencer_human_attribute_msgs_INSTALL_PREFIX /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/install)
+  set(spencer_human_attribute_msgs_INSTALL_PREFIX /home/yongxin/Guidedog-Service-Robot/catkin_ws/install)
   set(spencer_human_attribute_msgs_PREFIX ${spencer_human_attribute_msgs_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(spencer_human_attribute_msgs_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/include " STREQUAL " ")
+if(NOT "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/include " STREQUAL " ")
   set(spencer_human_attribute_msgs_INCLUDE_DIRS "")
-  set(_include_dirs "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/include")
+  set(_include_dirs "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/in
         message(FATAL_ERROR "Project 'spencer_human_attribute_msgs' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'spencer_human_attribute_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_human_attribute_msgs/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'spencer_human_attribute_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/2ndparty/spencer_messages/spencer_human_attribute_msgs/${idir}'.  ${_report}")
     endif()
     _list_append_unique(spencer_human_attribute_msgs_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib;/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib;/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

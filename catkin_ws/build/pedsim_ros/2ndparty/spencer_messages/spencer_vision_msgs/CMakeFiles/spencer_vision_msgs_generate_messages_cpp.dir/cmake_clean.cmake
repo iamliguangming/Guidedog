@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/spencer_vision_msgs_generate_messages_cpp"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/include/spencer_vision_msgs/PersonROI.h"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/include/spencer_vision_msgs/PersonImages.h"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/include/spencer_vision_msgs/PersonImage.h"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/include/spencer_vision_msgs/PersonROIs.h"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/include/spencer_vision_msgs/PersonROI.h"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/include/spencer_vision_msgs/PersonROIs.h"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/include/spencer_vision_msgs/PersonImages.h"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/include/spencer_vision_msgs/PersonImage.h"
 )
 
 # Per-language clean rules from dependency scanning.

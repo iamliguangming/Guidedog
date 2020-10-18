@@ -24,8 +24,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_human_attributes_display.cpp.o"
   "CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_person_display_common.cpp.o"
   "CMakeFiles/spencer_tracking_rviz_plugin.dir/src/moc_additional_topic_subscriber.cpp.o"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.pdb"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.pdb"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/libspencer_tracking_rviz_plugin.so"
 )
 
 # Per-language clean rules from dependency scanning.

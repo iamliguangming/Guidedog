@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -fPIC -std=gnu++11
 
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"spencer_tracking_rviz_plugin\" -Dspencer_tracking_rviz_plugin_EXPORTS
 
-CXX_INCLUDES = -I/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/OGRE/Overlay -I/usr/include/OGRE -isystem /home/iamliguangming/anaconda3/include/qt -isystem /home/iamliguangming/anaconda3/include/qt/QtWidgets -isystem /home/iamliguangming/anaconda3/include/qt/QtGui -isystem /home/iamliguangming/anaconda3/include/qt/QtCore -isystem /home/iamliguangming/anaconda3/./mkspecs/linux-g++ 
+CXX_INCLUDES = -I/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/OGRE/Overlay -I/usr/include/OGRE -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ 
 

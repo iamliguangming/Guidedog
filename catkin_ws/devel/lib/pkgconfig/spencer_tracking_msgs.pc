@@ -1,8 +1,8 @@
-prefix=/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel
+prefix=/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel
 
 Name: spencer_tracking_msgs
 Description: Description of spencer_tracking_msgs
 Version: 1.0.8
-Cflags: -I/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/include
+Cflags: -I/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/include
 Libs: -L${prefix}/lib 
 Requires: roscpp std_msgs geometry_msgs message_runtime

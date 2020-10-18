@@ -80,8 +80,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_shoppingplanner.cpp.o"
   "CMakeFiles/pedsim_simulator.dir/include/pedsim_simulator/waypointplanner/moc_queueingplanner.cpp.o"
   "CMakeFiles/pedsim_simulator.dir/pedsim_simulator_autogen/mocs_compilation.cpp.o"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator.pdb"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator.pdb"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/lib/pedsim_simulator/pedsim_simulator"
 )
 
 # Per-language clean rules from dependency scanning.

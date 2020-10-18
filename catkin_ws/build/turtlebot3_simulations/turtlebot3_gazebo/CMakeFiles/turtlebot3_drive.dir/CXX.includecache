@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/turtlebot3_gazebo/turtlebot3_drive.h
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/turtlebot3_gazebo/turtlebot3_drive.h
 ros/ros.h
 -
 sensor_msgs/LaserScan.h
@@ -16,9 +16,9 @@ geometry_msgs/Twist.h
 nav_msgs/Odometry.h
 -
 
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/src/turtlebot3_drive.cpp
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/src/turtlebot3_drive.cpp
 turtlebot3_gazebo/turtlebot3_drive.h
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/src/turtlebot3_gazebo/turtlebot3_drive.h
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/src/turtlebot3_gazebo/turtlebot3_drive.h
 
 /opt/ros/melodic/include/geometry_msgs/Point.h
 string

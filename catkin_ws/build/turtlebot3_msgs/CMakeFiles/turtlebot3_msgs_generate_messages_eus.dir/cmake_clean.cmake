@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/turtlebot3_msgs_generate_messages_eus"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/share/roseus/ros/turtlebot3_msgs/msg/SensorState.l"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/share/roseus/ros/turtlebot3_msgs/msg/VersionInfo.l"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/share/roseus/ros/turtlebot3_msgs/msg/Sound.l"
-  "/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/devel/share/roseus/ros/turtlebot3_msgs/manifest.l"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/share/roseus/ros/turtlebot3_msgs/msg/VersionInfo.l"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/share/roseus/ros/turtlebot3_msgs/msg/SensorState.l"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/share/roseus/ros/turtlebot3_msgs/msg/Sound.l"
+  "/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel/share/roseus/ros/turtlebot3_msgs/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

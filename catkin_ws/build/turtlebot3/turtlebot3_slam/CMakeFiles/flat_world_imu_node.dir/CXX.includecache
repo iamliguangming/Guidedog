@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3/turtlebot3_slam/include/turtlebot3_slam/flat_world_imu_node.h
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/turtlebot3/turtlebot3_slam/include/turtlebot3_slam/flat_world_imu_node.h
 ros/ros.h
 -
 sensor_msgs/Imu.h
 -
 
-/home/iamliguangming/Graduate_courses/CIS700/Guidedog/catkin_ws/src/turtlebot3/turtlebot3_slam/src/flat_world_imu_node.cpp
+/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/turtlebot3/turtlebot3_slam/src/flat_world_imu_node.cpp
 turtlebot3_slam/flat_world_imu_node.h
 -
 
