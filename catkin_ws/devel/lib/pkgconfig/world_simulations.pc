@@ -1,8 +1,0 @@
-prefix=/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel
-
-Name: world_simulations
-Description: Description of world_simulations
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

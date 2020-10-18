@@ -1,8 +1,0 @@
-prefix=/home/yongxin/Guidedog-Service-Robot/catkin_ws/devel
-
-Name: pedsim
-Description: Description of pedsim
-Version: 0.2.0
-Cflags: -I/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/pedsim_ros/3rdparty/libpedsim/include/
-Libs: -L${prefix}/lib -lpedsim
-Requires: roscpp
