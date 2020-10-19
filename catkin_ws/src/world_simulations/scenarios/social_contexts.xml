@@ -5,7 +5,7 @@
   <obstacle x1="-0.5" y1="-0.5" x2="29.5" y2="-0.5"/>
   <obstacle x1="-0.5" y1="-0.5" x2="-0.5" y2="29.5"/>
   <obstacle x1="-0.5" y1="29.5" x2="29.5" y2="29.5"/>
-	<obstacle x1="29.5" y1="29.5" x2="29.5" y2="-0.5"/>
+    <obstacle x1="29.5" y1="29.5" x2="29.5" y2="-0.5"/>
 
   <!--Waypoints (incl. WaitingQueues)-->
   <waypoint id="bookshop_entry" x="25" y="5" r="5"/>
@@ -17,22 +17,25 @@
   <waypoint id="robot_goal" x="22" y="27" r="2"/>
   <waypoint id="robot_start" x="4" y="4" r="2"/>
 
+  <waypoint id="test1" x="-2.5" y="-10" r="10"/>
+
   <queue id="info_desk" x="20" y="15" direction="0"/>
 
 
     <!--Agents-->
-    <agent x="17" y="11" n="1" dx="0" dy="0" type="2">
+    <!-- <agent x="17" y="11" n="1" dx="0" dy="0" type="2">
         <addwaypoint id="robot_start"/>
         <addwaypoint id="robot_goal"/>
-    </agent>
+    </agent> -->
     <!--AgentClusters-->
-    <agent x="6" y="5" n="10" dx="20" dy="20" type="0">
+    <agent x="-4.5" y="35" n="15" dx="10" dy="25" type="0">
+        <addwaypoint id="test1"/>
         <addwaypoint id="bookshop_entry"/>
         <addwaypoint id="bookshop_exit"/>
         <addwaypoint id="coffee_entry"/>
         <addwaypoint id="coffee_exit"/>
     </agent>
-    <agent x="7" y="5" n="5" dx="20" dy="20" type="1">
+    <!-- <agent x="7" y="5" n="5" dx="20" dy="20" type="1">
         <addqueue id="info_desk"/>
         <addwaypoint id="bookshop_exit"/>
         <addwaypoint id="coffee_entry"/>
@@ -48,5 +51,5 @@
         <addwaypoint id="coffee_entry"/>
         <addqueue id="info_desk"/>
         <addwaypoint id="bookshop_exit"/>
-    </agent>
+    </agent> -->
 </scenario>

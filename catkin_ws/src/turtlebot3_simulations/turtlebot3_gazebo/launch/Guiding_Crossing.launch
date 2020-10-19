@@ -4,17 +4,17 @@
         <arg name="visualize" default="true"/>
         <arg name="with_robot" default="true"/>
 
-        <arg name="simulation_factor" default="1.0"/> <!-- Speed up -->
+        <arg name="simulation_factor" default="0.9"/> <!-- Speed up -->
         <arg name="update_rate" default="25.0"/> <!-- Hz -->
         
         <!-- Change the .world file name and .xml scenario file name here to the one you like -->
         <!-- Please modify the following two lines for loading customize .xml scenario and .world files.  -->
         <arg name="scene_file" default="social_contexts"/>
-        <arg name="world_file" default="world01"/>
+        <arg name="world_file" default="streettest"/>
 
         <!-- Gazebo Robot Parameters -->
         <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
-        <arg name="x_pos" default="-2.0"/>
+        <arg name="x_pos" default="-2.2"/> 
         <arg name="y_pos" default="-0.5"/>
         <arg name="z_pos" default="0.0"/>
 
@@ -41,6 +41,7 @@
             <arg name="pose_initial_theta" value="0.7"/>
         </include>
 
+        <!-- Open Gazebo -->
         <!-- The .world file is modified to read from customize worlds folder inside customize pkg -->
         <include file="$(find gazebo_ros)/launch/empty_world.launch">
             <arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/$(arg world_file).world"/>
