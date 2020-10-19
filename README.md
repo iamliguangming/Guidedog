@@ -2,10 +2,13 @@
 
   Some basic guidelines on the installation
 ```
-git clone https://github.com/iamliguangming/Guidedog 
+git clone https://github.com/iamliguangming/Guidedog
 cd Guidedog
+git checkout world_branch
 git submodule update --init --recursive
-source catkin_ws/devel/setup.bash
+cd catkin_ws
+catkin_make
+source devel/setup.bash
 roslaunch pedsim_simulator airport_demo.launch 
 roslaunch pedsim_gazebo_plugin airport.launch
 ```
