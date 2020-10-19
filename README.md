@@ -1,3 +1,21 @@
+## For Developers
+
+  - .world files should be put inside Guidedog/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/worlds
+  - .world file related meshes should be put inside Guidedog/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models, make sure to include all your other resources here as well!!!
+  - Duplicate Guiding_Crossing.launch from Guidedog/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch and change line 8 from 
+  ```
+    <arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/world01.world"/>
+  ```
+  to
+  ```
+    <arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/<name_of_your_world.world>"/>
+  ```
+  now rerun ```catkin_make``` in the root directory
+  run
+  ```
+  roslaunch turtlebot3_gazebo <name_of_your_duplicated_launch_file>.launch 
+  ```
+
 ## Installation
 
   Some basic guidelines on the installation
@@ -9,8 +27,6 @@ git submodule update --init --recursive
 cd catkin_ws
 catkin_make
 source devel/setup.bash
-roslaunch pedsim_simulator airport_demo.launch 
-roslaunch pedsim_gazebo_plugin airport.launch
 ```
 
 ## Implementation  
