@@ -1,45 +1,68 @@
 <launch>
-  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
-  <arg name="x_pos" default="-2.0"/>
-  <arg name="y_pos" default="-0.5"/>
-  <arg name="z_pos" default="0.0"/>
-  <arg name="kbd_teleop" default="false"/>
-  <arg name="rqt_teleop" default="false"/>
-  <arg name="visualize" default="true"/>
-  <arg name="with_robot" default="true"/>
-  <arg name="scene_file" default="social_contexts"/>
-  <arg name="world_file" default="social_contexts"/>
-  <arg name="simulation_factor" default="1.0"/> <!-- Speed up -->
-  <arg name="update_rate" default="25.0"/> <!-- Hz -->
+        <arg name="kbd_teleop" default="false"/>
+        <arg name="rqt_teleop" default="false"/>
+        <arg name="visualize" default="true"/>
+        <arg name="with_robot" default="true"/>
 
-  <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/world01.world"/>
-    <arg name="paused" value="false"/>
-    <arg name="use_sim_time" value="true"/>
-    <arg name="gui" value="true"/>
-    <arg name="headless" value="false"/>
-    <arg name="debug" value="false"/>
-  </include>
+        <arg name="simulation_factor" default="1.0"/> <!-- Speed up -->
+        <arg name="update_rate" default="25.0"/> <!-- Hz -->
+        
+        <!-- Change the .world file name and .xml scenario file name here to the one you like -->
+        <!-- Please modify the following two lines for loading customize .xml scenario and .world files.  -->
+        <arg name="scene_file" default="social_contexts"/>
+        <arg name="world_file" default="world01"/>
 
-  <include file="$(find pedsim_simulator)/launch/simulator.launch">
-    <arg name="kbd_teleop" value="$(arg kbd_teleop)"/>
-    <arg name="rqt_teleop" value="$(arg rqt_teleop)"/>
-    <arg name="scene_file" value="$(find pedsim_simulator)/scenarios/$(arg scene_file).xml"/>
-    <arg name="with_robot" value="$(arg with_robot)"/>
-    <arg name="simulation_factor" value="$(arg simulation_factor)"/>
-    <arg name="update_rate" value="$(arg update_rate)"/>
-    <arg name="default_queue_size" value="10"/>
-    <arg name="max_robot_speed" value="1.5"/>
-    <arg name="robot_mode" value="1"/>
-    <arg name="enable_groups" value="true"/>
-    <arg name="pose_initial_x" value="5.0"/>
-    <arg name="pose_initial_y" value="5.0"/>
-    <arg name="pose_initial_theta" value="0.7"/>
-  </include>
+        <!-- Gazebo Robot Parameters -->
+        <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+        <arg name="x_pos" default="-2.0"/>
+        <arg name="y_pos" default="-0.5"/>
+        <arg name="z_pos" default="0.0"/>
+
+        <!-- Select Gazebo Robot Model. For our project, it is set to be 'burger'. -->
+        <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
 
 
-  <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
 
-  <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf"  args="-urdf -model turtlebot3_$(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
-  <node pkg="pedsim_gazebo_plugin" type="spawn_pedsim_agents.py" name="spawn_pedsim_agents"  output="screen"/>
+        <!-- Simulator -->
+        <!-- The scene_file is modified to read from customize scenarios folder inside customize pkg -->
+        <include file="$(find pedsim_simulator)/launch/simulator.launch">
+            <arg name="kbd_teleop" value="$(arg kbd_teleop)"/>
+            <arg name="rqt_teleop" value="$(arg rqt_teleop)"/>
+            <arg name="scene_file" value="$(find world_simulations)scenarios/$(arg scene_file).xml"/>
+            <arg name="with_robot" value="$(arg with_robot)"/>
+            <arg name="simulation_factor" value="$(arg simulation_factor)"/>
+            <arg name="update_rate" value="$(arg update_rate)"/>
+            <arg name="default_queue_size" value="10"/>
+            <arg name="max_robot_speed" value="1.5"/>
+            <arg name="robot_mode" value="1"/>
+            <arg name="enable_groups" value="true"/>
+            <arg name="pose_initial_x" value="5.0"/>
+            <arg name="pose_initial_y" value="5.0"/>
+            <arg name="pose_initial_theta" value="0.7"/>
+        </include>
+
+        <!-- The .world file is modified to read from customize worlds folder inside customize pkg -->
+        <include file="$(find gazebo_ros)/launch/empty_world.launch">
+            <arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/$(arg world_file).world"/>
+            <arg name="paused" value="false"/>
+            <arg name="use_sim_time" value="true"/>
+            <arg name="gui" value="true"/>
+            <arg name="headless" value="false"/>
+            <arg name="debug" value="false"/>
+         </include>
+         
+         <!-- this node spawn pedsim actors to gazebo once, then the plugin updates their pose -->  
+         <node pkg="pedsim_gazebo_plugin" type="spawn_pedsim_agents.py" name="spawn_pedsim_agents"  output="screen">
+         </node>
+        
+        <!-- load turtlebot3 model into the gazebo world -->
+        <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf"  args="-urdf -model turtlebot3_$(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
+    
+        <!-- load the turtlebot3 teleop key controller -->
+        <param name="model" value="$(arg model)"/>
+        <node pkg="turtlebot3_teleop" type="turtlebot3_teleop_key" name="turtlebot3_teleop_keyboard"  output="screen">
+        </node>
+
 </launch>
+
+
