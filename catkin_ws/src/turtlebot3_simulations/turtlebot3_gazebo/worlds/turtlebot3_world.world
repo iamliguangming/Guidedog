@@ -48,5 +48,6 @@
         <view_controller>orbit</view_controller>
       </camera>
     </gui>
+
   </world>
 </sdf>
