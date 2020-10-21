@@ -42,7 +42,6 @@
 ```
 git clone https://github.com/iamliguangming/Guidedog
 cd Guidedog
-git checkout world_branch
 git submodule update --init --recursive
 cd catkin_ws
 catkin_make
