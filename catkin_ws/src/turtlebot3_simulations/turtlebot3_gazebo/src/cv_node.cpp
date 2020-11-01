@@ -4,6 +4,7 @@
 #include <sensor_msgs/image_encodings.h>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
+#include <boost/filesystem.hpp> 
 
 static const std::string OPENCV_WINDOW = "Image window";
 
@@ -19,6 +20,11 @@ public:
     : it_(nh_)
   {
     // Subscrive to input video feed and publish output video feed
+    boost::filesystem::path path_target("./img/");
+    if (!boost::filesystem::exists(path_target))
+    {
+        boost::filesystem::create_directory(path_target);
+    }
     image_sub_ = it_.subscribe("/rrbot/camera1/image_raw", 1,
       &ImageConverter::imageCb, this);
     // image_pub_ = it_.advertise("/image_converter/output_video", 1);
@@ -53,7 +59,7 @@ public:
     // cv::waitKey(3);
     static int image_count = 0;                                // added this
     std::stringstream sstream;                               // added this
-    sstream << "my_image" << image_count << ".png" ;                  // added this
+    sstream << "img/my_image" << image_count << ".png" ;                  // added this
     ROS_ASSERT( cv::imwrite( sstream.str(),  cv_ptr->image ) );      // added this
     image_count++;                                      // added this
     ros::Duration(1).sleep();
