@@ -3724,5 +3724,6 @@
     <!-- Add plugin for pedsim agents to be movable -->
     <plugin name="ActorPosesPlugin" filename="libActorPosesPlugin.so">
         </plugin>
+        
   </world>
 </sdf>
