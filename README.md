@@ -70,7 +70,13 @@ generated map to a .pgm and .yaml file:
 ```
 rosrun map_server map_saver -f <mapname> /map:=/map2d  
 ```
-You can visualize the occupancy map by adding /map2d topic to your RVIZ window
+You can visualize the occupancy map by adding /map2d topic to your RVIZ window.  
+In the future development case that you've already have a map file and you want  
+to read from it and publish to a topic or create a service, you can run  
+```
+rosrun map_server map_server <name_of_your_map_file>.yaml  
+```
+It will publish the map to /map topic and create a service /static_map.
 
 ## Installation
 
