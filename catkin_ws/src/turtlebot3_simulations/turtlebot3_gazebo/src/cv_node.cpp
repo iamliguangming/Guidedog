@@ -19,9 +19,9 @@ public:
     : it_(nh_)
   {
     // Subscrive to input video feed and publish output video feed
-    image_sub_ = it_.subscribe("/camera/image_raw", 1,
+    image_sub_ = it_.subscribe("/rrbot/camera1/image_raw", 1,
       &ImageConverter::imageCb, this);
-    image_pub_ = it_.advertise("/image_converter/output_video", 1);
+    // image_pub_ = it_.advertise("/image_converter/output_video", 1);
 
     cv::namedWindow(OPENCV_WINDOW);
   }
@@ -45,15 +45,21 @@ public:
     }
 
     // Draw an example circle on the video stream
-    if (cv_ptr->image.rows > 60 && cv_ptr->image.cols > 60)
-      cv::circle(cv_ptr->image, cv::Point(50, 50), 10, CV_RGB(255,0,0));
+    // if (cv_ptr->image.rows > 60 && cv_ptr->image.cols > 60)
+    //   cv::circle(cv_ptr->image, cv::Point(50, 50), 10, CV_RGB(255,0,0));
 
     // Update GUI Window
-    cv::imshow(OPENCV_WINDOW, cv_ptr->image);
-    cv::waitKey(3);
+    // cv::imshow(OPENCV_WINDOW, cv_ptr->image);
+    // cv::waitKey(3);
+    static int image_count = 0;                                // added this
+    std::stringstream sstream;                               // added this
+    sstream << "my_image" << image_count << ".png" ;                  // added this
+    ROS_ASSERT( cv::imwrite( sstream.str(),  cv_ptr->image ) );      // added this
+    image_count++;                                      // added this
+    ros::Duration(1).sleep();
 
     // Output modified video stream
-    image_pub_.publish(cv_ptr->toImageMsg());
+    // image_pub_.publish(cv_ptr->toImageMsg());
   }
 };
 
@@ -61,6 +67,7 @@ int main(int argc, char** argv)
 {
   ros::init(argc, argv, "image_converter");
   ImageConverter ic;
+
   ros::spin();
   return 0;
 }
