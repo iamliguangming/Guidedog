@@ -1,0 +1,2 @@
+set_state
+-DCATKIN_DEVEL_PREFIX=/home/zhuoyu/Documents/CIS-700/Guidedog/catkin_ws/src/generate_data/devel -DCMAKE_INSTALL_PREFIX=/home/zhuoyu/Documents/CIS-700/Guidedog/catkin_ws/src/generate_data/install -G Unix Makefiles
