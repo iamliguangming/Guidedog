@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-  <model name='simplemodified'>
+  <model name='street2'>
   <static>true</static>
     <link name='link_0'>
       <inertial>
@@ -19,7 +19,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/yuchen/Documents/CIS700/world02/models/simplemodified/simplemodified.dae</uri>
+            <uri>model://street2/street2.dae</uri>
             <!--<uri>model://simplemodified.dae</uri>-->
             <scale>1 1 1</scale>
           </mesh>
@@ -40,7 +40,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/yuchen/Documents/CIS700/world02/models/simplemodified/simplemodified.dae</uri>
+            <uri>model://street2/street2.dae</uri>
             <!--<uri>model://simplemodified.dae</uri>-->
             <scale>1 1 1</scale>
           </mesh>
