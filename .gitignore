@@ -1,3 +1,8 @@
 catkin_ws/build
 catkin_ws/devel
 catkin_ws/img
+catkin_ws/src/catkin_simple/build
+catkin_ws/src/catkin_simple/devel
+catkin_ws/src/generate_data/build
+catkin_ws/src/generate_data/devel
+catkin_ws/src/generate_data/data

@@ -1,8 +1,0 @@
-prefix=/home/zhuoyu/Documents/CIS-700/generate_data/install
-
-Name: set_state
-Description: Description of set_state
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime roscpp gazebo_msgs geometry_msgs std_msgs

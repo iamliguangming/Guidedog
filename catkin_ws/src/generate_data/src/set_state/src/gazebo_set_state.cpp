@@ -15,8 +15,16 @@
 #include <cstdlib>
 #include <iostream>
 #include <cmath>
+#include <image_transport/image_transport.h>
+#include <cv_bridge/cv_bridge.h>
+#include <sensor_msgs/image_encodings.h>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <boost/filesystem.hpp> 
+
 
 #define PI 3.1415926
+
 
 static int IMG_ID = 0;
 
@@ -96,6 +104,25 @@ void modle_define(std::vector<std::string>& input_xml, std::vector<std::string>&
         ori_name_lib.push_back(input_name[i]);
     }
 }
+void imageCb(const sensor_msgs::ImageConstPtr& msg)
+{ 
+    cv_bridge::CvImagePtr cv_ptr;
+    try
+    {
+      cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
+    }
+    catch (cv_bridge::Exception& e)
+    {
+      ROS_ERROR("cv_bridge exception: %s", e.what());
+      return;
+    }
+    static int image_count = 0; 
+    std::stringstream sstream;                               // added this
+    sstream << "src/generate_data/data/label/my_image" << IMG_ID << ".png" ;                  // added this
+    ROS_ASSERT( cv::imwrite( sstream.str(),  cv_ptr->image ) );      // added this
+    // ros::Duration(1).sleep();
+}
+
 
 int main(int argc, char **argv) {
     ros::init(argc, argv, "init_model_state");
@@ -194,6 +221,9 @@ int main(int argc, char **argv) {
     bool del_result;
     bool add_result;
 
+    image_transport::ImageTransport it_(nh);
+    image_transport::Subscriber image_sub_;
+
     while(ros::ok()){
         for(int i=0; i<past_model_number; i++){
             model_delete_msg.request.model_name = "model_" + std::to_string(i);
@@ -237,6 +267,11 @@ int main(int argc, char **argv) {
                 ROS_WARN("generate error occurs once");
             }
         }
+
+        ros::spinOnce();
+        image_sub_ = it_.subscribe("/rrbot/camera1/image_rect_color", 1, imageCb);
+        
+        
         
         past_model_number = current_model_number;
         for(int i = 0; i<robot_state_number; i++){
@@ -265,8 +300,10 @@ int main(int argc, char **argv) {
                     output_file << '\n';
                 }
                 output_file.close();
-                IMG_ID += 1;
+                ros::spinOnce();
                 ros::Duration(1).sleep();
+                IMG_ID += 1;
+                
             }
         }
 
