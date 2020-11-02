@@ -266,7 +266,7 @@ int main(int argc, char **argv) {
                 }
                 output_file.close();
                 IMG_ID += 1;
-                ros::Duration(10).sleep();
+                ros::Duration(1).sleep();
             }
         }
 
