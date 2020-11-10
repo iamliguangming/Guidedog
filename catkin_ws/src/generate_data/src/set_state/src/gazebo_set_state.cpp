@@ -20,7 +20,8 @@
 #include <sensor_msgs/image_encodings.h>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
-#include <boost/filesystem.hpp> 
+#include <boost/filesystem.hpp>
+#include <std_srvs/Empty.h>
 
 
 #define PI 3.1415926
@@ -150,6 +151,10 @@ int main(int argc, char **argv) {
 
     ros::ServiceClient set_model_state_client = 
        nh.serviceClient<gazebo_msgs::SetModelState>("/gazebo/set_model_state");
+
+    ros::ServiceClient clear_pedsim_agent = 
+        nh.serviceClient<std_srvs::Empty>("/pedsim_simulator/clear_simulation");
+    ros::ServiceClient restart_pedsim_agent = nh.serviceClient<std_srvs::Empty>("/pedsim_simulator/restart_simulation");
     
     // model add msg
     gazebo_msgs::SpawnModel model_add_msg;

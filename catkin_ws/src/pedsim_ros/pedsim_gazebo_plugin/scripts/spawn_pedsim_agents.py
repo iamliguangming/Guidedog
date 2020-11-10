@@ -29,7 +29,7 @@ def actor_poses_callback(actors):
                                     actor_pose.orientation.w) )
 
         spawn_model(actor_id, xml_string, "", model_pose, "world")
-    rospy.signal_shutdown("all agents have been spawned !")
+    # rospy.signal_shutdown("all agents have been spawned !")
 
 
 
