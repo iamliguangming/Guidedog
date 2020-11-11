@@ -16,7 +16,7 @@ global xml_file
 
 def actor_poses_callback(actors):
     for actor in actors.agent_states:
-        actor_id = str( actor.id )
+        actor_id = "man"+str( actor.id )
         actor_pose = actor.pose
         rospy.loginfo("Spawning model: actor_id = %s", actor_id)
 

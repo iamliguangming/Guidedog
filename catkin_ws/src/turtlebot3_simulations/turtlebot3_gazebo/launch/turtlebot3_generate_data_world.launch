@@ -25,7 +25,7 @@
 
         <!-- Simulator -->
         <!-- The scene_file is modified to read from customize scenarios folder inside customize pkg -->
-        <!-- <include file="$(find pedsim_simulator)/launch/simulator.launch">
+        <include file="$(find pedsim_simulator)/launch/simulator.launch">
             <arg name="kbd_teleop" value="$(arg kbd_teleop)"/>
             <arg name="rqt_teleop" value="$(arg rqt_teleop)"/>
             <arg name="scene_file" value="$(find world_simulations)scenarios/$(arg scene_file).xml"/>
@@ -39,7 +39,7 @@
             <arg name="pose_initial_x" value="5.0"/>
             <arg name="pose_initial_y" value="5.0"/>
             <arg name="pose_initial_theta" value="0.7"/>
-        </include> -->
+        </include>
 
         <!-- Open Gazebo -->
         <!-- The .world file is modified to read from customize worlds folder inside customize pkg -->

@@ -29,6 +29,20 @@
 
 static int IMG_ID = 0;
 
+void delete_agent_models(gazebo_msgs::DeleteModel model_delete_msg, ros::ServiceClient delete_model_client, int& counter)
+{
+    for (int i = 0 ;i<=14;i++){
+        ros::Duration(0.1).sleep();
+        model_delete_msg.request.model_name = "man"+std::to_string(i+counter*15);
+        ROS_INFO_STREAM("Deleting Model"<<model_delete_msg.request.model_name<<std::endl);
+        delete_model_client.call(model_delete_msg);
+        bool del_result = model_delete_msg.response.success;
+        if(!del_result){
+        ROS_WARN("agent model delete error occurs once");}
+
+    }
+}
+
 void get_add_message(gazebo_msgs::SpawnModel& model_add_msg, int idx, std::string xml, std::string o_name, std::vector<float> &location_limit, float theta)
 {
     std::string model_name = "model_"  + std::to_string(idx);
@@ -73,6 +87,8 @@ void add_static_building(int num_static, std::vector<std::string>& static_xml_li
         static_add_msg.request.model_name = model_name;
         std::string xml = static_xml_lib[temp_idx];
         std::string o_name = static_ori_name_lib[temp_idx];
+        // ROS_INFO("I'm Here");
+        // ROS_INFO_STREAM(xml);
         xml.replace(xml.find(o_name),o_name.length(),model_name);
         static_add_msg.request.model_xml = xml;
 
@@ -156,6 +172,7 @@ int main(int argc, char **argv) {
         nh.serviceClient<std_srvs::Empty>("/pedsim_simulator/clear_simulation");
     ros::ServiceClient restart_pedsim_agent = nh.serviceClient<std_srvs::Empty>("/pedsim_simulator/restart_simulation");
     
+    std_srvs::Empty place_holder_msg;
     // model add msg
     gazebo_msgs::SpawnModel model_add_msg;
     
@@ -220,7 +237,7 @@ int main(int argc, char **argv) {
 
     // angle cahnge per time:
     float angle_change = (robot_theta_limit[1] - robot_theta_limit[0]) / robot_angle_number;
-
+    clear_pedsim_agent.call(place_holder_msg);
 
     // success flag
     bool del_result;
@@ -228,9 +245,15 @@ int main(int argc, char **argv) {
 
     image_transport::ImageTransport it_(nh);
     image_transport::Subscriber image_sub_;
-
+    int count = 0;
+    int& counter = count;
     while(ros::ok()){
+
+        clear_pedsim_agent.call(place_holder_msg);
+        ros::Duration(1).sleep();
         for(int i=0; i<past_model_number; i++){
+            ros::Duration(0.1).sleep();
+            ROS_INFO("Trying to delete buiding models");
             model_delete_msg.request.model_name = "model_" + std::to_string(i);
             delete_model_client.call(model_delete_msg);
             del_result = model_add_msg.response.success;
@@ -238,12 +261,20 @@ int main(int argc, char **argv) {
                 ROS_WARN("delete error occurs once");
             }
         }
+
+
+
+        delete_agent_models(model_delete_msg,delete_model_client,counter);
+        counter +=1;
         
         add_static_building(num_static, static_xml_lib, static_ori_name_lib, spawn_model_client);
 
         current_model_number = std::rand() % max_num_mobile + 1 + num_static;
+        // current_model_number = num_static;
 
         std::vector<std::vector<float>> store_values;
+        restart_pedsim_agent.call(place_holder_msg);
+
 
         // current_model_number = 1;
         for(int i=num_static; i<current_model_number; i++){
@@ -273,7 +304,7 @@ int main(int argc, char **argv) {
             }
         }
 
-        ros::spinOnce();
+        // ros::spinOnce();
         image_sub_ = it_.subscribe("/rrbot/camera1/image_rect_color", 1, imageCb);
         
         
@@ -305,12 +336,13 @@ int main(int argc, char **argv) {
                     output_file << '\n';
                 }
                 output_file.close();
-                ros::spinOnce();
                 ros::Duration(1).sleep();
                 IMG_ID += 1;
                 
             }
+
         }
+        ros::spinOnce();
 
         
 
