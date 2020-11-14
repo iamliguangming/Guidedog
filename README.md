@@ -35,7 +35,29 @@
   If using streettest.world. It is required to change some lines to reflect your local directory, please change the  
   line **108 and 122** in streettest.world file and line **23 and 45** in /simplemodified/model.sdf file under the  
   worlds and models folder. It is recommended to comment out the previous users'directories.  
+  
+## How to geneate bagfiles for data collection
+Assume you have already done:
+```
+source devel/setup.bash
+```
+First run:
+```
+roslaunch turtlebot3_gazebo turtlebot3_generate_data_world.launch 
+```
+Then open another terminal and run:
+```
+rosrun set_state gazebo_set_state 
 
+```
+Then open another terminal and:
+```
+mkdir rosbag
+cd rosbag
+rosbag record -O <name_of_your_bag_file> /rrbot/camera1/camera_info /rrbot/camera1/image_raw /gazebo/model_states /clock /tf
+```
+After you're done with recording, press ctrl+c to end the process.
+The bagfile is large in volume, a 240s bagfile would occupy around 16GB of storage. Changing the samping rate might be a good idea to reduce the volume.
 ## Installation
 
   Some basic guidelines on the installation
