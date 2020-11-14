@@ -340,7 +340,7 @@ void OccupancyMapFromWorld::CreateOccupancyMap()
     index2cell(map_index, cells_size_x, cells_size_y, cell_x, cell_y);
 
     //mark cell as free
-    occupancy_map_->data.at(map_index) = 0;
+    occupancy_map_->data.at(map_index) = 100; //0; reverse for our purpose
 
     //explore cells neighbors in an 8-connected grid
     unsigned int child_index;
@@ -368,7 +368,7 @@ void OccupancyMapFromWorld::CreateOccupancyMap()
 
             if(cell_occupied)
               //mark cell as occupied
-              occupancy_map_->data.at(child_index) = 100;
+              occupancy_map_->data.at(child_index) = 0; //100; reverse for our purpose
 
 
             else
@@ -377,7 +377,7 @@ void OccupancyMapFromWorld::CreateOccupancyMap()
               wavefront.push_back(child_index);
               //mark wavefront in map so we don't add children to wavefront multiple
               //times
-              occupancy_map_->data.at(child_index) = 50;
+              occupancy_map_->data.at(child_index) = 0; //50; reverse for our purpose
             }
           }
         }

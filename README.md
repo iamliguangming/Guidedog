@@ -38,9 +38,9 @@
 ```  
 <plugin name='gazebo_occupancy_map' filename='libgazebo_2Dmap_plugin.so'>
     <map_resolution>0.1</map_resolution> <!-- in meters, optional, default 0.1 -->
-    <map_height>0.3</map_height>         <!-- in meters, optional, default 0.3 -->
-    <map_size_x>10</map_size_x>          <!-- in meters, optional, default 10 -->
-    <map_size_y>10</map_size_y>          <!-- in meters, optional, default 10 -->
+    <map_z>0.16</map_z>         <!-- in meters, optional, default 0.3 -->
+    <map_size_x>200</map_size_x>          <!-- in meters, optional, default 10 -->
+    <map_size_y>200</map_size_y>          <!-- in meters, optional, default 10 -->
     <init_robot_x>0</init_robot_x>          <!-- x coordinate in meters, optional, default 0 -->
     <init_robot_y>0</init_robot_y>          <!-- y coordinate in meters, optional, default 0 -->
 </plugin>  
@@ -77,6 +77,16 @@ to read from it and publish to a topic or create a service, you can run
 rosrun map_server map_server <name_of_your_map_file>.yaml  
 ```
 It will publish the map to /map topic and create a service /static_map.
+
+### Merge/Overlap different maps
+Navigate into Map-Merge-Tool-master pkg folder using cd command, and type the following  
+three lines in terminal for target input and output map file names:  
+```  
+g++ -c mapmerge.cpp  
+g++ main.cpp mapmerge.o `pkg-config opencv --cflags --libs`  
+./a.out <input_map_file_name>.pgm <input_map_file_name>.pgm <output_map_file_name>.pgm  
+```
+Currently, the function can only support merging/overlapping two maps.  
 
 ## Installation
 
