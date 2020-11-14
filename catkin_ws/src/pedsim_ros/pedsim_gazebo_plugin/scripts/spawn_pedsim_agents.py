@@ -13,22 +13,33 @@ from pedsim_msgs.msg  import AgentStates
 
 # xml file containing a gazebo model to represent agent, currently is represented by a cubic but can be changed
 global xml_file
+global finished
+global max_id
+finished = 0
+max_id = -1
 
 def actor_poses_callback(actors):
-    for actor in actors.agent_states:
-        actor_id = "man"+str( actor.id )
-        actor_pose = actor.pose
-        rospy.loginfo("Spawning model: actor_id = %s", actor_id)
+    global finished
+    global max_id
+    if finished is 0:
+        max_id = actors.agent_states[-1].id
+        for actor in actors.agent_states:
+            actor_id = "man"+str( actor.id )
+            actor_pose = actor.pose
+            rospy.loginfo("Spawning model: actor_id = %s", actor_id)
 
-        model_pose = Pose(Point(x= actor_pose.position.x,
-                               y= actor_pose.position.y,
-                               z= actor_pose.position.z),
-                         Quaternion(actor_pose.orientation.x,
-                                    actor_pose.orientation.y,
-                                    actor_pose.orientation.z,
-                                    actor_pose.orientation.w) )
+            model_pose = Pose(Point(x= actor_pose.position.x,
+                                y= actor_pose.position.y,
+                                z= actor_pose.position.z),
+                            Quaternion(actor_pose.orientation.x,
+                                        actor_pose.orientation.y,
+                                        actor_pose.orientation.z,
+                                        actor_pose.orientation.w) )
 
-        spawn_model(actor_id, xml_string, "", model_pose, "world")
+            spawn_model(actor_id, xml_string, "", model_pose, "world")
+        finished = 1
+    elif actors.agent_states[0].id > max_id:
+        finished = 0
     # rospy.signal_shutdown("all agents have been spawned !")
 
 
@@ -45,7 +56,6 @@ if __name__ == '__main__':
     actor_model_file = rospy.get_param('~actor_model_file', default_actor_model_file)
     file_xml = open(actor_model_file)
     xml_string = file_xml.read()
-
     print("Waiting for gazebo services...")
     rospy.wait_for_service("gazebo/spawn_sdf_model")
     spawn_model = rospy.ServiceProxy("gazebo/spawn_sdf_model", SpawnModel)
