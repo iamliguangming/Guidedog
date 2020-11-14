@@ -19,7 +19,10 @@ class MapReader{
     int height;
     int width;
     double resolution;
+    int resolution_factor = 100;
+    int resolution_int;
     std::vector<std::vector<bool>> occupancyGrid;
+    std::vector<std::vector<bool>> local_occupancyGrid;
 
     public:
     MapReader(ros::NodeHandle* nh);
@@ -29,5 +32,6 @@ class MapReader{
     int getHeight();
     int getWidth();
     double getResolution();
-    bool get_occ_val(const int &i, const int &j);
+    bool get_occ_val(const double &x, const double &y);
+    std::vector<std::vector<bool>> get_local_occ_grid(const double &x, const double &y, const double &r);
 };
