@@ -29,6 +29,7 @@ void PotentialField::init(){
     decision_signal.y = 0.0;
     decision_signal.theta = 0.0;
     force_pub.publish(decision_signal);
+    globalPath = 
     getNextWaypoint(1);  //get the first waypoint
     ROS_INFO("--- PF initialization completed ---");
 }
