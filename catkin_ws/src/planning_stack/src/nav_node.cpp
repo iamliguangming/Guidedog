@@ -51,7 +51,7 @@ int main(int argc, char** argv){
     // Test path finding function
     ROS_INFO("Testing find_path function");
     std::vector<int> start = {500, 250};
-    std::vector<int> goal = {520, 220};
+    std::vector<int> goal = {520, 250};
     std::vector<std::vector<int>> path = dijkstra_finder.find_path(start, goal);
     std::vector<std::vector<int>>::iterator it;
     
