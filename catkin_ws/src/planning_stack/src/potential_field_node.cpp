@@ -77,6 +77,7 @@ void PotentialField::step(){
 //     }
 // };
 
+
 // void PotentialField::generateCmd(std::vector<double> &F){
 //     decision_signal.linear.x = 
 //     decision_signal.linear.y =

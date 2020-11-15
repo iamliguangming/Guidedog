@@ -117,7 +117,6 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-  include
   include/planning_stack
   ${catkin_INCLUDE_DIRS}
 )
@@ -138,7 +137,12 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/planning_stack_node.cpp)
 
-add_executable(nav_node src/nav_node.cpp src/global_planner/map_reader.cpp src/potential_field_node.cpp)
+add_executable(nav_node 
+src/nav_node.cpp 
+src/potential_field_node.cpp
+src/global_planner/map_reader.cpp
+src/global_planner/global_path_finder.cpp
+)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
