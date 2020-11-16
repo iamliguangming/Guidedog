@@ -17,12 +17,16 @@ int main(int argc, char** argv){
     ros::Publisher pub = n.advertise<geometry_msgs::Twist>("cmd_vel", 1);
     bot_control bc;
     bc.init();
+    ros::Rate loop_rate(10);
     while(ros::ok()){
-        bc.move();
+        
+        ROS_INFO("------ Spin once ------");
+        bc.move();        
         geometry_msgs::Twist cmd = bc.get_cmd();
-        ROS_INFO("cmd_vel:\n linear: %f, angular: %f", cmd.linear.x, cmd.angular.z);
+        ROS_INFO("cmd_vel: linear: %f, angular: %f", cmd.linear.x, cmd.angular.z);
         pub.publish(cmd);
-
+        ros::spinOnce();
+        loop_rate.sleep();
     }
     
 

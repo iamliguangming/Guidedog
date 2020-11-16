@@ -16,6 +16,8 @@ class bot_control{
 	void move();
 	geometry_msgs::Twist get_cmd();
 
+
+
 	private://parameter for conrolling the linear and angular speed
 	
 	double max_lin_vel = 0.22;
