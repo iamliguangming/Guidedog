@@ -18,7 +18,10 @@ find_package(catkin REQUIRED COMPONENTS
   nav_msgs
   tf
   gazebo_ros
+  cv_bridge
+  image_transport
 )
+find_package(OpenCV REQUIRED )
 
 find_package(gazebo REQUIRED)
 
@@ -47,11 +50,16 @@ catkin_package(
 # Build
 ################################################################################
 link_directories(${GAZEBO_LIBRARY_DIRS})
+link_directories(${OpenCV_LIBRARY_DIRS})
 
+catkin_install_python(PROGRAMS scripts/image_saver.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 include_directories(
   include
   ${catkin_INCLUDE_DIRS}
   ${GAZEBO_INCLUDE_DIRS}
+  ${OpenCV_INCLUDE_DIRS}
 )
 
 add_executable(turtlebot3_drive src/turtlebot3_drive.cpp)
@@ -61,6 +69,12 @@ target_link_libraries(turtlebot3_drive ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
 add_executable(rlocation_node src/rlocation_node.cpp)
 add_dependencies(rlocation_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(rlocation_node ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+
+add_executable(cv_node src/cv_node.cpp)
+add_dependencies(cv_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(cv_node ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES} ${OpenCV_LIBRARIES})
+
+
 
 ################################################################################
 # Install

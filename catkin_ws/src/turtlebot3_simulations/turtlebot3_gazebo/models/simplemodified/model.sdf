@@ -19,8 +19,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <!-- <uri>/home/yuchen/Documents/CIS700/world02/models/simplemodified/simplemodified.dae</uri> -->
-            <uri>/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/simplemodified/simplemodified.dae</uri>
+            <uri>/home/yuchen/Documents/CIS700/world02/models/simplemodified/simplemodified.dae</uri>
             <!--<uri>model://simplemodified.dae</uri>-->
             <scale>1 1 1</scale>
           </mesh>
@@ -41,8 +40,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <!-- <uri>/home/yuchen/Documents/CIS700/world02/models/simplemodified/simplemodified.dae</uri> -->
-            <uri>/home/yongxin/Guidedog-Service-Robot/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/simplemodified/simplemodified.dae</uri>
+            <uri>/home/yuchen/Documents/CIS700/world02/models/simplemodified/simplemodified.dae</uri>
             <!--<uri>model://simplemodified.dae</uri>-->
             <scale>1 1 1</scale>
           </mesh>
