@@ -116,7 +116,7 @@ nav_msgs::Path GlobalPathFinder::find_path(const std::vector<double> &start_cell
 
 }
 
-void GlobalPathFinder::publish_path(ros::NodeHandle *nh){
+void GlobalPathFinder::publish_path(){
     path_pub.publish(path);
 }
 

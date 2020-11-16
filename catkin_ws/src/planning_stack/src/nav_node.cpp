@@ -72,6 +72,6 @@ int main(int argc, char** argv){
     while(ros::ok()){
         dijkstra_finder.publish_path();
         ros::spinOnce();
-        sloop_rate.sleep();
+        loop_rate.sleep();
     }
 }

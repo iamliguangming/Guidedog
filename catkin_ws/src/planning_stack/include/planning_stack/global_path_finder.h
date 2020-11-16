@@ -25,9 +25,9 @@ class GlobalPathFinder{
     ros::NodeHandle *nh;
 
     public:
-    GlobalPathFinder(const std::string &method, MapReader* input_map);
+    GlobalPathFinder(ros::NodeHandle *nh, const std::string &method, MapReader* input_map);
     void add_adjacent_cell(const int &cell_idx);
     // std::vector<std::vector<int>> find_path(const std::vector<int> start_cell_coord, const std::vector<int> goal_cell_coord);
     nav_msgs::Path find_path(const std::vector<double> &start_cell, const std::vector<double> &goal_cell);
-    void publish_path(ros::NodeHandle *nh);
+    void publish_path();
 };
