@@ -54,7 +54,7 @@ Then open another terminal and:
 ```
 mkdir rosbag
 cd rosbag
-rosbag record -O <name_of_your_bag_file> /rrbot/camera1/camera_info /rrbot/camera1/image_raw /gazebo/model_states /clock /tf
+rosbag record -O <name_of_your_bag_file> /rrbot/camera1/camera_info /gazebo/model_states 
 ```
 After you're done with recording, press ctrl+c to end the process.
 The bagfile is large in volume, a 240s bagfile would occupy around 16GB of storage. Changing the samping rate might be a good idea to reduce the volume.
