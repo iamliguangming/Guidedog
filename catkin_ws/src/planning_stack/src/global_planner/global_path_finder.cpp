@@ -8,9 +8,11 @@
 
 #define INF 0x3f3f3f3f
 
-GlobalPathFinder::GlobalPathFinder(const std::string& method, MapReader* input_map){
+GlobalPathFinder::GlobalPathFinder(ros::NodeHandle *nh, const std::string& method, MapReader* input_map){
     this->method = method;
     this->map = input_map;
+    this->nh = nh;
+    path_pub = nh->advertise<nav_msgs::Path>(path_topic, 1);
     // Initialize the cost vector
     const long int map_size = map->get_map_size();
     cost.resize(map_size);
@@ -111,8 +113,11 @@ nav_msgs::Path GlobalPathFinder::find_path(const std::vector<double> &start_cell
         }
     }
     return path;
+
 }
 
-
+void GlobalPathFinder::publish_path(ros::NodeHandle *nh){
+    path_pub.publish(path);
+}
 
 

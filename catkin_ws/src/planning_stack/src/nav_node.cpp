@@ -47,7 +47,7 @@ int main(int argc, char** argv){
     ROS_INFO("Current coord is (%d, %d), and current idx is: %d", coord[0], coord[1], curr_idx);
 
     //============================Dijkstra Test Section===========================
-    GlobalPathFinder dijkstra_finder("dijkstra", &map);
+    GlobalPathFinder dijkstra_finder(&nh, "dijkstra", &map);
 
     // Test path finding function
     ROS_INFO("Testing find_path function");
@@ -66,5 +66,12 @@ int main(int argc, char** argv){
         ROS_INFO("Path Cell Coordinate: (%.2f, %.2f)", path.poses[i].pose.position.x, path.poses[i].pose.position.y);
     }
 
-    
+    //===========================Test Publish Topic and Visualization===============
+    ROS_INFO("Start Publishing...............");
+    ros::Rate loop_rate(0.1);
+    while(ros::ok()){
+        dijkstra_finder.publish_path();
+        ros::spinOnce();
+        sloop_rate.sleep();
+    }
 }
