@@ -52,7 +52,9 @@ catkin_package(
 link_directories(${GAZEBO_LIBRARY_DIRS})
 link_directories(${OpenCV_LIBRARY_DIRS})
 
-
+catkin_install_python(PROGRAMS scripts/image_saver.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 include_directories(
   include
   ${catkin_INCLUDE_DIRS}
@@ -71,6 +73,8 @@ target_link_libraries(rlocation_node ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
 add_executable(cv_node src/cv_node.cpp)
 add_dependencies(cv_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(cv_node ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES} ${OpenCV_LIBRARIES})
+
+
 
 ################################################################################
 # Install
