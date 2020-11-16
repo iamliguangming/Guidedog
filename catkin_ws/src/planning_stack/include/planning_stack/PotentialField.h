@@ -50,6 +50,10 @@ class PotentialField{
     std::string force_cmd_name = "PFforce";
     ros::Publisher force_pub;     // com_vel publisher    
     geometry_msgs::Pose2D decision_signal;
+    
+    std::string path_topic = "/global_path";
+    ros::Publisher path_pub;
+    
 
     void step();        // each PF step
     // void modifyCmd();

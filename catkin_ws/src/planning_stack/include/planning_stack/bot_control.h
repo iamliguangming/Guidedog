@@ -20,8 +20,10 @@ class bot_control{
 
 	private://parameter for conrolling the linear and angular speed
 	
+	// double max_lin_vel = 0.22;
+	// double max_ang_vel = 2.84;	
 	double max_lin_vel = 0.22;
-	double max_ang_vel = 2.84;
+	double max_ang_vel = 4.0;
 
 	ros::NodeHandle n;
 	std::string odom_topic_name = "/odom";

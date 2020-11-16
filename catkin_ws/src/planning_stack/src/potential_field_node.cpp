@@ -25,6 +25,7 @@ void PotentialField::init(){
     odom_sub = n.subscribe(odom_topic_name,10,&PotentialField::Odom_call_back,this);    // robot global pose
     rlocation_sub = n.subscribe(relative_location_topic_name, 10, &PotentialField::rlocationProcessing, this);  // peds relative pose
     force_pub = n.advertise<geometry_msgs::Pose2D>(force_cmd_name, 5);   //velocity command
+    path_pub = n.advertise<nav_msgs::Path>(path_topic, 1);
     // decision_signal.x = 0.0;
     // decision_signal.y = 0.0;
     // decision_signal.theta = 0.0;
@@ -43,6 +44,8 @@ void PotentialField::run(){
         int cnt = 0;
         while(ros::ok()){
             ROS_INFO("------ %d ------",cnt++);
+            path_pub.publish(globalPath);
+            ros::spinOnce();
             step();     //one step
             if(check()){
                 getNextWaypoint(i+1);
