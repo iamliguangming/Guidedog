@@ -187,7 +187,8 @@ double PotentialField::distance(const geometry_msgs::Pose2D &a , const geometry_
 }
 
 bool PotentialField::isInMap(const int &x, const int &y){
-    return map.get_occ_val(x, y);
+    std::vector<double> temp = {double(x), double(y)};
+    return map.get_occ_val(temp);
 }
 
 std::vector<int> PotentialField::pickRlocationWithinRange(){

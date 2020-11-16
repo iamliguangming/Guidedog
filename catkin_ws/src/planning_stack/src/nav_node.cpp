@@ -15,12 +15,14 @@ int main(int argc, char** argv){
     // Test get_occ_val for global occupancy grid 
     ROS_INFO("Testing get_occ_val...");
     for(int i=500; i<=600; i++){
-        ROS_INFO("Current occ value is: %d", map.get_occ_val(i*0.3, 250*0.3));
+        std::vector<double> i_double = {i*0.3, 250*0.3};
+        ROS_INFO("Current occ value is: %d", map.get_occ_val(i_double));
     }
 
     // Test local occupancy grid
     ROS_INFO("Testing get_local_occ_grid...");
-    std::vector<std::vector<bool>> local_grid = map.get_local_occ_grid(150, 75, 0.5);
+    std::vector<double> xy_double = {150.29, 75.96};
+    std::vector<std::vector<bool>> local_grid = map.get_local_occ_grid(xy_double, 0.5);
     ROS_INFO("local map grid value:");
     std::vector<std::vector<bool>>::iterator row;
     std::vector<bool>::iterator col;
@@ -32,9 +34,8 @@ int main(int argc, char** argv){
 
     // Test get_curr_grid_pos
     ROS_INFO("Testing get_curr_grid_pos");
-    int* curr_grid_pos;
-    curr_grid_pos = map.get_curr_grid_pos(150.29, 75.56);
-    ROS_INFO("Current grid position at: (%d, %d)", *curr_grid_pos, *(curr_grid_pos+1));
+    std::vector<int> curr_grid_pos = map.get_curr_grid_pos(xy_double);
+    ROS_INFO("Current grid position at: (%d, %d)", curr_grid_pos[0], curr_grid_pos[1]);
 
     // Test get_coord_from_idx and get_idx_from_coord
     ROS_INFO("Testing get_coord_from_idx");
@@ -50,14 +51,20 @@ int main(int argc, char** argv){
 
     // Test path finding function
     ROS_INFO("Testing find_path function");
-    std::vector<int> start = {500, 250};
-    std::vector<int> goal = {520, 250};
-    std::vector<std::vector<int>> path = dijkstra_finder.find_path(start, goal);
-    std::vector<std::vector<int>>::iterator it;
+    std::vector<double> start = {250 * 0.3, 500 * 0.3};
+    std::vector<double> goal = {250 * 0.3, 520 * 0.3};
+    std::vector<int> start_discre = map.get_curr_grid_pos(start);
+    std::vector<int> goal_discre = map.get_curr_grid_pos(goal);
+
+    nav_msgs::Path path = dijkstra_finder.find_path(start, goal);
+
     
-    ROS_INFO("Start at (%d, %d). Goal at (%d, %d)", start[0], start[1], goal[0], goal[1]);
+    ROS_INFO("Start at (%.2f, %.2f). Goal at (%.2f, %.2f)", start[0], start[1], goal[0], goal[1]);
+    ROS_INFO("Start at (%d, %d). Goal at (%d, %d)", start_discre[0], start_discre[1], goal_discre[0], goal_discre[1]);
     ROS_INFO("Found Path: ");
-    for(it = path.begin(); it != path.end(); it++){
-        ROS_INFO("Path Cell Coordinate: (%d, %d)", (*it)[0], (*it)[1]);
+    for(int i = 0; i < path.poses.size(); i++){
+        ROS_INFO("Path Cell Coordinate: (%.2f, %.2f)", path.poses[i].pose.position.x, path.poses[i].pose.position.y);
     }
+
+    
 }

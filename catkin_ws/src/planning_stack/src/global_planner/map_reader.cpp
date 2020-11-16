@@ -73,22 +73,22 @@ double MapReader::getResolution(){
     return resolution;
 }
 
-bool MapReader::get_occ_val(const double &x, const double &y){
+bool MapReader::get_occ_val(const std::vector<double> &xy_double){
     // int i = int(x * resolution_factor) / resolution_int;
     // int j = int(y * resolution_factor) / resolution_int;
-    int* curr_grid_pos = MapReader::get_curr_grid_pos(x ,y);
-    int i = *curr_grid_pos;
-    int j = *(curr_grid_pos + 1);
+    curr_grid_pos = MapReader::get_curr_grid_pos(xy_double);
+    int i = curr_grid_pos[0];
+    int j = curr_grid_pos[1];
 
     return occupancyGrid[i][j];
 }
 
-std::vector<std::vector<bool>> MapReader::get_local_occ_grid(const double &x, const double &y, const double &r){
+std::vector<std::vector<bool>> MapReader::get_local_occ_grid(const std::vector<double> &xy_double, const double &r){
     // int i = int(x * resolution_factor) / resolution_int;
     // int j = int(y * resolution_factor) / resolution_int;
-    int* curr_grid_pos = MapReader::get_curr_grid_pos(x ,y);
-    int i = *curr_grid_pos;
-    int j = *(curr_grid_pos + 1);
+    curr_grid_pos = MapReader::get_curr_grid_pos(xy_double);
+    int i = curr_grid_pos[0];
+    int j = curr_grid_pos[1];
     int i_start = i - int( (r - resolution / 2) * resolution_factor) / resolution_int - 1; // floor the cell
     int i_end = i + (i - i_start);
     int j_start = j - int( (r - resolution / 2) * resolution_factor) / resolution_int - 1; // floor the cell
@@ -110,20 +110,31 @@ std::vector<std::vector<bool>> MapReader::get_local_occ_grid(const double &x, co
     return local_occupancyGrid;
 }
 
-int* MapReader::get_curr_grid_pos(const double &x, const double &y){
+// Transfer x-y double type to x-y int. discretized type
+std::vector<int> MapReader::get_curr_grid_pos(const std::vector<double> &xy_double){
+    double x = xy_double[0];
+    double y = xy_double[1];    
     curr_grid_pos[0] = int(y * resolution_factor) / resolution_int;
-    curr_grid_pos[0] = (height - 1) - curr_grid_pos[0]; // flip y axis.  
+    curr_grid_pos[0] = (height - 1) - curr_grid_pos[0]; // flip y axis. 
     curr_grid_pos[1] = int(x * resolution_factor) / resolution_int;
     return curr_grid_pos;
 }
 
-int MapReader::get_curr_pos_idx(const double &x, const double &y){
-    int* curr_grid_pos = MapReader::get_curr_grid_pos(x, y);
+// Trnsfer x-y int. discretized type to x-y double type
+
+
+// Transfer x-y double type to one-dimensional index
+int MapReader::get_curr_pos_idx(const std::vector<double> &xy_double){
+    curr_grid_pos = MapReader::get_curr_grid_pos(xy_double);
     // Transfer it into one dimension index. Easier for implementation in Dijkstra.
-    curr_pos_idx = *curr_grid_pos * width + *(curr_grid_pos + 1);
+    curr_pos_idx = curr_grid_pos[0] * width + curr_grid_pos[1];
     return curr_pos_idx;
 }
 
+// Transfer one-dimensional index to x-y double type
+
+
+// Transfer one dimensional index to x-y int. discretized type
 std::vector<int> MapReader::get_coord_from_idx(const int &cell_idx){
     std::vector<int> coord;
     coord.resize(2);
@@ -133,6 +144,7 @@ std::vector<int> MapReader::get_coord_from_idx(const int &cell_idx){
     return coord;
 }
 
+// Transfer x-y int. discretized type to one dimensional index.
 int MapReader::get_idx_from_coord(const std::vector<int> &cell_coord){
     int cell_idx = cell_coord[0] * width + cell_coord[1];
 

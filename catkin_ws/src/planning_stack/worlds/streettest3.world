@@ -104,7 +104,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/yihangxu/Documents/guidedog/Guidedog/catkin_ws/src/planning_stack/worlds/models/street5/street5.dae</uri>
+              <uri>/home/yongxin/Guidedog/catkin_ws/src/planning_stack/worlds/models/street5/street5.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -117,7 +117,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/yihangxu/Documents/guidedog/Guidedog/catkin_ws/src/planning_stack/worlds/models/street5/street5.dae</uri>
+              <uri>/home/yongxin/Guidedog/catkin_ws/src/planning_stack/worlds/models/street5/street5.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
