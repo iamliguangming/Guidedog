@@ -25,10 +25,10 @@ void PotentialField::init(){
     odom_sub = n.subscribe(odom_topic_name,10,&PotentialField::Odom_call_back,this);    // robot global pose
     rlocation_sub = n.subscribe(relative_location_topic_name, 10, &PotentialField::rlocationProcessing, this);  // peds relative pose
     force_pub = n.advertise<geometry_msgs::Pose2D>(force_cmd_name, 5);   //velocity command
-    decision_signal.x = 0.0;
-    decision_signal.y = 0.0;
-    decision_signal.theta = 0.0;
-    force_pub.publish(decision_signal);
+    // decision_signal.x = 0.0;
+    // decision_signal.y = 0.0;
+    // decision_signal.theta = 0.0;
+    // force_pub.publish(decision_signal);
     // globalPath = 
     getNextWaypoint(1);  //get the first waypoint
     ROS_INFO("--- PF initialization completed ---");

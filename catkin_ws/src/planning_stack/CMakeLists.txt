@@ -144,6 +144,13 @@ src/global_planner/map_reader.cpp
 src/global_planner/global_path_finder.cpp
 )
 
+add_executable(simple_controller_node 
+src/simple_controller_node.cpp
+src/bot_control.cpp 
+)
+target_link_libraries(simple_controller_node
+${catkin_LIBRARIES})
+
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
