@@ -14,8 +14,8 @@
 
         <!-- Gazebo Robot Parameters -->
         <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
-        <arg name="x_pos" default="-2.2"/> 
-        <arg name="y_pos" default="1.2"/>
+        <arg name="x_pos" default="5"/> 
+        <arg name="y_pos" default="5"/>
         <arg name="z_pos" default="0.5"/>
 
         <!-- Select Gazebo Robot Model. For our project, it is set to be 'burger'. -->
@@ -61,8 +61,8 @@
     
         <!-- load the turtlebot3 teleop key controller -->
         <param name="model" value="$(arg model)"/>
-        <node pkg="turtlebot3_teleop" type="turtlebot3_teleop_key" name="turtlebot3_teleop_keyboard"  output="screen">
-        </node>
+        <!-- <node pkg="turtlebot3_teleop" type="turtlebot3_teleop_key" name="turtlebot3_teleop_keyboard"  output="screen">
+        </node> -->
 
 </launch>
 

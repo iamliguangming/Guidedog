@@ -230,7 +230,7 @@ int main(int argc, char **argv) {
     location_limit_p = {2, 1, 10, 5};
 
     std::vector<float> location_limit_robot(4);
-    location_limit_robot = {-2, 2, 1, 4};
+    location_limit_robot = {3, 2, 5, 4};
 
     std::vector<float> robot_theta_limit(2);
     robot_theta_limit = {-0.2, 0.2};
@@ -307,9 +307,9 @@ int main(int argc, char **argv) {
 
         // ros::spinOnce();
         image_sub_ = it_.subscribe("/rrbot/camera1/image_rect_color", 1, imageCb);
+
         
-        
-        
+             
         past_model_number = current_model_number;
         for(int i = 0; i<robot_state_number; i++){
             float temp_x = float(std::rand() % 101) / 100.0 * (location_limit_robot[2] - location_limit_robot[0]) + location_limit_robot[0];
@@ -337,7 +337,7 @@ int main(int argc, char **argv) {
                 //     output_file << '\n';
                 // }
                 // output_file.close();
-                ros::Duration(1).sleep();
+                ros::Duration(10).sleep();
                 IMG_ID += 1;
                 
             }
