@@ -6,3 +6,4 @@ catkin_ws/src/catkin_simple/devel
 catkin_ws/src/generate_data/build
 catkin_ws/src/generate_data/devel
 catkin_ws/src/generate_data/data
+catkin_ws/sample.bag

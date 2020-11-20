@@ -10,6 +10,7 @@
       <geometry>
         <box>
           <size>.5 .5 1.5</size>
+          <size>0 0 0</size>
         </box>
       </geometry>
     </collision>

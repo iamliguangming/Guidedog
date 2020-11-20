@@ -1,0 +1,6 @@
+ rosbag record -O sample /gazebo/model_states /rrbot/camera1/camera_info /rrbot/camera1/image_raw /odom
+ rosrun image_view video_recorder image:=/rrbot/camera1/image_raw
+
+
+ rostopic echo /gazebo/model_states -b sample.bag -p > modelstates.csv
+

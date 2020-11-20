@@ -14,9 +14,9 @@
 
         <!-- Gazebo Robot Parameters -->
         <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
-        <arg name="x_pos" default="5"/> 
-        <arg name="y_pos" default="5"/>
-        <arg name="z_pos" default="0.5"/>
+        <arg name="x_pos" default="-2"/> 
+        <arg name="y_pos" default="-2"/>
+        <arg name="z_pos" default="1.5"/>
 
         <!-- Select Gazebo Robot Model. For our project, it is set to be 'burger'. -->
         <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
