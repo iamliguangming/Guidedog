@@ -23,11 +23,11 @@
 #include <boost/filesystem.hpp>
 #include <std_srvs/Empty.h>
 
-
 #define PI 3.1415926
 
 
 static int IMG_ID = 0;
+static std::vector<std::string> curr_obstacle_arr;
 
 void delete_agent_models(gazebo_msgs::DeleteModel model_delete_msg, ros::ServiceClient delete_model_client, int& counter)
 {
@@ -119,10 +119,11 @@ void add_static_obstacles(int num_static, std::vector<std::string>& static_xml_l
     for(int i=0; i<num_static; i++){
         
         int temp_idx = std::rand() % static_xml_lib.size();
-        std::string model_name = "obstacle_"  + std::to_string(i);
-        static_add_msg.request.model_name = model_name;
         std::string xml = static_xml_lib[temp_idx];
         std::string o_name = static_ori_name_lib[temp_idx];
+        std::string model_name = o_name + std::to_string(i);
+        curr_obstacle_arr.push_back(model_name);
+        static_add_msg.request.model_name = model_name;
         // ROS_INFO("I'm Here");
         // ROS_INFO_STREAM(xml);
         xml.replace(xml.find(o_name),o_name.length(),model_name);
@@ -263,8 +264,6 @@ int main(int argc, char **argv) {
 
 
 
-
-
     modle_define(input_mobile_xml, input_mobile_name, mobile_xml_lib, mobile_ori_name_lib);
     modle_define(input_static_xml, input_static_name, static_xml_lib, static_ori_name_lib);
     modle_define(input_static_obstacle_xml,input_static_obstacle_name, static_obstacle_xml_lib, static_obstacle_ori_name_lib);
@@ -319,10 +318,11 @@ int main(int argc, char **argv) {
                 ROS_WARN("delete error occurs once");
             }
         }
-        for(int i=0; i<current_model_number - num_static; i++){
+        // for(int i=0; i<current_model_number - num_static; i++){
+        for(std::string name : curr_obstacle_arr){
             // ros::Duration(0.1).sleep();
             ROS_INFO("Trying to delete obstacle models");
-            model_delete_msg.request.model_name = "obstacle_" + std::to_string(i);
+            model_delete_msg.request.model_name = name;
             delete_model_client.call(model_delete_msg);
             del_result = model_delete_msg.response.success;
             if(!del_result){
