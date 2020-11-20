@@ -21,7 +21,6 @@ def image_callback(msg):
         # Save your OpenCV2 image as a jpeg 
         time = msg.header.stamp
         cv2.imwrite(''+str(time)+'.jpeg', cv2_img)
-        rospy.sleep(1)
 
 def main():
     rospy.init_node('image_listener')

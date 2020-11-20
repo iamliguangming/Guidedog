@@ -23,16 +23,16 @@
 #include <boost/filesystem.hpp>
 #include <std_srvs/Empty.h>
 
-
 #define PI 3.1415926
 
 
 static int IMG_ID = 0;
+static std::vector<std::string> curr_obstacle_arr;
 
 void delete_agent_models(gazebo_msgs::DeleteModel model_delete_msg, ros::ServiceClient delete_model_client, int& counter)
 {
     for (int i = 0 ;i<=23;i++){
-        ros::Duration(0.1).sleep();
+        // ros::Duration(0.1).sleep();
         model_delete_msg.request.model_name = "man"+std::to_string(i+counter*24);
         ROS_INFO_STREAM("Deleting Model"<<model_delete_msg.request.model_name<<std::endl);
         delete_model_client.call(model_delete_msg);
@@ -83,7 +83,7 @@ void add_static_building(int num_static, std::vector<std::string>& static_xml_li
     for(int i=0; i<num_static; i++){
         
         int temp_idx = std::rand() % static_xml_lib.size();
-        std::string model_name = "model_"  + std::to_string(i);
+        std::string model_name = "building_"  + std::to_string(i);
         static_add_msg.request.model_name = model_name;
         std::string xml = static_xml_lib[temp_idx];
         std::string o_name = static_ori_name_lib[temp_idx];
@@ -99,6 +99,43 @@ void add_static_building(int num_static, std::vector<std::string>& static_xml_li
         static_add_msg.request.initial_pose.orientation.y = 0;
         static_add_msg.request.initial_pose.orientation.z =  std::sin(std::pow(-1, i) * PI/4 + PI/4);
         static_add_msg.request.initial_pose.orientation.w =  std::cos(PI/4 + std::pow(-1, i) * PI/4);
+
+
+        // cout << model_add_msg.request.model_xml;
+        spawn_model_client.call(static_add_msg);
+        //make sure service call was successful
+        bool add_result = static_add_msg.response.success;
+        if (!add_result){
+            ROS_WARN("generate error occurs once");
+        }
+    }
+}
+
+void add_static_obstacles(int num_static, std::vector<std::string>& static_xml_lib, std::vector<std::string>& static_ori_name_lib, 
+                            ros::ServiceClient& spawn_model_client){
+    gazebo_msgs::SpawnModel static_add_msg;
+    double random_y_shift = (std::rand() % 100 - 20) / 99.0 * 5;
+    
+    for(int i=0; i<num_static; i++){
+        
+        int temp_idx = std::rand() % static_xml_lib.size();
+        std::string xml = static_xml_lib[temp_idx];
+        std::string o_name = static_ori_name_lib[temp_idx];
+        std::string model_name = o_name + std::to_string(i);
+        curr_obstacle_arr.push_back(model_name);
+        static_add_msg.request.model_name = model_name;
+        // ROS_INFO("I'm Here");
+        // ROS_INFO_STREAM(xml);
+        xml.replace(xml.find(o_name),o_name.length(),model_name);
+        static_add_msg.request.model_xml = xml;
+
+        static_add_msg.request.initial_pose.position.x = (i / 2) * 3 + random_y_shift;
+        static_add_msg.request.initial_pose.position.y = std::pow(-1, i+1) * 3.5 + 5;
+        static_add_msg.request.initial_pose.position.z = 0;
+        static_add_msg.request.initial_pose.orientation.x = 0;
+        static_add_msg.request.initial_pose.orientation.y = 0;
+        static_add_msg.request.initial_pose.orientation.z =  std::sin(-PI/4);
+        static_add_msg.request.initial_pose.orientation.w =  std::cos(-PI/4 );
 
 
         // cout << model_add_msg.request.model_xml;
@@ -187,9 +224,14 @@ int main(int argc, char **argv) {
     std::vector<std::string> mobile_ori_name_lib;
     std::vector<std::string> static_xml_lib;
     std::vector<std::string> static_ori_name_lib;
+    std::vector<std::string> static_obstacle_xml_lib;
+    std::vector<std::string> static_obstacle_ori_name_lib;
+
 
     std::vector<std::string> input_mobile_xml;
     std::vector<std::string> input_mobile_name;
+    std::vector<std::string> input_static_obstacle_xml;
+    std::vector<std::string> input_static_obstacle_name;
     std::vector<std::string> input_static_xml;
     std::vector<std::string> input_static_name;
     std::vector<std::vector<float>> mobile_scale;
@@ -207,15 +249,30 @@ int main(int argc, char **argv) {
     input_static_name.push_back("law_office");
     input_static_xml.push_back("src/generate_data/models/post_office/model.sdf");
     input_static_name.push_back("post_office");
+    input_static_obstacle_xml.push_back("src/generate_data/models/fire_hydrant/model.sdf");
+    input_static_obstacle_name.push_back("fire_hydrant");
+    input_static_obstacle_xml.push_back("src/generate_data/models/first_2015_trash_can/model.sdf");
+    input_static_obstacle_name.push_back("trash_can");
+    input_static_obstacle_xml.push_back("src/generate_data/models/oak_tree/model.sdf");
+    input_static_obstacle_name.push_back("oak_tree");
+    input_static_obstacle_xml.push_back("src/generate_data/models/stop_sign/model.sdf");
+    input_static_obstacle_name.push_back("stop_sign");
+    input_static_obstacle_xml.push_back("src/generate_data/models/mailbox/model.sdf");
+    input_static_obstacle_name.push_back("mailbox");
+   input_static_obstacle_xml.push_back("src/generate_data/models/stop_light/model.sdf");
+    input_static_obstacle_name.push_back("stop_light");
+
 
 
     modle_define(input_mobile_xml, input_mobile_name, mobile_xml_lib, mobile_ori_name_lib);
     modle_define(input_static_xml, input_static_name, static_xml_lib, static_ori_name_lib);
+    modle_define(input_static_obstacle_xml,input_static_obstacle_name, static_obstacle_xml_lib, static_obstacle_ori_name_lib);
        
     ros::Rate loop_rate(10);
 
     // generate parameters
     int num_static = 6;
+    int num_static_obstacle = 20;
     int max_num_mobile = 10;
     int robot_state_number = 5;
     int robot_angle_number = 3;
@@ -230,10 +287,10 @@ int main(int argc, char **argv) {
     location_limit_p = {2, 1, 10, 5};
 
     std::vector<float> location_limit_robot(4);
-    location_limit_robot = {-2, 2, 1, 4};
+    location_limit_robot = {5, 2, 10, 4};
 
     std::vector<float> robot_theta_limit(2);
-    robot_theta_limit = {-0.2, 0.2};
+    robot_theta_limit = {-0.1, 0.1};
 
     // angle cahnge per time:
     float angle_change = (robot_theta_limit[1] - robot_theta_limit[0]) / robot_angle_number;
@@ -251,10 +308,21 @@ int main(int argc, char **argv) {
 
         clear_pedsim_agent.call(place_holder_msg);
         ros::Duration(2).sleep();
-        for(int i=0; i<past_model_number; i++){
-            ros::Duration(0.1).sleep();
+        for(int i=0; i<current_model_number-num_static_obstacle; i++){
+            // ros::Duration(0.1).sleep();
             ROS_INFO("Trying to delete buiding models");
-            model_delete_msg.request.model_name = "model_" + std::to_string(i);
+            model_delete_msg.request.model_name = "building_" + std::to_string(i);
+            delete_model_client.call(model_delete_msg);
+            del_result = model_delete_msg.response.success;
+            if(!del_result){
+                ROS_WARN("delete error occurs once");
+            }
+        }
+        // for(int i=0; i<current_model_number - num_static; i++){
+        for(std::string name : curr_obstacle_arr){
+            // ros::Duration(0.1).sleep();
+            ROS_INFO("Trying to delete obstacle models");
+            model_delete_msg.request.model_name = name;
             delete_model_client.call(model_delete_msg);
             del_result = model_delete_msg.response.success;
             if(!del_result){
@@ -264,13 +332,16 @@ int main(int argc, char **argv) {
 
 
 
+
         delete_agent_models(model_delete_msg,delete_model_client,counter);
         counter +=1;
+
+        add_static_obstacles(num_static_obstacle,static_obstacle_xml_lib,static_obstacle_ori_name_lib,spawn_model_client);
         
         add_static_building(num_static, static_xml_lib, static_ori_name_lib, spawn_model_client);
 
         // current_model_number = std::rand() % max_num_mobile + 1 + num_static;
-        current_model_number = num_static;
+        current_model_number = num_static + num_static_obstacle;
 
         // std::vector<std::vector<float>> store_values;
         restart_pedsim_agent.call(place_holder_msg);
@@ -307,9 +378,9 @@ int main(int argc, char **argv) {
 
         // ros::spinOnce();
         image_sub_ = it_.subscribe("/rrbot/camera1/image_rect_color", 1, imageCb);
+
         
-        
-        
+             
         past_model_number = current_model_number;
         for(int i = 0; i<robot_state_number; i++){
             float temp_x = float(std::rand() % 101) / 100.0 * (location_limit_robot[2] - location_limit_robot[0]) + location_limit_robot[0];
@@ -337,7 +408,7 @@ int main(int argc, char **argv) {
                 //     output_file << '\n';
                 // }
                 // output_file.close();
-                ros::Duration(1).sleep();
+                ros::Duration(20).sleep();
                 IMG_ID += 1;
                 
             }

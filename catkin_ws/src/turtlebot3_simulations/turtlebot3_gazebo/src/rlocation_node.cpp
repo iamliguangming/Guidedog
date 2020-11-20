@@ -21,6 +21,9 @@ class RelativeLocation
   ros::Publisher point_cloud_pub;
   double bot_x;
   double bot_y;
+  ros::Publisher cmd_vel_pub;
+  geometry_msgs::Twist cmd_vel;
+
   
   public:
   RelativeLocation(int number)
@@ -30,6 +33,10 @@ class RelativeLocation
       obs_msg_pub = n.advertise<gazebo_msgs::ModelStates>("/rlocation",10);
       odom_sub = n.subscribe(odom_topic_name,10,&RelativeLocation::Odom_call_back,this);
       model_state_sub = n.subscribe(model_states_topic_name,10,&RelativeLocation::Model_states_call_back,this);
+      cmd_vel_pub = n.advertise<geometry_msgs::Twist>("/cmd_vel",10);
+      cmd_vel.linear.x =  0.22;
+      cmd_vel.angular.z = 0.00375;
+
 
   }
   void Model_states_call_back(const gazebo_msgs::ModelStates::ConstPtr &msgs)
@@ -52,6 +59,7 @@ class RelativeLocation
     }
     obs_msg_pub.publish(relative_location);
     point_cloud_pub.publish(point_cloud);
+    cmd_vel_pub.publish(cmd_vel);
 }
 
 void Odom_call_back(const nav_msgs::Odometry::ConstPtr &msgs)
