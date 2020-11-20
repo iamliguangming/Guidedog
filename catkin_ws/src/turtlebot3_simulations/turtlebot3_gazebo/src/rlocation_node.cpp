@@ -34,8 +34,8 @@ class RelativeLocation
       odom_sub = n.subscribe(odom_topic_name,10,&RelativeLocation::Odom_call_back,this);
       model_state_sub = n.subscribe(model_states_topic_name,10,&RelativeLocation::Model_states_call_back,this);
       cmd_vel_pub = n.advertise<geometry_msgs::Twist>("/cmd_vel",10);
-      cmd_vel.linear.x =  0.6;
-      cmd_vel.angular.z = 0;
+      cmd_vel.linear.x =  0.22;
+      cmd_vel.angular.z = 0.00375;
 
 
   }

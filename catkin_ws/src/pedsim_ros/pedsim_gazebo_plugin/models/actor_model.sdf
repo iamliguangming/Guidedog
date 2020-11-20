@@ -8,7 +8,8 @@
     <collision name="collision">
       <geometry>
         <box>
-          <size>.5 .5 1.5</size>
+          <size>0.001 0.001 1.5</size>
+          <!-- <size>.5 .5 1.5</size> -->
         </box>
       </geometry>
     </collision>
