@@ -14,8 +14,8 @@
 
         <!-- Gazebo Robot Parameters -->
         <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
-        <arg name="x_pos" default="-2.2"/> 
-        <arg name="y_pos" default="1.2"/>
+        <arg name="x_pos" default="5"/> 
+        <arg name="y_pos" default="5"/>
         <arg name="z_pos" default="0.5"/>
 
         <!-- Select Gazebo Robot Model. For our project, it is set to be 'burger'. -->
@@ -25,7 +25,7 @@
 
         <!-- Simulator -->
         <!-- The scene_file is modified to read from customize scenarios folder inside customize pkg -->
-        <!-- <include file="$(find pedsim_simulator)/launch/simulator.launch">
+        <include file="$(find pedsim_simulator)/launch/simulator.launch">
             <arg name="kbd_teleop" value="$(arg kbd_teleop)"/>
             <arg name="rqt_teleop" value="$(arg rqt_teleop)"/>
             <arg name="scene_file" value="$(find world_simulations)scenarios/$(arg scene_file).xml"/>
@@ -39,7 +39,7 @@
             <arg name="pose_initial_x" value="5.0"/>
             <arg name="pose_initial_y" value="5.0"/>
             <arg name="pose_initial_theta" value="0.7"/>
-        </include> -->
+        </include>
 
         <!-- Open Gazebo -->
         <!-- The .world file is modified to read from customize worlds folder inside customize pkg -->
@@ -53,16 +53,16 @@
          </include>
          
          <!-- this node spawn pedsim actors to gazebo once, then the plugin updates their pose -->  
-         <!-- <node pkg="pedsim_gazebo_plugin" type="spawn_pedsim_agents.py" name="spawn_pedsim_agents"  output="screen">
-         </node> -->
+         <node pkg="pedsim_gazebo_plugin" type="spawn_pedsim_agents.py" name="spawn_pedsim_agents"  output="screen">
+         </node>
         
         <!-- load turtlebot3 model into the gazebo world -->
         <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf"  args="-urdf -model turtlebot3_$(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
     
         <!-- load the turtlebot3 teleop key controller -->
         <param name="model" value="$(arg model)"/>
-        <node pkg="turtlebot3_teleop" type="turtlebot3_teleop_key" name="turtlebot3_teleop_keyboard"  output="screen">
-        </node>
+        <!-- <node pkg="turtlebot3_teleop" type="turtlebot3_teleop_key" name="turtlebot3_teleop_keyboard"  output="screen">
+        </node> -->
 
 </launch>
 

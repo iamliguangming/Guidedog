@@ -87,6 +87,8 @@ bool Simulator::initializeSimulation() {
       "pause_simulation", &Simulator::onPauseSimulation, this);
   srv_unpause_simulation_ = nh_.advertiseService(
       "unpause_simulation", &Simulator::onUnpauseSimulation, this);
+  srv_clear_simulation_ = nh_.advertiseService("clear_simulation", &Simulator::onClearSimulation,this);
+  srv_restart_simulation_ = nh_.advertiseService("restart_simulation",&Simulator::onRestartSimulation,this);
 
   // setup TF listener and other pointers
   transform_listener_.reset(new tf::TransformListener());
@@ -134,6 +136,7 @@ bool Simulator::initializeSimulation() {
 
   return true;
 }
+
 
 void Simulator::runSimulation() {
   ros::Rate r(CONFIG.updateRate);
@@ -189,6 +192,33 @@ void Simulator::reconfigureCB(pedsim_simulator::PedsimSimulatorConfig& config,
                                                         << " incoming rate="
                                                         << config.update_rate);
 }
+
+bool Simulator::onClearSimulation(std_srvs::Empty::Request& request,
+                                  std_srvs::Empty::Response& response)
+{
+  SCENE.clear();
+  return true;
+}
+bool Simulator::onRestartSimulation(std_srvs::Empty::Request& request,
+                                  std_srvs::Empty::Response& response)
+{
+  std::string scene_file_param;
+  nh_.param<std::string>("scene_file", scene_file_param, "");
+  ROS_INFO_STREAM("Loading scene [" << scene_file_param << "] for simulation");
+
+  const QString scenefile = QString::fromStdString(scene_file_param);
+  ScenarioReader scenario_reader;
+  if (scenario_reader.readFromFile(scenefile) == false) {
+    ROS_ERROR_STREAM(
+        "Could not load the scene file, please check the paths and param "
+        "names : "
+        << scene_file_param);
+    return false;
+  }
+  return true;
+
+}
+
 
 bool Simulator::onPauseSimulation(std_srvs::Empty::Request& request,
                                   std_srvs::Empty::Response& response) {

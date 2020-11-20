@@ -87,7 +87,9 @@ class Simulator {
                          std_srvs::Empty::Response& response);
   bool onUnpauseSimulation(std_srvs::Empty::Request& request,
                            std_srvs::Empty::Response& response);
-
+  bool onClearSimulation(std_srvs::Empty::Request& request,std_srvs::Empty::Response& response);
+  bool onRestartSimulation(std_srvs::Empty::Request& request,
+                                  std_srvs::Empty::Response& response);
   void spawnCallback(const ros::TimerEvent& event);
 
  protected:
@@ -117,6 +119,8 @@ class Simulator {
   // provided services
   ros::ServiceServer srv_pause_simulation_;
   ros::ServiceServer srv_unpause_simulation_;
+  ros::ServiceServer srv_clear_simulation_;
+  ros::ServiceServer srv_restart_simulation_;
 
   // frame ids
   std::string frame_id_;

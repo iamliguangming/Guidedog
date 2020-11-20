@@ -20,13 +20,28 @@
 #include <sensor_msgs/image_encodings.h>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
-#include <boost/filesystem.hpp> 
+#include <boost/filesystem.hpp>
+#include <std_srvs/Empty.h>
 
 
 #define PI 3.1415926
 
 
 static int IMG_ID = 0;
+
+void delete_agent_models(gazebo_msgs::DeleteModel model_delete_msg, ros::ServiceClient delete_model_client, int& counter)
+{
+    for (int i = 0 ;i<=23;i++){
+        ros::Duration(0.1).sleep();
+        model_delete_msg.request.model_name = "man"+std::to_string(i+counter*24);
+        ROS_INFO_STREAM("Deleting Model"<<model_delete_msg.request.model_name<<std::endl);
+        delete_model_client.call(model_delete_msg);
+        bool del_result = model_delete_msg.response.success;
+        if(!del_result){
+        ROS_WARN("agent model delete error occurs once");}
+
+    }
+}
 
 void get_add_message(gazebo_msgs::SpawnModel& model_add_msg, int idx, std::string xml, std::string o_name, std::vector<float> &location_limit, float theta)
 {
@@ -72,6 +87,8 @@ void add_static_building(int num_static, std::vector<std::string>& static_xml_li
         static_add_msg.request.model_name = model_name;
         std::string xml = static_xml_lib[temp_idx];
         std::string o_name = static_ori_name_lib[temp_idx];
+        // ROS_INFO("I'm Here");
+        // ROS_INFO_STREAM(xml);
         xml.replace(xml.find(o_name),o_name.length(),model_name);
         static_add_msg.request.model_xml = xml;
 
@@ -150,7 +167,12 @@ int main(int argc, char **argv) {
 
     ros::ServiceClient set_model_state_client = 
        nh.serviceClient<gazebo_msgs::SetModelState>("/gazebo/set_model_state");
+
+    ros::ServiceClient clear_pedsim_agent = 
+        nh.serviceClient<std_srvs::Empty>("/pedsim_simulator/clear_simulation");
+    ros::ServiceClient restart_pedsim_agent = nh.serviceClient<std_srvs::Empty>("/pedsim_simulator/restart_simulation");
     
+    std_srvs::Empty place_holder_msg;
     // model add msg
     gazebo_msgs::SpawnModel model_add_msg;
     
@@ -208,14 +230,14 @@ int main(int argc, char **argv) {
     location_limit_p = {2, 1, 10, 5};
 
     std::vector<float> location_limit_robot(4);
-    location_limit_robot = {-2, 2, 1, 4};
+    location_limit_robot = {3, 2, 5, 4};
 
     std::vector<float> robot_theta_limit(2);
     robot_theta_limit = {-0.2, 0.2};
 
     // angle cahnge per time:
     float angle_change = (robot_theta_limit[1] - robot_theta_limit[0]) / robot_angle_number;
-
+    clear_pedsim_agent.call(place_holder_msg);
 
     // success flag
     bool del_result;
@@ -223,56 +245,71 @@ int main(int argc, char **argv) {
 
     image_transport::ImageTransport it_(nh);
     image_transport::Subscriber image_sub_;
-
+    int count = 0;
+    int& counter = count;
     while(ros::ok()){
+
+        clear_pedsim_agent.call(place_holder_msg);
+        ros::Duration(2).sleep();
         for(int i=0; i<past_model_number; i++){
+            ros::Duration(0.1).sleep();
+            ROS_INFO("Trying to delete buiding models");
             model_delete_msg.request.model_name = "model_" + std::to_string(i);
             delete_model_client.call(model_delete_msg);
-            del_result = model_add_msg.response.success;
+            del_result = model_delete_msg.response.success;
             if(!del_result){
                 ROS_WARN("delete error occurs once");
             }
         }
+
+
+
+        delete_agent_models(model_delete_msg,delete_model_client,counter);
+        counter +=1;
         
         add_static_building(num_static, static_xml_lib, static_ori_name_lib, spawn_model_client);
 
-        current_model_number = std::rand() % max_num_mobile + 1 + num_static;
+        // current_model_number = std::rand() % max_num_mobile + 1 + num_static;
+        current_model_number = num_static;
 
-        std::vector<std::vector<float>> store_values;
+        // std::vector<std::vector<float>> store_values;
+        restart_pedsim_agent.call(place_holder_msg);
+        // ros::Duration(1).sleep();
+
 
         // current_model_number = 1;
-        for(int i=num_static; i<current_model_number; i++){
-            int temp_idx = std::rand() % mobile_xml_lib.size();
-            float theta = float(std::rand() % 100)/99.0 * PI;
-            get_add_message(model_add_msg, i, mobile_xml_lib[temp_idx], mobile_ori_name_lib[temp_idx], location_limit_p, theta);
-            // cout << model_add_msg.request.model_xml;
-            spawn_model_client.call(model_add_msg);
+        // for(int i=num_static; i<current_model_number; i++){
+        //     int temp_idx = std::rand() % mobile_xml_lib.size();
+        //     float theta = float(std::rand() % 100)/99.0 * PI;
+        //     get_add_message(model_add_msg, i, mobile_xml_lib[temp_idx], mobile_ori_name_lib[temp_idx], location_limit_p, theta);
+        //     // cout << model_add_msg.request.model_xml;
+        //     spawn_model_client.call(model_add_msg);
 
-            std::vector<float> current_model_data(8);
+        //     std::vector<float> current_model_data(8);
             
-            current_model_data[0] =  temp_idx;
-            current_model_data[1] =  model_add_msg.request.initial_pose.position.x;
-            current_model_data[2] =  model_add_msg.request.initial_pose.position.y;
-            current_model_data[3] =  model_add_msg.request.initial_pose.position.z;
-            current_model_data[4] =  theta;
-            current_model_data[5] =  mobile_scale[temp_idx][0];
-            current_model_data[6] =  mobile_scale[temp_idx][1];
-            current_model_data[7] =  mobile_scale[temp_idx][2];
+        //     current_model_data[0] =  temp_idx;
+        //     current_model_data[1] =  model_add_msg.request.initial_pose.position.x;
+        //     current_model_data[2] =  model_add_msg.request.initial_pose.position.y;
+        //     current_model_data[3] =  model_add_msg.request.initial_pose.position.z;
+        //     current_model_data[4] =  theta;
+        //     current_model_data[5] =  mobile_scale[temp_idx][0];
+        //     current_model_data[6] =  mobile_scale[temp_idx][1];
+        //     current_model_data[7] =  mobile_scale[temp_idx][2];
 
-            store_values.push_back(current_model_data);
+        //     store_values.push_back(current_model_data);
 
-            //make sure service call was successful
-            add_result = model_add_msg.response.success;
-            if (!add_result){
-                ROS_WARN("generate error occurs once");
-            }
-        }
+        //     //make sure service call was successful
+        //     add_result = model_add_msg.response.success;
+        //     if (!add_result){
+        //         ROS_WARN("generate error occurs once");
+        //     }
+        // }
 
-        ros::spinOnce();
+        // ros::spinOnce();
         image_sub_ = it_.subscribe("/rrbot/camera1/image_rect_color", 1, imageCb);
+
         
-        
-        
+             
         past_model_number = current_model_number;
         for(int i = 0; i<robot_state_number; i++){
             float temp_x = float(std::rand() % 101) / 100.0 * (location_limit_robot[2] - location_limit_robot[0]) + location_limit_robot[0];
@@ -286,26 +323,27 @@ int main(int argc, char **argv) {
                 camera_status[1] = temp_y;
                 camera_status[2] = 0;
                 camera_status[3] = temp_theta;
-                int len = store_values.size();
-                if (store_values[len-1].size() == 8){
-                    store_values.push_back(camera_status);
-                }
-                else{
-                    store_values[len-1] = camera_status;
-                }
-                std::ofstream output_file("src/generate_data/data/label/" + std::to_string(IMG_ID) + ".txt");
-                std::ostream_iterator<float> output_iterator(output_file, " ");
-                for (auto item : store_values){
-                    std::copy(item.begin(), item.end(), output_iterator);
-                    output_file << '\n';
-                }
-                output_file.close();
-                ros::spinOnce();
-                ros::Duration(1).sleep();
+                // int len = store_values.size();
+                // if (store_values[len-1].size() == 8){
+                //     store_values.push_back(camera_status);
+                // }
+                // else{
+                //     store_values[len-1] = camera_status;
+                // }
+                // std::ofstream output_file("src/generate_data/data/label/" + std::to_string(IMG_ID) + ".txt");
+                // std::ostream_iterator<float> output_iterator(output_file, " ");
+                // for (auto item : store_values){
+                //     std::copy(item.begin(), item.end(), output_iterator);
+                //     output_file << '\n';
+                // }
+                // output_file.close();
+                ros::Duration(10).sleep();
                 IMG_ID += 1;
                 
             }
+
         }
+        ros::spinOnce();
 
         
 
