@@ -115,10 +115,14 @@ void add_static_obstacles(int num_static, std::vector<std::string>& static_xml_l
                             ros::ServiceClient& spawn_model_client){
     gazebo_msgs::SpawnModel static_add_msg;
     double random_y_shift = (std::rand() % 100 - 20) / 99.0 * 5;
+    int stop_light_count = 0;
+    int last_light_location = 0;
     
     for(int i=0; i<num_static; i++){
         
         int temp_idx = std::rand() % static_xml_lib.size();
+        while (((i / 2) * 3 + random_y_shift - last_light_location < 12 || stop_light_count > 1) &&(static_ori_name_lib[temp_idx]=="stop_light" || static_ori_name_lib[temp_idx]=="stop_light_green"))
+        temp_idx = std::rand() % static_xml_lib.size();
         std::string xml = static_xml_lib[temp_idx];
         std::string o_name = static_ori_name_lib[temp_idx];
         std::string model_name = o_name + std::to_string(i);
@@ -130,6 +134,10 @@ void add_static_obstacles(int num_static, std::vector<std::string>& static_xml_l
         static_add_msg.request.model_xml = xml;
 
         static_add_msg.request.initial_pose.position.x = (i / 2) * 3 + random_y_shift;
+        if (o_name == "stop_light" || o_name == "stop_light_green"){
+            stop_light_count+=1;
+            last_light_location = static_add_msg.request.initial_pose.position.x;
+        }
         static_add_msg.request.initial_pose.position.y = std::pow(-1, i+1) * 3.5 + 5;
         static_add_msg.request.initial_pose.position.z = 0;
         static_add_msg.request.initial_pose.orientation.x = 0;
@@ -259,8 +267,10 @@ int main(int argc, char **argv) {
     input_static_obstacle_name.push_back("stop_sign");
     input_static_obstacle_xml.push_back("src/generate_data/models/mailbox/model.sdf");
     input_static_obstacle_name.push_back("mailbox");
-   input_static_obstacle_xml.push_back("src/generate_data/models/stop_light/model.sdf");
+    input_static_obstacle_xml.push_back("src/generate_data/models/stop_light/model.sdf");
     input_static_obstacle_name.push_back("stop_light");
+    input_static_obstacle_xml.push_back("src/generate_data/models/stop_light_green/model.sdf");
+    input_static_obstacle_name.push_back("stop_light_green");
 
 
 
@@ -386,14 +396,14 @@ int main(int argc, char **argv) {
             float temp_x = float(std::rand() % 101) / 100.0 * (location_limit_robot[2] - location_limit_robot[0]) + location_limit_robot[0];
             float temp_y = float(std::rand() % 101) / 100.0 * (location_limit_robot[3] - location_limit_robot[1]) + location_limit_robot[1];
             for(int j = 0; j<robot_angle_number; j++){
-                float temp_theta = robot_theta_limit[0] + (j+1) * (float(std::rand() % 101) / 100.0) * angle_change;
-                get_change_msg(model_state_msg, temp_x, temp_y, temp_theta);
+                // float temp_theta = robot_theta_limit[0] + (j+1) * (float(std::rand() % 101) / 100.0) * angle_change;
+                get_change_msg(model_state_msg, temp_x, temp_y, 0);
                 set_model_state_client.call(model_state_msg);
                 std::vector<float> camera_status(4);
                 camera_status[0] = temp_x;
                 camera_status[1] = temp_y;
                 camera_status[2] = 0;
-                camera_status[3] = temp_theta;
+                camera_status[3] = 0;
                 // int len = store_values.size();
                 // if (store_values[len-1].size() == 8){
                 //     store_values.push_back(camera_status);
