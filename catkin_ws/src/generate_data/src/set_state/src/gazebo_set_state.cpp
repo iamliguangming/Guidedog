@@ -31,9 +31,9 @@ static std::vector<std::string> curr_obstacle_arr;
 
 void delete_agent_models(gazebo_msgs::DeleteModel model_delete_msg, ros::ServiceClient delete_model_client, int& counter)
 {
-    for (int i = 0 ;i<=23;i++){
+    for (int i = 0 ;i<=11;i++){
         // ros::Duration(0.1).sleep();
-        model_delete_msg.request.model_name = "man"+std::to_string(i+counter*24);
+        model_delete_msg.request.model_name = "man"+std::to_string(i+counter*12); //The number here should match the number of pedestrains
         ROS_INFO_STREAM("Deleting Model"<<model_delete_msg.request.model_name<<std::endl);
         delete_model_client.call(model_delete_msg);
         bool del_result = model_delete_msg.response.success;
@@ -297,7 +297,7 @@ int main(int argc, char **argv) {
     location_limit_p = {2, 1, 10, 5};
 
     std::vector<float> location_limit_robot(4);
-    location_limit_robot = {5, 2, 10, 4};
+    location_limit_robot = {0, 2, 2, 4};
 
     std::vector<float> robot_theta_limit(2);
     robot_theta_limit = {-0.1, 0.1};

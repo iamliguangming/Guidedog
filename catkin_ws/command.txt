@@ -1,4 +1,4 @@
- rosbag record -O sample /gazebo/model_states /rrbot/camera1/camera_info /rrbot/camera1/image_raw /odom
+ rosbag record -O sample /gazebo/model_states /rrbot/camera1/camera_info 
  rosrun image_view video_recorder image:=/rrbot/camera1/image_raw
 
 

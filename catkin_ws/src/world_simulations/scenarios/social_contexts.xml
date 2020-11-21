@@ -10,7 +10,7 @@
   <!--Waypoints (incl. WaitingQueues)-->
 
 
-<waypoint id="test1" x="50" y="5" r="2"/>
+<waypoint id="test1" x="25" y="5" r="2"/>
 <waypoint id="start" x="5" y="5" r="2"/>
 <waypoint id="left" x="0" y="0" r="2"/>
 <waypoint id="right" x="0" y="25" r="2"/>
@@ -24,16 +24,16 @@
         <addwaypoint id="robot_goal"/>
     </agent> -->
     <!--AgentClusters-->
-    <agent x="5" y="5" n="8" dx="10" dy="5" type="0">
+    <agent x="5" y="5" n="4" dx="10" dy="5" type="0">
         <addwaypoint id="test1"/>
     </agent>
-    <agent x="25" y="5" n="7" dx="10" dy="5" type="0">
+    <agent x="25" y="5" n="3" dx="10" dy="5" type="0">
         <addwaypoint id="start"/>
     </agent>
-    <agent x="0" y="0" n="4" dx="10" dy="5" type="0">
+    <agent x="0" y="0" n="2" dx="10" dy="5" type="0">
         <addwaypoint id="right"/>
     </agent>
-    <agent x="0" y="25" n="5" dx="10" dy="5" type="0">
+    <agent x="0" y="25" n="3" dx="10" dy="5" type="0">
         <addwaypoint id="left"/>
     </agent>
     <!-- <agent x="7" y="5" n="5" dx="20" dy="20" type="1">

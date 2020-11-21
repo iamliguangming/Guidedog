@@ -37,6 +37,8 @@
         </constraints>
       </ode>
     </physics>
+    <plugin name="ActorPosesPlugin" filename="libActorPosesPlugin.so">
+    </plugin>
   </world>
 
 </sdf>

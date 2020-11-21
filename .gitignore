@@ -7,3 +7,5 @@ catkin_ws/src/generate_data/build
 catkin_ws/src/generate_data/devel
 catkin_ws/src/generate_data/data
 catkin_ws/sample.bag
+catkin_ws/image.zip
+catkin_ws/command.txt
