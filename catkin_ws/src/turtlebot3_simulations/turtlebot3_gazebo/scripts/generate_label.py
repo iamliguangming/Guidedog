@@ -11,7 +11,8 @@ from matplotlib import patches
 import pandas as pd
 import numpy as np
 matplotlib.use('Agg')
-b = bagreader('samplev1.bag')
+name = "0009"
+b = bagreader('/mnt/new/bagfile/' + name + '.bag')
 
 # replace the topic name as per your need
 model_states, t_model = b.message_by_topic('/gazebo/model_states')
@@ -20,14 +21,15 @@ camera_infos, t_camera = b.message_by_topic('/rrbot/camera1/camera_info')
  # prints laser data in the form of pandas dataframe
 
 # def world_camera(wor)
-image_folder_name = 'training_set'
-entries = os.listdir('.\\{}'.format(image_folder_name))
+image_folder_name = '/mnt/new/guidedog/raw_image/' + name
+entries = os.listdir('{}'.format(image_folder_name))
 image_time_list=[]
-a = list(map(lambda x: x.replace('.jpeg',''),entries))
+a = list(map(lambda x: x.replace('.png',''),entries))
 flag= False
 for entry in a:
     image_time_list.append(int(entry))
 idx_max = len(image_time_list)
+image_time_list.sort()
 image_list_tracking_idx = 0
 import math
 
@@ -61,8 +63,10 @@ def IOU(bbox_1, bbox_2):
   iou = (inter_area + 1e-9) / (union_area + 1e-9)
   return iou
 
-os.makedirs("resultcheck", exist_ok=True)
-with open('train_label.txt', 'w') as f:
+check_path = "/mnt/new/guidedog/resultcheck/" + name
+label_path = "/mnt/new/guidedog/label/"
+os.makedirs(check_path, exist_ok=True)
+with open(label_path + name + '.txt', 'w') as f:
 
     for f_idx, msgs in enumerate(model_states):
             name = msgs.name
@@ -124,7 +128,7 @@ with open('train_label.txt', 'w') as f:
             ])
             h_cam_world = h_cam_link @ h_link_world
 
-            img = ".\\{}\\{}.jpeg".format(image_folder_name,current_image_stamp)
+            img = "{}/{}.png".format(image_folder_name,current_image_stamp)
             img_vis = mpimg.imread(img)
             # fig, ax = plt.subplots(1, 1)
             fig, ax = plt.subplots()
@@ -221,14 +225,14 @@ with open('train_label.txt', 'w') as f:
                     local_point7 = np.array([-0.2, 0.2, -0.9, 1])
                     local_point8 = np.array([0.2, -0.2, -0.9, 1])
                 elif obj_class == "stop_light":
-                    local_point1 = np.array([-0.2, 0, -0.9, 1])
-                    local_point2 = np.array([0.2, -0.05, -0.9, 1])
-                    local_point3 = np.array([-0.2, -0.05, -0.9, 1])
-                    local_point4 = np.array([0.2, 0, -0.9, 1])
-                    local_point5 = np.array([-0.2, 0, -1.75, 1])
-                    local_point6 = np.array([0.2, -0.05, -1.75, 1])
-                    local_point7 = np.array([-0.2, -0.05, -1.75, 1])
-                    local_point8 = np.array([0.2, 0, -1.75, 1])
+                    local_point1 = np.array([-0.28, 0.075, -0.9, 1])
+                    local_point2 = np.array([0, -0.175, -0.9, 1])
+                    local_point3 = np.array([-0.28, -0.075, -0.9, 1])
+                    local_point4 = np.array([0, 0.075, -0.9, 1])
+                    local_point5 = np.array([-0.28, 0.075, -1.75, 1])
+                    local_point6 = np.array([0, -0.175, -1.75, 1])
+                    local_point7 = np.array([-0.28, -0.175, -1.75, 1])
+                    local_point8 = np.array([0, 0.075, -1.75, 1])
                 elif obj_class == "mailbox":
                     local_point1 = np.array([-0.07, -0.15, 0.1, 1])
                     local_point2 = np.array([0.07, 0.15, 0.1, 1])
@@ -345,7 +349,7 @@ with open('train_label.txt', 'w') as f:
                 elif obj_class == "stop_light":
                     color = light_color
                     each_obj += [image_list_tracking_idx - 1, -1, obj_class, trunc, 0, alpha, umin, vmin, umax,
-                                vmax, 0.4, 0.05, 0.85, cam_point[0], cam_point[1], cam_point[2], rotation_y, color]
+                                vmax, 0.28, 0.25, 0.85, cam_point[0], cam_point[1], cam_point[2], rotation_y, color]
 
 
 
@@ -357,7 +361,7 @@ with open('train_label.txt', 'w') as f:
                 continue
 
             else:
-                    result_dir = ".\\resultcheck\\{}.jpeg".format(current_image_stamp)
+                    result_dir = "{}/{}.png".format(check_path, current_image_stamp)
                     plt.savefig(result_dir)
                     plt.close('all')
                     array_frame = pd.DataFrame(list_frame)

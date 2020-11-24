@@ -10,10 +10,11 @@
   <!--Waypoints (incl. WaitingQueues)-->
 
 
-<waypoint id="test1" x="25" y="5" r="2"/>
-<waypoint id="start" x="5" y="5" r="2"/>
-<waypoint id="left" x="0" y="0" r="2"/>
-<waypoint id="right" x="0" y="25" r="2"/>
+<waypoint id="test1" x="60" y="0.5" r="2"/>
+<waypoint id="start1" x="-10" y="0.2" r="2"/>
+<waypoint id="start2" x="-10" y="-2" r="2"/>
+<waypoint id="left" x="40" y="-3" r="2"/>
+<waypoint id="right" x="40" y="25" r="2"/>
 
   <queue id="info_desk" x="20" y="15" direction="0"/>
 
@@ -24,17 +25,63 @@
         <addwaypoint id="robot_goal"/>
     </agent> -->
     <!--AgentClusters-->
-    <agent x="5" y="5" n="4" dx="10" dy="5" type="0">
+    <agent x="-5" y="0.2" n="1" dx="10" dy="5" type="0">
+        <addwaypoint id="test1"/>
+        <addwaypoint id="start1"/>
+        <addwaypoint id="test1"/>
+        <addwaypoint id="start1"/>
+    </agent>
+    <agent x="-15" y="-2.2" n="1" dx="30" dy="5" type="0">
+        <addwaypoint id="test1"/>
+        <addwaypoint id="start2"/>
+        <addwaypoint id="test1"/>
+        <addwaypoint id="start2"/>
+    </agent>
+    <agent x="35" y="0.2" n="1" dx="8" dy="5" type="0">
+        <addwaypoint id="start1"/>
+        <addwaypoint id="test1"/>
+        <addwaypoint id="start1"/>
         <addwaypoint id="test1"/>
     </agent>
-    <agent x="25" y="5" n="3" dx="10" dy="5" type="0">
-        <addwaypoint id="start"/>
+    <agent x="15" y="-2.2" n="1" dx="6" dy="5" type="0">
+        <addwaypoint id="start2"/>
+        <addwaypoint id="test1"/>
+        <addwaypoint id="start2"/>
+        <addwaypoint id="test1"/>
     </agent>
-    <agent x="0" y="0" n="2" dx="10" dy="5" type="0">
+    <!-- <agent x="25" y="0.2" n="1" dx="13" dy="5" type="0">
+        <addwaypoint id="start1"/>
+        <addwaypoint id="test1"/>
+        <addwaypoint id="start1"/> -->
+    <!-- </agent> -->
+    <agent x="30" y="0.2" n="1" dx="4" dy="5" type="0">
+        <addwaypoint id="start1"/>
+        <addwaypoint id="test1"/>
+        <addwaypoint id="start1"/>
+    </agent>
+    <agent x="65" y="-2.2" n="2" dx="17" dy="5" type="0">
+        <addwaypoint id="start2"/>
+        <addwaypoint id="test1"/>
+        <addwaypoint id="start2"/>
+        <addwaypoint id="test1"/>
+    </agent>
+    <agent x="55" y="0.2" n="2" dx="22" dy="5" type="0">
+        <addwaypoint id="start1"/>
+        <addwaypoint id="test1"/>
+        <addwaypoint id="start1"/>
+        <addwaypoint id="test1"/>
+    </agent>
+    <!-- <agent x="15" y="0" n="2" dx="10" dy="5" type="0">
         <addwaypoint id="right"/>
-    </agent>
-    <agent x="0" y="25" n="3" dx="10" dy="5" type="0">
         <addwaypoint id="left"/>
+        <addwaypoint id="right"/>
+        <addwaypoint id="left"/>
+    </agent> -->
+    <agent x="15" y="25" n="2" dx="15" dy="5" type="0">
+        <addwaypoint id="left"/>
+        <addwaypoint id="right"/>
+        <addwaypoint id="left"/>
+        <addwaypoint id="right"/>
     </agent>
     <!-- <agent x="7" y="5" n="5" dx="20" dy="20" type="1">
         <addqueue id="info_desk"/>
