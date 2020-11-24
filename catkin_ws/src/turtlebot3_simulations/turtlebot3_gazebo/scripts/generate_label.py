@@ -188,6 +188,7 @@ with open(label_path + name + '.txt', 'w') as f:
                     local_point6 = np.array([0.25, 0.25, -1.7, 1])
                     local_point7 = np.array([-0.25, 0.25, -1.7, 1])
                     local_point8 = np.array([0.25, -0.25, -1.7, 1])
+                    local_point = np.array([0, 0, -0.725, 1])
                 elif obj_class == "oak_tree":
                     local_point1 = np.array([-0.4, -0.3, 1.2, 1])
                     local_point2 = np.array([0.2, 0.3, 1.2, 1])
@@ -197,6 +198,7 @@ with open(label_path + name + '.txt', 'w') as f:
                     local_point6 = np.array([0.2, 0.3, -0.8, 1])
                     local_point7 = np.array([-0.4, 0.3, -0.8, 1])
                     local_point8 = np.array([0.2, -0.3, -0.8, 1])
+                    local_point = np.array([-0.1, 0, 0.2, 1])
                 elif obj_class == "stop_sign":
                     local_point1 = np.array([-0.25, -0.05, 0.9, 1])
                     local_point2 = np.array([0.25, 0.01, 0.9, 1])
@@ -206,6 +208,7 @@ with open(label_path + name + '.txt', 'w') as f:
                     local_point6 = np.array([0.25, 0.01, 0.3, 1])
                     local_point7 = np.array([-0.25, 0.01, 0.3, 1])
                     local_point8 = np.array([0.25, -0.05, 0.3, 1])
+                    local_point = np.array([0, -0.02, 0.6, 1])
                 elif obj_class == "trash_can":
                     local_point1 = np.array([-0.25, -0.25, -0.1, 1])
                     local_point2 = np.array([0.25, 0.25, -0.1, 1])
@@ -215,6 +218,7 @@ with open(label_path + name + '.txt', 'w') as f:
                     local_point6 = np.array([0.25, 0.25, -0.9, 1])
                     local_point7 = np.array([-0.25, 0.25, -0.9, 1])
                     local_point8 = np.array([0.25, -0.25, -0.9, 1])
+                    local_point = np.array([0, 0, -0.5, 1])
                 elif obj_class == "fire_hydrant":
                     local_point1 = np.array([-0.2, -0.2, 0.1, 1])
                     local_point2 = np.array([0.2, 0.2, 0.1, 1])
@@ -224,6 +228,7 @@ with open(label_path + name + '.txt', 'w') as f:
                     local_point6 = np.array([0.2, 0.2, -0.9, 1])
                     local_point7 = np.array([-0.2, 0.2, -0.9, 1])
                     local_point8 = np.array([0.2, -0.2, -0.9, 1])
+                    local_point = np.array([0, 0, -0.4, 1])
                 elif obj_class == "stop_light":
                     local_point1 = np.array([-0.28, 0.075, -0.9, 1])
                     local_point2 = np.array([0, -0.175, -0.9, 1])
@@ -233,6 +238,7 @@ with open(label_path + name + '.txt', 'w') as f:
                     local_point6 = np.array([0, -0.175, -1.75, 1])
                     local_point7 = np.array([-0.28, -0.175, -1.75, 1])
                     local_point8 = np.array([0, 0.075, -1.75, 1])
+                    local_point = np.array([-0.14, -0.05, -1.325, 1])
                 elif obj_class == "mailbox":
                     local_point1 = np.array([-0.07, -0.15, 0.1, 1])
                     local_point2 = np.array([0.07, 0.15, 0.1, 1])
@@ -242,6 +248,7 @@ with open(label_path + name + '.txt', 'w') as f:
                     local_point6 = np.array([0.07, 0.15, -0.15, 1])
                     local_point7 = np.array([-0.07, 0.15, -0.15, 1])
                     local_point8 = np.array([0.07, -0.15, -0.15, 1])
+                    local_point = np.array([0, 0, -0.025, 1])
 
 
 
@@ -253,9 +260,9 @@ with open(label_path + name + '.txt', 'w') as f:
                 cam_point6 = (h_cam_world @ h_world_man @ local_point6).astype(float)
                 cam_point7 = (h_cam_world @ h_world_man @ local_point7).astype(float)
                 cam_point8 = (h_cam_world @ h_world_man @ local_point8).astype(float)
-                cam_point = (h_cam_world @ h_world_man @ np.array([0,0,0,1])).astype(float)
-                cam_point_front = (h_cam_world @ h_world_man @ np.array([1, 0, 0, 1])).astype(float)
-                cam_point_up = (h_cam_world @ h_world_man @ np.array([0, 0, 1, 1])).astype(float)
+                cam_point = (h_cam_world @ h_world_man @ local_point).astype(float)
+                cam_point_front = (h_cam_world @ h_world_man @ (local_point + np.array([1, 0, 0, 0]))).astype(float)
+                cam_point_up = (h_cam_world @ h_world_man @ (local_point + np.array([0, 0, 1, 0]))).astype(float)
                 # in camera frame
                 vector_front_in_cam = (cam_point_front - cam_point)
                 vector_front_in_cam_xz = np.array([vector_front_in_cam[0],vector_front_in_cam[2]])
@@ -329,7 +336,7 @@ with open(label_path + name + '.txt', 'w') as f:
                 elif obj_class == "fire_hydrant":
                     color = -1
                     each_obj += [image_list_tracking_idx - 1, -1, obj_class, trunc, 0, alpha, umin, vmin, umax,
-                                vmax, 0.4, 0.4, 0.8, cam_point[0], cam_point[1], cam_point[2], rotation_y, color]
+                                vmax, 0.4, 0.4, 1, cam_point[0], cam_point[1], cam_point[2], rotation_y, color]
                 elif obj_class == "trash_can":
                     color = -1
                     each_obj += [image_list_tracking_idx - 1, -1, obj_class, trunc, 0, alpha, umin, vmin, umax,
