@@ -232,7 +232,7 @@ with open(label_path + name + '.txt', 'w') as f:
                 elif obj_class == "stop_light":
                     local_point1 = np.array([-0.28, 0.075, -0.9, 1])
                     local_point2 = np.array([0, -0.175, -0.9, 1])
-                    local_point3 = np.array([-0.28, -0.075, -0.9, 1])
+                    local_point3 = np.array([-0.28, -0.175, -0.9, 1])
                     local_point4 = np.array([0, 0.075, -0.9, 1])
                     local_point5 = np.array([-0.28, 0.075, -1.75, 1])
                     local_point6 = np.array([0, -0.175, -1.75, 1])
