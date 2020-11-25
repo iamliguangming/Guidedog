@@ -63,7 +63,7 @@ nav_msgs::Path GlobalPathFinder::find_path(const std::vector<double> &start_cell
 
         int curr_cell_idx = curr_cell.second;
         if(curr_cell_idx == goal_cell_idx) break;  // goal reached. Stop dijkstra.
-
+        
         add_adjacent_cell(curr_cell_idx);
 
         std::list<std::pair<int, int>>::iterator it;
@@ -72,6 +72,7 @@ nav_msgs::Path GlobalPathFinder::find_path(const std::vector<double> &start_cell
         for(it = curr_adjacent_list.begin(); it != curr_adjacent_list.end(); it++){
             int dist_to_adj = (*it).first;
             int adj_idx = (*it).second;
+
             if (cost[adj_idx] > cost[curr_cell_idx] + dist_to_adj){
                 if (cost[adj_idx] != INF){
                     // remove the neighbor cell from sets for updating
@@ -80,6 +81,7 @@ nav_msgs::Path GlobalPathFinder::find_path(const std::vector<double> &start_cell
                     for(it_parents = parents.begin(); it_parents != parents.end(); it_parents++){
                         if((*it_parents).second == adj_idx)
                             parents.erase(it_parents);
+                            break;
                     }
                 }
                 cost[adj_idx] = cost[curr_cell_idx] + dist_to_adj; // update the cell's cost

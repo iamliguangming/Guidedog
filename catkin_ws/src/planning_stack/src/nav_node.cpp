@@ -60,7 +60,9 @@ int main(int argc, char** argv){
     // std::vector<double> start = {77.0, 240 * 0.3};
     // std::vector<double> goal = {173.0, 550 * 0.3};    
     std::vector<double> start = {50.11 + map_offset_x, -51.59 + map_offset_y};
-    std::vector<double> goal = {140.0, -51.59 + map_offset_y};
+    //std::vector<double> goal = {140.0, -51.59 + map_offset_y};
+    std::vector<double> goal = {52.33, 105.87}; 
+    
     std::vector<int> start_discre = map.get_curr_grid_pos(start);
     std::vector<int> goal_discre = map.get_curr_grid_pos(goal);
 
@@ -74,9 +76,9 @@ int main(int argc, char** argv){
 
     dijkstra_finder.publish_path();
 
-    PotentialField PF(path, map);
-    PF.init();
-    PF.run();
+    // PotentialField PF(path, map);
+    // PF.init();
+    // PF.run();
 
     
     //===========================Test Publish Topic and Visualization===============
