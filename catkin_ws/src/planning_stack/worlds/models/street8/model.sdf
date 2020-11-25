@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-  <model name='pednopass'>
+  <model name='street8'>
   <static>true</static>
     <link name='link_0'>
       <inertial>
@@ -19,7 +19,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/yuchen/Documents/CIS700/world02/models/pednopass/pednopass.dae</uri>
+            <uri>/home/yuchen/Documents/CIS700/world02/models/street8/street8.dae</uri>
             <!--<uri>model://simplemodified.dae</uri>-->
             <scale>1 1 1</scale>
           </mesh>
@@ -40,7 +40,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/yuchen/Documents/CIS700/world02/models/pednopass/pednopass.dae</uri>
+            <uri>/home/yuchen/Documents/CIS700/world02/models/street8/street8.dae</uri>
             <!--<uri>model://simplemodified.dae</uri>-->
             <scale>1 1 1</scale>
           </mesh>
@@ -48,8 +48,8 @@
         <surface>
           <friction>
             <ode>
-              <mu>1</mu>
-              <mu2>1</mu2>
+              <mu>2</mu>
+              <mu2>2</mu2>
               <fdir1>0 0 0</fdir1>
               <slip1>0</slip1>
               <slip2>0</slip2>

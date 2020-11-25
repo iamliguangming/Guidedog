@@ -54,8 +54,13 @@ int main(int argc, char** argv){
     ROS_INFO("Testing find_path function");
     // std::vector<double> start = {275 * 0.3, 240 * 0.3};
     // std::vector<double> goal = {255 * 0.3, 545 * 0.3};
-    std::vector<double> start = {77, 240 * 0.3};
-    std::vector<double> goal = {173, 550 * 0.3};
+    double map_offset_x = 115.0;
+    double map_offset_y = 115.0; 
+    
+    // std::vector<double> start = {77.0, 240 * 0.3};
+    // std::vector<double> goal = {173.0, 550 * 0.3};    
+    std::vector<double> start = {50.11 + map_offset_x, -51.59 + map_offset_y};
+    std::vector<double> goal = {140.0, -51.59 + map_offset_y};
     std::vector<int> start_discre = map.get_curr_grid_pos(start);
     std::vector<int> goal_discre = map.get_curr_grid_pos(goal);
 

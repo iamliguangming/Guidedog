@@ -3,27 +3,19 @@
 <scenario>
     <!--Obstacles-->
   
-  <obstacle x1="48" y1="-53" x2="-48" y2="-53"/>
-  <obstacle x1="-48" y1="-53" x2="-48" y2="-49"/>
-  <obstacle x1="-48" y1="-49" x2="48" y2="-49"/>
-  <obstacle x1="48" y1="-49" x2="48" y2="-53"/>
-<!--
-  <obstacle x1="11" y1="12" x2="11" y2="50"/>
-  <obstacle x1="11" y1="50" x2="15" y2="50"/>
-  <obstacle x1="15" y1="50" x2="15" y2="12"/>
-  <obstacle x1="15" y1="12" x2="11" y2="12"/>
--->
+  <obstacle x1="10" y1="12" x2="10" y2="50"/>
+  <obstacle x1="10" y1="50" x2="14" y2="50"/>
+    <obstacle x1="14" y1="50" x2="14" y2="12"/>
+    <obstacle x1="14" y1="12" x2="10" y2="12"/>
   <!-- <obstacle x1="-0.5" y1="-0.5" x2="29.5" y2="-0.5"/>
   <obstacle x1="-0.5" y1="-0.5" x2="-0.5" y2="29.5"/>
   <obstacle x1="-0.5" y1="29.5" x2="29.5" y2="29.5"/>
     <obstacle x1="29.5" y1="29.5" x2="29.5" y2="-0.5"/> -->
 
   <!--Waypoints (incl. WaitingQueues)-->
-  <waypoint id="wp1" x="44" y="-51" r="5"/>  
-  <waypoint id="wp2" x="24" y="-51" r="5"/>
-  <waypoint id="wp3" x="4" y="-51" r="5"/>
-  <waypoint id="wp4" x="-24" y="-51" r="5"/>
-  <waypoint id="wp5" x="-44" y="-51" r="5"/>
+  <waypoint id="wp1" x="13" y="40" r="5"/>  
+  <waypoint id="wp2" x="13" y="24" r="5"/>
+  <waypoint id="wp3" x="13" y="12" r="5"/>
 
   <!-- <queue id="info_desk" x="20" y="15" direction="0"/> -->
 
@@ -35,12 +27,10 @@
     </agent> -->
 
     <!--AgentClusters-->
-    <agent x="-46" y="-51" n="10" dx="5" dy="20" type="0">    
+    <agent x="13" y="45" n="4" dx="5" dy="20" type="0">    
         <addwaypoint id="wp1"/>
         <addwaypoint id="wp2"/>
         <addwaypoint id="wp3"/>
-        <addwaypoint id="wp4"/>
-        <addwaypoint id="wp5"/>
     </agent>
 
     <!-- <agent x="7" y="5" n="5" dx="20" dy="20" type="1">
