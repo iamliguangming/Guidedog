@@ -97,7 +97,9 @@ nav_msgs::Path GlobalPathFinder::find_path(const std::vector<double> &start_cell
     geometry_msgs::PoseStamped pose;
     // set use_sim_time false!!!! to publish.
     //pose.header.stamp = ros::Time::now();
-    pose.header.frame_id = "map";
+    world_frame = map->get_world_frame_id();
+    pose.header.frame_id = world_frame;
+    path.header.frame_id = world_frame;
     while(true){
         for(it_parents = parents.begin(); it_parents != parents.end(); it_parents++){
             if((*it_parents).second == backtrace_cell_idx){
@@ -117,6 +119,7 @@ nav_msgs::Path GlobalPathFinder::find_path(const std::vector<double> &start_cell
             break; 
         }
     }
+
     return path;
 
 }

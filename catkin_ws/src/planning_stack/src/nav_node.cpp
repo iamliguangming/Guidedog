@@ -52,8 +52,10 @@ int main(int argc, char** argv){
 
     // // Test path finding function
     ROS_INFO("Testing find_path function");
-    std::vector<double> start = {250 * 0.3, 500 * 0.3};
-    std::vector<double> goal = {250 * 0.3, 520 * 0.3};
+    // std::vector<double> start = {275 * 0.3, 240 * 0.3};
+    // std::vector<double> goal = {255 * 0.3, 545 * 0.3};
+    std::vector<double> start = {77, 240 * 0.3};
+    std::vector<double> goal = {173, 550 * 0.3};
     std::vector<int> start_discre = map.get_curr_grid_pos(start);
     std::vector<int> goal_discre = map.get_curr_grid_pos(goal);
 
@@ -74,7 +76,7 @@ int main(int argc, char** argv){
     
     //===========================Test Publish Topic and Visualization===============
     ROS_INFO("Start Publishing...............");
-    ros::Rate loop_rate(0.1);
+    ros::Rate loop_rate(5);
     while(ros::ok()){
         dijkstra_finder.publish_path();
         ros::spinOnce();

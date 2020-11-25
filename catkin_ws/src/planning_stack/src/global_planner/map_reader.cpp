@@ -3,13 +3,39 @@
 // Contact: yongxin@seas.upenn.edu
 #include "map_reader.h"
 #include <iostream>
+#include <tf2_ros/static_transform_broadcaster.h>
+#include <geometry_msgs/TransformStamped.h>
+#include <tf2/LinearMath/Quaternion.h>
 
 MapReader::MapReader(ros::NodeHandle* nh){
     request_map(nh); // establish the client-server relationship
     get_map_data(); // retrieve the map data for occupancy grid
+    publish_transform(); // publish transform
 }
 
 MapReader::~MapReader(){
+}
+
+void MapReader::publish_transform(){
+    // start transformation between map and world frame
+    static tf2_ros::StaticTransformBroadcaster static_broadcaster;
+    geometry_msgs::TransformStamped static_transformStamped;
+
+    static_transformStamped.header.stamp = ros::Time::now();
+    static_transformStamped.header.frame_id = map_frame;
+    static_transformStamped.child_frame_id = world_frame;
+    
+    // assign the offset value
+    tf2::Quaternion quat;
+    quat.setRPY(0, 0, -1.57);
+    static_transformStamped.transform.translation.x = -(height * resolution) / 2;
+    static_transformStamped.transform.translation.y = (width * resolution) / 2;
+    static_transformStamped.transform.translation.z = 0;
+    static_transformStamped.transform.rotation.x = quat.x();
+    static_transformStamped.transform.rotation.y = quat.y();
+    static_transformStamped.transform.rotation.z = quat.z();
+    static_transformStamped.transform.rotation.w = quat.w();
+    static_broadcaster.sendTransform(static_transformStamped);
 }
 
 void MapReader::request_map(ros::NodeHandle* nh){
@@ -27,6 +53,7 @@ void MapReader::get_map_data(){
     height = map.info.height; // row
     width = map.info.width;  // col
     resolution = map.info.resolution;
+    map_frame = map.header.frame_id;
     resolution_int = int(resolution_factor * resolution);
     ROS_INFO("Map Received. Size: %d X %d with %.3f m/cell",
             width, height, resolution);
@@ -71,6 +98,10 @@ long int MapReader::get_map_size(){
 
 double MapReader::getResolution(){
     return resolution;
+}
+
+std::string MapReader::get_world_frame_id(){
+    return world_frame;
 }
 
 bool MapReader::get_occ_val(const std::vector<double> &xy_double){

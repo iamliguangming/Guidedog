@@ -23,6 +23,7 @@ class GlobalPathFinder{
     ros::Publisher path_pub;
     std::string path_topic = "/global_path";
     ros::NodeHandle *nh;
+    std::string world_frame;
 
     public:
     GlobalPathFinder(ros::NodeHandle *nh, const std::string &method, MapReader* input_map);

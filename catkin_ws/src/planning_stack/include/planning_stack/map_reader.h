@@ -20,6 +20,8 @@ class MapReader{
     int width;
     long int size;
     double resolution;
+    std::string map_frame;
+    std::string world_frame = "world";
     int resolution_factor = 100;
     int resolution_int;
     std::vector<std::vector<bool>> occupancyGrid;
@@ -30,12 +32,14 @@ class MapReader{
     public:
     MapReader(ros::NodeHandle* nh);
     ~MapReader();
+    void publish_transform();
     void request_map(ros::NodeHandle* nh);
     void get_map_data();
     int getHeight();
     int getWidth();
     long int get_map_size();
     double getResolution();
+    std::string get_world_frame_id();
     bool get_occ_val(const std::vector<double> &xy_double);
     std::vector<std::vector<bool>> get_local_occ_grid(const std::vector<double> &xy_double, const double &r);
     std::vector<int> get_curr_grid_pos(const std::vector<double> &xy_double);
