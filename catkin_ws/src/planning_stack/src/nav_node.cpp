@@ -52,6 +52,9 @@ int main(int argc, char** argv){
 
     // // Test path finding function
     ROS_INFO("Testing find_path function");
+
+
+    ROS_INFO("");
     // std::vector<double> start = {275 * 0.3, 240 * 0.3};
     // std::vector<double> goal = {255 * 0.3, 545 * 0.3};
     double map_offset_x = 115.0;
