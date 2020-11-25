@@ -86,7 +86,13 @@ bool MapReader::get_occ_val(const std::vector<double> &xy_double){
 std::vector<std::vector<bool>> MapReader::get_local_occ_grid(const std::vector<double> &xy_double, const double &r){
     // int i = int(x * resolution_factor) / resolution_int;
     // int j = int(y * resolution_factor) / resolution_int;
-    curr_grid_pos = MapReader::get_curr_grid_pos(xy_double);
+    ROS_INFO("map size: %d %d", width, height);
+    ROS_INFO("map resolution: %f", resolution);
+    ROS_INFO("curr x double: %f", xy_double[0]);
+    ROS_INFO("curr y double: %f", xy_double[1]);
+    std::vector<int> curr_grid_pos = get_curr_grid_pos(xy_double);
+    ROS_INFO("curr grid pos i:%d", curr_grid_pos[0]);
+    ROS_INFO("curr grid pos j:%d", curr_grid_pos[1]);
     int i = curr_grid_pos[0];
     int j = curr_grid_pos[1];
     int i_start = i - int( (r - resolution / 2) * resolution_factor) / resolution_int - 1; // floor the cell
@@ -101,7 +107,7 @@ std::vector<std::vector<bool>> MapReader::get_local_occ_grid(const std::vector<d
         local_occupancyGrid[row - i_start].resize(j_end - j_start + 1);
     }
     // Assign the local grid map
-    for(int row= i_start; row <= i_end; row++){
+    for(int row = i_start; row <= i_end; row++){
         for(int col = j_start; col <= j_end; col++){
             local_occupancyGrid[row - i_start][col - j_start] = occupancyGrid[row][col];
         }
@@ -121,7 +127,11 @@ std::vector<int> MapReader::get_curr_grid_pos(const std::vector<double> &xy_doub
 }
 
 // Trnsfer x-y int. discretized type to x-y double type
-
+std::vector<double> MapReader::get_xy_double_from_coord(const std::vector<int> &curr_grid_coord){
+    std::vector<double> xy_double = {(height - curr_grid_coord[0]) * resolution + resolution / 2.0, 
+                                curr_grid_coord[1] * resolution + resolution / 2.0};
+    return xy_double;
+}
 
 // Transfer x-y double type to one-dimensional index
 int MapReader::get_curr_pos_idx(const std::vector<double> &xy_double){
@@ -132,7 +142,10 @@ int MapReader::get_curr_pos_idx(const std::vector<double> &xy_double){
 }
 
 // Transfer one-dimensional index to x-y double type
-
+std::vector<double> MapReader::get_xy_double_from_idx(const int &curr_pos_idx){
+    std::vector<int> temp = MapReader::get_coord_from_idx(curr_pos_idx);
+    return MapReader::get_xy_double_from_coord(temp);      
+}
 
 // Transfer one dimensional index to x-y int. discretized type
 std::vector<int> MapReader::get_coord_from_idx(const int &cell_idx){

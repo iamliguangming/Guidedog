@@ -42,6 +42,8 @@ class MapReader{
     int get_curr_pos_idx(const std::vector<double> &xy_double);
     std::vector<int> get_coord_from_idx(const int &cell_idx);
     int get_idx_from_coord(const std::vector<int> &cell_coord);
+    std::vector<double> get_xy_double_from_idx(const int &curr_pos_idx);
+    std::vector<double> get_xy_double_from_coord(const std::vector<int> &curr_grid_coord);
     bool is_colliding(const std::vector<int> &cell_coord);
     bool is_outside_map(const std::vector<int> &cell_coord);
 

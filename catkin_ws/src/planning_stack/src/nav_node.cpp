@@ -66,7 +66,7 @@ int main(int argc, char** argv){
     }
 
     dijkstra_finder.publish_path();
-    
+
     PotentialField PF(path, map);
     PF.init();
     PF.run();

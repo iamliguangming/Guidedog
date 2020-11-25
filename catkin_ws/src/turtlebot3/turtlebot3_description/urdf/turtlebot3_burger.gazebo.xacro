@@ -9,34 +9,34 @@
   </gazebo>
 
   <gazebo reference="wheel_left_link">
-    <mu1>0.1</mu1>
-    <mu2>0.1</mu2>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
     <kp>500000.0</kp>
     <kd>10.0</kd>
     <minDepth>0.001</minDepth>
-    <maxVel>0.1</maxVel>
+    <maxVel>0.5</maxVel>
     <fdir1>1 0 0</fdir1>
     <material>Gazebo/FlatBlack</material>
   </gazebo>
 
   <gazebo reference="wheel_right_link">
-    <mu1>0.1</mu1>
-    <mu2>0.1</mu2>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
     <kp>500000.0</kp>
     <kd>10.0</kd>
     <minDepth>0.001</minDepth>
-    <maxVel>0.1</maxVel>
+    <maxVel>0.5</maxVel>
     <fdir1>1 0 0</fdir1>
     <material>Gazebo/FlatBlack</material>
   </gazebo>
 
   <gazebo reference="caster_back_link">
-    <mu1>0.1</mu1>
-    <mu2>0.1</mu2>
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
     <kp>1000000.0</kp>
     <kd>100.0</kd>
     <minDepth>0.001</minDepth>
-    <maxVel>1.0</maxVel>
+    <maxVel>5.0</maxVel>
     <material>Gazebo/FlatBlack</material>
   </gazebo>
 
@@ -135,7 +135,7 @@
 
   <gazebo reference="camera_link">
 <sensor type="camera" name="camera1">
-  <update_rate>30.0</update_rate>
+  <update_rate>15.0</update_rate>
   <camera name="head">
     <horizontal_fov>1.3962634</horizontal_fov>
     <image>

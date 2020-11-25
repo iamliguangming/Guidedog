@@ -57,6 +57,7 @@ nav_msgs::Path GlobalPathFinder::find_path(const std::vector<double> &start_cell
 
     // Dijkstra algorithm
     while (!cost_min_heap.empty()){
+        ROS_INFO("Looking for Path!!!!");
         std::pair<int, int> curr_cell = *(cost_min_heap.begin()); // extract the cell with minimum cost
         cost_min_heap.erase(cost_min_heap.begin()); // remove it from the unvisited sets
 
@@ -94,10 +95,14 @@ nav_msgs::Path GlobalPathFinder::find_path(const std::vector<double> &start_cell
     // Extract the path
     int backtrace_cell_idx = goal_cell_idx;
     geometry_msgs::PoseStamped pose;
+    // set use_sim_time false!!!! to publish.
+    //pose.header.stamp = ros::Time::now();
+    pose.header.frame_id = "map";
     while(true){
         for(it_parents = parents.begin(); it_parents != parents.end(); it_parents++){
             if((*it_parents).second == backtrace_cell_idx){
-                std::vector<int> path_coord = map->get_coord_from_idx((*it_parents).second);
+                //std::vector<int> path_coord = map->get_coord_from_idx((*it_parents).second);
+                std::vector<double> path_coord = map->get_xy_double_from_idx((*it_parents).second);
                 pose.pose.position.x = path_coord[1];
                 pose.pose.position.y = path_coord[0];
                 path.poses.push_back(pose);
