@@ -117,13 +117,13 @@ bool MapReader::get_occ_val(const std::vector<double> &xy_double){
 std::vector<std::vector<bool>> MapReader::get_local_occ_grid(const std::vector<double> &xy_double, const double &r){
     // int i = int(x * resolution_factor) / resolution_int;
     // int j = int(y * resolution_factor) / resolution_int;
-    ROS_INFO("map size: %d %d", width, height);
-    ROS_INFO("map resolution: %f", resolution);
-    ROS_INFO("curr x double: %f", xy_double[0]);
-    ROS_INFO("curr y double: %f", xy_double[1]);
+    // ROS_INFO("map size: %d %d", width, height);
+    // ROS_INFO("map resolution: %f", resolution);
+    // ROS_INFO("curr x double: %f", xy_double[0]);
+    // ROS_INFO("curr y double: %f", xy_double[1]);
     std::vector<int> curr_grid_pos = get_curr_grid_pos(xy_double);
-    ROS_INFO("curr grid pos i:%d", curr_grid_pos[0]);
-    ROS_INFO("curr grid pos j:%d", curr_grid_pos[1]);
+    // ROS_INFO("curr grid pos i:%d", curr_grid_pos[0]);
+    // ROS_INFO("curr grid pos j:%d", curr_grid_pos[1]);
     int i = curr_grid_pos[0];
     int j = curr_grid_pos[1];
     int i_start = i - int( (r - resolution / 2) * resolution_factor) / resolution_int - 1; // floor the cell

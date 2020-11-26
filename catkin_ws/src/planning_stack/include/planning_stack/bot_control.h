@@ -23,7 +23,7 @@ class bot_control{
 	// double max_lin_vel = 0.22;
 	// double max_ang_vel = 2.84;	
 	double max_lin_vel = 0.22;
-	double max_ang_vel = 4.0;
+	double max_ang_vel = 3.14;
 
 	ros::NodeHandle n;
 	std::string odom_topic_name = "/odom";

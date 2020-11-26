@@ -1,13 +1,4 @@
 #include <ros/ros.h>
-#include <geometry_msgs/Twist.h>
-#include <geometry_msgs/Point.h>
-#include <tf/tf.h>
-#include <nav_msgs/Odometry.h>
-#include <angles/angles.h>
-#include <gazebo_msgs/ModelStates.h>
-#include <nav_msgs/Path.h>
-#include <geometry_msgs/Pose2D.h>
-#include <math.h>
 #include <bot_control.h>
 
 
@@ -20,14 +11,12 @@ int main(int argc, char** argv){
     ros::Rate loop_rate(50);
     while(ros::ok()){
         
-        ROS_INFO("------ Spin once ------");
         bc.move();        
-        // geometry_msgs::Twist cmd;
-        // cmd.linear.x = 1.0;
-        // cmd.angular.z = 0.0;
         geometry_msgs::Twist cmd = bc.get_cmd();
         ROS_INFO("cmd_vel: linear: %f, angular: %f", cmd.linear.x, cmd.angular.z);
         pub.publish(cmd);
+
+        ROS_INFO("------------ Spin once ------------");
         ros::spinOnce();
         loop_rate.sleep();
     }

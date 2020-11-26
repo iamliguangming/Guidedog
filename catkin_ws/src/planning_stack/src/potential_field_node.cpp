@@ -48,7 +48,7 @@ void PotentialField::run(){
     ROS_INFO("------------------- PF running -------------------");
     int way_point_num = globalPath.poses.size();
     for(int i = 1; i <= way_point_num; i++){
-        ROS_INFO("-------------- Current waypoint %d / %d --------------", i, way_point_num);
+        ROS_INFO("----------------- Current waypoint %d / %d -----------------", i, way_point_num);
         int cnt = 0;
         while(ros::ok()){            
             ros::spinOnce();
@@ -60,6 +60,7 @@ void PotentialField::run(){
             step();     //one step
 
             if(check()){
+                ROS_INFO("WP_%d reached", i);
                 getNextWaypoint(i+1);
                 break;
             }
@@ -85,6 +86,9 @@ std::vector<double> PotentialField::calculateForce(){
     std::vector<double> F_tot(2, 0.0);
     ROS_INFO("bot_pos: %f, %f", bot_pos.x, bot_pos.y);
 
+    next_wp_pos.x = -30.45;
+    next_wp_pos.y = -51.25;
+
     // Fatt from goal ---
     calcFatt(F_tot);
     // Frep from peds ---
@@ -102,6 +106,7 @@ std::vector<double> PotentialField::calculateForce(){
 
 void PotentialField::calcFatt(std::vector<double> &F_tot){
     ROS_INFO("------------- Fatt from WPs --------------");
+    ROS_INFO("next_wp_pos: %f %f", next_wp_pos.x, next_wp_pos.y);
     std::vector<double> F_ori(2, 0.0);
     double att_source_dis = distance(bot_pos, next_wp_pos);
     double Fatt_mag = 0.0;
@@ -158,22 +163,25 @@ void PotentialField::calcFrep_w(std::vector<double> &F_tot){
     ROS_INFO("------------- Frep from wall -------------");
     double Frep_mag = 0.0;
     std::vector<double> F_ori(2, 0.0);
-    std::vector<double> xy_double = {bot_pos.x + map_offext_x, bot_pos.y + map_offext_y};
+    std::vector<double> xy_double = {bot_pos.x + map_offset_x, bot_pos.y + map_offset_y};
     std::vector<std::vector<bool>> local_map = map.get_local_occ_grid(xy_double, local_map_size);   // local map 
 
-    // ROS_INFO("Local map: ");
-    // for(int i= 0; i < local_map.size(); i++){
-    //     ROS_INFO("%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d", int(local_map[i][0]), int(local_map[i][1]), int(local_map[i][2]), int(local_map[i][3]), int(local_map[i][4]), int(local_map[i][5]), int(local_map[i][6]), int(local_map[i][7]), int(local_map[i][8]), int(local_map[i][9]), int(local_map[i][10]));
-    // }
+    ROS_INFO("Local map: ");
+    for(int i= 0; i < local_map.size(); i++){
+        ROS_INFO("%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d", \
+        int(local_map[i][0]), int(local_map[i][1]), int(local_map[i][2]), int(local_map[i][3]), int(local_map[i][4]), int(local_map[i][5]), int(local_map[i][6]), int(local_map[i][7]), int(local_map[i][8]), int(local_map[i][9]),\
+        int(local_map[i][10]), int(local_map[i][11]), int(local_map[i][12]), int(local_map[i][13]), int(local_map[i][14]), int(local_map[i][15]), int(local_map[i][16]), int(local_map[i][17]), int(local_map[i][18]), int(local_map[i][19]),\
+        int(local_map[i][20]), int(local_map[i][21]), int(local_map[i][22]), int(local_map[i][23]), int(local_map[i][24]), int(local_map[i][25]), int(local_map[i][26]), int(local_map[i][27]), int(local_map[i][28]), int(local_map[i][29]), int(local_map[i][30]));
+    }
 
     int row = local_map.size();
-    ROS_INFO("local map size:%d", row);
+    // ROS_INFO("local map size:%d", row);
     int col = local_map[0].size();
     // ROS_INFO("8");
     for(int i = 0; i < row; i++){
         for(int j = 0; j < col; j++){
             if(local_map[i][j]){
-                ROS_INFO("wall_%d_%d occupied", i, j);
+                // ROS_INFO("wall_%d_%d occupied", i, j);
                 double dx = map_resolution * (j - col / 2);
                 double dy = map_resolution * (row / 2 - i);
                 double rep_source_dis = sqrt(pow(dx, 2.0) + pow(dy, 2.0));
@@ -232,16 +240,15 @@ void PotentialField::calcDangerIndex(std::vector<double> &F_tot){
         }
     }
 }
-
 bool PotentialField::check(){
-    double dis = sqrt(pow((bot_pos.x - next_wp_pos.x), 2.0) + pow((bot_pos.y - next_wp_pos.y), 2.0) );
+    double dis = sqrt(pow((bot_pos.x - next_wp_pos.x), 2.0) + pow((bot_pos.y - next_wp_pos.y), 2.0));
     if(dis <= check_arrive_threshold) return true;
     return false;
 };
 
 void PotentialField::getNextWaypoint(const int i){
-    next_wp_pos.x = globalPath.poses[i].pose.position.x;
-    next_wp_pos.y = globalPath.poses[i].pose.position.y;
+    next_wp_pos.x = globalPath.poses[i].pose.position.x - map_offset_x;
+    next_wp_pos.y = globalPath.poses[i].pose.position.y - map_offset_y;
 }
 
 double PotentialField::distance(const geometry_msgs::Pose2D &a , const geometry_msgs::Pose2D &b){
@@ -255,8 +262,8 @@ bool PotentialField::isInMap(const int &x, const int &y){
 
 void PotentialField::Odom_call_back(const nav_msgs::Odometry::ConstPtr &msg){
     // ROS_INFO("in odom_call_back");
-    bot_pos.x = msg->pose.pose.position.x + 12.0;
-    bot_pos.y = msg->pose.pose.position.y + 13.0;
+    bot_pos.x = msg->pose.pose.position.x;
+    bot_pos.y = msg->pose.pose.position.y;
     bot_vel.x = msg->twist.twist.linear.x;
     bot_vel.y = msg->twist.twist.linear.y;
 

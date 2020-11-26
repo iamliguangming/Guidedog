@@ -11,13 +11,15 @@
         <!-- Please modify the following two lines for loading customize .xml scenario and .world files.  -->
         <arg name="scene_file" default="social_contexts"/>
         <arg name="world_file" default="street_empty"/>
+        <arg name="map_file_name" default="map_final"/>
+        <arg name="map_file" default="$(find planning_stack)/maps/$(arg map_file_name).yaml"/>>
 
         <!-- Gazebo Robot Parameters -->
         <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
-        <arg name="x_pos" default="50.11"/> 
-        <arg name="y_pos" default="-51.39"/>
+        <arg name="x_pos" default="50.45"/> 
+        <arg name="y_pos" default="-51.25"/>
         <arg name="z_pos" default="0.0"/>
-        <arg name="yaw"   default="-3.107"/>
+        <arg name="yaw"   default="-3.1415"/>
 
         <!-- Select Gazebo Robot Model. For our project, it is set to be 'burger'. -->
         <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
@@ -26,7 +28,7 @@
 
         <!-- Simulator -->
         <!-- The scene_file is modified to read from customize scenarios folder inside customize pkg -->
-        <include file="$(find pedsim_simulator)/launch/simulator.launch">
+        <!-- <include file="$(find pedsim_simulator)/launch/simulator.launch">
             <arg name="kbd_teleop" value="$(arg kbd_teleop)"/>
             <arg name="rqt_teleop" value="$(arg rqt_teleop)"/>
             <arg name="scene_file" value="$(find planning_stack)scenarios/$(arg scene_file).xml"/>
@@ -40,7 +42,7 @@
             <arg name="pose_initial_x" value="5.0"/>
             <arg name="pose_initial_y" value="5.0"/>
             <arg name="pose_initial_theta" value="0.7"/>
-        </include>
+        </include> -->
 
         <!-- Open Gazebo -->
         <!-- The .world file is modified to read from customize worlds folder inside customize pkg -->
@@ -59,7 +61,17 @@
         
         <!-- load turtlebot3 model into the gazebo world -->
         <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf"  args="-urdf -model turtlebot3_$(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -Y $(arg yaw) -param robot_description" />
-    
+
+        <!-- load the dummy rlocation node -->
+        <node pkg="turtlebot3_gazebo" type="rlocation_node" name="rlocation_node"  output="screen">
+        </node>
+        <!-- rosrun turtlebot3_gazebo rlocation_node  -->
+
+        <!-- Run the map server -->
+        <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" >
+        </node>        
+        
+        
         <!-- load the turtlebot3 teleop key controller -->
         <param name="model" value="$(arg model)"/>
         <node pkg="turtlebot3_teleop" type="turtlebot3_teleop_key" name="turtlebot3_teleop_keyboard"  output="screen">

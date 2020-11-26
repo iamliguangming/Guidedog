@@ -21,8 +21,8 @@ class PotentialField{
 
     private:    
     MapReader map;   
-    double map_offext_x = 115.0;
-    double map_offext_y = 115.0;  
+    double map_offset_x = 115.0;
+    double map_offset_y = 115.0;  
     double map_resolution = 0.1;
     double local_map_size = 1.5; // half of side length 
     // Parameters for tuning ----------------------------------------------------------
@@ -30,11 +30,11 @@ class PotentialField{
 
     double horizon_r = 5.0;     // robot vision horizon
     double bot_r = 0.35;     // robot radius
-    double check_arrive_threshold = 0.1;    //tolerance
+    double check_arrive_threshold = 1.0;    //tolerance
     
 
     // attraction field pararmeters ---
-    double att_scale = 1.0;   //Fatt intensity
+    double att_scale = 2.0;   //Fatt intensity
     double att_r = 2.0;     // parabolic to conic well boundary
     double att_const = att_scale * att_r;   //   
     // pedestrian repulsive field parameters ---
@@ -43,8 +43,8 @@ class PotentialField{
     double rep_r_p = 0.8;     // extra radius of the repulsive field
     // wall repulsive field parameters ---
     double rep_scale_w = 1.0;
-    double wall_r = map_resolution * sqrt(2.0) / 2;
-    double rep_r_w = 0.2;   // extra radius of the repulsize field   
+    double wall_r = map_resolution * sqrt(2.0) / 2.0;
+    double rep_r_w = 0.5;   // extra radius of the repulsize field   
     // danger index field paremeters ---
     bool DI = false;
     double DI_scale = 1.0;
