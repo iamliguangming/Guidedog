@@ -4,6 +4,7 @@
 #include <ros/ros.h>
 #include <nav_msgs/Path.h>
 #include <geometry_msgs/PoseStamped.h>
+#include <algorithm>
 
 
 #define INF 0x3f3f3f3f
@@ -13,12 +14,15 @@ GlobalPathFinder::GlobalPathFinder(ros::NodeHandle *nh, const std::string& metho
     this->map = input_map;
     this->nh = nh;
     path_pub = nh->advertise<nav_msgs::Path>(path_topic, 1);
+    nav_goal_sub = nh->subscribe(nav_goal_topic, 10, &GlobalPathFinder::receive_goal, this);
     // Initialize the cost vector
     const long int map_size = map->get_map_size();
     cost.resize(map_size);
     for(int i = 0; i < map_size; i++){
         cost[i] = INF;
     }
+    // Initialize the start position
+    initial_pose = {165.11, 63.41};
 }
 
 
@@ -38,22 +42,28 @@ void GlobalPathFinder::add_adjacent_cell(const int& cell_idx){
     }
 }
 
-nav_msgs::Path GlobalPathFinder::find_path(const std::vector<double> &start_cell, const std::vector<double> &goal_cell){
+
+
+void GlobalPathFinder::find_path(const std::vector<double> &start_cell, const std::vector<double> &goal_cell){
     // Transfer double type to discretized integer type
     std::vector<int> start_cell_coord = map->get_curr_grid_pos(start_cell);
     std::vector<int> goal_cell_coord = map->get_curr_grid_pos(goal_cell);
 
+    // ROS_INFO("start cell coord: (%d, %d)", start_cell_coord[0], start_cell_coord[1]);
+    // ROS_INFO("goal cell coord: (%d, %d)", goal_cell_coord[0], goal_cell_coord[1]);
     // Check if the start cell is inside the obstacle
     if(map->is_colliding(start_cell_coord) || map->is_colliding(goal_cell_coord)){
         ROS_WARN("The start or goal location is inside the obstacle! Please evaluate your choice.");
-        return path;
+        // return path;
     }
+    ROS_INFO("checkpoint 1");
     // push back the start point into heap and cost of it into cost vector
     int start_cell_idx = map->get_idx_from_coord(start_cell_coord);
     int goal_cell_idx = map->get_idx_from_coord(goal_cell_coord);
 
     cost[start_cell_idx] = 0;
     cost_min_heap.insert(std::make_pair(0, start_cell_idx));
+    ROS_INFO("checkpoint 2");
 
     // Dijkstra algorithm
     while (!cost_min_heap.empty()){
@@ -122,12 +132,56 @@ nav_msgs::Path GlobalPathFinder::find_path(const std::vector<double> &start_cell
         }
     }
 
-    return path;
-
+    // reverse the path
+    std::reverse(path.poses.begin(), path.poses.end());
+    //return path;
 }
 
 void GlobalPathFinder::publish_path(){
     path_pub.publish(path);
+}
+
+void GlobalPathFinder::receive_goal(const geometry_msgs::PoseStamped &nav_goal_pose){
+    double offset_x;
+    double offset_y;
+    if(nav_goal_pose.header.frame_id == "map"){  // if incoming poses are expressed in map frame, do the conversion
+        offset_x = map_offset_x;
+        offset_y = map_offset_y;
+    }
+    else if(nav_goal_pose.header.frame_id == "world"){  // if incoming poses are already expressed in world frame, conversion is not needed.
+        offset_x = 0;
+        offset_y = 0;
+    }
+    goal_received = {offset_x + nav_goal_pose.pose.position.x, offset_y + nav_goal_pose.pose.position.y};
+    is_goal_received = true;
+    ROS_INFO("Goal received!");
+}
+
+nav_msgs::Path GlobalPathFinder::fireup(){
+    if(print_once_flag){
+        ROS_INFO("Waiting for goal...");
+        print_once_flag = false;
+    }
+    if(is_goal_received){
+        path.poses.clear();
+        GlobalPathFinder::find_path(initial_pose, goal_received);
+        is_goal_received = false;
+        print_once_flag = true;
+        initial_pose = goal_received;
+        for(int i = 0; i < path.poses.size(); i++){
+            ROS_INFO("Path Cell Coordinate: (%.2f, %.2f)", path.poses[i].pose.position.x, path.poses[i].pose.position.y);
+        }
+        cost_min_heap.clear();
+        curr_adjacent_list.clear();
+        parents.clear();
+        const long int map_size = map->get_map_size();
+        cost.resize(map_size);
+        for(int i = 0; i < map_size; i++){
+            cost[i] = INF;
+        }
+        return path;
+    }
+    return path;
 }
 
 

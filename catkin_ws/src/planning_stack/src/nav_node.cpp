@@ -66,15 +66,15 @@ int main(int argc, char** argv){
     std::vector<int> start_discre = map.get_curr_grid_pos(start);
     std::vector<int> goal_discre = map.get_curr_grid_pos(goal);
 
-    nav_msgs::Path path = dijkstra_finder.find_path(start, goal);
+    //nav_msgs::Path path = dijkstra_finder.find_path(start, goal);
     ROS_INFO("Start at (%.2f, %.2f). Goal at (%.2f, %.2f)", start[0], start[1], goal[0], goal[1]);
     ROS_INFO("Start at (%d, %d). Goal at (%d, %d)", start_discre[0], start_discre[1], goal_discre[0], goal_discre[1]);
     ROS_INFO("Found Path: ");
-    for(int i = 0; i < path.poses.size(); i++){
-        ROS_INFO("Path Cell Coordinate: (%.2f, %.2f)", path.poses[i].pose.position.x, path.poses[i].pose.position.y);
-    }
+    // for(int i = 0; i < path.poses.size(); i++){
+    //     ROS_INFO("Path Cell Coordinate: (%.2f, %.2f)", path.poses[i].pose.position.x, path.poses[i].pose.position.y);
+    // }
 
-    dijkstra_finder.publish_path();
+    //dijkstra_finder.publish_path();
 
     // PotentialField PF(path, map);
     // PF.init();
@@ -83,8 +83,9 @@ int main(int argc, char** argv){
     
     //===========================Test Publish Topic and Visualization===============
     ROS_INFO("Start Publishing...............");
-    ros::Rate loop_rate(5);
+    ros::Rate loop_rate(10);
     while(ros::ok()){
+        dijkstra_finder.fireup();
         dijkstra_finder.publish_path();
         ros::spinOnce();
         loop_rate.sleep();
