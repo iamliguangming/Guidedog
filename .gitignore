@@ -7,3 +7,7 @@ catkin_ws/src/generate_data/build
 catkin_ws/src/generate_data/devel
 catkin_ws/src/generate_data/data
 catkin_ws/sample.bag
+catkin_ws/image.zip
+catkin_ws/command.txt
+catkin_ws/src/cv_forward/CenterTrack/exp/
+catkin_ws/src/cv_forward/CenterTrack/model/

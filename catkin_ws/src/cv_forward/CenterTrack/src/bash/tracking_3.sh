@@ -1,0 +1,1 @@
+python3 ../main.py --task tracking,ddd --exp_id 3classes --load_model /home/zhuoyu/Documents/CIS-700/Guidedog/catkin_ws/src/cv_forward/CenterTrack/model/model_last.pth --pre_hm --same_aug --hm_disturb 0.05 --lost_disturb 0.2 --fp_disturb 0.1 --dataset_version train_half --save_point 10,20,40,60
