@@ -5,6 +5,7 @@
 #include <nav_msgs/Path.h>
 #include <geometry_msgs/PoseStamped.h>
 #include <algorithm>
+#include <math.h>
 
 
 #define INF 0x3f3f3f3f
@@ -15,6 +16,7 @@ GlobalPathFinder::GlobalPathFinder(ros::NodeHandle *nh, const std::string& metho
     this->nh = nh;
     path_pub = nh->advertise<nav_msgs::Path>(path_topic, 1);
     nav_goal_sub = nh->subscribe(nav_goal_topic, 10, &GlobalPathFinder::receive_goal, this);
+    odom_sub = nh->subscribe("/odom",1, &GlobalPathFinder::Odom_call_back,this);    // robot global pose
     // Initialize the cost vector
     const long int map_size = map->get_map_size();
     cost.resize(map_size);
@@ -67,7 +69,7 @@ void GlobalPathFinder::find_path(const std::vector<double> &start_cell, const st
 
     // Dijkstra algorithm
     while (!cost_min_heap.empty()){
-        ROS_INFO("Looking for Path!!!!");
+        ROS_INFO("Looking for Path ...");
         std::pair<int, int> curr_cell = *(cost_min_heap.begin()); // extract the cell with minimum cost
         cost_min_heap.erase(cost_min_heap.begin()); // remove it from the unvisited sets
 
@@ -102,7 +104,7 @@ void GlobalPathFinder::find_path(const std::vector<double> &start_cell, const st
         curr_adjacent_list.clear(); // remove all the neighbor cell for next time use.
     }
 
-    ROS_INFO("Back sourcing ......");
+    ROS_INFO("Back sourcing ...");
     std::list<std::pair<int, int>>::iterator it_parents;
     // Extract the path
     int backtrace_cell_idx = goal_cell_idx;
@@ -153,8 +155,14 @@ void GlobalPathFinder::receive_goal(const geometry_msgs::PoseStamped &nav_goal_p
         offset_y = 0;
     }
     goal_received = {offset_x + nav_goal_pose.pose.position.x, offset_y + nav_goal_pose.pose.position.y};
-    is_goal_received = true;
-    ROS_INFO("Goal received!");
+
+    if(sqrt(pow((goal_received[0] - bot_pos.x), 2.0) + pow((goal_received[1] - bot_pos.y), 2.0)) >= 2.0){
+        is_goal_received = true;
+        // goal_received_pre = goal_received;
+        ROS_INFO("Goal received!");
+    }else{
+        ROS_INFO("Goal too close to current position!");
+    }
 }
 
 nav_msgs::Path GlobalPathFinder::fireup(){
@@ -163,13 +171,16 @@ nav_msgs::Path GlobalPathFinder::fireup(){
         print_once_flag = false;
     }
     if(is_goal_received){
-        path.poses.clear();
+        path.poses.clear();        
+        initial_pose[0] = bot_pos.x;
+        initial_pose[1] = bot_pos.y;
         GlobalPathFinder::find_path(initial_pose, goal_received);
         is_goal_received = false;
         print_once_flag = true;
-        initial_pose = goal_received;
+        // initial_pose = goal_received;
+        ROS_INFO("Found Path: ");
         for(int i = 0; i < path.poses.size(); i++){
-            ROS_INFO("Path Cell Coordinate: (%.2f, %.2f)", path.poses[i].pose.position.x, path.poses[i].pose.position.y);
+            ROS_INFO("Path Gazebo Coordinate: (%.2f, %.2f)", path.poses[i].pose.position.x - map_offset_x, path.poses[i].pose.position.y - map_offset_y);
         }
         cost_min_heap.clear();
         curr_adjacent_list.clear();
@@ -181,11 +192,18 @@ nav_msgs::Path GlobalPathFinder::fireup(){
         }
         return path;
     }
-    return path;
+    nav_msgs::Path ignore;
+    return ignore;
 }
 
 nav_msgs::Path GlobalPathFinder::get_path(){
     return path;
 };
+
+void GlobalPathFinder::Odom_call_back(const nav_msgs::Odometry::ConstPtr &msg){
+    // ROS_INFO("in odom_call_back");
+    bot_pos.x = msg->pose.pose.position.x + map_offset_x;
+    bot_pos.y = msg->pose.pose.position.y + map_offset_y;
+}
 
 

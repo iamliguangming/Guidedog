@@ -16,8 +16,8 @@ bot_control::bot_control(){
 };
 
 void bot_control::init(){
-    odom_sub = n.subscribe(odom_topic_name, 10,&bot_control::Odom_call_back,this);    // robot global pose
-    Force_sub = n.subscribe(Force_topic_name, 10, &bot_control::Force_call_back, this);  // peds relative pose
+    odom_sub = n.subscribe(odom_topic_name, 1,&bot_control::Odom_call_back,this);    // robot global pose
+    Force_sub = n.subscribe(Force_topic_name, 1, &bot_control::Force_call_back, this);  // peds relative pose
     ROS_INFO("--- Controller initialization completed ---");
 }
 
@@ -80,7 +80,6 @@ void bot_control::move(){
                     ROS_INFO("Reverse Turn CW");
                 }
             }
-
            
             // cmd.angular.z = cmd.angular.z < (angular_pre + angular_window)?cmd.angular.z:(angular_pre + angular_window);
             // cmd.angular.z = cmd.angular.z > (angular_pre - angular_window)?cmd.angular.z:(angular_pre - angular_window);
@@ -93,8 +92,8 @@ void bot_control::move(){
         // }
         
     }else{
-        cmd.linear.x = 0;
-        cmd.angular.z = 0;
+        cmd.linear.x = 0.0;
+        cmd.angular.z = 0.0;
     }
 
     // ROS_INFO("cmd.linear.x: %f", cmd.linear.x);

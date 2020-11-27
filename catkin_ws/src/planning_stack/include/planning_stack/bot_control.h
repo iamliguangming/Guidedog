@@ -42,7 +42,7 @@ class bot_control{
 	geometry_msgs::Pose2D bot_pos;
 	geometry_msgs::Pose2D Force;
 	double goal_angle;
-	double stop_flag = 0.0;
+	double stop_flag = 1.0;
 
 	geometry_msgs::Twist cmd;
 

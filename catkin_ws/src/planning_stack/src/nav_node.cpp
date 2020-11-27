@@ -81,30 +81,29 @@ int main(int argc, char** argv){
     // PotentialField PF(path, map);
     // PF.init();
     // PF.run();
-    bool flag = true;
+    // bool flag = true;
     PotentialField PF(map);
+    PF.init();
     //===========================Test Publish Topic and Visualization===============
-    ROS_INFO("Start Publishing...............");
+    // ROS_INFO("Start Publishing...............");
     ros::Rate loop_rate(10);
     while(ros::ok()){
         nav_msgs::Path path;
+        ROS_INFO("Please specify a goal in Rviz ...");
         while(1){
             path = dijkstra_finder.fireup();
+            ros::spinOnce();
+            loop_rate.sleep();
             if(path.poses.size() > 1) break;
         }
         dijkstra_finder.publish_path();
-        // nav_msgs::Path path = dijkstra_finder.get_path();
-        ROS_INFO("Found Path: ");
-        for(int i = 0; i < path.poses.size(); i++){
-            ROS_INFO("Path Cell Coordinate: (%.2f, %.2f)", path.poses[i].pose.position.x, path.poses[i].pose.position.y);
-        }
-        if(flag){
-            PF.init();
-            PF.getNewPath(path);
-            flag= false;
-        }else{
-            PF.getNewPath(path);
-        }
+    
+        // ROS_INFO("Found Path: ");
+        // for(int i = 0; i < path.poses.size(); i++){
+        //     ROS_INFO("Path Cell Coordinate: (%.2f, %.2f)", path.poses[i].pose.position.x - 115.0, path.poses[i].pose.position.y - 115.0);
+        // }
+
+        PF.getNewPath(path);
         PF.run();
         ros::spinOnce();
         loop_rate.sleep();

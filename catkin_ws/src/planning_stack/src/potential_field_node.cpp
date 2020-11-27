@@ -18,61 +18,59 @@
 
 
 PotentialField::PotentialField(MapReader m):map(m){
-    ROS_INFO("Potential Field constructor called");
+    ROS_INFO("Potential Field constructor called ... ");
 };
 
 // PotentialField::~PotentialField(){}
 
 void PotentialField::init(){
+    ROS_INFO("PF initializating ...");
     ros::Rate r_init(10);
-    odom_sub = n.subscribe("/odom",100,&PotentialField::Odom_call_back,this);    // robot global pose
-    rlocation_sub = n.subscribe("/rlocation", 100, &PotentialField::rlocationProcessing, this);  // peds relative pose
-    force_pub = n.advertise<geometry_msgs::Pose2D>(force_cmd_name, 10);   //velocity command
+    odom_sub = n.subscribe("/odom",1, &PotentialField::Odom_call_back,this);    // robot global pose
+    rlocation_sub = n.subscribe("/rlocation", 1, &PotentialField::rlocationProcessing, this);  // peds relative pose
+    force_pub = n.advertise<geometry_msgs::Pose2D>(force_cmd_name, 1);   //velocity command
     path_pub = n.advertise<nav_msgs::Path>(path_topic, 1);
-    // decision_signal.x = 0.0;
-    // decision_signal.y = 0.0;
-    // decision_signal.theta = 0.0;
-    // force_pub.publish(decision_signal);
     int cnt = 10;
     while(cnt--){
         ros::spinOnce();
         r_init.sleep();
     }
-    getSparseGlobalPath();
-    getNextWaypoint(1);  //get the first waypoint
-    // next_wp_pos.x = -50.45;
-    // next_wp_pos.y = -51.25;
-    ROS_INFO("----------- PF initialization completed -----------");
+    // getSparseGlobalPath();
+    // getNextWaypoint(1);  //get the first waypoint
+    ROS_INFO("PF initialization completed. ");
 }
 
 void PotentialField::run(){
     ros::Rate r(run_freq);
     ROS_INFO("------------------- PF running -------------------");
     int way_point_num = sparse_global_path.poses.size();
-    for(int i = 1; i <= way_point_num; i++){
-        ROS_INFO("----------------- Current waypoint %d / %d -----------------", i, way_point_num);
+    for(int i = 1; i < way_point_num; i++){
+        ROS_INFO("--------------- Current waypoint %d / %d ---------------", i, way_point_num - 1 );
+        getNextWaypoint(i);
         int cnt = 0;
         while(ros::ok()){            
             ros::spinOnce();
             r.sleep();   // sleep for 0.1s
             ROS_INFO(" ");
-            ROS_INFO("---------------------- WP_%d iter_%d ---------------------",i, cnt++);
-            path_pub.publish(sparse_global_path);
+            ROS_INFO("-------------------- WP_%d / %d, iter_%d -------------------",i, way_point_num - 1, cnt++);
+            // path_pub.publish(sparse_global_path);
             
             step();     //one step
 
             if(check()){
-                ROS_INFO("WP_%d reached", i);
-                getNextWaypoint(i+1);
-                // next_wp_pos.x = -50.45;
-                // next_wp_pos.y = 51.25;
+                ROS_INFO("WP_%d / %d reached.", i, way_point_num - 1);
+                if(i == way_point_num - 1){
+                    ROS_INFO("Goal reached ...");
+                    decision_signal.x = 0.0;
+                    decision_signal.y = 0.0;
+                    decision_signal.theta = 1.0;
+                    force_pub.publish(decision_signal);
+                } 
                 break;
             }
         }
-        if(i == way_point_num){
-            ROS_INFO("Navigation Completed!");
-        }
     }
+    ROS_INFO("End of run ...");
 }
 
 void PotentialField::step(){
@@ -157,8 +155,8 @@ void PotentialField::calcFrep_p(std::vector<double> &F_tot){
                 if(close_dis < 0){
                     ROS_INFO(" Hit  ped_%d: % f, % f !!!!!!!", i, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
                     Frep_mag = - rep_scale_p * (1.0 / close_dis - 1.0 / rep_r_p) * pow(1.0 / close_dis, 2.0);
-                    F_ori[0] =  ped_info[i].posex / rep_source_dis;
-                    F_ori[1] =  ped_info[i].posey / rep_source_dis;
+                    F_ori[0] = - ped_info[i].posex / rep_source_dis;
+                    F_ori[1] = - ped_info[i].posey / rep_source_dis;
                     F_tot[0] += Frep_mag * F_ori[0];
                     F_tot[1] += Frep_mag * F_ori[1];
                 }
@@ -207,7 +205,14 @@ void PotentialField::calcFrep_w(std::vector<double> &F_tot){
                     F_tot[1] += Frep_mag * F_ori[1];
                     ROS_INFO("Frep wall_%d_%d: % f, % f", i,j, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
                 }
-                if(close_dis <= 0) ROS_INFO("Hit  wall_%d_%d: % f, % f !!!!!!!", i,j, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
+                if(close_dis < 0){
+                    ROS_INFO("Hit  wall_%d_%d: % f, % f !!!!!!!", i,j, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);                                                       mag * F_ori[0], Frep_mag * F_ori[1]);
+                    Frep_mag = - rep_scale_w * (1.0 / close_dis - 1.0 / rep_r_w) * pow(1.0 / close_dis, 2.0);
+                    F_ori[0] = - dx / rep_source_dis;
+                    F_ori[1] = - dy / rep_source_dis;
+                    F_tot[0] += Frep_mag * F_ori[0];
+                    F_tot[1] += Frep_mag * F_ori[1];
+                } 
             }
         }
     }
@@ -400,9 +405,10 @@ void PotentialField::getSparseGlobalPath(){
     // double goal_x = dense_global_path.poses[size].pose.position.x;
     // double goal_y = dense_global_path.poses[size].pose.position.y;
     geometry_msgs::PoseStamped tmp;
+    nav_msgs::Path sparse_global_path_;
     tmp.pose.position.x = dense_global_path.poses[0].pose.position.x;
     tmp.pose.position.y = dense_global_path.poses[0].pose.position.y;
-    sparse_global_path.poses.push_back(tmp);
+    sparse_global_path_.poses.push_back(tmp);
     int curr_wp = 0;
     for(int i = 1; i < size - 1; i++){
         double dx1 = dense_global_path.poses[i].pose.position.x - dense_global_path.poses[curr_wp].pose.position.x;
@@ -412,21 +418,23 @@ void PotentialField::getSparseGlobalPath(){
         if((dy2 / dx2 - dy1 / dx1) > 0.01){
             tmp.pose.position.x = dense_global_path.poses[i+1].pose.position.x;
             tmp.pose.position.y = dense_global_path.poses[i+1].pose.position.y;
-            sparse_global_path.poses.push_back(tmp);
+            sparse_global_path_.poses.push_back(tmp);
             curr_wp = i+1;
             i++;
         }
     }
     tmp.pose.position.x = dense_global_path.poses[size - 1].pose.position.x;
     tmp.pose.position.y = dense_global_path.poses[size - 1].pose.position.y;
-    sparse_global_path.poses.push_back(tmp);
+    sparse_global_path_.poses.push_back(tmp);
 
-    for(int i = 0; i < sparse_global_path.poses.size(); i++){
-        ROS_INFO("Sparse Coordinate: (%.2f, %.2f)", sparse_global_path.poses[i].pose.position.x, sparse_global_path.poses[i].pose.position.y);
+    for(int i = 0; i < sparse_global_path_.poses.size(); i++){
+        ROS_INFO("Sparse Coordinate: (%.2f, %.2f)", sparse_global_path_.poses[i].pose.position.x -map_offset_y , sparse_global_path_.poses[i].pose.position.y - map_offset_y);
     }
+    sparse_global_path = sparse_global_path_;
 }
 
 void PotentialField::getNewPath(nav_msgs::Path new_path){
     dense_global_path = new_path;
     getSparseGlobalPath();
+    // getNextWaypoint(1);
 }
