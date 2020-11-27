@@ -22,7 +22,7 @@ class bot_control{
 	
 	// double max_lin_vel = 0.22;
 	// double max_ang_vel = 2.84;	
-	double max_lin_vel = 0.3;
+	double max_lin_vel = 0.24;
 	double max_ang_vel = 5.0;
 
 	double angular_pre = 0.0;

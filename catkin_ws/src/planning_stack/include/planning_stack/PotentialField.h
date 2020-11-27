@@ -15,7 +15,9 @@
 
 class PotentialField{
     public:
-    PotentialField(nav_msgs::Path gp, MapReader m);        
+    // PotentialField(nav_msgs::Path gp, MapReader m);
+    PotentialField(MapReader m);     
+    void getNewPath(nav_msgs::Path new_path);  
     void init();
     void run();
 
@@ -34,13 +36,13 @@ class PotentialField{
     
 
     // attraction field pararmeters ---
-    double att_scale = 5.0;   //Fatt intensity
+    double att_scale = 10.0;   //Fatt intensity
     double att_r = 2.0;     // parabolic to conic well boundary
     double att_const = att_scale * att_r;   //   
     // pedestrian repulsive field parameters ---
-    double rep_scale_p = 5.0;     //Frep intneisty
+    double rep_scale_p = 10.0;     //Frep intneisty
     double ped_r = 0.3;     // ped radius
-    double rep_r_p =2.5;     // extra radius of the repulsive field
+    double rep_r_p = 3.0;     // extra radius of the repulsive field
     // wall repulsive field parameters ---
     double rep_scale_w = 1.0;
     double wall_r = map_resolution * sqrt(2.0) / 2.0;
@@ -55,7 +57,8 @@ class PotentialField{
 
     ros::NodeHandle n;
 
-    nav_msgs::Path globalPath;
+    nav_msgs::Path sparse_global_path;
+    nav_msgs::Path dense_global_path;
     std::string path_topic = "global_path";
     ros::Publisher path_pub;  
 
@@ -102,6 +105,8 @@ class PotentialField{
     void printRlocation();
     void getPedVelocity();
     void newPedMsgTest();
+    void getSparseGlobalPath();
+    
 };
 
 #endif // POTENTIALFIELD

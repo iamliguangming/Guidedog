@@ -54,7 +54,7 @@ void bot_control::move(){
             // ROS_INFO("modified delta_angle: %f", std::min(delta_angle_ccw, delta_angle_cw));
             ROS_INFO("min angle: %f: ", std::min(delta_angle_ccw, delta_angle_cw));
 
-            if(std::min(delta_angle_ccw, delta_angle_cw) <= 2.0 / 3.0 * pi){
+            if(std::min(delta_angle_ccw, delta_angle_cw) <= 3.0 / 4.0 * pi){
                 
                 if(delta_angle_ccw < delta_angle_cw){
                     cmd.angular.z = max_ang_vel / M_PI * delta_angle_ccw;  
@@ -71,13 +71,13 @@ void bot_control::move(){
             }else{
                 double angle_sup = M_PI - std::max(delta_angle_ccw, delta_angle_cw);
                 if(delta_angle_ccw < delta_angle_cw){
-                    cmd.angular.z = reverse_discount * (max_ang_vel / M_PI * angle_sup);  
+                    cmd.angular.z = - reverse_discount * (max_ang_vel / M_PI * angle_sup);  
+                    cmd.linear.x = - reverse_discount * ( - max_lin_vel / M_PI * abs(angle_sup) + max_lin_vel);
+                    ROS_INFO("Reverse Turn CCW");
+                }else{
+                    cmd.angular.z =  reverse_discount * max_ang_vel / M_PI * angle_sup;  
                     cmd.linear.x = - reverse_discount * ( - max_lin_vel / M_PI * abs(angle_sup) + max_lin_vel);
                     ROS_INFO("Reverse Turn CW");
-                }else{
-                    cmd.angular.z = - max_ang_vel / M_PI * angle_sup;  
-                    cmd.linear.x = - ( - max_lin_vel / M_PI * abs(angle_sup) + max_lin_vel);
-                    ROS_INFO("Reverse Turn CCW");
                 }
             }
 

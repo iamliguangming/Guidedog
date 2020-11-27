@@ -22,7 +22,7 @@ GlobalPathFinder::GlobalPathFinder(ros::NodeHandle *nh, const std::string& metho
         cost[i] = INF;
     }
     // Initialize the start position
-    initial_pose = {165.11, 63.41};
+    initial_pose = {165.45, 63.75};
 }
 
 
@@ -102,7 +102,7 @@ void GlobalPathFinder::find_path(const std::vector<double> &start_cell, const st
         curr_adjacent_list.clear(); // remove all the neighbor cell for next time use.
     }
 
-
+    ROS_INFO("Back sourcing ......");
     std::list<std::pair<int, int>>::iterator it_parents;
     // Extract the path
     int backtrace_cell_idx = goal_cell_idx;

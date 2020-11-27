@@ -35,27 +35,27 @@
     </agent> -->
 
     <!--AgentClusters-->   
-    <agent x="30" y="-52" n="1" dx="5" dy="3" type="0">    
+    <agent x="30" y="-52" n="1" dx="3" dy="3" type="0">    
         <addwaypoint id="wp5"/>
     </agent>    
     <!-- <agent x="20" y="-51" n="1" dx="5" dy="5" type="0">    
         <addwaypoint id="wp2"/>
         <addwaypoint id="wp1"/>
     </agent> -->
-    <!-- <agent x="10" y="-51" n="1" dx="5" dy="5" type="0">    
+    <agent x="10" y="-51" n="1" dx="5" dy="5" type="0">    
         <addwaypoint id="wp2"/>
         <addwaypoint id="wp1"/>
-    </agent> -->
+    </agent>
     <!-- <agent x="0" y="-51" n="1" dx="5" dy="5" type="0">    
         <addwaypoint id="wp4"/>
         <addwaypoint id="wp5"/>
     </agent>   -->
-    <agent x="-10" y="-50" n="1" dx="5" dy="3" type="0">    
+    <agent x="-10" y="-49" n="1" dx="3" dy="2" type="0">    
         <addwaypoint id="wp3"/>
         <addwaypoint id="wp2"/>
         <addwaypoint id="wp1"/>
     </agent>
-    <agent x="-25" y="-52" n="1" dx="10" dy="3" type="0">    
+    <agent x="-25" y="-52.5" n="1" dx="3" dy="2" type="0">    
         <addwaypoint id="wp4"/>
         <addwaypoint id="wp5"/>
     </agent>
@@ -65,10 +65,10 @@
         <addwaypoint id="wp2"/> 
         <addwaypoint id="wp1"/>
     </agent>     -->
-    <agent x="-40" y="-51" n="1" dx="20" dy="5" type="0">    
+    <agent x="-40" y="-49.5" n="1" dx="3" dy="2" type="0">    
         <addwaypoint id="wp4"/>
         <addwaypoint id="wp3"/> 
-        <addwaypoint id="wp2"/>>
+        <addwaypoint id="wp2"/>
     </agent> 
     <!-- <agent x="7" y="5" n="5" dx="20" dy="20" type="1">
         <addqueue id="info_desk"/>
