@@ -26,7 +26,7 @@ class PotentialField{
     double map_resolution = 0.1;
     double local_map_size = 1.5; // half of side length 
     // Parameters for tuning ----------------------------------------------------------
-    double run_freq = 10;  
+    double run_freq = 20;  
 
     double horizon_r = 5.0;     // robot vision horizon
     double bot_r = 0.35;     // robot radius
@@ -34,13 +34,13 @@ class PotentialField{
     
 
     // attraction field pararmeters ---
-    double att_scale = 2.0;   //Fatt intensity
+    double att_scale = 5.0;   //Fatt intensity
     double att_r = 2.0;     // parabolic to conic well boundary
     double att_const = att_scale * att_r;   //   
     // pedestrian repulsive field parameters ---
-    double rep_scale_p = 1.0;     //Frep intneisty
+    double rep_scale_p = 5.0;     //Frep intneisty
     double ped_r = 0.3;     // ped radius
-    double rep_r_p = 0.8;     // extra radius of the repulsive field
+    double rep_r_p =2.5;     // extra radius of the repulsive field
     // wall repulsive field parameters ---
     double rep_scale_w = 1.0;
     double wall_r = map_resolution * sqrt(2.0) / 2.0;

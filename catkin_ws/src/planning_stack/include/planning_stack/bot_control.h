@@ -22,8 +22,16 @@ class bot_control{
 	
 	// double max_lin_vel = 0.22;
 	// double max_ang_vel = 2.84;	
-	double max_lin_vel = 0.22;
-	double max_ang_vel = 3.14;
+	double max_lin_vel = 0.3;
+	double max_ang_vel = 5.0;
+
+	double angular_pre = 0.0;
+	double angular_window = 100.0;
+
+	bool new_info_flag = false;
+	double cmd_discount_rate = 0.95;
+
+	double reverse_discount = 0.3;
 
 	ros::NodeHandle n;
 	std::string odom_topic_name = "/odom";

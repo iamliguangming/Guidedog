@@ -61,11 +61,14 @@ int main(int argc, char** argv){
     // std::vector<double> start = {77.0, 240 * 0.3};
     // std::vector<double> goal = {173.0, 550 * 0.3};    
     std::vector<double> start = {50.45 + map_offset_x, -51.25 + map_offset_y};
-    std::vector<double> goal = {140.0, -51.39 + map_offset_y};
+    //std::vector<double> goal = {140.0, -51.59 + map_offset_y};
+    std::vector<double> goal = {0.45 + map_offset_x, -51.25 + map_offset_y}; 
+    
     std::vector<int> start_discre = map.get_curr_grid_pos(start);
     std::vector<int> goal_discre = map.get_curr_grid_pos(goal);
 
-    nav_msgs::Path path = dijkstra_finder.find_path(start, goal);
+    dijkstra_finder.find_path(start, goal);
+    nav_msgs::Path path = dijkstra_finder.get_path();
     ROS_INFO("Start at (%.2f, %.2f). Goal at (%.2f, %.2f)", start[0], start[1], goal[0], goal[1]);
     ROS_INFO("Start at (%d, %d). Goal at (%d, %d)", start_discre[0], start_discre[1], goal_discre[0], goal_discre[1]);
     ROS_INFO("Found Path: ");
@@ -81,13 +84,14 @@ int main(int argc, char** argv){
 
     
     //===========================Test Publish Topic and Visualization===============
-    ROS_INFO("Start Publishing...............");
-    ros::Rate loop_rate(5);
-    while(ros::ok()){
-        dijkstra_finder.publish_path();
-        ros::spinOnce();
-        loop_rate.sleep();
-    }
+    // ROS_INFO("Start Publishing...............");
+    // ros::Rate loop_rate(10);
+    // while(ros::ok()){
+    //     dijkstra_finder.fireup();
+    //     dijkstra_finder.publish_path();
+    //     ros::spinOnce();
+    //     loop_rate.sleep();
+    // }
 
 
 

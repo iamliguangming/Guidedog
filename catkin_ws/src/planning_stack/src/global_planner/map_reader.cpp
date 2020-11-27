@@ -27,9 +27,10 @@ void MapReader::publish_transform(){
     
     // assign the offset value
     tf2::Quaternion quat;
-    quat.setRPY(0, 0, -1.57);
+    // quat.setRPY(0, 0, -1.57);
+    quat.setRPY(0, 0, 0);
     static_transformStamped.transform.translation.x = -(height * resolution) / 2;
-    static_transformStamped.transform.translation.y = (width * resolution) / 2;
+    static_transformStamped.transform.translation.y = -(width * resolution) / 2;
     static_transformStamped.transform.translation.z = 0;
     static_transformStamped.transform.rotation.x = quat.x();
     static_transformStamped.transform.rotation.y = quat.y();

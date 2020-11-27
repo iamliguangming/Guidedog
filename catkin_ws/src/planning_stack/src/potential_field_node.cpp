@@ -40,6 +40,8 @@ void PotentialField::init(){
         r_init.sleep();
     }
     getNextWaypoint(1);  //get the first waypoint
+    next_wp_pos.x = -50.45;
+    next_wp_pos.y = -51.25;
     ROS_INFO("----------- PF initialization completed -----------");
 }
 
@@ -62,6 +64,8 @@ void PotentialField::run(){
             if(check()){
                 ROS_INFO("WP_%d reached", i);
                 getNextWaypoint(i+1);
+                next_wp_pos.x = -50.45;
+                next_wp_pos.y = 51.25;
                 break;
             }
         }
@@ -73,7 +77,7 @@ void PotentialField::run(){
 
 void PotentialField::step(){
     std::vector<double> Force = calculateForce();
-    ROS_INFO("Force: %f, %f", Force[0], Force[1]);
+    ROS_INFO("Force: % f, % f", Force[0], Force[1]);
     
     decision_signal.x = Force[0];
     decision_signal.y = Force[1];
@@ -84,10 +88,8 @@ void PotentialField::step(){
 
 std::vector<double> PotentialField::calculateForce(){
     std::vector<double> F_tot(2, 0.0);
-    ROS_INFO("bot_pos: %f, %f", bot_pos.x, bot_pos.y);
-
-    next_wp_pos.x = -30.45;
-    next_wp_pos.y = -51.25;
+    ROS_INFO("bot_pos: % f, % f", bot_pos.x, bot_pos.y);
+    ROS_INFO("next_wp_pos: % f % f", next_wp_pos.x, next_wp_pos.y);
 
     // Fatt from goal ---
     calcFatt(F_tot);
@@ -106,7 +108,6 @@ std::vector<double> PotentialField::calculateForce(){
 
 void PotentialField::calcFatt(std::vector<double> &F_tot){
     ROS_INFO("------------- Fatt from WPs --------------");
-    ROS_INFO("next_wp_pos: %f %f", next_wp_pos.x, next_wp_pos.y);
     std::vector<double> F_ori(2, 0.0);
     double att_source_dis = distance(bot_pos, next_wp_pos);
     double Fatt_mag = 0.0;
@@ -120,35 +121,40 @@ void PotentialField::calcFatt(std::vector<double> &F_tot){
     F_tot[0] = Fatt_mag * F_ori[0];
     F_tot[1] = Fatt_mag * F_ori[1];
     
-    ROS_INFO("Fatt: %f, %f", F_tot[0], F_tot[1]);
+    ROS_INFO("Fatt: % f, % f", F_tot[0], F_tot[1]);
 }
 
 void PotentialField::calcFrep_p(std::vector<double> &F_tot){
     ROS_INFO("------------- Frep from peds -------------");
-    printRlocation();
+    // printRlocation();
     pickRlocationWithinRange();
+    // for(int i = 0; i < peds_in_range.size(); i++){
+    //     ROS_INFO("peds in range %d: %d", i, peds_in_range[i]);
+    // }
 
     std::vector<double> F_ori(2, 0.0);
     // ROS_INFO("1");    
     if(int(ped_info.size()) > 0){
         // ROS_INFO("2");
-        for(int i = 0; i < ped_info.size(); i++){
-            // ROS_INFO("3");
+        for(int i = 0; i < int(ped_info.size()); i++){
+            // ROS_INFO("i = %d", i);
             if(peds_in_range[i]){
-                // ROS_INFO("4");
+                // ROS_INFO("peds in range: %d", i);
                 double rep_source_dis = sqrt(pow(ped_info[i].posex, 2.0) + pow(ped_info[i].posey, 2.0));
                 double close_dis = rep_source_dis - bot_r - ped_r;
                 double Frep_mag = 0.0;
-                if(close_dis <= rep_r_p){
+                ROS_INFO("ped_%d in range: % f  % f", i, ped_info[i].posex, ped_info[i].posey);
+                ROS_INFO("close_dis of ped_%d: %f", i, close_dis);
+                if(0 < close_dis && close_dis <= rep_r_p){
                     // ROS_INFO("5");
                     Frep_mag = rep_scale_p * (1.0 / close_dis - 1.0 / rep_r_p) * pow(1.0 / close_dis, 2.0);
-                    F_ori[0] = ped_info[i].posex / rep_source_dis;
-                    F_ori[1] = ped_info[i].posey / rep_source_dis;
+                    F_ori[0] = - ped_info[i].posex / rep_source_dis;
+                    F_ori[1] = - ped_info[i].posey / rep_source_dis;
                     F_tot[0] += Frep_mag * F_ori[0];
                     F_tot[1] += Frep_mag * F_ori[1];
-                    ROS_INFO("Frep ped_%d: %f, %f", i, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
+                    ROS_INFO("Frep ped_%d: % f, % f", i, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
                 }
-                if(close_dis <= 0) ROS_INFO(" Hit  ped_%d: %f, %f !!!!!!!", i, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
+                if(close_dis <= 0) ROS_INFO(" Hit  ped_%d: % f, % f !!!!!!!", i, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
             }
         }
     }
@@ -167,12 +173,12 @@ void PotentialField::calcFrep_w(std::vector<double> &F_tot){
     std::vector<std::vector<bool>> local_map = map.get_local_occ_grid(xy_double, local_map_size);   // local map 
 
     ROS_INFO("Local map: ");
-    for(int i= 0; i < local_map.size(); i++){
-        ROS_INFO("%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d", \
-        int(local_map[i][0]), int(local_map[i][1]), int(local_map[i][2]), int(local_map[i][3]), int(local_map[i][4]), int(local_map[i][5]), int(local_map[i][6]), int(local_map[i][7]), int(local_map[i][8]), int(local_map[i][9]),\
-        int(local_map[i][10]), int(local_map[i][11]), int(local_map[i][12]), int(local_map[i][13]), int(local_map[i][14]), int(local_map[i][15]), int(local_map[i][16]), int(local_map[i][17]), int(local_map[i][18]), int(local_map[i][19]),\
-        int(local_map[i][20]), int(local_map[i][21]), int(local_map[i][22]), int(local_map[i][23]), int(local_map[i][24]), int(local_map[i][25]), int(local_map[i][26]), int(local_map[i][27]), int(local_map[i][28]), int(local_map[i][29]), int(local_map[i][30]));
-    }
+    // for(int i= 0; i < local_map.size(); i++){
+    //     ROS_INFO("%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d%2d", \
+    //     int(local_map[i][0]), int(local_map[i][1]), int(local_map[i][2]), int(local_map[i][3]), int(local_map[i][4]), int(local_map[i][5]), int(local_map[i][6]), int(local_map[i][7]), int(local_map[i][8]), int(local_map[i][9]),\
+    //     int(local_map[i][10]), int(local_map[i][11]), int(local_map[i][12]), int(local_map[i][13]), int(local_map[i][14]), int(local_map[i][15]), int(local_map[i][16]), int(local_map[i][17]), int(local_map[i][18]), int(local_map[i][19]),\
+    //     int(local_map[i][20]), int(local_map[i][21]), int(local_map[i][22]), int(local_map[i][23]), int(local_map[i][24]), int(local_map[i][25]), int(local_map[i][26]), int(local_map[i][27]), int(local_map[i][28]), int(local_map[i][29]), int(local_map[i][30]));
+    // }
 
     int row = local_map.size();
     // ROS_INFO("local map size:%d", row);
@@ -186,15 +192,15 @@ void PotentialField::calcFrep_w(std::vector<double> &F_tot){
                 double dy = map_resolution * (row / 2 - i);
                 double rep_source_dis = sqrt(pow(dx, 2.0) + pow(dy, 2.0));
                 double close_dis = rep_source_dis - bot_r - wall_r;
-                if(close_dis <= rep_r_w && close_dis > 0){
+                if(0 < close_dis && close_dis <= rep_r_w && close_dis > 0){
                     Frep_mag = rep_scale_w * (1.0 / close_dis - 1.0 / rep_r_w) * pow(1.0 / close_dis, 2.0);
                     F_ori[0] = - dx / rep_source_dis;
                     F_ori[1] = - dy / rep_source_dis;
                     F_tot[0] += Frep_mag * F_ori[0];
                     F_tot[1] += Frep_mag * F_ori[1];
-                    ROS_INFO("Frep wall_%d_%d: %f, %f", i,j, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
+                    ROS_INFO("Frep wall_%d_%d: % f, % f", i,j, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
                 }
-                if(close_dis <= 0) ROS_INFO("Hit  wall_%d_%d: %f, %f !!!!!!!", i,j, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
+                if(close_dis <= 0) ROS_INFO("Hit  wall_%d_%d: % f, % f !!!!!!!", i,j, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
             }
         }
     }
@@ -321,19 +327,21 @@ void PotentialField::pickRlocation(const gazebo_msgs::ModelStates::ConstPtr &msg
 // std::vector<int> PotentialField::pickRlocationWithinRange(){
 void PotentialField::pickRlocationWithinRange(){
     // ROS_INFO("in pick");
-    // std::vector<int> peds_in_range;
+    std::vector<int> peds_in_range_;
     // printRlocation();
 
     int size = int(ped_info.size());
 
     for(int i = 0; i < size; i++){
         if(sqrt(pow(ped_info[i].posex, 2.0) + pow(ped_info[i].posey, 2.0)) <= horizon_r){
-            ROS_INFO("ped name in horizon: %s", (ped_info[i].name).c_str());
-            peds_in_range.push_back(1);
+            // ROS_INFO("ped name in horizon: %s", (ped_info[i].name).c_str());
+            peds_in_range_.push_back(1);
         }else{
-            peds_in_range.push_back(0);
+            peds_in_range_.push_back(0);
         } 
     }
+
+    peds_in_range = peds_in_range_;
     // return peds_in_range;
 }
 
@@ -343,7 +351,7 @@ void PotentialField::printRlocation(){
     ROS_INFO("id      x         y");
 
     for(int i = 0; i < int(ped_info.size()); i++){
-        ROS_INFO("%d: %f  %f", i, ped_info[i].posex, ped_info[i].posey);
+        ROS_INFO("%d: % f  % f", i, ped_info[i].posex, ped_info[i].posey);
     }
 }
 

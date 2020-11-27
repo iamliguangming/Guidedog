@@ -4,9 +4,9 @@
     <!--Obstacles-->
   
   <obstacle x1="48" y1="-53" x2="-48" y2="-53"/>
-  <obstacle x1="-48" y1="-53" x2="-48" y2="-49"/>
-  <obstacle x1="-48" y1="-49" x2="48" y2="-49"/>
-  <obstacle x1="48" y1="-49" x2="48" y2="-53"/>
+  <obstacle x1="-48" y1="-53" x2="-48" y2="-48"/>
+  <obstacle x1="-48" y1="-48" x2="48" y2="-48"/>
+  <obstacle x1="48" y1="-48" x2="48" y2="-53"/>
 <!--
   <obstacle x1="11" y1="12" x2="11" y2="50"/>
   <obstacle x1="11" y1="50" x2="15" y2="50"/>
@@ -34,15 +34,42 @@
         <addwaypoint id="robot_goal"/>
     </agent> -->
 
-    <!--AgentClusters-->
-    <agent x="-46" y="-51" n="10" dx="5" dy="20" type="0">    
-        <addwaypoint id="wp1"/>
+    <!--AgentClusters-->   
+    <agent x="30" y="-52" n="1" dx="5" dy="3" type="0">    
+        <addwaypoint id="wp5"/>
+    </agent>    
+    <!-- <agent x="20" y="-51" n="1" dx="5" dy="5" type="0">    
         <addwaypoint id="wp2"/>
+        <addwaypoint id="wp1"/>
+    </agent> -->
+    <!-- <agent x="10" y="-51" n="1" dx="5" dy="5" type="0">    
+        <addwaypoint id="wp2"/>
+        <addwaypoint id="wp1"/>
+    </agent> -->
+    <!-- <agent x="0" y="-51" n="1" dx="5" dy="5" type="0">    
+        <addwaypoint id="wp4"/>
+        <addwaypoint id="wp5"/>
+    </agent>   -->
+    <agent x="-10" y="-50" n="1" dx="5" dy="3" type="0">    
         <addwaypoint id="wp3"/>
+        <addwaypoint id="wp2"/>
+        <addwaypoint id="wp1"/>
+    </agent>
+    <agent x="-25" y="-52" n="1" dx="10" dy="3" type="0">    
         <addwaypoint id="wp4"/>
         <addwaypoint id="wp5"/>
     </agent>
-
+    <!-- <agent x="-30" y="-51" n="1" dx="10" dy="5" type="0">    
+        <addwaypoint id="wp4"/>
+        <addwaypoint id="wp3"/>
+        <addwaypoint id="wp2"/> 
+        <addwaypoint id="wp1"/>
+    </agent>     -->
+    <agent x="-40" y="-51" n="1" dx="20" dy="5" type="0">    
+        <addwaypoint id="wp4"/>
+        <addwaypoint id="wp3"/> 
+        <addwaypoint id="wp2"/>>
+    </agent> 
     <!-- <agent x="7" y="5" n="5" dx="20" dy="20" type="1">
         <addqueue id="info_desk"/>
         <addwaypoint id="bookshop_exit"/>
