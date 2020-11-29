@@ -7,7 +7,7 @@
         <pose>0 0 4.289977323 0 0 0</pose>
         <geometry>
           <box>
-            <size>13.03704276 13.03704276 8.579954646</size>
+            <size>6.03704276 6.03704276 4.579954646</size>
           </box>
         </geometry>
       </collision>
@@ -15,7 +15,7 @@
         <pose>0 0 0.464086321 0 0 0</pose>
         <geometry>
           <box>
-            <size>13.03704276 16.24458524 0.928172642</size>
+            <size>6.03704276 8.24458524 0.428172642</size>
           </box>
         </geometry>
       </collision>
@@ -23,6 +23,7 @@
         <geometry>
           <mesh>
             <uri>model://police_station/meshes/police_station.dae</uri>
+	    <scale>0.5 0.5 0.5</scale>
           </mesh>
         </geometry>
       </visual>

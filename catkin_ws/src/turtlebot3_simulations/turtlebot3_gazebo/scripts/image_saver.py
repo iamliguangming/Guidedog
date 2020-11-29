@@ -20,12 +20,12 @@ def image_callback(msg):
     else:
         # Save your OpenCV2 image as a jpeg 
         time = msg.header.stamp
-        cv2.imwrite(''+str(time)+'.jpeg', cv2_img)
+        cv2.imwrite("/mnt/new/0020/"+str(time)+'.png', cv2_img)
 
 def main():
     rospy.init_node('image_listener')
     # Define your image topic
-    image_topic = "/rrbot/camera1/image_raw"
+    image_topic = "/rrbot/camera1/image_rect_color"
     # Set up your subscriber and define its callback
     rospy.Subscriber(image_topic, Image, image_callback)
     # Spin until ctrl + c

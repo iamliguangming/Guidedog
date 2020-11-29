@@ -31,9 +31,9 @@ static std::vector<std::string> curr_obstacle_arr;
 
 void delete_agent_models(gazebo_msgs::DeleteModel model_delete_msg, ros::ServiceClient delete_model_client, int& counter)
 {
-    for (int i = 0 ;i<=23;i++){
+    for (int i = 0 ;i<=11;i++){
         // ros::Duration(0.1).sleep();
-        model_delete_msg.request.model_name = "man"+std::to_string(i+counter*24);
+        model_delete_msg.request.model_name = "man"+std::to_string(i+counter*12); //The number here should match the number of pedestrains
         ROS_INFO_STREAM("Deleting Model"<<model_delete_msg.request.model_name<<std::endl);
         delete_model_client.call(model_delete_msg);
         bool del_result = model_delete_msg.response.success;
@@ -93,7 +93,7 @@ void add_static_building(int num_static, std::vector<std::string>& static_xml_li
         static_add_msg.request.model_xml = xml;
 
         static_add_msg.request.initial_pose.position.x = (i / 2) * 10 + random_y_shift;
-        static_add_msg.request.initial_pose.position.y = std::pow(-1, i+1) * 10 + 5;
+        static_add_msg.request.initial_pose.position.y = std::pow(-1, i+1) * 14 + 5;
         static_add_msg.request.initial_pose.position.z = 0;
         static_add_msg.request.initial_pose.orientation.x = 0;
         static_add_msg.request.initial_pose.orientation.y = 0;
@@ -115,10 +115,14 @@ void add_static_obstacles(int num_static, std::vector<std::string>& static_xml_l
                             ros::ServiceClient& spawn_model_client){
     gazebo_msgs::SpawnModel static_add_msg;
     double random_y_shift = (std::rand() % 100 - 20) / 99.0 * 5;
+    int stop_light_count = 0;
+    int last_light_location = 0;
     
     for(int i=0; i<num_static; i++){
         
         int temp_idx = std::rand() % static_xml_lib.size();
+        while (((i / 2) * 3 + random_y_shift - last_light_location < 12 || stop_light_count > 1) &&(static_ori_name_lib[temp_idx]=="stop_light" || static_ori_name_lib[temp_idx]=="stop_light_green"))
+        temp_idx = std::rand() % static_xml_lib.size();
         std::string xml = static_xml_lib[temp_idx];
         std::string o_name = static_ori_name_lib[temp_idx];
         std::string model_name = o_name + std::to_string(i);
@@ -129,9 +133,18 @@ void add_static_obstacles(int num_static, std::vector<std::string>& static_xml_l
         xml.replace(xml.find(o_name),o_name.length(),model_name);
         static_add_msg.request.model_xml = xml;
 
-        static_add_msg.request.initial_pose.position.x = (i / 2) * 3 + random_y_shift;
+        static_add_msg.request.initial_pose.position.x = (i / 2) * 4.5 + random_y_shift;
+        if (o_name == "stop_light" || o_name == "stop_light_green"){
+            stop_light_count+=1;
+            last_light_location = static_add_msg.request.initial_pose.position.x;
+        }
         static_add_msg.request.initial_pose.position.y = std::pow(-1, i+1) * 3.5 + 5;
-        static_add_msg.request.initial_pose.position.z = 0;
+         if (o_name == "stop_light" || o_name == "stop_light_green"){
+            static_add_msg.request.initial_pose.position.z = 1;
+         }
+         else{
+             static_add_msg.request.initial_pose.position.z = 0;
+         }
         static_add_msg.request.initial_pose.orientation.x = 0;
         static_add_msg.request.initial_pose.orientation.y = 0;
         static_add_msg.request.initial_pose.orientation.z =  std::sin(-PI/4);
@@ -179,6 +192,7 @@ void imageCb(const sensor_msgs::ImageConstPtr& msg)
 
 
 int main(int argc, char **argv) {
+    std::srand (222);
     ros::init(argc, argv, "init_model_state");
     ros::NodeHandle nh;
     ros::Duration half_sec(0.5);
@@ -245,12 +259,26 @@ int main(int argc, char **argv) {
     //static model sdf define
     input_static_xml.push_back("src/generate_data/models/house_1/model-1_3.sdf");
     input_static_name.push_back("house_1");
+    input_static_xml.push_back("src/generate_data/models/house_2/model-1_3.sdf");
+    input_static_name.push_back("house_2");
+    input_static_xml.push_back("src/generate_data/models/house_3/model-1_3.sdf");
+    input_static_name.push_back("house_3");
     input_static_xml.push_back("src/generate_data/models/law_office/model.sdf");
     input_static_name.push_back("law_office");
     input_static_xml.push_back("src/generate_data/models/post_office/model.sdf");
     input_static_name.push_back("post_office");
-    input_static_obstacle_xml.push_back("src/generate_data/models/fire_hydrant/model.sdf");
-    input_static_obstacle_name.push_back("fire_hydrant");
+    input_static_xml.push_back("src/generate_data/models/police_station/model.sdf");
+    input_static_name.push_back("police_station");
+    input_static_xml.push_back("src/generate_data/models/radio_tower/model.sdf");
+    input_static_name.push_back("radio_tower");   
+    // input_static_obstacle_xml.push_back("src/generate_data/models/fire_hydrant/model.sdf");
+    // input_static_obstacle_name.push_back("fire_hydrant");
+    input_static_obstacle_xml.push_back("src/generate_data/models/stop_light_green/model.sdf");
+    input_static_obstacle_name.push_back("stop_light_green");
+    input_static_obstacle_xml.push_back("src/generate_data/models/stop_light_green/model.sdf");
+    input_static_obstacle_name.push_back("stop_light_green");
+    input_static_obstacle_xml.push_back("src/generate_data/models/stop_light_green/model.sdf");
+    input_static_obstacle_name.push_back("stop_light_green");
     input_static_obstacle_xml.push_back("src/generate_data/models/first_2015_trash_can/model.sdf");
     input_static_obstacle_name.push_back("trash_can");
     input_static_obstacle_xml.push_back("src/generate_data/models/oak_tree/model.sdf");
@@ -259,8 +287,10 @@ int main(int argc, char **argv) {
     input_static_obstacle_name.push_back("stop_sign");
     input_static_obstacle_xml.push_back("src/generate_data/models/mailbox/model.sdf");
     input_static_obstacle_name.push_back("mailbox");
-   input_static_obstacle_xml.push_back("src/generate_data/models/stop_light/model.sdf");
-    input_static_obstacle_name.push_back("stop_light");
+    // input_static_obstacle_xml.push_back("src/generate_data/models/stop_light/model.sdf");
+    // input_static_obstacle_name.push_back("stop_light");
+    input_static_obstacle_xml.push_back("src/generate_data/models/stop_light_green/model.sdf");
+    input_static_obstacle_name.push_back("stop_light_green");
 
 
 
@@ -271,11 +301,11 @@ int main(int argc, char **argv) {
     ros::Rate loop_rate(10);
 
     // generate parameters
-    int num_static = 6;
-    int num_static_obstacle = 20;
+    int num_static = 18;
+    int num_static_obstacle = 45;
     int max_num_mobile = 10;
-    int robot_state_number = 5;
-    int robot_angle_number = 3;
+    int robot_state_number = 1;
+    int robot_angle_number = 1;
 
 
     int past_model_number = 0;
@@ -287,7 +317,7 @@ int main(int argc, char **argv) {
     location_limit_p = {2, 1, 10, 5};
 
     std::vector<float> location_limit_robot(4);
-    location_limit_robot = {5, 2, 10, 4};
+    location_limit_robot = {-5, -1.5, 5, -1.0};
 
     std::vector<float> robot_theta_limit(2);
     robot_theta_limit = {-0.1, 0.1};
@@ -386,14 +416,14 @@ int main(int argc, char **argv) {
             float temp_x = float(std::rand() % 101) / 100.0 * (location_limit_robot[2] - location_limit_robot[0]) + location_limit_robot[0];
             float temp_y = float(std::rand() % 101) / 100.0 * (location_limit_robot[3] - location_limit_robot[1]) + location_limit_robot[1];
             for(int j = 0; j<robot_angle_number; j++){
-                float temp_theta = robot_theta_limit[0] + (j+1) * (float(std::rand() % 101) / 100.0) * angle_change;
-                get_change_msg(model_state_msg, temp_x, temp_y, temp_theta);
+                // float temp_theta = robot_theta_limit[0] + (j+1) * (float(std::rand() % 101) / 100.0) * angle_change;
+                get_change_msg(model_state_msg, temp_x, temp_y, 0.0001);
                 set_model_state_client.call(model_state_msg);
                 std::vector<float> camera_status(4);
                 camera_status[0] = temp_x;
                 camera_status[1] = temp_y;
                 camera_status[2] = 0;
-                camera_status[3] = temp_theta;
+                camera_status[3] = 0;
                 // int len = store_values.size();
                 // if (store_values[len-1].size() == 8){
                 //     store_values.push_back(camera_status);
@@ -408,7 +438,7 @@ int main(int argc, char **argv) {
                 //     output_file << '\n';
                 // }
                 // output_file.close();
-                ros::Duration(20).sleep();
+                ros::Duration(100).sleep();
                 IMG_ID += 1;
                 
             }
