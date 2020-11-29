@@ -19,7 +19,11 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
+<<<<<<< HEAD
             <uri>model://street1/street1.dae</uri>
+=======
+            <uri>/home/yuchen/Documents/CIS700/world02/models/street1/street1.dae</uri>
+>>>>>>> planning
             <!--<uri>model://simplemodified.dae</uri>-->
             <scale>1 1 1</scale>
           </mesh>
@@ -40,7 +44,11 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
+<<<<<<< HEAD
             <uri>model://street1/street1.dae</uri>
+=======
+            <uri>/home/yuchen/Documents/CIS700/world02/models/street1/street1.dae</uri>
+>>>>>>> planning
             <!--<uri>model://simplemodified.dae</uri>-->
             <scale>1 1 1</scale>
           </mesh>
