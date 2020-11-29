@@ -36,7 +36,7 @@
             <arg name="simulation_factor" value="$(arg simulation_factor)"/>
             <arg name="update_rate" value="$(arg update_rate)"/>
             <arg name="default_queue_size" value="10"/>
-            <arg name="max_robot_speed" value="0.8"/>
+            <arg name="max_robot_speed" value="0.5"/>
             <arg name="robot_mode" value="1"/>
             <arg name="enable_groups" value="true"/>
             <arg name="pose_initial_x" value="5.0"/>
@@ -69,8 +69,11 @@
 
         <!-- Run the map server -->
         <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" >
-        </node>        
-        
+        </node>  
+
+        <!-- Run the controller -->
+        <!-- <node pkg="planning_stack" type="simple_controller_node" name="simple_controller_node"  output="screen">
+        </node> -->
         
         <!-- load the turtlebot3 teleop key controller -->
         <param name="model" value="$(arg model)"/>

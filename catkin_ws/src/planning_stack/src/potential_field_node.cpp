@@ -98,8 +98,11 @@ std::vector<double> PotentialField::calculateForce(){
     calcFrep_w(F_tot);
     // Frep from danger index
     if(DI) calcDangerIndex(F_tot);
+    // Frep from velo ---
+    calcFrep_v(F_tot);
 
     ped_info_pre = ped_info;
+    
 
     return F_tot;
 };
@@ -145,7 +148,8 @@ void PotentialField::calcFrep_p(std::vector<double> &F_tot){
                 ROS_INFO("close_dis of ped_%d: %f", i, close_dis);
                 if(0 < close_dis && close_dis <= rep_r_p){
                     // ROS_INFO("5");
-                    Frep_mag = rep_scale_p * (1.0 / close_dis - 1.0 / rep_r_p) * pow(1.0 / close_dis, 2.0);
+                    Frep_mag = rep_scale_p * (1.0 / close_dis - 1.0 / rep_r_p) * pow(1.0 / close_dis, 1.5);
+                    // Frep_mag = rep_scale_p * (1.0 / close_dis - 1.0 / rep_r_p) * sqrt(1.0 / close_dis);
                     F_ori[0] = - ped_info[i].posex / rep_source_dis;
                     F_ori[1] = - ped_info[i].posey / rep_source_dis;
                     F_tot[0] += Frep_mag * F_ori[0];
@@ -153,12 +157,13 @@ void PotentialField::calcFrep_p(std::vector<double> &F_tot){
                     ROS_INFO("Frep ped_%d: % f, % f", i, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
                 }
                 if(close_dis < 0){
-                    ROS_INFO(" Hit  ped_%d: % f, % f !!!!!!!", i, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
-                    Frep_mag = - rep_scale_p * (1.0 / close_dis - 1.0 / rep_r_p) * pow(1.0 / close_dis, 2.0);
+                    Frep_mag = - rep_scale_p * (1.0 / close_dis - 1.0 / rep_r_p) * pow(1.0 / close_dis, 1.5);
+                    // Frep_mag = - rep_scale_p * (1.0 / close_dis - 1.0 / rep_r_p) * sqrt(1.0 / close_dis);
                     F_ori[0] = - ped_info[i].posex / rep_source_dis;
                     F_ori[1] = - ped_info[i].posey / rep_source_dis;
                     F_tot[0] += Frep_mag * F_ori[0];
                     F_tot[1] += Frep_mag * F_ori[1];
+                    ROS_INFO(" Hit  ped_%d: % f, % f !!!!!!!", i, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
                 }
             }
         }
@@ -206,12 +211,12 @@ void PotentialField::calcFrep_w(std::vector<double> &F_tot){
                     ROS_INFO("Frep wall_%d_%d: % f, % f", i,j, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
                 }
                 if(close_dis < 0){
-                    ROS_INFO("Hit  wall_%d_%d: % f, % f !!!!!!!", i,j, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);                                                       mag * F_ori[0], Frep_mag * F_ori[1]);
                     Frep_mag = - rep_scale_w * (1.0 / close_dis - 1.0 / rep_r_w) * pow(1.0 / close_dis, 2.0);
                     F_ori[0] = - dx / rep_source_dis;
                     F_ori[1] = - dy / rep_source_dis;
                     F_tot[0] += Frep_mag * F_ori[0];
                     F_tot[1] += Frep_mag * F_ori[1];
+                    ROS_INFO("Hit wall_%d_%d: % f, % f !!!", i,j, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
                 } 
             }
         }
@@ -258,6 +263,39 @@ void PotentialField::calcDangerIndex(std::vector<double> &F_tot){
         }
     }
 }
+
+void PotentialField::calcFrep_v(std::vector<double> &F_tot){
+    ROS_INFO("------------- Frep from velo --------------");
+    std::vector<double> F_ori(2, 0.0);
+    // printRlocation();
+    getPedVelocity();
+    for(int i = 0; i < ped_info.size(); i++){
+        if(peds_in_range[i]){
+            double rep_source_dis = sqrt(pow(ped_info[i].posex, 2.0) + pow(ped_info[i].posey, 2.0));
+            double Frep_mag = rep_scale_v * sqrt(pow(ped_info[i].velox, 2.0) + pow(ped_info[i].velox, 2.0));
+            ROS_INFO("r in p veloy: %f, velox: %f", - ped_info[i].veloy, - ped_info[i].velox);
+            ROS_INFO("p in r posey: %f, posex: %f", ped_info[i].posey, ped_info[i].posex);
+            double v_angle = atan2(- ped_info[i].veloy, - ped_info[i].velox) + pi;
+            double p_angle = atan2(ped_info[i].posey, ped_info[i].posex) + pi;
+            ROS_INFO("ped %d", i);
+            ROS_INFO("v_angle: %f", v_angle);
+            ROS_INFO("p_angle: %f", p_angle); 
+            double delta_angle = abs(v_angle - p_angle);
+            double delta_angle_sup = 2 * pi - delta_angle;
+            ROS_INFO("delta angle: %f", delta_angle);
+            ROS_INFO("delta angle sup %f", delta_angle_sup);
+            if(std::min(delta_angle, delta_angle_sup) < 1.57){
+                F_ori[0] = - ped_info[i].posex / rep_source_dis;
+                F_ori[1] = - ped_info[i].posey / rep_source_dis;
+                F_tot[0] += Frep_mag * F_ori[0];
+                F_tot[1] += Frep_mag * F_ori[1];
+                ROS_INFO("Frep velo_ped_%d: % f, % f", i, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
+            }
+            
+        }
+    }
+}
+
 bool PotentialField::check(){
     double dis = sqrt(pow((bot_pos.x - next_wp_pos.x), 2.0) + pow((bot_pos.y - next_wp_pos.y), 2.0));
     if(dis <= check_arrive_threshold) return true;
@@ -368,7 +406,7 @@ void PotentialField::printRlocation(){
 }
 
 void PotentialField::getPedVelocity(){
-    ped_set_pre = ped_set;
+    // ped_set_pre = ped_set;
     std::set<std::string>::iterator iter;
     
     for(iter = ped_set.begin() ; iter != ped_set.end() ; ++iter)
@@ -376,13 +414,13 @@ void PotentialField::getPedVelocity(){
         ROS_INFO("ped name in get velo: %s", (*iter).c_str());
     }
     for(int i = 0; i < ped_info.size(); i++){
-        if(ped_set_pre.find(ped_info[i].name) != ped_set_pre.end() && ped_info_pre.size() > 0){
+        if(ped_info_pre.size() > 0 && ped_set_pre.find(ped_info[i].name) != ped_set_pre.end()){
             ped_info[i].velox = (ped_info[i].posex - ped_info_pre[i].posex) / (1.0 / run_freq);
             ped_info[i].veloy = (ped_info[i].posey - ped_info_pre[i].posey) / (1.0 / run_freq);
         }
         ROS_INFO("ped %s relative velocity: % f % f", (ped_info[i].name).c_str(), ped_info[i].velox, ped_info[i].veloy);
     } 
-    
+
     ped_set_pre = ped_set;
     ped_set.clear();
 }
