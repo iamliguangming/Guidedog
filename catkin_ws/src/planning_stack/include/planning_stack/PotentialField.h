@@ -48,9 +48,9 @@ class PotentialField{
     double rep_r_p = 2.5;     // extra radius of the repulsive field
     
     // wall repulsive field parameters ---
-    double rep_scale_w = 10.0;
+    double rep_scale_w = 15.0;
     double wall_r = map_resolution * sqrt(2.0) / 2.0;
-    double rep_r_w = 0.6;   // extra radius of the repulsize field   
+    double rep_r_w = 0.6;   // extra radius of the repulsize field   was 0.6
 
     // danger index field paremeters ---
     bool DI = false;

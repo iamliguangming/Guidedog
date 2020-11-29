@@ -449,11 +449,12 @@ void PotentialField::getSparseGlobalPath(){
     sparse_global_path_.poses.push_back(tmp);
     int curr_wp = 0;
     for(int i = 1; i < size - 1; i++){
-        double dx1 = dense_global_path.poses[i].pose.position.x - dense_global_path.poses[curr_wp].pose.position.x;
-        double dy1 = dense_global_path.poses[i].pose.position.y - dense_global_path.poses[curr_wp].pose.position.y;
-        double dx2 = dense_global_path.poses[i+1].pose.position.x - dense_global_path.poses[curr_wp].pose.position.x;
-        double dy2 = dense_global_path.poses[i+1].pose.position.y - dense_global_path.poses[curr_wp].pose.position.y;       
-        if((dy2 / dx2 - dy1 / dx1) > 0.01){
+        double dx1 = dense_global_path.poses[i].pose.position.x - dense_global_path.poses[i-1].pose.position.x; // i-1 used to be curr_wp
+        double dy1 = dense_global_path.poses[i].pose.position.y - dense_global_path.poses[i-1].pose.position.y;
+        double dx2 = dense_global_path.poses[i+1].pose.position.x - dense_global_path.poses[i-1].pose.position.x;
+        double dy2 = dense_global_path.poses[i+1].pose.position.y - dense_global_path.poses[i-1].pose.position.y;       
+        if(abs(dy2 / dx2 - dy1 / dx1) > 0.001){
+            ROS_INFO("new WP!  delta slope: %f", abs(dy2 / dx2 - dy1 / dx1));
             tmp.pose.position.x = dense_global_path.poses[i+1].pose.position.x;
             tmp.pose.position.y = dense_global_path.poses[i+1].pose.position.y;
             sparse_global_path_.poses.push_back(tmp);

@@ -69,7 +69,7 @@ void bot_control::move(){
             ROS_INFO("min angle: %f: ", std::min(delta_angle_ccw, delta_angle_cw));
 
             // if(std::min(delta_angle_ccw, delta_angle_cw) <= 3.0 / 4.0 * pi){
-            if(std::min(delta_angle_ccw, delta_angle_cw) >= 4.0 / 5.0 * pi){   // when both angle is close to pi / 2, reverse
+            if(std::min(delta_angle_ccw, delta_angle_cw) >= 3.0 / 4.0 * pi){   // when both angle is close to pi / 2, reverse
                
                 double angle_sup = M_PI - std::max(delta_angle_ccw, delta_angle_cw);    // the supplement angle
                 if(delta_angle_ccw < delta_angle_cw){
@@ -98,6 +98,7 @@ void bot_control::move(){
             }
 
             cmd.angular.z *= emergency_scale * no_force_scale;
+            cmd.angular.z += 0.02;
             cmd.linear.x *= emergency_scale * no_force_scale;
 
             // ROS_INFO("modified delta_angle: %f", std::min(delta_angle_ccw, delta_angle_cw));

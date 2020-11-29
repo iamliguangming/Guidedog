@@ -34,10 +34,10 @@ void GlobalPathFinder::add_adjacent_cell(const int& cell_idx){
     int row_shift[8] = {0, -1, -1, -1, 0, 1, 1, 1};
     int col_shift[8] = {-1, -1, 0, 1, 1, 1, 0, -1};
     int dist[8] = {5, 7, 5, 7, 5, 7, 5, 7};
-
+    bool is_map_inflated = true;  // use inflation map for planning
     for(int i = 0; i < 8; i++){
         std::vector<int> neighbor_coord = {cell_coord[0] + row_shift[i], cell_coord[1] + col_shift[i]};
-        if (!map->is_outside_map(neighbor_coord) && !map->is_colliding(neighbor_coord)){
+        if (!map->is_outside_map(neighbor_coord) && !map->is_colliding(neighbor_coord, is_map_inflated)){
             int curr_idx = map->get_idx_from_coord(neighbor_coord);
             curr_adjacent_list.push_back(std::make_pair(dist[i],curr_idx));
         }
@@ -54,18 +54,26 @@ void GlobalPathFinder::find_path(const std::vector<double> &start_cell, const st
     // ROS_INFO("start cell coord: (%d, %d)", start_cell_coord[0], start_cell_coord[1]);
     // ROS_INFO("goal cell coord: (%d, %d)", goal_cell_coord[0], goal_cell_coord[1]);
     // Check if the start cell is inside the obstacle
-    if(map->is_colliding(start_cell_coord) || map->is_colliding(goal_cell_coord)){
+    bool is_map_inflated = false;  // for selection, use non-inflated map.
+    if(map->is_colliding(start_cell_coord, is_map_inflated) || map->is_colliding(goal_cell_coord, is_map_inflated)){
         ROS_WARN("The start or goal location is inside the obstacle! Please evaluate your choice.");
+        std::abort();
+    }
+
+    // check if the selected cell and goal cell is inside the inflation layer
+    is_map_inflated = true;
+    if(map->is_colliding(start_cell_coord, is_map_inflated) || map->is_colliding(goal_cell_coord, is_map_inflated)){
+        ROS_WARN("The start or goal location is inside the inflation layer! Please evaluate your choice.");
+        std::abort();
         // return path;
     }
-    ROS_INFO("checkpoint 1");
+
     // push back the start point into heap and cost of it into cost vector
     int start_cell_idx = map->get_idx_from_coord(start_cell_coord);
     int goal_cell_idx = map->get_idx_from_coord(goal_cell_coord);
 
     cost[start_cell_idx] = 0;
     cost_min_heap.insert(std::make_pair(0, start_cell_idx));
-    ROS_INFO("checkpoint 2");
 
     // Dijkstra algorithm
     while (!cost_min_heap.empty()){

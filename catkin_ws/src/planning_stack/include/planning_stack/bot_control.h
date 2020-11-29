@@ -34,7 +34,7 @@ class bot_control{
 
 	double reverse_discount = 1.5;	 // when reversing, move faster
 	double emergency_discount = 1.5;	// when in panic (large force), move faster
-	double no_force_discount = 0.8;		// the controller is runing at 100Hz but the force signal is running at 10Hz. When no force signal, add discount on the earlier command
+	double no_force_discount = 0.75;		// the controller is runing at 100Hz but the force signal is running at 10Hz. When no force signal, add discount on the earlier command
 	double no_force_scale = 1.0;	
 
 

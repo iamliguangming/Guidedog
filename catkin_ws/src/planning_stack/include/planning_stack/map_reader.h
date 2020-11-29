@@ -28,6 +28,8 @@ class MapReader{
     std::vector<std::vector<bool>> local_occupancyGrid;
     std::vector<int> curr_grid_pos = {0, 0};
     int curr_pos_idx;
+    int inflation_layer = 13;
+    std::vector<std::vector<bool>> not_inflated_occupancyGrid;
 
     public:
     MapReader(ros::NodeHandle* nh);
@@ -35,6 +37,7 @@ class MapReader{
     void publish_transform();
     void request_map(ros::NodeHandle* nh);
     void get_map_data();
+    void inflate_map(std::vector<std::vector<bool>> &occupancyGrid);
     int getHeight();
     int getWidth();
     long int get_map_size();
@@ -48,7 +51,7 @@ class MapReader{
     int get_idx_from_coord(const std::vector<int> &cell_coord);
     std::vector<double> get_xy_double_from_idx(const int &curr_pos_idx);
     std::vector<double> get_xy_double_from_coord(const std::vector<int> &curr_grid_coord);
-    bool is_colliding(const std::vector<int> &cell_coord);
+    bool is_colliding(const std::vector<int> &cell_coord, const bool &is_map_inflated);
     bool is_outside_map(const std::vector<int> &cell_coord);
 
 };
