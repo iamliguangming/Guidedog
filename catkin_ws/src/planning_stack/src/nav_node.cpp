@@ -67,8 +67,8 @@ int main(int argc, char** argv){
     std::vector<int> start_discre = map.get_curr_grid_pos(start);
     std::vector<int> goal_discre = map.get_curr_grid_pos(goal);
 
-    // dijkstra_finder.find_path(start, goal);
-    // nav_msgs::Path path = dijkstra_finder.get_path();
+    //dijkstra_finder.find_path(start, goal);
+    //nav_msgs::Path path = dijkstra_finder.get_path();
     // ROS_INFO("Start at (%.2f, %.2f). Goal at (%.2f, %.2f)", start[0], start[1], goal[0], goal[1]);
     // ROS_INFO("Start at (%d, %d). Goal at (%d, %d)", start_discre[0], start_discre[1], goal_discre[0], goal_discre[1]);
     // ROS_INFO("Found Path: ");
