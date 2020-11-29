@@ -20,18 +20,23 @@ class bot_control{
 
 	private://parameter for conrolling the linear and angular speed
 	
+	int cnt = 0;
 	// double max_lin_vel = 0.22;
 	// double max_ang_vel = 2.84;	
-	double max_lin_vel = 0.3;
-	double max_ang_vel = 5.0;
+	double max_lin_vel = 0.22;	// max linear speed
+	double max_ang_vel = 10.0;	// max angular speed
 
 	double angular_pre = 0.0;
-	double angular_window = 100.0;
+	double angular_window = 100.0;	// ignore
 
 	bool new_info_flag = false;
-	double cmd_discount_rate = 0.95;
+	double cmd_discount_rate = 0.95; 	// ignore
 
-	double reverse_discount = 0.3;
+	double reverse_discount = 1.5;	 // when reversing, move faster
+	double emergency_discount = 1.5;	// when in panic (large force), move faster
+	double no_force_discount = 0.75;		// the controller is runing at 100Hz but the force signal is running at 10Hz. When no force signal, add discount on the earlier command
+	double no_force_scale = 1.0;	
+
 
 	ros::NodeHandle n;
 	std::string odom_topic_name = "/odom";
@@ -42,7 +47,7 @@ class bot_control{
 	geometry_msgs::Pose2D bot_pos;
 	geometry_msgs::Pose2D Force;
 	double goal_angle;
-	double stop_flag = 0.0;
+	double stop_flag = 1.0;
 
 	geometry_msgs::Twist cmd;
 

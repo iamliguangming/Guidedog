@@ -8,7 +8,7 @@ int main(int argc, char** argv){
     ros::Publisher pub = n.advertise<geometry_msgs::Twist>("cmd_vel", 1);
     bot_control bc;
     bc.init();
-    ros::Rate loop_rate(50);
+    ros::Rate loop_rate(100);
     while(ros::ok()){
         
         bc.move();        

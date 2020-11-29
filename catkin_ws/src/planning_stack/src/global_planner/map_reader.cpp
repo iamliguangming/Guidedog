@@ -6,6 +6,7 @@
 #include <tf2_ros/static_transform_broadcaster.h>
 #include <geometry_msgs/TransformStamped.h>
 #include <tf2/LinearMath/Quaternion.h>
+#include <vector>
 
 MapReader::MapReader(ros::NodeHandle* nh){
     request_map(nh); // establish the client-server relationship
@@ -81,6 +82,68 @@ void MapReader::get_map_data(){
             cellCounter ++;
         }
     }
+
+    // inflate the map according to inflation layer setting for avoiding the robot going along the wall
+    not_inflated_occupancyGrid = occupancyGrid;
+    inflate_map(occupancyGrid);
+}
+
+void MapReader::inflate_map(std::vector<std::vector<bool>> &occupancyGrid){
+    // inflate every vertical wall by reading the map from horizontal direction(left to right)
+    for(int i = 0; i < height; i++){
+        int layer_counter = 0;
+        for(int j = 0; j < width - 1; j++){
+            if((occupancyGrid[i][j] != occupancyGrid[i][j+1]) && (occupancyGrid[i][j] == true)){
+                occupancyGrid[i][j+1] = true;
+                layer_counter++;
+                if(layer_counter == inflation_layer){
+                    j++;  // if layer counter reach the preset layer thickness, skip the next cell for stopping the inflation process
+                    layer_counter = 0;  // set layer counter to zero.
+                }
+            }
+        }
+
+        // reverse the horizontal inflation process to complete all the walls.
+        layer_counter = 0; // reinitialize layer counter for reverse
+        for(int j = width - 1; j > 1; j--){
+            if((occupancyGrid[i][j] != occupancyGrid[i][j-1]) && (occupancyGrid[i][j] == true)){
+                occupancyGrid[i][j-1] = true;
+                layer_counter++;
+                if(layer_counter == inflation_layer){
+                    j--;
+                    layer_counter = 0;
+                }
+            }
+        }
+    }
+
+    // inflate every horizontal wall by reading the map from vertical direction(up to down)
+    for(int j = 0; j < width; j++){
+        int layer_counter = 0;
+        for(int i = 0; i < height - 1; i++){
+            if((occupancyGrid[i][j] != occupancyGrid[i + 1][j]) && (occupancyGrid[i][j] == true)){
+                occupancyGrid[i + 1][j] = true;
+                layer_counter++;
+                if(layer_counter == inflation_layer){
+                    i++;
+                    layer_counter = 0;
+                }
+            }
+        }
+
+        // reverse direction
+        layer_counter = 0;
+        for(int i = height - 1; i > 1; i--){
+            if((occupancyGrid[i][j] != occupancyGrid[i-1][j]) && (occupancyGrid[i][j] == true)){
+                occupancyGrid[i-1][j] = true;
+                layer_counter++;
+                if(layer_counter == inflation_layer){
+                    i--;
+                    layer_counter = 0;
+                }
+            }
+        }
+    }
 }
 
 int MapReader::getHeight(){
@@ -141,7 +204,7 @@ std::vector<std::vector<bool>> MapReader::get_local_occ_grid(const std::vector<d
     // Assign the local grid map
     for(int row = i_start; row <= i_end; row++){
         for(int col = j_start; col <= j_end; col++){
-            local_occupancyGrid[row - i_start][col - j_start] = occupancyGrid[row][col];
+            local_occupancyGrid[row - i_start][col - j_start] = not_inflated_occupancyGrid[row][col];
         }
     }
     
@@ -196,8 +259,13 @@ int MapReader::get_idx_from_coord(const std::vector<int> &cell_coord){
     return cell_idx;
 }
 
-bool MapReader::is_colliding(const std::vector<int> &cell_coord){
-    return occupancyGrid[cell_coord[0]][cell_coord[1]];
+bool MapReader::is_colliding(const std::vector<int> &cell_coord, const bool &is_map_inflated){
+    if(is_map_inflated){
+        return occupancyGrid[cell_coord[0]][cell_coord[1]];
+    }
+    else{
+        return not_inflated_occupancyGrid[cell_coord[0]][cell_coord[1]];
+    }
 }
 
 bool MapReader::is_outside_map(const std::vector<int> &cell_coord){
