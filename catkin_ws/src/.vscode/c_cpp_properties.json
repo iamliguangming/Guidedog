@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/yihangxu/Documents/guidedog/Guidedog/catkin_ws/devel/include/**",
+                "/home/yihangxu/Documents/ros_wiki/catkin_ws/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/home/yihangxu/Documents/ros_wiki/catkin_ws/src/beginner_tutorials/include/**",
+                "/home/yihangxu/Documents/guidedog/Guidedog/catkin_ws/src/gazebo_ros_2Dmap_plugin-melodic-devel/include/**",
+                "/home/yihangxu/Documents/guidedog/Guidedog/catkin_ws/src/pedsim_ros/3rdparty/libpedsim/include/**",
+                "/home/yihangxu/Documents/guidedog/Guidedog/catkin_ws/src/pedsim_ros/pedsim_sensors/include/**",
+                "/home/yihangxu/Documents/guidedog/Guidedog/catkin_ws/src/pedsim_ros/pedsim_simulator/include/**",
+                "/home/yihangxu/Documents/guidedog/Guidedog/catkin_ws/src/pedsim_ros/pedsim_utils/include/**",
+                "/home/yihangxu/Documents/guidedog/Guidedog/catkin_ws/src/pedsim_ros/pedsim_visualizer/include/**",
+                "/home/yihangxu/Documents/guidedog/Guidedog/catkin_ws/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+                "/home/yihangxu/Documents/guidedog/Guidedog/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+                "/home/yihangxu/Documents/guidedog/Guidedog/catkin_ws/src/turtlebot3/turtlebot3_slam/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14"
+        }
+    ],
+    "version": 4
+}

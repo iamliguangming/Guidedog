@@ -1,0 +1,18 @@
+<launch>
+        <!-- Change the .world file name and .xml scenario file name here to the one you like -->
+        <!-- Please modify the followsing two lines for loading customize .xml scenario and .world files.  -->
+        <arg name="world_file" default="newstreet_4blocks"/>
+    
+
+        <!-- Open Gazebo -->
+        <!-- The .world file is modified to read from customize worlds folder inside customize pkg -->
+        <include file="$(find gazebo_ros)/launch/empty_world.launch">
+            <arg name="world_name" value="$(find turtlebot3_gazebo)/worlds/$(arg world_file).world"/>
+            <arg name="paused" value="false"/>
+            <arg name="use_sim_time" value="true"/>
+            <arg name="gui" value="true"/>
+            <arg name="headless" value="false"/>
+            <arg name="debug" value="false"/>
+         </include>
+
+</launch>

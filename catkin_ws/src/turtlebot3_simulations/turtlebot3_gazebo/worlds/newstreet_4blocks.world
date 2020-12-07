@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <sdf version='1.6'>
   <world name='default'>
     <light name='sun' type='directional'>
@@ -103,6 +104,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
+              <!-- <uri>/home/yuchen/Documents/CIS700/world02/models/street2/street2.dae</uri> -->
               <uri>model://street2/street2.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
@@ -116,6 +118,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
+              <!-- <uri>/home/yuchen/Documents/CIS700/world02/models/street2/street2.dae</uri> -->
               <uri>model://street2/street2.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
@@ -210,5 +213,21 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
+<<<<<<< HEAD
+=======
+    <!-- Add 2D map generator  -->
+    <plugin name='gazebo_occupancy_map' filename='libgazebo_2Dmap_plugin.so'>
+      <map_resolution>0.2</map_resolution> <!-- in meters, optional, default 0.1 -->
+      <map_z>0.16</map_z>         <!-- in meters, optional, default 0.3 -->
+      <map_size_x>350</map_size_x>          <!-- in meters, optional, default 10 -->
+      <map_size_y>350</map_size_y>          <!-- in meters, optional, default 10 -->
+      <init_robot_x>-50</init_robot_x>          <!-- x coordinate in meters, optional, default 0. -50 for inside. -50 for outside-->
+      <init_robot_y>50</init_robot_y>          <!-- y coordinate in meters, optional, default 0, 50 for inside. -50 for outside-->
+
+    </plugin>
+    <!-- Add plugin for pedsim agents to be movable -->
+    <plugin name="ActorPosesPlugin" filename="libActorPosesPlugin.so">
+    </plugin> 
+>>>>>>> planning
   </world>
 </sdf>
