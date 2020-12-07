@@ -53,7 +53,11 @@ void GlobalPathFinder::find_path(const std::vector<double> &start_cell, const st
 
     // ROS_INFO("start cell coord: (%d, %d)", start_cell_coord[0], start_cell_coord[1]);
     // ROS_INFO("goal cell coord: (%d, %d)", goal_cell_coord[0], goal_cell_coord[1]);
+<<<<<<< Updated upstream
     // Check if the start cell is inside the obstacle
+=======
+    // Check if the selected start and goal cell is inside the obstacle
+>>>>>>> Stashed changes
     bool is_map_inflated = false;  // for selection, use non-inflated map.
     if(map->is_colliding(goal_cell_coord, is_map_inflated)){
         ROS_WARN("The start or goal location is inside the obstacle! Please evaluate your choice.");
