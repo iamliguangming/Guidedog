@@ -201,4 +201,69 @@
 </collision>
 </link>
 
+  <joint name="camera_joint_2" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link_2"/>
+    <origin xyz="0.056 0 0.4788" rpy="0 0 0.785"/>
+  </joint>
+
+
+
+<link name='camera_link_2'>
+<!-- <inertial>
+  <origin xyz="0 0 0.0" rpy="0 0 0"/>
+  <inertia ixx="0.005" ixy="0.0" ixz="0.0"
+           iyy="0.005" iyz="0.0"
+           izz="0.005" />
+  <mass value="0.02" />
+</inertial> -->
+
+<visual name='camera_visual_2'>
+    <origin xyz="0.056 -0.028 -0.056" rpy="0 1.57 0"/>
+  <geometry>
+    <mesh filename="package://turtlebot3_description/meshes/sensors/ras_cam.dae" scale="2.8 2.8 2.8"/>
+  </geometry>
+</visual>
+
+<collision name='camera_collision_2'>
+  <pose frame=''>0.056 -0.028 -0.056 0 -0 0</pose>
+  <geometry>
+     <box size="0.0084 0.084 0.07"/>
+  </geometry>
+</collision>
+</link>
+
+
+  <joint name="camera_joint_3" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link_3"/>
+    <origin xyz="0.056 0 0.4788" rpy="0 0 -0.785"/>
+  </joint>
+
+
+
+<link name='camera_link_3'>
+<!-- <inertial>
+  <origin xyz="0 0 0.0" rpy="0 0 0"/>
+  <inertia ixx="0.005" ixy="0.0" ixz="0.0"
+           iyy="0.005" iyz="0.0"
+           izz="0.005" />
+  <mass value="0.02" />
+</inertial> -->
+
+<visual name='camera_visual_3'>
+    <origin xyz="0.056 -0.028 -0.056" rpy="0 1.57 0"/>
+  <geometry>
+    <mesh filename="package://turtlebot3_description/meshes/sensors/ras_cam.dae" scale="2.8 2.8 2.8"/>
+  </geometry>
+</visual>
+
+<collision name='camera_collision_3'>
+  <pose frame=''>0.056 -0.028 -0.056 0 -0 0</pose>
+  <geometry>
+     <box size="0.0084 0.084 0.07"/>
+  </geometry>
+</collision>
+</link>
+
 </robot>
