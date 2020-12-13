@@ -1,5 +1,6 @@
 catkin_ws/build
 catkin_ws/devel
+catkin_ws/src/devel
 catkin_ws/img
 catkin_ws/src/catkin_simple/build
 catkin_ws/src/catkin_simple/devel
