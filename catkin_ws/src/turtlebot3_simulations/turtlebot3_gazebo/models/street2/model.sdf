@@ -41,6 +41,7 @@
         <geometry>
           <mesh>
             <uri>model://street2/street2.dae</uri>
+
             <!--<uri>model://simplemodified.dae</uri>-->
             <scale>1 1 1</scale>
           </mesh>

@@ -70,10 +70,13 @@ add_executable(rlocation_node src/rlocation_node.cpp)
 add_dependencies(rlocation_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(rlocation_node ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
 
+add_executable(get_rlocation_node src/get_rlocation_node.cpp)
+add_dependencies(get_rlocation_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(get_rlocation_node ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+
 add_executable(cv_node src/cv_node.cpp)
 add_dependencies(cv_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(cv_node ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES} ${OpenCV_LIBRARIES})
-
 
 
 ################################################################################
