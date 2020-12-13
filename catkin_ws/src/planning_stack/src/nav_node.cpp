@@ -86,7 +86,7 @@ int main(int argc, char** argv){
     PF.init();
     //===========================Test Publish Topic and Visualization===============
     // ROS_INFO("Start Publishing...............");
-    ros::Rate loop_rate(10);
+    ros::Rate loop_rate(5);
     while(ros::ok()){
         nav_msgs::Path path;
         ROS_INFO("Please specify a goal in Rviz ...");

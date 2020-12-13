@@ -79,21 +79,26 @@ void PotentialField::step(){
     
     decision_signal.x = Force[0];
     decision_signal.y = Force[1];
-    if(check()) decision_signal.theta = 1.0;
-    else decision_signal.theta = 0.0;
+    if(check()){
+        decision_signal.theta = 1.0;
+    }
+    else{
+        decision_signal.theta = 0.0;
+        if(far_avoid_flag == 2.0) decision_signal.theta = 2.0;
+        if(far_avoid_flag == 3.0) decision_signal.theta = 3.0;
+    }
     force_pub.publish(decision_signal);
 };
 
 std::vector<double> PotentialField::calculateForce(){
     std::vector<double> F_tot(2, 0.0);
-    ROS_INFO("bot_pos: % f, % f", bot_pos.x, bot_pos.y);
+    ROS_INFO("bot_pos: % f, % f,  %f", bot_pos.x, bot_pos.y, bot_pos.theta);
     ROS_INFO("next_wp_pos: % f % f", next_wp_pos.x, next_wp_pos.y);
 
     // Fatt from goal ---
     calcFatt(F_tot);
     // Frep from peds ---
     calcFrep_p(F_tot);
-    // ROS_INFO("6");
     // Frep from walls ---
     calcFrep_w(F_tot);
     // Frep from danger index
@@ -103,7 +108,6 @@ std::vector<double> PotentialField::calculateForce(){
 
     ped_info_pre = ped_info;
     
-
     return F_tot;
 };
 
@@ -127,57 +131,58 @@ void PotentialField::calcFatt(std::vector<double> &F_tot){
 
 void PotentialField::calcFrep_p(std::vector<double> &F_tot){
     ROS_INFO("------------- Frep from peds -------------");
-    // printRlocation();
+    printRlocation();
     pickRlocationWithinRange();
+    getPedVelocity();
     // for(int i = 0; i < peds_in_range.size(); i++){
     //     ROS_INFO("peds in range %d: %d", i, peds_in_range[i]);
     // }
 
-    std::vector<double> F_ori(2, 0.0);
-    // ROS_INFO("1");    
     if(int(ped_info.size()) > 0){
-        // ROS_INFO("2");
+        double sin_t = sin(bot_pos.theta);
+        double cos_t = cos(bot_pos.theta);
         for(int i = 0; i < int(ped_info.size()); i++){
-            // ROS_INFO("i = %d", i);
             if(peds_in_range[i]){
-                // ROS_INFO("peds in range: %d", i);
+                std::vector<double> F_ori_r(2, 0.0);    // orientation in robot frame
+                std::vector<double> F_ori(2, 0.0);      // orientation in gazebo frame
                 double rep_source_dis = sqrt(pow(ped_info[i].posex, 2.0) + pow(ped_info[i].posey, 2.0));
                 double close_dis = rep_source_dis - bot_r - ped_r;
                 double Frep_mag = 0.0;
                 ROS_INFO("ped_%d in range: % f  % f", i, ped_info[i].posex, ped_info[i].posey);
                 ROS_INFO("close_dis of ped_%d: %f", i, close_dis);
-                if(0 < close_dis && close_dis <= rep_r_p){
-                    // ROS_INFO("5");
-                    Frep_mag = rep_scale_p * (1.0 / close_dis - 1.0 / rep_r_p) * pow(1.0 / close_dis, 1.5);
-                    // Frep_mag = rep_scale_p * (1.0 / close_dis - 1.0 / rep_r_p) * sqrt(1.0 / close_dis);
-                    F_ori[0] = - ped_info[i].posex / rep_source_dis;
-                    F_ori[1] = - ped_info[i].posey / rep_source_dis;
-                    F_tot[0] += Frep_mag * F_ori[0];
-                    F_tot[1] += Frep_mag * F_ori[1];
-                    ROS_INFO("Frep ped_%d: % f, % f", i, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
+                
+                if(ped_info[i].velox < 0.0){    //calculate repulsive force when the ped is moving towards the robot
+                    if(0 < close_dis && close_dis <= rep_r_p){
+                        Frep_mag = rep_scale_p * (1.0 / close_dis - 1.0 / rep_r_p) * pow(1.0 / close_dis, 1.5);
+                        // Frep_mag = rep_scale_p * (1.0 / close_dis - 1.0 / rep_r_p) * sqrt(1.0 / close_dis);
+                        F_ori_r[0] = - ped_info[i].posex / rep_source_dis;
+                        F_ori_r[1] = - ped_info[i].posey / rep_source_dis;
+                        F_ori[0] = F_ori_r[0] * cos_t - F_ori_r[1] * sin_t;
+                        F_ori[1] = F_ori_r[0] * sin_t + F_ori_r[1] * cos_t;
+                        F_tot[0] += Frep_mag * F_ori[0];
+                        F_tot[1] += Frep_mag * F_ori[1];
+                        ROS_INFO("Frep ped_%d: % f, % f", i, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
+                    }
+                    if(close_dis < 0){
+                        Frep_mag = - rep_scale_p * (1.0 / close_dis - 1.0 / rep_r_p) * pow(1.0 / close_dis, 1.5);
+                        // Frep_mag = - rep_scale_p * (1.0 / close_dis - 1.0 / rep_r_p) * sqrt(1.0 / close_dis);
+                        F_ori_r[0] = - ped_info[i].posex / rep_source_dis;
+                        F_ori_r[1] = - ped_info[i].posey / rep_source_dis;
+                        F_ori[0] = F_ori_r[0] * cos_t - F_ori_r[1] * sin_t;
+                        F_ori[1] = F_ori_r[0] * sin_t + F_ori_r[1] * cos_t;
+                        F_tot[0] += Frep_mag * F_ori[0];
+                        F_tot[1] += Frep_mag * F_ori[1];
+                        ROS_INFO(" Hit  ped_%d: % f, % f !!!!!!!", i, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
+                    }
                 }
-                if(close_dis < 0){
-                    Frep_mag = - rep_scale_p * (1.0 / close_dis - 1.0 / rep_r_p) * pow(1.0 / close_dis, 1.5);
-                    // Frep_mag = - rep_scale_p * (1.0 / close_dis - 1.0 / rep_r_p) * sqrt(1.0 / close_dis);
-                    F_ori[0] = - ped_info[i].posex / rep_source_dis;
-                    F_ori[1] = - ped_info[i].posey / rep_source_dis;
-                    F_tot[0] += Frep_mag * F_ori[0];
-                    F_tot[1] += Frep_mag * F_ori[1];
-                    ROS_INFO(" Hit  ped_%d: % f, % f !!!!!!!", i, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
-                }
+                
             }
         }
-    }
-    
-    //ROS_INFO("5.1");
-    // for(int i = 0; i < ped_info.size();i++){
-    //     ped_info.pop_back();
-    // }    
+    }  
 }
 
 void PotentialField::calcFrep_w(std::vector<double> &F_tot){ 
     ROS_INFO("------------- Frep from wall -------------");
-    double Frep_mag = 0.0;
     std::vector<double> F_ori(2, 0.0);
     std::vector<double> xy_double = {bot_pos.x + map_offset_x, bot_pos.y + map_offset_y};
     std::vector<std::vector<bool>> local_map = map.get_local_occ_grid(xy_double, local_map_size);   // local map 
@@ -193,16 +198,15 @@ void PotentialField::calcFrep_w(std::vector<double> &F_tot){
     int row = local_map.size();
     // ROS_INFO("local map size:%d", row);
     int col = local_map[0].size();
-    // ROS_INFO("8");
     for(int i = 0; i < row; i++){
         for(int j = 0; j < col; j++){
             if(local_map[i][j]){
-                // ROS_INFO("wall_%d_%d occupied", i, j);
-                double dx = map_resolution * (j - col / 2);
+                double Frep_mag = 0.0;
+                double dx = map_resolution * (j - col / 2);     
                 double dy = map_resolution * (row / 2 - i);
                 double rep_source_dis = sqrt(pow(dx, 2.0) + pow(dy, 2.0));
                 double close_dis = rep_source_dis - bot_r - wall_r;
-                if(0 < close_dis && close_dis <= rep_r_w && close_dis > 0){
+                if(0 < close_dis && close_dis <= rep_r_w){
                     Frep_mag = rep_scale_w * (1.0 / close_dis - 1.0 / rep_r_w) * pow(1.0 / close_dis, 2.0);
                     F_ori[0] = - dx / rep_source_dis;
                     F_ori[1] = - dy / rep_source_dis;
@@ -266,32 +270,61 @@ void PotentialField::calcDangerIndex(std::vector<double> &F_tot){
 
 void PotentialField::calcFrep_v(std::vector<double> &F_tot){
     ROS_INFO("------------- Frep from velo --------------");
-    std::vector<double> F_ori(2, 0.0);
+
+    double sin_t = sin(bot_pos.theta);
+    double cos_t = cos(bot_pos.theta);
     // printRlocation();
     getPedVelocity();
+    far_avoid_flag = 0.0;
     for(int i = 0; i < ped_info.size(); i++){
         if(peds_in_range[i]){
+            std::vector<double> F_ori_r(2, 0.0);    // orientation in robot frame
+            std::vector<double> F_ori(2, 0.0);      // orientation in gazebo frame
             double rep_source_dis = sqrt(pow(ped_info[i].posex, 2.0) + pow(ped_info[i].posey, 2.0));
-            double Frep_mag = rep_scale_v * sqrt(pow(ped_info[i].velox, 2.0) + pow(ped_info[i].velox, 2.0));
-            ROS_INFO("r in p veloy: %f, velox: %f", - ped_info[i].veloy, - ped_info[i].velox);
-            ROS_INFO("p in r posey: %f, posex: %f", ped_info[i].posey, ped_info[i].posex);
-            double v_angle = atan2(- ped_info[i].veloy, - ped_info[i].velox) + pi;
-            double p_angle = atan2(ped_info[i].posey, ped_info[i].posex) + pi;
-            ROS_INFO("ped %d", i);
-            ROS_INFO("v_angle: %f", v_angle);
-            ROS_INFO("p_angle: %f", p_angle); 
-            double delta_angle = abs(v_angle - p_angle);
-            double delta_angle_sup = 2 * pi - delta_angle;
-            ROS_INFO("delta angle: %f", delta_angle);
-            ROS_INFO("delta angle sup %f", delta_angle_sup);
-            if(std::min(delta_angle, delta_angle_sup) < 1.57){
-                F_ori[0] = - ped_info[i].posex / rep_source_dis;
-                F_ori[1] = - ped_info[i].posey / rep_source_dis;
-                F_tot[0] += Frep_mag * F_ori[0];
-                F_tot[1] += Frep_mag * F_ori[1];
-                ROS_INFO("Frep velo_ped_%d: % f, % f", i, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
+            double v_angle = 0;
+            double p_angle = 0;
+            // if(rep_source_dis <= rep_r_v){
+                double Frep_mag = rep_scale_v * sqrt(pow(ped_info[i].velox, 2.0) + pow(ped_info[i].velox, 2.0));
+                ROS_INFO("r in p velox: %f, veloy: %f", - ped_info[i].velox, - ped_info[i].veloy);
+                ROS_INFO("p in r posex: %f, posey: %f", ped_info[i].posex, ped_info[i].posey);
+                v_angle = atan2(- ped_info[i].veloy, - ped_info[i].velox);
+                p_angle = atan2(ped_info[i].posey, ped_info[i].posex);
+                ROS_INFO("ped %d", i);
+                ROS_INFO("v_angle: %f", v_angle);
+                ROS_INFO("p_angle: %f", p_angle); 
+                double delta_angle = abs(v_angle - p_angle);
+                double delta_angle_sup = 2 * pi - delta_angle;
+                // ROS_INFO("delta angle: %f", delta_angle);
+                // ROS_INFO("delta angle sup %f", delta_angle_sup);
+                if(std::min(delta_angle, delta_angle_sup) < 1.57){
+                    F_ori[0] = - ped_info[i].posex / rep_source_dis;
+                    F_ori[1] = - ped_info[i].posey / rep_source_dis;
+                    // F_ori_r[0] = F_ori_r[0] * cos_t - F_ori_r[1] * sin_t;
+                    // F_ori_r[1] = F_ori_r[0] * sin_t + F_ori_r[1] * cos_t;
+                    // F_tot[0] += Frep_mag * F_ori[0];
+                    // F_tot[1] += Frep_mag * F_ori[1];
+                    // ROS_INFO("Frep velo_ped_%d: % f, % f", i, Frep_mag * F_ori[0], Frep_mag * F_ori[1]);
+                }
+            // }
+
+            // when the ped is far and the the robot is going straight to the robot, turn accoding to the sign of (v_angle - p_angle)
+            if(rep_source_dis > 3.0 && rep_source_dis < 4.0){
+                // if(v_angle - p_angle >= 0 && v_angle - p_angle < 0.15){
+                if(p_angle > 0.0 && p_angle < 0.25){
+                    ROS_INFO("Ped in front, turn CW");
+                    far_avoid_flag = 2.0;
+                }
+                // else if(v_angle - p_angle < 0 && v_angle - p_angle > -0.15){
+                else if(p_angle < 0.0 && p_angle > -0.25){
+                    ROS_INFO("Ped in front, turn CCW");
+                    far_avoid_flag = 3.0;  
+                } 
+                else{
+                    far_avoid_flag = 0.0;
+                } 
+            }else{
+                far_avoid_flag = 0.0;
             }
-            
         }
     }
 }
@@ -332,12 +365,13 @@ void PotentialField::Odom_call_back(const nav_msgs::Odometry::ConstPtr &msg){
     double roll, pitch, yaw;
     m.getRPY(roll, pitch, yaw);
 
-    bot_pos.theta = yaw + 1.57;
+    // bot_pos.theta = yaw + 1.57;
+    bot_pos.theta = yaw;
+    
 }
 
 void PotentialField::rlocationProcessing(const gazebo_msgs::ModelStates::ConstPtr &msg){
     // ROS_INFO("in rlocation_call_back");
-    std::string name = "";
     pickRlocation(msg);
     // pickRlocationWithinRange();
 }
@@ -346,12 +380,12 @@ void PotentialField::pickRlocation(const gazebo_msgs::ModelStates::ConstPtr &msg
     std::vector<planning_stack::ped> ped_info_;
     int msg_length = msg->name.size();
     // ROS_INFO("msg_length: %d", msg_length);
-    int cnt = 0;
+    // int cnt = 0;
     for (int i=0;i<msg_length;i++){ 
-
-        std::string cnt_s = std::to_string(cnt);
-        if(msg->name[i] == cnt_s){ // only print out the pedetrians' info
-            cnt++;
+        // class:1 tracking_id:7
+        // std::string cnt_s = "class:1 tracking_id:" + std::to_string(cnt);
+        if(msg->name[i].find("man") != std::string::npos){ // only print out the pedetrians' info
+            // cnt++;
             std::string name = msg->name[i]; 
             double rx = msg->pose[i].position.x;
             double ry = msg->pose[i].position.y;
@@ -361,10 +395,12 @@ void PotentialField::pickRlocation(const gazebo_msgs::ModelStates::ConstPtr &msg
         // new data structure to store the ped infomation ---
             planning_stack::ped tmp2;
             tmp2.name = msg->name[i]; 
-            tmp2.posex = rx;
-            tmp2.posey = ry;
-            tmp2.velox = 1000.0;
-            tmp2.veloy = 1000.0;
+            // tmp2.posex = rx;    // for testing planning module, this pose and pose is in gazebo frame
+            // tmp2.posey = ry;
+            tmp2.posex = rx; // for merging, this posex and posey is in robot frame
+            tmp2.posey = -ry;
+            tmp2.velox = 0.0;
+            tmp2.veloy = 0.0;
             ped_info_.push_back(tmp2);
         // insert the ped's name in a set
             ped_set.insert(msg->name[i]);
@@ -374,14 +410,11 @@ void PotentialField::pickRlocation(const gazebo_msgs::ModelStates::ConstPtr &msg
     ped_info = ped_info_;
 }
 
-// std::vector<int> PotentialField::pickRlocationWithinRange(){
 void PotentialField::pickRlocationWithinRange(){
-    // ROS_INFO("in pick");
     std::vector<int> peds_in_range_;
     // printRlocation();
 
     int size = int(ped_info.size());
-
     for(int i = 0; i < size; i++){
         if(sqrt(pow(ped_info[i].posex, 2.0) + pow(ped_info[i].posey, 2.0)) <= horizon_r){
             // ROS_INFO("ped name in horizon: %s", (ped_info[i].name).c_str());
@@ -390,9 +423,7 @@ void PotentialField::pickRlocationWithinRange(){
             peds_in_range_.push_back(0);
         } 
     }
-
     peds_in_range = peds_in_range_;
-    // return peds_in_range;
 }
 
 void PotentialField::printRlocation(){
@@ -401,28 +432,33 @@ void PotentialField::printRlocation(){
     ROS_INFO("id      x         y");
 
     for(int i = 0; i < int(ped_info.size()); i++){
-        ROS_INFO("%d: % f  % f", i, ped_info[i].posex, ped_info[i].posey);
+        ROS_INFO("%s: % f  % f", (ped_info[i].name).c_str(), ped_info[i].posex, ped_info[i].posey);
     }
 }
 
 void PotentialField::getPedVelocity(){
-    // ped_set_pre = ped_set;
     std::set<std::string>::iterator iter;
-    
+
     for(iter = ped_set.begin() ; iter != ped_set.end() ; ++iter)
     {
-        ROS_INFO("ped name in get velo: %s", (*iter).c_str());
+        // ROS_INFO("ped name in get velo: %s", (*iter).c_str());
     }
     for(int i = 0; i < ped_info.size(); i++){
         if(ped_info_pre.size() > 0 && ped_set_pre.find(ped_info[i].name) != ped_set_pre.end()){
-            ped_info[i].velox = (ped_info[i].posex - ped_info_pre[i].posex) / (1.0 / run_freq);
-            ped_info[i].veloy = (ped_info[i].posey - ped_info_pre[i].posey) / (1.0 / run_freq);
+            ped_info[i].velox = clamp((ped_info[i].posex - ped_info_pre[i].posex) / (1.0 / run_freq));
+            ped_info[i].veloy = clamp((ped_info[i].posey - ped_info_pre[i].posey) / (1.0 / run_freq));
         }
-        ROS_INFO("ped %s relative velocity: % f % f", (ped_info[i].name).c_str(), ped_info[i].velox, ped_info[i].veloy);
+        // ROS_INFO("ped %s relative velocity: % f % f", (ped_info[i].name).c_str(), ped_info[i].velox, ped_info[i].veloy);
     } 
 
     ped_set_pre = ped_set;
     ped_set.clear();
+}
+
+double PotentialField::clamp(double value){
+    value = value > 5.0 ? 5.0 : value;
+    value = value < -5.0 ? -5.0 : value;
+    return value;
 }
 
 void PotentialField::newPedMsgTest(){
@@ -440,25 +476,32 @@ void PotentialField::newPedMsgTest(){
 
 void PotentialField::getSparseGlobalPath(){
     int size = dense_global_path.poses.size();
-    // double goal_x = dense_global_path.poses[size].pose.position.x;
-    // double goal_y = dense_global_path.poses[size].pose.position.y;
     geometry_msgs::PoseStamped tmp;
     nav_msgs::Path sparse_global_path_;
     tmp.pose.position.x = dense_global_path.poses[0].pose.position.x;
     tmp.pose.position.y = dense_global_path.poses[0].pose.position.y;
     sparse_global_path_.poses.push_back(tmp);
-    int curr_wp = 0;
+    int cnt = 0;
     for(int i = 1; i < size - 1; i++){
+        cnt++;
         double dx1 = dense_global_path.poses[i].pose.position.x - dense_global_path.poses[i-1].pose.position.x; // i-1 used to be curr_wp
         double dy1 = dense_global_path.poses[i].pose.position.y - dense_global_path.poses[i-1].pose.position.y;
         double dx2 = dense_global_path.poses[i+1].pose.position.x - dense_global_path.poses[i-1].pose.position.x;
         double dy2 = dense_global_path.poses[i+1].pose.position.y - dense_global_path.poses[i-1].pose.position.y;       
         if(abs(dy2 / dx2 - dy1 / dx1) > 0.001){
+            cnt = 0;
             ROS_INFO("new WP!  delta slope: %f", abs(dy2 / dx2 - dy1 / dx1));
             tmp.pose.position.x = dense_global_path.poses[i+1].pose.position.x;
             tmp.pose.position.y = dense_global_path.poses[i+1].pose.position.y;
             sparse_global_path_.poses.push_back(tmp);
-            curr_wp = i+1;
+            i++;
+        }
+        if(cnt >= 80){
+            cnt = 0;
+            ROS_INFO("new WP! Each 8 meters");
+            tmp.pose.position.x = dense_global_path.poses[i+1].pose.position.x;
+            tmp.pose.position.y = dense_global_path.poses[i+1].pose.position.y;
+            sparse_global_path_.poses.push_back(tmp);
             i++;
         }
     }

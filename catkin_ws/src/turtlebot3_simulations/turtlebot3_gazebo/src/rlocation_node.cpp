@@ -45,30 +45,30 @@ class RelativeLocation
   void Model_states_call_back(const gazebo_msgs::ModelStates::ConstPtr &msgs)
 {
     int msg_length = msgs->name.size();
-    // gazebo_msgs::ModelStates relative_location;
-    // sensor_msgs::PointCloud point_cloud;
-    // geometry_msgs::Point32 current_point;
+    gazebo_msgs::ModelStates relative_location;
+    sensor_msgs::PointCloud point_cloud;
+    geometry_msgs::Point32 current_point;
     for (int i=0;i<msg_length;i++)
     { 
-      // current_point.x  = msgs->pose[i].position.x;
-      // current_point.y  = msgs->pose[i].position.y;
-      // current_point.z  = msgs->pose[i].position.z;
-      // point_cloud.points.push_back(current_point);     
-      // relative_location.name.push_back(msgs->name[i]); // Copying the name of models in the environment
-      // relative_location.pose.push_back(msgs->pose[i]);
-      // relative_location.twist.push_back(msgs->twist[i]);
-      // relative_location.pose[i].position.x = msgs->pose[i].position.x - RelativeLocation::bot_x; //Give Relative obstacle X location wrt Bot
-      // relative_location.pose[i].position.y = msgs->pose[i].position.y - RelativeLocation::bot_y; //Give Relative obstacle Y location wrt Bot 
+      current_point.x  = msgs->pose[i].position.x;
+      current_point.y  = msgs->pose[i].position.y;
+      current_point.z  = msgs->pose[i].position.z;
+      point_cloud.points.push_back(current_point);     
+      relative_location.name.push_back(msgs->name[i]); // Copying the name of models in the environment
+      relative_location.pose.push_back(msgs->pose[i]);
+      relative_location.twist.push_back(msgs->twist[i]);
+      relative_location.pose[i].position.x = msgs->pose[i].position.x - RelativeLocation::bot_x; //Give Relative obstacle X location wrt Bot
+      relative_location.pose[i].position.y = msgs->pose[i].position.y - RelativeLocation::bot_y; //Give Relative obstacle Y location wrt Bot 
       if (msgs->name[i] == "turtlebot3_burger"){
         double angle = msgs->pose[i].orientation.z;
         angle = std::asin(angle);
         cmd_vel.angular.z = - K_p * angle;
-        std::cout << angle << std::endl;
+        // std::cout << angle << std::endl;
       }
     }
-    // obs_msg_pub.publish(relative_location);
+    obs_msg_pub.publish(relative_location);
     // point_cloud_pub.publish(point_cloud);
-    cmd_vel_pub.publish(cmd_vel);
+    // cmd_vel_pub.publish(cmd_vel);
 }
 
 void Odom_call_back(const nav_msgs::Odometry::ConstPtr &msgs)

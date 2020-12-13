@@ -10,15 +10,16 @@
         <!-- Change the .world file name and .xml scenario file name here to the one you like -->
         <!-- Please modify the following two lines for loading customize .xml scenario and .world files.  -->
         <arg name="scene_file" default="social_contexts"/>
-        <arg name="world_file" default="street_empty"/>
+        <arg name="world_file" default="street_demo"/>
+        <!-- street_empty -->
         <arg name="map_file_name" default="map_final"/>
         <arg name="map_file" default="$(find planning_stack)/maps/$(arg map_file_name).yaml"/>>
 
         <!-- Gazebo Robot Parameters -->
         <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
-        <arg name="x_pos" default="50.45"/> 
-        <arg name="y_pos" default="-51.25"/>
-        <arg name="z_pos" default="0.0"/>
+        <arg name="x_pos" default="0.0"/> 
+        <arg name="y_pos" default="-51.0"/>
+        <arg name="z_pos" default="2.0"/>
         <arg name="yaw"   default="-3.1415"/>
 
         <!-- Select Gazebo Robot Model. For our project, it is set to be 'burger'. -->
@@ -63,8 +64,8 @@
         <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf"  args="-urdf -model turtlebot3_$(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -Y $(arg yaw) -param robot_description" />
 
         <!-- load the dummy rlocation node -->
-        <node pkg="turtlebot3_gazebo" type="rlocation_node" name="rlocation_node"  output="screen">
-        </node>
+        <!-- <node pkg="turtlebot3_gazebo" type="rlocation_node" name="rlocation_node"  output="screen">
+        </node> -->
         <!-- rosrun turtlebot3_gazebo rlocation_node  -->
 
         <!-- Run the map server -->
@@ -74,10 +75,13 @@
         <!-- Run the controller -->
         <!-- <node pkg="planning_stack" type="simple_controller_node" name="simple_controller_node"  output="screen">
         </node> -->
+
+        <node pkg = "cv_forward" type = "forward_node.py" name = "forward_node" output = "screen">
+        </node>
         
         <!-- load the turtlebot3 teleop key controller -->
         <param name="model" value="$(arg model)"/>
-        <node pkg="turtlebot3_teleop" type="turtlebot3_teleop_key" name="turtlebot3_teleop_keyboard"  output="screen">
+        <node pkg="turtlebot3_teleop" type="turtlebot3_teleop_key" name="turtlebot3_teleop_keyboard" output="screen">
         </node>
 
 </launch>

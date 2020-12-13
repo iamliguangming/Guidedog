@@ -24,10 +24,10 @@ void bot_control::init(){
 //control and move
 
 void bot_control::move(){
-    // ROS_INFO("1, 1, %f", atan2(1, 1) + pi);
-    // ROS_INFO("1, -1, %f", atan2(1, -1) + pi);
-    // ROS_INFO("-1, 1, %f", atan2(-1, 1) + pi);
-    // ROS_INFO("-1, -1, %f", atan2(-1, -1) + pi);
+    // ROS_INFO("1, 1, %f", atan2(1, 1));
+    // ROS_INFO("1, -1, %f", atan2(1, -1));
+    // ROS_INFO("-1, 1, %f", atan2(-1, 1));
+    // ROS_INFO("-1, -1, %f", atan2(-1, -1));
     // ROS_INFO("pi: %f", M_PI);
     
     ROS_INFO("Force: x:%f, y:%f, angle:%f", Force.x, Force.y, goal_angle);
@@ -48,7 +48,7 @@ void bot_control::move(){
     
     ROS_INFO("cnt: %d", cnt++); // not force input loop numbers
     
-    if(stop_flag == 0.0){ 
+    if(stop_flag != 1.0){ 
 
             double delta_angle = goal_angle - bot_pos.theta;
             ROS_INFO("original delta_angle: %f", delta_angle);
@@ -69,15 +69,15 @@ void bot_control::move(){
             ROS_INFO("min angle: %f: ", std::min(delta_angle_ccw, delta_angle_cw));
 
             // if(std::min(delta_angle_ccw, delta_angle_cw) <= 3.0 / 4.0 * pi){
-            if(std::min(delta_angle_ccw, delta_angle_cw) >= 3.0 / 4.0 * pi){   // when both angle is close to pi / 2, reverse
+            if(std::min(delta_angle_ccw, delta_angle_cw) >= 4.0 / 5.0 * pi){   // when both angle is close to pi / 2, reverse
                
                 double angle_sup = M_PI - std::max(delta_angle_ccw, delta_angle_cw);    // the supplement angle
                 if(delta_angle_ccw < delta_angle_cw){
-                    cmd.angular.z = - reverse_discount * (max_ang_vel / M_PI * angle_sup);  
+                    cmd.angular.z = - reverse_discount * (max_ang_vel / M_PI * sqrt(angle_sup));  
                     cmd.linear.x = - reverse_discount * ( - max_lin_vel / M_PI * abs(angle_sup) + max_lin_vel);
                     ROS_INFO("Reverse, Turn CCW");
                 }else{
-                    cmd.angular.z =   max_ang_vel / M_PI * angle_sup;  
+                    cmd.angular.z =   max_ang_vel / M_PI * sqrt(angle_sup);  
                     cmd.linear.x = -  ( - max_lin_vel / M_PI * abs(angle_sup) + max_lin_vel);
                     ROS_INFO("Reverse, Turn CW");
                 }
@@ -85,12 +85,12 @@ void bot_control::move(){
             }else{
                
                 if(delta_angle_ccw < delta_angle_cw){
-                    cmd.angular.z = max_ang_vel / M_PI * delta_angle_ccw;  
+                    cmd.angular.z = max_ang_vel / M_PI * sqrt(delta_angle_ccw);  
                     cmd.linear.x = - max_lin_vel / M_PI * abs(delta_angle_ccw) + max_lin_vel;//make linear velocity negatively proportional 
                                                                                     // to the delta_angle
                     ROS_INFO("Forward, Turn CCW");
                 }else{
-                    cmd.angular.z = - max_ang_vel / M_PI * delta_angle_cw; 
+                    cmd.angular.z = - max_ang_vel / M_PI * sqrt(delta_angle_cw); 
                     cmd.linear.x = - max_lin_vel / M_PI * abs(delta_angle_cw) + max_lin_vel;//make linear velocity negatively proportional 
                                                                                     // to the delta_angle
                     ROS_INFO("Forward, Turn CW");
@@ -98,8 +98,18 @@ void bot_control::move(){
             }
 
             cmd.angular.z *= emergency_scale * no_force_scale;
-            cmd.angular.z += 0.02;
             cmd.linear.x *= emergency_scale * no_force_scale;
+
+            if(stop_flag == 2.0){
+                ROS_INFO("Ped in front, turn CW");
+                // stop_flag == 0.0;
+                cmd.angular.z -= 3.0;  //rotate CW to avoid peds in the front
+            }
+            if(stop_flag == 3.0){
+                ROS_INFO("Ped in front, turn CCW");
+                // stop_flag == 0.0;
+                cmd.angular.z += 3.0;   //rotate CCW to avoid peds in the front
+            } 
 
             // ROS_INFO("modified delta_angle: %f", std::min(delta_angle_ccw, delta_angle_cw));
 

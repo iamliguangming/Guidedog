@@ -27,7 +27,7 @@ class opts(object):
                                   '3: use matplot to display' # useful when lunching training with ipython notebook
                                   '4: save all visualizations to disk')
     self.parser.add_argument('--no_pause', action='store_true')
-    self.parser.add_argument('--demo', default='/mnt/new/guidedog/image/try',
+    self.parser.add_argument('--demo', default='/mnt/new/ttttt/',
                              help='path to image/ image folders/ video. '
                                   'or "webcam"')
     self.parser.add_argument('--load_model', default='/home/zhuoyu/Documents/CIS-700/Guidedog/catkin_ws/src/cv_forward/CenterTrack/exp/tracking,ddd/default/model_last.pth',

@@ -23,8 +23,8 @@ class bot_control{
 	int cnt = 0;
 	// double max_lin_vel = 0.22;
 	// double max_ang_vel = 2.84;	
-	double max_lin_vel = 0.22;	// max linear speed
-	double max_ang_vel = 10.0;	// max angular speed
+	double max_lin_vel = 0.3;	// max linear speed
+	double max_ang_vel = 5.0;	// max angular speed
 
 	double angular_pre = 0.0;
 	double angular_window = 100.0;	// ignore
@@ -32,8 +32,8 @@ class bot_control{
 	bool new_info_flag = false;
 	double cmd_discount_rate = 0.95; 	// ignore
 
-	double reverse_discount = 1.5;	 // when reversing, move faster
-	double emergency_discount = 1.5;	// when in panic (large force), move faster
+	double reverse_discount = 2.0;	 // when reversing, move faster
+	double emergency_discount = 2.0;	// when in panic (large force), move faster
 	double no_force_discount = 0.75;		// the controller is runing at 100Hz but the force signal is running at 10Hz. When no force signal, add discount on the earlier command
 	double no_force_scale = 1.0;	
 

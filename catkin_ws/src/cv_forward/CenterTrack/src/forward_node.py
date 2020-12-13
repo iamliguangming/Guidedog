@@ -5,6 +5,7 @@ from __future__ import division
 from __future__ import print_function
 
 import roslib
+
 roslib.load_manifest('cv_forward')
 import sys
 import rospy
@@ -27,24 +28,32 @@ import math
 
 from opts import opts
 from dataset.dataset_factory import dataset_factory
-from forward_detector import ForwardDetector
+# from forward_detector import ForwardDetector
+from detector import Detector
 from utils.utils import AverageMeter
+
+CLASS_NAME = {1: "man", 2: "obstacle", 3: "traffic_light"}
+
 
 class forward:
     def __init__(self, opt):
-        self.CAMERA_CALIB = np.array([[721.53772, 0, 0, 44.85728], [0, 721.53772, 0, 0.21638], [0, 0, 1, 0.00275]])
+        self.CAMERA_CALIB = np.array([[762.7249337622711, 0, 640.5, 0],
+                         [0, 762.7249337622711, 192.5, 0],
+                        [0, 0, 1, 0]])
         self.Dataset = dataset_factory[opt.test_dataset]
         self.opt = opts().update_dataset_info_and_set_heads(opt, self.Dataset)
-        self.detector = ForwardDetector(opt)
+        self.detector = Detector(opt)
         self.frame_id = 1
         time_stats = ['tot', 'load', 'pre', 'net', 'dec', 'post']
         self.avg_time_stats = {t: AverageMeter() for t in time_stats}
         self.bridge = CvBridge()
         self.image_sub = rospy.Subscriber("/rrbot/camera1/image_rect_color", Image, self.callback)
-        self.state_pub = rospy.Publisher("guidedog_modelstates", ModelStates, queue_size=10)
+        self.state_pub = rospy.Publisher("/rlocation", ModelStates, queue_size=1)
         self.input_meta = {}
         self.input_meta['calib'] = self.CAMERA_CALIB
-
+        self.vel_his = 0
+        self.count = 0
+        self.old_x = 0
     def callback(self, data):
         try:
             cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
@@ -63,25 +72,30 @@ class forward:
 
         temp_states = ModelStates()
         for result in results:
-            temp_states.name.append('class:' + str(result['class']) + ' tracking_id:' + str(result['tracking_id']))
+            temp_states.name.append( CLASS_NAME[result['class']] + str(result['tracking_id']))
             temp_pose = Pose()
             temp_twist = Twist()
             temp_point = Point()
             temp_quat = Quaternion()
             temp_bbox = Vector3()
             temp_useless = Vector3()
-            temp_point.x = result['loc'][0]
-            temp_point.y = result['loc'][1]
-            temp_point.z = result['loc'][2]
+            temp_point.x = result['loc'][2]
+            temp_point.y = result['loc'][0]
+            temp_point.z = -result['loc'][1]
+            # if self.old_x !=0:
+            #     vel = temp_point.x - self.old_x
+            #     self.vel_his = (self.vel_his * self.count + vel) / (self.count + 1)
+            # self.old_x = temp_point.x
+            print(result['rot_y'])
             temp_quat.x = 0
             temp_quat.y = 0
-            temp_quat.z = math.sin(result['rot_y']/2)
-            temp_quat.w = math.cos(result['rot_y']/2)
+            temp_quat.z = math.sin(result['rot_y'] / 2)
+            temp_quat.w = math.cos(result['rot_y'] / 2)
             temp_pose.position = temp_point
             temp_pose.orientation = temp_quat
-            temp_bbox.x = result['dim'][0]
+            temp_bbox.x = result['dim'][2]
             temp_bbox.y = result['dim'][1]
-            temp_bbox.z = result['dim'][2]
+            temp_bbox.z = result['dim'][0]
             temp_useless.x = 0
             temp_useless.y = 0
             temp_useless.z = 0
@@ -90,7 +104,7 @@ class forward:
             temp_states.pose.append(temp_pose)
             temp_states.twist.append(temp_twist)
         self.state_pub.publish(temp_states)
-        print(temp_states.name)
+        # print(temp_states.name)
         for t in self.avg_time_stats:
             self.avg_time_stats[t].update(ret[t])
         self.frame_id += 1
@@ -100,8 +114,8 @@ class forward:
         #     if t == 'tot':
         #         print(t, self.avg_time_stats[t].avg)
 
-def main(args):
 
+def main(args):
     opt = opts().parse()
     os.environ['CUDA_VISIBLE_DEVICES'] = opt.gpus_str
     fw = forward(opt)

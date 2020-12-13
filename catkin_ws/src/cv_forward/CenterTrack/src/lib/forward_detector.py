@@ -100,6 +100,12 @@ class ForwardDetector(object):
         # convert the cropped and 4x downsampled output coordinate system
         # back to the input image coordinate system
         results = self.post_process(dets, meta)
+        for re in results:
+            temp = re['dim'][0]
+            re['dim'][0] = re['dim'][2]
+            re['dim'][2] = re['dim'][1]
+            re['dim'][1] = temp
+            re['loc'][1] = re['loc'][1] + re['dim'][0] / 2
         post_process_time = time.time()
         post_time += post_process_time - decode_time
 

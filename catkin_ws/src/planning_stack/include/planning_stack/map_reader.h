@@ -28,7 +28,7 @@ class MapReader{
     std::vector<std::vector<bool>> local_occupancyGrid;
     std::vector<int> curr_grid_pos = {0, 0};
     int curr_pos_idx;
-    int inflation_layer = 13;
+    int inflation_layer = 15;
     std::vector<std::vector<bool>> not_inflated_occupancyGrid;
 
     public:

@@ -8,22 +8,22 @@
   <joint name="base_joint" type="fixed">
     <parent link="base_footprint"/>
     <child link="base_link"/>
-    <origin xyz="0.0 0.0 0.050" rpy="0 0 0"/>
+    <origin xyz="0.0 0.0 0.028" rpy="0 0 0"/>
   </joint>
 
   <link name="base_link">
     <visual>
-      <origin xyz="-0.16 0 0.0" rpy="0 0 0"/>
+      <origin xyz="-0.0896 0 0.0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://turtlebot3_description/meshes/bases/burger_base.stl" scale="0.005 0.005 0.005"/>
+        <mesh filename="package://turtlebot3_description/meshes/bases/burger_base.stl" scale="0.0028 0.0028 0.0028"/>
       </geometry>
       <material name="light_black"/>
     </visual>
 
     <collision>
-      <origin xyz="-0.16 0 0.35" rpy="0 0 0"/>
+      <origin xyz="-0.0896 0 0.196" rpy="0 0 0"/>
       <geometry>
-        <box size="0.7 0.7 0.715"/>
+        <box size="0.392 0.392 0.4004"/>
       </geometry>
     </collision>
 
@@ -39,7 +39,7 @@
   <!-- <joint name="wheel_left_joint" type="fixed"> -->
      <parent link="base_link"/>
     <child link="wheel_left_link"/>
-    <origin xyz="0.0 0.4 0.115" rpy="-1.57 0 0"/>
+    <origin xyz="0.0 0.224 0.0644" rpy="-1.57 0 0"/>
     <axis xyz="0 0 1"/>
   </joint>
 
@@ -47,7 +47,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="1.57 0 0"/>
       <geometry>
-        <mesh filename="package://turtlebot3_description/meshes/wheels/left_tire.stl" scale="0.005 0.005 0.005"/>
+        <mesh filename="package://turtlebot3_description/meshes/wheels/left_tire.stl" scale="0.0028 0.0028 0.0028"/>
       </geometry>
       <material name="dark"/>
     </visual>
@@ -55,7 +55,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <cylinder length="0.09" radius="0.165"/>
+        <cylinder length="0.0504" radius="0.0924"/>
       </geometry>
     </collision>
 
@@ -72,7 +72,7 @@
   <!-- <joint name="wheel_right_joint" type="fixed"> -->
     <parent link="base_link"/>
     <child link="wheel_right_link"/>
-    <origin xyz="0.0 -0.4 0.115" rpy="-1.57 0 0"/>
+    <origin xyz="0.0 -0.224 0.0644" rpy="-1.57 0 0"/>
     <axis xyz="0 0 1"/>
   </joint>
 
@@ -80,7 +80,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="1.57 0 0"/>
       <geometry>
-        <mesh filename="package://turtlebot3_description/meshes/wheels/right_tire.stl" scale="0.005 0.005 0.005"/>
+        <mesh filename="package://turtlebot3_description/meshes/wheels/right_tire.stl" scale="0.0028 0.0028 0.0028"/>
       </geometry>
       <material name="dark"/>
     </visual>
@@ -88,7 +88,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <cylinder length="0.09" radius="0.165"/>
+        <cylinder length="0.0504" radius="0.0924"/>
       </geometry>
     </collision>
 
@@ -104,20 +104,20 @@
   <joint name="caster_back_joint" type="fixed">
     <parent link="base_link"/>
     <child link="caster_back_link"/>
-    <origin xyz="-0.405 0 -0.02" rpy="-1.57 0 0"/>
+    <origin xyz="-0.2268 0 -0.0112" rpy="-1.57 0 0"/>
   </joint>
 
   <link name="caster_back_link">
     <collision>
-      <origin xyz="0 0.005 0" rpy="0 0 0"/>
+      <origin xyz="0 0.0028 0" rpy="0 0 0"/>
       <geometry>
-        <box size="0.15 0.045 0.100"/>
+        <box size="0.084 0.0252 0.056"/>
       </geometry>
     </collision>
     <visual>
-      <origin xyz="0 0.005 0" rpy="0 0 0"/>
+      <origin xyz="0 0.0028 0" rpy="0 0 0"/>
       <geometry>
-        <box size="0.15 0.045 0.100"/>
+        <box size="0.084 0.0252 0.056"/>
       </geometry>
     </visual>
 
@@ -133,7 +133,7 @@
   <joint name="imu_joint" type="fixed">
     <parent link="base_link"/>
     <child link="imu_link"/>
-    <origin xyz="-0.16 0 0.34" rpy="0 0 0"/>
+    <origin xyz="-0.0896 0 0.1904" rpy="0 0 0"/>
   </joint>
 
   <link name="imu_link"/>
@@ -141,22 +141,22 @@
   <joint name="scan_joint" type="fixed">
     <parent link="base_link"/>
     <child link="base_scan"/>
-    <origin xyz="-0.16 0 0.86" rpy="0 0 0"/>
+    <origin xyz="-0.0896 0 0.4816" rpy="0 0 0"/>
   </joint>
 
   <link name="base_scan">
     <visual>
       <origin xyz="0 0 0.0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://turtlebot3_description/meshes/sensors/lds.stl" scale="0.005 0.005 0.005"/>
+        <mesh filename="package://turtlebot3_description/meshes/sensors/lds.stl" scale="0.0028 0.0028 0.0028"/>
       </geometry>
       <material name="dark"/>
     </visual>
 
     <collision>
-      <origin xyz="0.075 0 -0.0325" rpy="0 0 0"/>
+      <origin xyz="0.042 0 -0.0182" rpy="0 0 0"/>
       <geometry>
-        <cylinder length="0.1575" radius="0.275"/>
+        <cylinder length="0.0882" radius="0.154"/>
       </geometry>
     </collision>
 
@@ -172,7 +172,7 @@
   <joint name="camera_joint" type="fixed">
     <parent link="base_link"/>
     <child link="camera_link"/>
-    <origin xyz="0.1 0 0.855" rpy="0 0 0"/>
+    <origin xyz="0.056 0 0.7" rpy="0 0 0"/>
   </joint>
 
 
@@ -187,16 +187,16 @@
 </inertial> -->
 
 <visual name='camera_visual'>
-    <origin xyz="0.1 -0.05 -0.1" rpy="0 1.57 0"/>
+    <origin xyz="0.056 -0.028 -0.056" rpy="0 1.57 0"/>
   <geometry>
-    <mesh filename="package://turtlebot3_description/meshes/sensors/ras_cam.dae" scale="5 5 5"/>
+    <mesh filename="package://turtlebot3_description/meshes/sensors/ras_cam.dae" scale="2.8 2.8 2.8"/>
   </geometry>
 </visual>
 
 <collision name='camera_collision'>
-  <pose frame=''>0.1 -0.05 0.525 0 -0 0</pose>
+  <pose frame=''>0.056 -0.028 0.294 0 -0 0</pose>
   <geometry>
-     <box size="0.015 0.015 0.125"/>
+     <box size="0.0084 0.084 0.07"/>
   </geometry>
 </collision>
 </link>

@@ -30,11 +30,11 @@ class PotentialField{
     double map_resolution = 0.1;
     double local_map_size = 1.5; // half of side length 
     // Parameters for tuning ----------------------------------------------------------
-    double run_freq = 20;  
+    double run_freq = 14;  
 
     double horizon_r = 5.0;     // robot vision horizon
-    double bot_r = 0.35;     // robot radius
-    double check_arrive_threshold = 1.0;    //tolerance
+    double bot_r = 0.2;     // robot radius
+    double check_arrive_threshold = 2.5;    //waypoint tolerance
     
 
     // attraction field pararmeters ---
@@ -43,14 +43,14 @@ class PotentialField{
     double att_const = att_scale * att_r;   //   
 
     // pedestrian repulsive field parameters ---
-    double rep_scale_p = 15.0;     //Frep intneisty
+    double rep_scale_p = 5.0;     //Frep intneisty
     double ped_r = 0.35;     // ped radius
     double rep_r_p = 2.5;     // extra radius of the repulsive field
     
     // wall repulsive field parameters ---
     double rep_scale_w = 15.0;
     double wall_r = map_resolution * sqrt(2.0) / 2.0;
-    double rep_r_w = 0.6;   // extra radius of the repulsize field   was 0.6
+    double rep_r_w = 0.5;   // extra radius of the repulsize field   was 0.6
 
     // danger index field paremeters ---
     bool DI = false;
@@ -60,7 +60,8 @@ class PotentialField{
     double eta = (rhocmin * rhocmax) / (rhocmax - rhocmin); 
     double epsilon = 3.0;
     // velocity repulsive 
-    double rep_scale_v = 0.4;
+    double rep_scale_v = 0.5;
+    double rep_r_v = 2.0;
 
     ros::NodeHandle n;
 
@@ -78,6 +79,7 @@ class PotentialField{
     std::string force_cmd_name = "PFforce";
     ros::Publisher force_pub;     // com_vel publisher    
     geometry_msgs::Pose2D decision_signal;
+    double far_avoid_flag = 0.0;
     // std::vector<geometry_msgs::Pose2D> pedRlocations;   //relative position of the peds to the robot
     // std::vector<geometry_msgs::Pose2D> pedRlocations_pre;   //relative position of the peds to the robot
     std::vector<planning_stack::ped> ped_info;
@@ -112,6 +114,7 @@ class PotentialField{
     void pickRlocationWithinRange();
     void printRlocation();
     void getPedVelocity();
+    double clamp(double value);
     void newPedMsgTest();
     void getSparseGlobalPath();
     
