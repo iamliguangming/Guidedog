@@ -67,6 +67,7 @@
         "thread": "cpp",
         "cfenv": "cpp",
         "cinttypes": "cpp",
-        "bit": "cpp"
+        "bit": "cpp",
+        "*.ipp": "cpp"
     }
 }

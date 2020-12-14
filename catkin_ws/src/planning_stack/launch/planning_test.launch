@@ -9,7 +9,7 @@
         
         <!-- Change the .world file name and .xml scenario file name here to the one you like -->
         <!-- Please modify the following two lines for loading customize .xml scenario and .world files.  -->
-        <arg name="scene_file" default="social_contexts"/>
+        <arg name="scene_file" default="social_contexts_hard"/>
         <arg name="world_file" default="street_demo"/>
         <!-- street_empty -->
         <arg name="map_file_name" default="map_final"/>

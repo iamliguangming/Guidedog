@@ -23,8 +23,8 @@ class bot_control{
 	int cnt = 0;
 	// double max_lin_vel = 0.22;
 	// double max_ang_vel = 2.84;	
-	double max_lin_vel = 0.3;	// max linear speed
-	double max_ang_vel = 5.0;	// max angular speed
+	double max_lin_vel = 0.35;	// max linear speed
+	double max_ang_vel = 8.0;	// max angular speed
 
 	double angular_pre = 0.0;
 	double angular_window = 100.0;	// ignore

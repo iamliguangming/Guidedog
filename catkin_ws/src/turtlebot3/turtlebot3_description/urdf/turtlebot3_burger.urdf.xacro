@@ -204,7 +204,7 @@
   <joint name="camera_joint_2" type="fixed">
     <parent link="base_link"/>
     <child link="camera_link_2"/>
-    <origin xyz="0.056 0 0.7" rpy="0 0 0.785"/>
+    <origin xyz="0.056 0 0.7" rpy="0 0 1.396"/>
   </joint>
 
 
@@ -237,7 +237,7 @@
   <joint name="camera_joint_3" type="fixed">
     <parent link="base_link"/>
     <child link="camera_link_3"/>
-    <origin xyz="0.056 0 0.7" rpy="0 0 -0.785"/>
+    <origin xyz="0.056 0 0.7" rpy="0 0 -1.39"/>
   </joint>
 
 

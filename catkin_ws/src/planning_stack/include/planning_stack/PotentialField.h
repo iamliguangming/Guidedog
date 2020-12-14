@@ -30,7 +30,7 @@ class PotentialField{
     double map_resolution = 0.1;
     double local_map_size = 1.5; // half of side length 
     // Parameters for tuning ----------------------------------------------------------
-    double run_freq = 14;  
+    double run_freq = 44;  
 
     double horizon_r = 5.0;     // robot vision horizon
     double bot_r = 0.2;     // robot radius
@@ -38,14 +38,14 @@ class PotentialField{
     
 
     // attraction field pararmeters ---
-    double att_scale = 1.0;   //Fatt intensity
+    double att_scale = 5.0;   //Fatt intensity
     double att_r = 2.0;     // parabolic to conic well boundary
     double att_const = att_scale * att_r;   //   
 
     // pedestrian repulsive field parameters ---
     double rep_scale_p = 5.0;     //Frep intneisty
     double ped_r = 0.35;     // ped radius
-    double rep_r_p = 2.5;     // extra radius of the repulsive field
+    double rep_r_p = 1.2;     // extra radius of the repulsive field
     
     // wall repulsive field parameters ---
     double rep_scale_w = 15.0;
@@ -84,6 +84,12 @@ class PotentialField{
     // std::vector<geometry_msgs::Pose2D> pedRlocations_pre;   //relative position of the peds to the robot
     std::vector<planning_stack::ped> ped_info;
     std::vector<planning_stack::ped> ped_info_pre;
+    std::vector<planning_stack::ped> ped_info_1;
+    std::vector<planning_stack::ped> ped_info_2;
+    std::vector<planning_stack::ped> ped_info_3;
+    double cam_angle = 80.0;
+    double sin_cam = sin(cam_angle / 180.0 * pi);
+    double cos_cam = cos(cam_angle / 180.0 * pi);
     std::vector<int> peds_in_range;
     std::set<std::string> ped_set;
     std::set<std::string> ped_set_pre; 
@@ -114,6 +120,7 @@ class PotentialField{
     void pickRlocationWithinRange();
     void printRlocation();
     void getPedVelocity();
+    void updatePedInfo();
     double clamp(double value);
     void newPedMsgTest();
     void getSparseGlobalPath();

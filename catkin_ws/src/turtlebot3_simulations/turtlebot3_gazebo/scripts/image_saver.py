@@ -10,7 +10,7 @@ import cv2
 # Instantiate CvBridge
 bridge = CvBridge()
 
-def image_callback(msg):
+def image_callback1(msg):
     print("Received an image!")
     try:
         # Convert your ROS Image message to OpenCV2
@@ -20,14 +20,42 @@ def image_callback(msg):
     else:
         # Save your OpenCV2 image as a jpeg 
         time = msg.header.stamp
-        cv2.imwrite("/mnt/new/ttttt/"+str(time)+'.png', cv2_img)
+        cv2.imwrite("/mnt/new/image_collect/1/"+str(time)+'.png', cv2_img)
+
+def image_callback2(msg):
+    print("Received an image!")
+    try:
+        # Convert your ROS Image message to OpenCV2
+        cv2_img = bridge.imgmsg_to_cv2(msg, "bgr8")
+    except CvBridgeError as e:
+        print(e)
+    else:
+        # Save your OpenCV2 image as a jpeg
+        time = msg.header.stamp
+        cv2.imwrite("/mnt/new/image_collect/2/"+str(time)+'.png', cv2_img)
+
+def image_callback3(msg):
+    print("Received an image!")
+    try:
+        # Convert your ROS Image message to OpenCV2
+        cv2_img = bridge.imgmsg_to_cv2(msg, "bgr8")
+    except CvBridgeError as e:
+        print(e)
+    else:
+        # Save your OpenCV2 image as a jpeg
+        time = msg.header.stamp
+        cv2.imwrite("/mnt/new/image_collect/3/"+str(time)+'.png', cv2_img)
 
 def main():
     rospy.init_node('image_listener')
     # Define your image topic
-    image_topic = "/rrbot/camera1/image_rect_color"
+    image_topic1 = "/rrbot/camera1/image_rect_color"
+    image_topic2 = "/rrbot/camera2/image_rect_color"
+    image_topic3 = "/rrbot/camera3/image_rect_color"
     # Set up your subscriber and define its callback
-    rospy.Subscriber(image_topic, Image, image_callback)
+    rospy.Subscriber(image_topic1, Image, image_callback1)
+    rospy.Subscriber(image_topic2, Image, image_callback2)
+    rospy.Subscriber(image_topic3, Image, image_callback3)
     # Spin until ctrl + c
     rospy.spin()
 

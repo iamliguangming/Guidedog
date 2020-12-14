@@ -103,12 +103,13 @@ void bot_control::move(){
             if(stop_flag == 2.0){
                 ROS_INFO("Ped in front, turn CW");
                 // stop_flag == 0.0;
-                cmd.angular.z -= 3.0;  //rotate CW to avoid peds in the front
+                // cmd.angular.z -= 4.0;  //rotate CW to avoid peds in the front
+                cmd.angular.z = - 3.0; 
             }
             if(stop_flag == 3.0){
                 ROS_INFO("Ped in front, turn CCW");
                 // stop_flag == 0.0;
-                cmd.angular.z += 3.0;   //rotate CCW to avoid peds in the front
+                cmd.angular.z = 3.0;   //rotate CCW to avoid peds in the front
             } 
 
             // ROS_INFO("modified delta_angle: %f", std::min(delta_angle_ccw, delta_angle_cw));

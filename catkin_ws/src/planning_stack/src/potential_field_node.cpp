@@ -106,8 +106,6 @@ std::vector<double> PotentialField::calculateForce(){
     // Frep from velo ---
     calcFrep_v(F_tot);
 
-    ped_info_pre = ped_info;
-    
     return F_tot;
 };
 
@@ -131,12 +129,10 @@ void PotentialField::calcFatt(std::vector<double> &F_tot){
 
 void PotentialField::calcFrep_p(std::vector<double> &F_tot){
     ROS_INFO("------------- Frep from peds -------------");
+    // updatePedInfo();     // print, pick, get velocity
     printRlocation();
     pickRlocationWithinRange();
     getPedVelocity();
-    // for(int i = 0; i < peds_in_range.size(); i++){
-    //     ROS_INFO("peds in range %d: %d", i, peds_in_range[i]);
-    // }
 
     if(int(ped_info.size()) > 0){
         double sin_t = sin(bot_pos.theta);
@@ -148,7 +144,7 @@ void PotentialField::calcFrep_p(std::vector<double> &F_tot){
                 double rep_source_dis = sqrt(pow(ped_info[i].posex, 2.0) + pow(ped_info[i].posey, 2.0));
                 double close_dis = rep_source_dis - bot_r - ped_r;
                 double Frep_mag = 0.0;
-                ROS_INFO("ped_%d in range: % f  % f", i, ped_info[i].posex, ped_info[i].posey);
+                ROS_INFO("ped_%s in range: % f  % f", ped_info[i].name.c_str(), ped_info[i].posex, ped_info[i].posey);
                 ROS_INFO("close_dis of ped_%d: %f", i, close_dis);
                 
                 if(ped_info[i].velox < 0.0){    //calculate repulsive force when the ped is moving towards the robot
@@ -285,13 +281,13 @@ void PotentialField::calcFrep_v(std::vector<double> &F_tot){
             double p_angle = 0;
             // if(rep_source_dis <= rep_r_v){
                 double Frep_mag = rep_scale_v * sqrt(pow(ped_info[i].velox, 2.0) + pow(ped_info[i].velox, 2.0));
-                ROS_INFO("r in p velox: %f, veloy: %f", - ped_info[i].velox, - ped_info[i].veloy);
-                ROS_INFO("p in r posex: %f, posey: %f", ped_info[i].posex, ped_info[i].posey);
+                ROS_INFO("p in r velox: %f, veloy: %f", ped_info[i].velox, ped_info[i].veloy);
+                // ROS_INFO("p in r posex: %f, posey: %f", ped_info[i].posex, ped_info[i].posey);
                 v_angle = atan2(- ped_info[i].veloy, - ped_info[i].velox);
                 p_angle = atan2(ped_info[i].posey, ped_info[i].posex);
-                ROS_INFO("ped %d", i);
-                ROS_INFO("v_angle: %f", v_angle);
-                ROS_INFO("p_angle: %f", p_angle); 
+                // ROS_INFO("ped %d", i);
+                // ROS_INFO("v_angle: %f", v_angle);
+                // ROS_INFO("p_angle: %f", p_angle); 
                 double delta_angle = abs(v_angle - p_angle);
                 double delta_angle_sup = 2 * pi - delta_angle;
                 // ROS_INFO("delta angle: %f", delta_angle);
@@ -308,20 +304,20 @@ void PotentialField::calcFrep_v(std::vector<double> &F_tot){
             // }
 
             // when the ped is far and the the robot is going straight to the robot, turn accoding to the sign of (v_angle - p_angle)
-            if(rep_source_dis > 3.0 && rep_source_dis < 4.0){
+            if(rep_source_dis > 1.0 && rep_source_dis < 4.0){
                 // if(v_angle - p_angle >= 0 && v_angle - p_angle < 0.15){
                 if(p_angle > 0.0 && p_angle < 0.25){
                     ROS_INFO("Ped in front, turn CW");
                     far_avoid_flag = 2.0;
                 }
                 // else if(v_angle - p_angle < 0 && v_angle - p_angle > -0.15){
-                else if(p_angle < 0.0 && p_angle > -0.25){
+                else if(p_angle <= 0.0 && p_angle > -0.25){
                     ROS_INFO("Ped in front, turn CCW");
                     far_avoid_flag = 3.0;  
                 } 
-                else{
-                    far_avoid_flag = 0.0;
-                } 
+                // else{
+                //     far_avoid_flag = 0.0;
+                // } 
             }else{
                 far_avoid_flag = 0.0;
             }
@@ -377,22 +373,19 @@ void PotentialField::rlocationProcessing(const gazebo_msgs::ModelStates::ConstPt
 }
 
 void PotentialField::pickRlocation(const gazebo_msgs::ModelStates::ConstPtr &msg){
+    std::vector<planning_stack::ped> ped_info_n;
     std::vector<planning_stack::ped> ped_info_;
     int msg_length = msg->name.size();
-    // ROS_INFO("msg_length: %d", msg_length);
-    // int cnt = 0;
+
     for (int i=0;i<msg_length;i++){ 
-        // class:1 tracking_id:7
-        // std::string cnt_s = "class:1 tracking_id:" + std::to_string(cnt);
         if(msg->name[i].find("man") != std::string::npos){ // only print out the pedetrians' info
-            // cnt++;
             std::string name = msg->name[i]; 
             double rx = msg->pose[i].position.x;
             double ry = msg->pose[i].position.y;
             // ROS_INFO("Ped name: %s", name.c_str());
             // ROS_INFO("x = %f, y = %f \n", rx, ry);
 
-        // new data structure to store the ped infomation ---
+            // new data structure to store the ped infomation ---
             planning_stack::ped tmp2;
             tmp2.name = msg->name[i]; 
             // tmp2.posex = rx;    // for testing planning module, this pose and pose is in gazebo frame
@@ -401,13 +394,55 @@ void PotentialField::pickRlocation(const gazebo_msgs::ModelStates::ConstPtr &msg
             tmp2.posey = -ry;
             tmp2.velox = 0.0;
             tmp2.veloy = 0.0;
-            ped_info_.push_back(tmp2);
-        // insert the ped's name in a set
+            ped_info_n.push_back(tmp2);
+
+            // insert the ped's name in a set
             ped_set.insert(msg->name[i]);
         }
     }
+    
+    // find out which camera's info is being processed, and put the info in the corresponding ped_info_#
+    // if(ped_info_n.size()){
+        if(msg->name[0][0] == '1'){     //camera in the front
+            if(ped_info_n.size()) ROS_INFO("1");
+            ped_info_1 = ped_info_n;
+        }else if(msg->name[0][0] == '2'){    //camera on the left
+            if(ped_info_n.size()) ROS_INFO("2");
+            for(int i = 0; i < ped_info_n.size(); i++){     
+                double tmpx = ped_info_n[i].posex * cos_cam - ped_info_n[i].posey * sin_cam;
+                double tmpy = ped_info_n[i].posex * sin_cam + ped_info_n[i].posey * cos_cam;
+                ped_info_n[i].posex = tmpx;
+                ped_info_n[i].posey = tmpy;
+            }
+            ped_info_2 = ped_info_n;
+        }else if(msg->name[0][0] == '3'){       //camera on the right
+            if(ped_info_n.size()) ROS_INFO("3");
+            for(int i = 0; i < ped_info_n.size(); i++){     //camera on the left
+                double tmpx = ped_info_n[i].posex * cos_cam + ped_info_n[i].posey * sin_cam;
+                double tmpy = - ped_info_n[i].posex * sin_cam + ped_info_n[i].posey * cos_cam;
+                ped_info_n[i].posex = tmpx;
+                ped_info_n[i].posey = tmpy;
+            }
+            ped_info_3 = ped_info_n;
+        }
 
-    ped_info = ped_info_;
+        //update the ped_info whenever a new camera's info comes in 
+        ped_info_.reserve(ped_info_1.size() + ped_info_2.size() + ped_info_3.size()); // preallocate memory
+        ped_info_.insert(ped_info_.end(), ped_info_1.begin(), ped_info_1.end());
+        ped_info_.insert(ped_info_.end(), ped_info_2.begin(), ped_info_2.end());
+        ped_info_.insert(ped_info_.end(), ped_info_3.begin(), ped_info_3.end());
+
+        ped_info_pre = ped_info;    //store previous ped_info
+        ped_info = ped_info_;   //update ped_info
+    // }
+    // else{      // not man detected, need to find out which camera 
+        
+    // }
+    // // else if(msg_length == 1 && msg->name[0].find("nan") != std::string::npos){     // only one msg and the name is "nan"
+    // //     if(msg->name[0].name[0] == '1') ped_info_1 = ped_info_n;    // ped_info_n is empty
+    // //     else if(msg->name[0].name[0] == '2') ped_info_2 = ped_info_n; 
+    // //     else if(msg->name[0].name[0] == '3') ped_info_3 = ped_info_n; 
+    // // }
 }
 
 void PotentialField::pickRlocationWithinRange(){
@@ -439,20 +474,26 @@ void PotentialField::printRlocation(){
 void PotentialField::getPedVelocity(){
     std::set<std::string>::iterator iter;
 
-    for(iter = ped_set.begin() ; iter != ped_set.end() ; ++iter)
-    {
-        // ROS_INFO("ped name in get velo: %s", (*iter).c_str());
-    }
+    // for(iter = ped_set.begin() ; iter != ped_set.end() ; ++iter)
+    // {
+    //     // ROS_INFO("ped name in get velo: %s", (*iter).c_str());
+    // }
     for(int i = 0; i < ped_info.size(); i++){
         if(ped_info_pre.size() > 0 && ped_set_pre.find(ped_info[i].name) != ped_set_pre.end()){
             ped_info[i].velox = clamp((ped_info[i].posex - ped_info_pre[i].posex) / (1.0 / run_freq));
             ped_info[i].veloy = clamp((ped_info[i].posey - ped_info_pre[i].posey) / (1.0 / run_freq));
+            // ROS_INFO("ped %s relative velocity: % f % f", (ped_info[i].name).c_str(), ped_info[i].velox, ped_info[i].veloy);
         }
-        // ROS_INFO("ped %s relative velocity: % f % f", (ped_info[i].name).c_str(), ped_info[i].velox, ped_info[i].veloy);
     } 
 
     ped_set_pre = ped_set;
     ped_set.clear();
+}
+
+void PotentialField::updatePedInfo(){
+    printRlocation();
+    pickRlocationWithinRange();
+    getPedVelocity();
 }
 
 double PotentialField::clamp(double value){
@@ -496,7 +537,7 @@ void PotentialField::getSparseGlobalPath(){
             sparse_global_path_.poses.push_back(tmp);
             i++;
         }
-        if(cnt >= 80){
+        if(cnt >= 300){
             cnt = 0;
             ROS_INFO("new WP! Each 8 meters");
             tmp.pose.position.x = dense_global_path.poses[i+1].pose.position.x;
