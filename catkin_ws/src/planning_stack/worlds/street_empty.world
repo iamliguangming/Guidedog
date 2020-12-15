@@ -103,7 +103,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/zhuoyu/Documents/CIS-700/Guidedog/catkin_ws/src/planning_stack/worlds/models/street8/street8.dae</uri>
+              <uri>/home/yihangxu/Documents/guidedog/Guidedog/catkin_ws/src/planning_stack/worlds/models/street8/street8.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -116,7 +116,7 @@
           <pose frame=''>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>/home/zhuoyu/Documents/CIS-700/Guidedog/catkin_ws/src/planning_stack/worlds/models/street8/street8.dae</uri>
+              <uri>/home/yihangxu/Documents/guidedog/Guidedog/catkin_ws/src/planning_stack/worlds/models/street8/street8.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>

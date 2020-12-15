@@ -22,15 +22,24 @@ class PotentialField{
     void getNewPath(nav_msgs::Path new_path);  
     void init();
     void run();
+    void run_test();
 
     private:    
+    bool use_cam_info = false;
+    bool DI = true;  
+    bool wall = false;
+    bool velo = false;
+
+    bool manual_goal = true;
+      
     MapReader map;   
     double map_offset_x = 115.0;
     double map_offset_y = 115.0;  
     double map_resolution = 0.1;
     double local_map_size = 1.5; // half of side length 
+
     // Parameters for tuning ----------------------------------------------------------
-    double run_freq = 44;  
+    double run_freq = 14;  
 
     double horizon_r = 5.0;     // robot vision horizon
     double bot_r = 0.2;     // robot radius
@@ -43,7 +52,10 @@ class PotentialField{
     double att_const = att_scale * att_r;   //   
 
     // pedestrian repulsive field parameters ---
-    double rep_scale_p = 5.0;     //Frep intneisty
+    // double rep_scale_p = 5.0;     //Frep intneisty       // integrated demo parameters ---
+    // double ped_r = 0.35;     // ped radius
+    // double rep_r_p = 1.2;     // extra radius of the repulsive field    
+    double rep_scale_p = 5.0;     //Frep intneisty      // DI test parameters ---
     double ped_r = 0.35;     // ped radius
     double rep_r_p = 1.2;     // extra radius of the repulsive field
     
@@ -53,15 +65,18 @@ class PotentialField{
     double rep_r_w = 0.5;   // extra radius of the repulsize field   was 0.6
 
     // danger index field paremeters ---
-    bool DI = false;
-    double DI_scale = 1.0;
-    double rhocmin = bot_r + ped_r;
-    double rhocmax = 1.0; 
+    double DI_scale = 10.0;
+    double rhocmin = bot_r + ped_r;   // closest distance of the centers of the robot and the pedestrian can get
+    double rhocmax = 1.3;       // DI start distance
     double eta = (rhocmin * rhocmax) / (rhocmax - rhocmin); 
-    double epsilon = 3.0;
-    // velocity repulsive 
+    double epsilon = 2.0;   // larger, robot more conservative; smaller, more aggressive
+
+    // velocity repulsive ---
     double rep_scale_v = 0.5;
     double rep_r_v = 2.0;
+
+    double dodge_min = 1.0;
+    double dodge_max = 4.0;
 
     ros::NodeHandle n;
 
@@ -116,14 +131,15 @@ class PotentialField{
     
     void Odom_call_back(const nav_msgs::Odometry::ConstPtr &msg);
     void rlocationProcessing(const gazebo_msgs::ModelStates::ConstPtr &msg);
-    void pickRlocation(const gazebo_msgs::ModelStates::ConstPtr &msg);      // pick the peds from the other objs in the simualtor
-    void pickRlocationWithinRange();
+    void pickRlocationFromCameras(const gazebo_msgs::ModelStates::ConstPtr &msg);      // pick the peds from the other objs in the simualtor
+    void pickRlocationFromWorld(const gazebo_msgs::ModelStates::ConstPtr &msg);     // pick the peds from god view
+    void pickRlocationWithinRange();   
     void printRlocation();
     void getPedVelocity();
     void updatePedInfo();
-    double clamp(double value);
+    double clamp(double value);      // clamp the velocity of the pedestrians 
     void newPedMsgTest();
-    void getSparseGlobalPath();
+    void getSparseGlobalPath();     // get waypoints from dijkstra result
     
 };
 

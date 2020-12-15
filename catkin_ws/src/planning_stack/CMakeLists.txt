@@ -146,6 +146,15 @@ src/global_planner/map_reader.cpp
 src/global_planner/global_path_finder.cpp
 )
 
+add_executable(nav_node_PnC_test 
+src/nav_node_PnC_test.cpp 
+src/potential_field_node.cpp
+src/global_planner/map_reader.cpp
+src/global_planner/global_path_finder.cpp
+)
+target_link_libraries(nav_node_PnC_test
+${catkin_LIBRARIES})
+
 add_executable(simple_controller_node 
 src/simple_controller_node.cpp
 src/bot_control.cpp 
