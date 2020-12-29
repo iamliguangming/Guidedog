@@ -48,7 +48,7 @@ def demo(opt):
   if opt.save_video:
     # fourcc = cv2.VideoWriter_fourcc(*'XVID')
     fourcc = cv2.VideoWriter_fourcc(*'acv1')
-    out = cv2.VideoWriter('/mnt/new/guidedog/try_demo/{}.mp4'.format(
+    out = cv2.VideoWriter('/mnt/new/guidedog/try_demo/demo3/3/{}.mp4'.format(
       opt.exp_id + '_' + out_name),fourcc, opt.save_framerate, (
         opt.video_w, opt.video_h))
   
@@ -96,7 +96,7 @@ def demo(opt):
       if opt.save_video:
         out.write(ret['generic'])
         if not is_video:
-          cv2.imwrite('/mnt/new/guidedog/try_demo/demo{}.jpg'.format(cnt), ret['generic'])
+          cv2.imwrite('/mnt/new/guidedog/try_demo/demo3/3/demo{}.jpg'.format(cnt), ret['generic'])
       
       # esc to quit and finish saving video
       if cv2.waitKey(1) == 27:

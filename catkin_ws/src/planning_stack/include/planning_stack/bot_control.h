@@ -22,8 +22,10 @@ class bot_control{
 	
 	int cnt = 0;
 	double max_lin_vel = 0.35;	// max linear speed		// integrated demo
-	// double max_lin_vel = 0.8;	// max linear speed	//DI test
-	double max_ang_vel = 8.0;	// max angular speed
+	double max_ang_vel = 6.0;	// max angular speed
+
+	// double max_lin_vel = 0.38;	// max linear speed	//DI test
+	// double max_ang_vel = 12.0;	// max angular speed
 
 	double angular_pre = 0.0;
 	double angular_window = 100.0;	// ignore
@@ -31,8 +33,9 @@ class bot_control{
 	bool new_info_flag = false;
 	double cmd_discount_rate = 0.95; 	// ignore
 
-	double reverse_discount = 2.0;	 // when reversing, move faster
-	double emergency_discount = 2.0;	// when in panic (large force), move faster
+	// double reverse_discount = 2.0;	 // when reversing, move faster
+	double reverse_discount = 0.35;	 // DI test
+	double emergency_discount = 1.50;	// when in panic (large force), move faster
 	double no_force_discount = 0.75;		// the controller is runing at 100Hz but the force signal is running at 10Hz. When no force signal, add discount on the earlier command
 	double no_force_scale = 1.0;	
 

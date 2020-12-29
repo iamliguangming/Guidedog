@@ -16,8 +16,17 @@
   <waypoint id="wp0u" x="30" y="-5" r="5"/>
   <waypoint id="wp5u" x="-30" y="-5" r="5"/>
 
+  <waypoint id="wp0m" x="30" y="-10" r="5"/>
+  <waypoint id="wp5m" x="-30" y="-10" r="5"/>
+
   <waypoint id="wp0d" x="30" y="-20" r="5"/>
   <waypoint id="wp5d" x="-30" y="-20" r="5"/>
+
+
+  <waypoint id="wp1x" x="30" y="0" r="5"/>
+  <waypoint id="wp3x" x="-30" y="-20" r="5"/>
+  <waypoint id="wp2x" x="30" y="-20" r="5"/>
+  <waypoint id="wp4x" x="-30" y="20" r="5"/>
   <!-- <queue id="info_desk" x="20" y="15" direction="0"/> -->
 
     <!--Agents-->
@@ -28,22 +37,42 @@
 
     <!--AgentClusters-->   
 
-    <agent x="15.0" y="-15.0" n="2" dx="2" dy="2" type="0">    
+    <agent x="15.0" y="-15.0" n="2" dx="2" dy="2" type="3">    
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
     </agent>  
 
-    <agent x="-5.0" y="-15.0" n="2" dx="2" dy="2" type="0">    
+    <agent x="10.0" y="-15.0" n="2" dx="2" dy="2" type="3">    
+        <addwaypoint id="wp0"/>
+        <addwaypoint id="wp5"/>
+    </agent> 
+
+    <agent x="0.0" y="-15.0" n="2" dx="2" dy="2" type="3">    
+        <addwaypoint id="wp0"/>
+        <addwaypoint id="wp5"/>
+    </agent>
+
+    <agent x="-5.0" y="-15.0" n="1" dx="2" dy="2" type="0">    
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
     </agent>  
+
+    <agent x="-10.0" y="-15.0" n="2" dx="2" dy="2" type="3">    
+        <addwaypoint id="wp0"/>
+        <addwaypoint id="wp5"/>
+    </agent> 
+
+    <agent x="-15.0" y="-15.0" n="2" dx="2" dy="2" type="3">    
+        <addwaypoint id="wp0"/>
+        <addwaypoint id="wp5"/>
+    </agent> 
 
     <agent x="-20.0" y="-15.0" n="2" dx="2" dy="2" type="0">    
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
     </agent> 
 
-    <agent x="-35.0" y="-15.0" n="2" dx="2" dy="2" type="0">    
+    <agent x="-35.0" y="-15.0" n="1" dx="2" dy="2" type="3">    
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
     </agent>    
@@ -55,95 +84,129 @@
 
 
 
-    <agent x="15.0" y="-5.0" n="2" dx="1" dy="1" type="0">    
+    <agent x="10.0" y="-5.0" n="2" dx="1" dy="1" type="0">    
         <addwaypoint id="wp0u"/>
         <addwaypoint id="wp5u"/>
     </agent>  
 
-    <agent x="-5.0" y="-5.0" n="2" dx="1" dy="1" type="0">    
+    <agent x="-10.0" y="-5.0" n="1" dx="1" dy="1" type="3">    
         <addwaypoint id="wp0u"/>
         <addwaypoint id="wp5u"/>
     </agent>  
 
-    <agent x="-20.0" y="-5.0" n="2" dx="1" dy="1" type="0">    
+    <agent x="-25.0" y="-5.0" n="2" dx="1" dy="1" type="0">    
         <addwaypoint id="wp0u"/>
         <addwaypoint id="wp5u"/>
     </agent> 
 
-    <agent x="-35.0" y="-5.0" n="2" dx="1" dy="1" type="0">    
+    <agent x="-40.0" y="-5.0" n="1" dx="1" dy="1" type="3">    
         <addwaypoint id="wp0u"/>
         <addwaypoint id="wp5u"/>
     </agent>    
+
+    <agent x="-450.0" y="-5.0" n="1" dx="1" dy="1" type="0">    
+        <addwaypoint id="wp0u"/>
+        <addwaypoint id="wp5u"/>
+    </agent>  
     
-    <agent x="-50.0" y="-5.0" n="2" dx="1" dy="1" type="0">    
+    <agent x="-55.0" y="-5.0" n="2" dx="1" dy="1" type="3">    
         <addwaypoint id="wp0u"/>
         <addwaypoint id="wp5u"/>
     </agent>
 
-    <agent x="15.0" y="-5.0" n="2" dx="1" dy="1" type="0">    
+    <agent x="20.0" y="-5.0" n="2" dx="1" dy="1" type="0">    
         <addwaypoint id="wp0u"/>
         <addwaypoint id="wp5u"/>
     </agent>  
 
 
-    <agent x="-0.0" y="-20.0" n="2" dx="1" dy="1" type="0">    
-        <addwaypoint id="wp0d"/>
-        <addwaypoint id="wp5d"/>
+
+
+
+    <agent x="12.0" y="-10.0" n="1" dx="1" dy="1" type="0">    
+        <addwaypoint id="wp0m"/>
+        <addwaypoint id="wp5m"/>
     </agent>  
 
-    <agent x="-15.0" y="-20.0" n="2" dx="1" dy="1" type="0">    
-        <addwaypoint id="wp0d"/>
-        <addwaypoint id="wp5d"/>
+    <agent x="-13.0" y="-10.0" n="2" dx="1" dy="1" type="3">    
+        <addwaypoint id="wp0m"/>
+        <addwaypoint id="wp5m"/>
+    </agent>  
+
+    <agent x="-24.0" y="-10.0" n="1" dx="1" dy="1" type="0">    
+        <addwaypoint id="wp0m"/>
+        <addwaypoint id="wp5m"/>
     </agent> 
 
-    <agent x="-35.0" y="-20.0" n="2" dx="1" dy="1" type="0">    
-        <addwaypoint id="wp0d"/>
-        <addwaypoint id="wp5d"/>
+    <agent x="-45.0" y="-10.0" n="2" dx="1" dy="1" type="3">    
+        <addwaypoint id="wp0m"/>
+        <addwaypoint id="wp5m"/>
+    </agent>    
+
+    <agent x="-46.0" y="-10.0" n="1" dx="1" dy="1" type="0">    
+        <addwaypoint id="wp0m"/>
+        <addwaypoint id="wp5m"/>
+    </agent>  
+    
+    <agent x="-57.0" y="-10.0" n="1" dx="1" dy="1" type="3">    
+        <addwaypoint id="wp0m"/>
+        <addwaypoint id="wp5m"/>
+    </agent>
+
+    <agent x="28.0" y="-10.0" n="2" dx="1" dy="1" type="0">    
+        <addwaypoint id="wp0m"/>
+        <addwaypoint id="wp5m"/>
+    </agent>  
+
+
+
+
+
+    <agent x="-5.0" y="-34.0" n="2" dx="1" dy="1" type="0">    
+        <addwaypoint id="wp1x"/>
+        <addwaypoint id="wp3x"/>
+    </agent>  
+
+    <agent x="-10.0" y="-23.0" n="1" dx="1" dy="1" type="3">    
+        <addwaypoint id="wp2x"/>
+        <addwaypoint id="wp4x"/>
+    </agent> 
+
+    <agent x="-15.0" y="-70.0" n="1" dx="1" dy="1" type="0">    
+        <addwaypoint id="wp2x"/>
+        <addwaypoint id="wp4x"/>
+    </agent> 
+
+    <agent x="-30.0" y="-3.0" n="2" dx="1" dy="1" type="0">    
+        <addwaypoint id="wp4x"/>
+        <addwaypoint id="wp2x"/>
     </agent>    
     
-    <agent x="-45.0" y="-20.0" n="2" dx="1" dy="1" type="0">    
-        <addwaypoint id="wp0d"/>
-        <addwaypoint id="wp5d"/>
+    <agent x="-40.0" y="-4.0" n="2" dx="1" dy="1" type="3">    
+        <addwaypoint id="wp1x"/>
+        <addwaypoint id="wp3x"/>
     </agent>
-    <!-- <agent x="-50.0" y="-15.0" n="1" dx="1" dy="1" type="0">    
-        <addwaypoint id="wp0"/>
-        <addwaypoint id="wp5"/>
-    </agent>
+    
+    <agent x="10.0" y="-5.0" n="2" dx="1" dy="1" type="0">    
+        <addwaypoint id="wp3x"/>
+        <addwaypoint id="wp1x"/>
+    </agent>  
 
-    <agent x="-30.0" y="-15.0" n="1" dx="1" dy="1" type="0">    
-        <addwaypoint id="wp0"/>
-        <addwaypoint id="wp5"/>
-    </agent>
+    <agent x="-10.0" y="-13.0" n="1" dx="1" dy="1" type="3">    
+        <addwaypoint id="wp1x"/>
+        <addwaypoint id="wp2x"/>
+    </agent>  
 
-    <agent x="-30.0" y="-15.0" n="1" dx="1" dy="1" type="0">    
-        <addwaypoint id="wp0"/>
-        <addwaypoint id="wp5"/>
-    </agent> -->
-<!-- 
-    <agent x="-20.0" y="-52.0" n="1" dx="1" dy="1" type="0">    
-        <addwaypoint id="wp0"/>
-        <addwaypoint id="wp5"/>
+    <agent x="-25.0" y="-15.0" n="2" dx="1" dy="1" type="0">    
+        <addwaypoint id="wp2x"/>
+        <addwaypoint id="wp1x"/>
     </agent> 
 
-    <agent x="-25.0" y="-49.0" n="1" dx="1" dy="1" type="0">    
-        <addwaypoint id="wp0"/>
-        <addwaypoint id="wp5"/>
-    </agent>
-    
-    <agent x="-30.0" y="-52.0" n="1" dx="1" dy="1" type="0">    
-        <addwaypoint id="wp0"/>
-        <addwaypoint id="wp5"/>
-    </agent>  
+    <agent x="-40.0" y="-19.0" n="1" dx="1" dy="1" type="3">    
+        <addwaypoint id="wp2x"/>
+        <addwaypoint id="wp4x"/>
+    </agent>    
 
-    <agent x="-35.0" y="-49.0" n="1" dx="1" dy="1" type="0">    
-        <addwaypoint id="wp0"/>
-        <addwaypoint id="wp5"/>
-    </agent>  
-    
-    <agent x="-40" y="-50" n="1" dx="1" dy="1" type="0">    
-        <addwaypoint id="wp0"/>
-        <addwaypoint id="wp5"/>
-    </agent>  -->
 
 
 </scenario>

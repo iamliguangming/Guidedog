@@ -153,7 +153,7 @@ vector<vector<tDetection>> loadDetections(string file_name, bool& compute_aos,
             if (fream != fream_old) {
                 detections.push_back(temp);
                 temp.clear();
-                fream_old = fream;
+                fream_old += 1;
             }
             // d.thresh = 1;
             d.box.type = str;
@@ -205,7 +205,7 @@ vector<vector<tGroundtruth>> loadGroundtruth(string file_name, bool& success) {
             if (fream != fream_old) {
                 groundtruth.push_back(temp);
                 temp.clear();
-                fream_old = fream;
+                fream_old += 1;
             }
             if(str[0] == 'm' && str[2] == 'n'){
                 strcpy(str, "pedestrian");

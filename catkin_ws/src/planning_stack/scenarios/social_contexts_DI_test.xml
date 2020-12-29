@@ -24,27 +24,27 @@
 
     <!--AgentClusters-->   
 
-    <agent x="15.0" y="-15.0" n="1" dx="1" dy="1" type="0">    
+    <agent x="15.0" y="-15.0" n="1" dx="1" dy="0.5" type="3">    
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
     </agent>  
 
-    <agent x="-5.0" y="-15.0" n="1" dx="1" dy="1" type="0">    
+    <agent x="-5.0" y="-15.0" n="1" dx="1" dy="1" type="3">    
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
     </agent>  
 
-    <agent x="-20.0" y="-15.0" n="1" dx="1" dy="1" type="0">    
+    <agent x="-20.0" y="-15.0" n="1" dx="1" dy="0.5" type="3">    
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
     </agent> 
 
-    <agent x="-35.0" y="-15.0" n="1" dx="1" dy="1" type="0">    
+    <agent x="-35.0" y="-15.0" n="1" dx="1" dy="1" type="3">    
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
     </agent>    
     
-    <agent x="-50.0" y="-15.0" n="1" dx="1" dy="1" type="0">    
+    <agent x="-50.0" y="-15.0" n="1" dx="1" dy="0.5" type="3">    
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
     </agent>

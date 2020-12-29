@@ -69,7 +69,7 @@ void bot_control::move(){
             ROS_INFO("min angle: %f: ", std::min(delta_angle_ccw, delta_angle_cw));
 
             // if(std::min(delta_angle_ccw, delta_angle_cw) <= 3.0 / 4.0 * pi){
-            if(std::min(delta_angle_ccw, delta_angle_cw) > 5.0 / 5.0 * pi){   // when both angle is close to pi / 2, reverse
+            if(std::min(delta_angle_ccw, delta_angle_cw) > 6.0 / 6.0 * pi){   // when both angle is close to pi / 2, reverse
                
                 double angle_sup = M_PI - std::max(delta_angle_ccw, delta_angle_cw);    // the supplement angle
                 if(delta_angle_ccw < delta_angle_cw){
@@ -77,8 +77,8 @@ void bot_control::move(){
                     cmd.linear.x = - reverse_discount * ( - max_lin_vel / M_PI * abs(angle_sup) + max_lin_vel);
                     ROS_INFO("Reverse, Turn CCW");
                 }else{
-                    cmd.angular.z =   max_ang_vel / M_PI * sqrt(angle_sup);  
-                    cmd.linear.x = -  ( - max_lin_vel / M_PI * abs(angle_sup) + max_lin_vel);
+                    cmd.angular.z =  reverse_discount * max_ang_vel / M_PI * sqrt(angle_sup);  
+                    cmd.linear.x = - reverse_discount * ( - max_lin_vel / M_PI * abs(angle_sup) + max_lin_vel);
                     ROS_INFO("Reverse, Turn CW");
                 }
 
@@ -104,12 +104,12 @@ void bot_control::move(){
                 ROS_INFO("Ped in front, turn CW");
                 // stop_flag == 0.0;
                 // cmd.angular.z -= 4.0;  //rotate CW to avoid peds in the front
-                cmd.angular.z = - 3.0; 
+                cmd.angular.z = - 2.5; 
             }
             if(stop_flag == 3.0){
                 ROS_INFO("Ped in front, turn CCW");
                 // stop_flag == 0.0;
-                cmd.angular.z = 3.0;   //rotate CCW to avoid peds in the front
+                cmd.angular.z = 2.5;   //rotate CCW to avoid peds in the front
             } 
 
             // ROS_INFO("modified delta_angle: %f", std::min(delta_angle_ccw, delta_angle_cw));

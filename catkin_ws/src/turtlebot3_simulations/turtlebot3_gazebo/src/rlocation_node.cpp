@@ -57,8 +57,10 @@ class RelativeLocation
       relative_location.name.push_back(msgs->name[i]); // Copying the name of models in the environment
       relative_location.pose.push_back(msgs->pose[i]);
       relative_location.twist.push_back(msgs->twist[i]);
-      relative_location.pose[i].position.x = msgs->pose[i].position.x - RelativeLocation::bot_x; //Give Relative obstacle X location wrt Bot
-      relative_location.pose[i].position.y = msgs->pose[i].position.y - RelativeLocation::bot_y; //Give Relative obstacle Y location wrt Bot 
+      // relative_location.pose[i].position.x = msgs->pose[i].position.x - RelativeLocation::bot_x; //Give Relative obstacle X location wrt Bot
+      // relative_location.pose[i].position.y = msgs->pose[i].position.y - RelativeLocation::bot_y; //Give Relative obstacle Y location wrt Bot 
+      relative_location.pose[i].position.x = msgs->pose[i].position.x; //Give Relative obstacle X location wrt Bot
+      relative_location.pose[i].position.y = msgs->pose[i].position.y; //Give Relative obstacle Y location wrt Bot 
       if (msgs->name[i] == "turtlebot3_burger"){
         double angle = msgs->pose[i].orientation.z;
         angle = std::asin(angle);

@@ -26,11 +26,11 @@ class PotentialField{
 
     private:    
     bool use_cam_info = false;
-    bool DI = true;  
-    bool wall = false;
-    bool velo = false;
-
-    bool manual_goal = true;
+    bool manual_goal = false;
+    bool DI = false;  
+    bool wall = true;
+    bool velo = true;
+    
       
     MapReader map;   
     double map_offset_x = 115.0;
@@ -39,11 +39,11 @@ class PotentialField{
     double local_map_size = 1.5; // half of side length 
 
     // Parameters for tuning ----------------------------------------------------------
-    double run_freq = 14;  
+    double run_freq = 30;  
 
     double horizon_r = 5.0;     // robot vision horizon
     double bot_r = 0.2;     // robot radius
-    double check_arrive_threshold = 2.5;    //waypoint tolerance
+    double check_arrive_threshold = 3.0;    //waypoint tolerance
     
 
     // attraction field pararmeters ---
@@ -52,28 +52,28 @@ class PotentialField{
     double att_const = att_scale * att_r;   //   
 
     // pedestrian repulsive field parameters ---
-    // double rep_scale_p = 5.0;     //Frep intneisty       // integrated demo parameters ---
-    // double ped_r = 0.35;     // ped radius
-    // double rep_r_p = 1.2;     // extra radius of the repulsive field    
-    double rep_scale_p = 5.0;     //Frep intneisty      // DI test parameters ---
+    double rep_scale_p = 2.0;     //Frep intneisty       // integrated demo parameters ---
     double ped_r = 0.35;     // ped radius
-    double rep_r_p = 1.2;     // extra radius of the repulsive field
+    double rep_r_p = 0.2;     // extra radius of the repulsive field    
+    // double rep_scale_p = 500.0;     //Frep intneisty      // DI test parameters ---
+    // double ped_r = 0.35;     // ped radius
+    // double rep_r_p = 1.0;     // extra radius of the repulsive field
     
     // wall repulsive field parameters ---
     double rep_scale_w = 15.0;
     double wall_r = map_resolution * sqrt(2.0) / 2.0;
-    double rep_r_w = 0.5;   // extra radius of the repulsize field   was 0.6
+    double rep_r_w = 0.5;   // extra radius of the repulsize field 
 
     // danger index field paremeters ---
-    double DI_scale = 10.0;
-    double rhocmin = bot_r + ped_r;   // closest distance of the centers of the robot and the pedestrian can get
-    double rhocmax = 1.3;       // DI start distance
+    double DI_scale = 20.0;
+    double rhocmin = bot_r + ped_r + 0.2;   // closest distance of the centers of the robot and the pedestrian can get
+    double rhocmax = 1.8;       // DI start distance
     double eta = (rhocmin * rhocmax) / (rhocmax - rhocmin); 
-    double epsilon = 2.0;   // larger, robot more conservative; smaller, more aggressive
+    double epsilon = 1.5;   // larger, robot more conservative; smaller, more aggressive
 
     // velocity repulsive ---
-    double rep_scale_v = 0.5;
-    double rep_r_v = 2.0;
+    double rep_scale_v = 1.1;
+    double rep_r_v = 2.5;
 
     double dodge_min = 1.0;
     double dodge_max = 4.0;
@@ -136,6 +136,7 @@ class PotentialField{
     void pickRlocationWithinRange();   
     void printRlocation();
     void getPedVelocity();
+    void getPedVelocity_DI();   // gets peds velosity gazebo frame
     void updatePedInfo();
     double clamp(double value);      // clamp the velocity of the pedestrians 
     void newPedMsgTest();

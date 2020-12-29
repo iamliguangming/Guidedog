@@ -26,32 +26,56 @@
         <addwaypoint id="robot_goal"/>
     </agent> -->
 
-    <!--AgentClusters-->   
+    <!--AgentClusters--> 
+    <!-- <agent x="0.0" y="-50.0" n="1" dx="1" dy="1" type="0">    
+        <addwaypoint id="wp0"/>
+        <addwaypoint id="wp5"/>
+    </agent> 
+
+    <agent x="-3.0" y="-52.0" n="1" dx="1" dy="1" type="0">    
+        <addwaypoint id="wp0"/>
+        <addwaypoint id="wp5"/>
+    </agent> 
+
+    <agent x="-5.0" y="-49.0" n="2" dx="1" dy="1" type="0">    
+        <addwaypoint id="wp0"/>
+        <addwaypoint id="wp5"/>
+    </agent>
+
+    <agent x="-8.0" y="-52.0" n="1" dx="1" dy="1" type="0">    
+        <addwaypoint id="wp0"/>
+        <addwaypoint id="wp5"/>
+    </agent>    -->
 
     <agent x="-10.0" y="-52.0" n="1" dx="1" dy="1" type="0">    
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
     </agent> 
 
-    <agent x="-15.0" y="-49.0" n="1" dx="1" dy="1" type="0">    
+    <!-- <agent x="-12.0" y="-51.0" n="1" dx="1" dy="1" type="0">    
+        <addwaypoint id="wp0"/>
+        <addwaypoint id="wp5"/>
+    </agent>  -->
+
+    <agent x="-15.0" y="-49.0" n="2" dx="1" dy="1" type="0">    
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
     </agent>
 
-    <agent x="-20.0" y="-52.0" n="1" dx="1" dy="1" type="0">    
+    <!-- <agent x="-20.0" y="-52.0" n="1" dx="1" dy="1" type="0">    
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
-    </agent> 
+    </agent>  -->
 
     <agent x="-25.0" y="-49.0" n="1" dx="1" dy="1" type="0">    
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
     </agent>
-    
+<!--     
     <agent x="-30.0" y="-52.0" n="1" dx="1" dy="1" type="0">    
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
-    </agent>  
+    </agent>   -->
 
     <agent x="-35.0" y="-49.0" n="1" dx="1" dy="1" type="0">    
         <addwaypoint id="wp0"/>
@@ -67,11 +91,11 @@
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
     </agent>
-
+<!-- 
     <agent x="-50" y="-52" n="1" dx="1" dy="1" type="0">    
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
-    </agent>    
+    </agent>     -->
 
     <agent x="-55" y="-49.5" n="1" dx="1" dy="1" type="0">    
         <addwaypoint id="wp0"/>
@@ -83,10 +107,10 @@
         <addwaypoint id="wp5"/>
     </agent> 
     
-    <agent x="-65.0" y="-49.0" n="1" dx="1" dy="1" type="0">    
+    <!-- <agent x="-65.0" y="-49.0" n="1" dx="1" dy="1" type="0">    
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
-    </agent>
+    </agent> -->
     
     <agent x="-70.0" y="-52.0" n="1" dx="1" dy="1" type="0">    
         <addwaypoint id="wp0"/>
@@ -128,10 +152,10 @@
         <addwaypoint id="wp5"/>
     </agent>
 
-    <agent x="-110.0" y="-52.0" n="1" dx="1" dy="1" type="0">    
+    <!-- <agent x="-110.0" y="-52.0" n="1" dx="1" dy="1" type="0">    
         <addwaypoint id="wp0"/>
         <addwaypoint id="wp5"/>
-    </agent>
+    </agent> -->
 
     <agent x="-115.0" y="-49.0" n="1" dx="1" dy="1" type="0">    
         <addwaypoint id="wp0"/>

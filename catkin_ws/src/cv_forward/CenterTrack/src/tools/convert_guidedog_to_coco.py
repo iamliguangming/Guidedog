@@ -70,7 +70,7 @@ for i, cat in enumerate(cats):
 if __name__ == '__main__':
     calib = CAMERA_CALIB
     for split in SPLITS:
-        ann_dir = DATA_PATH + '/label_wrong_1/'
+        ann_dir = DATA_PATH + '/label/'
         ret = {'images': [], 'annotations': [], "categories": cat_info,
                'videos': []}
         num_images = 0
@@ -103,11 +103,11 @@ if __name__ == '__main__':
             if split == 'test':
                 continue
             # 0 -1 DontCare -1 -1 -10.000000 219.310000 188.490000 245.500000 218.560000 -1000.000000 -1000.000000 -1000.000000 -10.000000 -1.000000 -1.000000 -1.000000
-            ann_path = DATA_PATH + 'label_wrong_1/{}.txt'.format(video_name)
+            ann_path = DATA_PATH + 'label/{}.txt'.format(video_name)
             anns = open(ann_path, 'r')
 
             if CREATE_HALF_LABEL and 'half' in split:
-                label_out_folder = DATA_PATH + 'label_wrong_02_{}/'.format(split)
+                label_out_folder = DATA_PATH + 'label_02_{}/'.format(split)
                 label_out_path = label_out_folder + '{}.txt'.format(video_name)
                 if not os.path.exists(label_out_folder):
                     os.mkdir(label_out_folder)

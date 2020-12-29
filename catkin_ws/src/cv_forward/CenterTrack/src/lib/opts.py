@@ -18,7 +18,7 @@ class opts(object):
                             'available datasets')
     self.parser.add_argument('--test_dataset', default='',
                              help='coco | kitti | coco_hp | pascal')
-    self.parser.add_argument('--exp_id', default='default')
+    self.parser.add_argument('--exp_id', default='pre_train_on_3d')
     self.parser.add_argument('--test', action='store_true')
     self.parser.add_argument('--debug', type=int, default=0,
                              help='level of visualization.'
@@ -27,12 +27,12 @@ class opts(object):
                                   '3: use matplot to display' # useful when lunching training with ipython notebook
                                   '4: save all visualizations to disk')
     self.parser.add_argument('--no_pause', action='store_true')
-    self.parser.add_argument('--demo', default='/mnt/new/ttttt/',
+    self.parser.add_argument('--demo', default='/mnt/new/image_collect/1/',
                              help='path to image/ image folders/ video. '
                                   'or "webcam"')
     self.parser.add_argument('--load_model', default='/home/zhuoyu/Documents/CIS-700/Guidedog/catkin_ws/src/cv_forward/CenterTrack/exp/tracking,ddd/default/model_last.pth',
                              help='path to pretrained model')
-    self.parser.add_argument('--resume', action='store_true',
+    self.parser.add_argument('--resume', action='store_true',default=True,
                              help='resume an experiment. '
                                   'Reloaded the optimizer parameter and '
                                   'set load_model to model_last.pth '
@@ -110,11 +110,11 @@ class opts(object):
                              help='input height. -1 for default from dataset.')
     self.parser.add_argument('--input_w', type=int, default=-1, 
                              help='input width. -1 for default from dataset.')
-    self.parser.add_argument('--dataset_version', default='train_half')
+    self.parser.add_argument('--dataset_version', default='val_half')
 
     # train
     self.parser.add_argument('--optim', default='adam')
-    self.parser.add_argument('--lr', type=float, default=6e-5,
+    self.parser.add_argument('--lr', type=float, default=1e-5,
                              help='learning rate for batch size 32.')
     self.parser.add_argument('--lr_step', type=str, default='60',
                              help='drop learning rate by 10.')
@@ -164,7 +164,7 @@ class opts(object):
                              help='')
     self.parser.add_argument('--depth_scale', type=float, default=1,
                              help='')
-    self.parser.add_argument('--save_results', action='store_true')
+    self.parser.add_argument('--save_results', action='store_true', default=True)
     self.parser.add_argument('--load_results', default='')
     self.parser.add_argument('--use_loaded_results', action='store_true')
     self.parser.add_argument('--ignore_loaded_cats', default='')
